@@ -13,10 +13,10 @@ of the OGC/WPS related software comes from the `GeoPython project <http://geopyt
 
 Birdhouse is the home of the following WPS components (birds):
 
-* :ref:`Phoenix <phoenix:installation>`: a web-based WPS client with ESGF data access
-* :ref:`Malleefowl <malleefowl:installation>`: access to climate data (ESGF, ...) as a service and library
-* :ref:`Flyingpigeon <flyingpigeon:installation>`: services for the climate impact community
-* :ref:`Hummingbird <hummingbird:installation>`: provides cdo and cfchecker as a service
+* :ref:`Phoenix <phoenix:introduction>`: a web-based WPS client with ESGF data access
+* :ref:`Malleefowl <malleefowl:introduction>`: access to climate data (ESGF, ...) as a service and library
+* :ref:`Flyingpigeon <flyingpigeon:introduction>`: services for the climate impact community
+* :ref:`Hummingbird <hummingbird:introduction>`: provides cdo and cfchecker as a service
 * `Emu <http://emu.readthedocs.org/en/latest/>`_: some example WPS processes
 * `Birdy <http://birdy.readthedocs.org/en/latest/>`_: a WPS command line tool
 

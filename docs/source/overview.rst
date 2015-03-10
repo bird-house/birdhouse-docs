@@ -1,9 +1,11 @@
 .. _overview:
+
 ******************
 Birdhouse Overview
 ******************
 
 .. _wps_use_case:
+
 ============
 WPS Use Case
 ============
@@ -13,6 +15,7 @@ A user runs a WPS processes remotely on a machine with direct access to climate 
 .. image:: images/wps-use-case.png
 
 .. _birdhouse_overview:
+
 =============================
 Birdhouse with WPS components
 =============================
