@@ -1,8 +1,8 @@
 .. _appendix:
 
-********
-Appendix
-********
+************
+Useful Links
+************
 
 WPS Software
 ============

@@ -9,6 +9,7 @@ Table of contents:
 #. :ref:`getting-help`
 
 .. _general-questions:
+
 General questions
 =================
 
@@ -18,6 +19,7 @@ General questions
    The available packages are used in the climate science community.
 
 .. _getting-help:
+
 Getting help
 ============ 
 

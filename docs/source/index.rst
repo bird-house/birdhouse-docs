@@ -17,8 +17,8 @@ Birdhouse is the home of the following WPS components (birds):
 * :ref:`Malleefowl <malleefowl:installation>`: access to climate data (ESGF, ...) as a service and library
 * :ref:`Flyingpigeon <flyingpigeon:installation>`: services for the climate impact community
 * :ref:`Hummingbird <hummingbird:installation>`: provides cdo and cfchecker as a service
-* :ref:`Emu <emu:installation>`: some example WPS processes
-* :ref:`Birdy <birdy:installation>`: a WPS command line tool
+* `Emu <http://emu.readthedocs.org/en/latest/>`_: some example WPS processes
+* `Birdy <http://birdy.readthedocs.org/en/latest/>`_: a WPS command line tool
 
 You can find the source code for all Birdhouse components on
 `our github page <http://github.com/bird-house>`_.
@@ -26,23 +26,23 @@ You can find the source code for all Birdhouse components on
 Getting started
 ===============
 
-* `Web Processing Service Information Site <http://geoprocessing.info/wpsdoc/index>`_
-* `PyWPS Tutorial <http://pywps.wald.intevation.org/documentation/course/process/index.html>`_
-* `Emu: starting with some WPS test processes <http://emu.readthedocs.org/en/latest/>`_
-* `IPython Notebook tutorial for using WPS on nbviewer.ipython.org <http://nbviewer.ipython.org/github/bird-house/pyramid-phoenix/tree/master/docs/notebook/tutorial/>`_
-* `IPython Notebook tutorial for using WPS on GitHub <https://github.com/bird-house/pyramid-phoenix/tree/master/docs/notebook/tutorial>`_
-* `Useful WPS links <http://pyramid-phoenix.readthedocs.org/en/latest/appendix/index.html>`_
-* `Birdhouse Overview (outdated) <http://pyramid-phoenix.readthedocs.org/en/latest/overview/index.html>`_
-* `Phoenix Tutorial on ReadTheDocs (outdated) <http://pyramid-phoenix.readthedocs.org/en/latest/tutorial/index.html>`_
-
 .. toctree::
    :maxdepth: 1
+
+   overview
+   tutorial
+   anaconda
+   docker
+   notebooks
+   faq
+   glossary
+   appendix
 
 
 Getting involved
 ================
 
-Development discussion takes place on the `wps mailing list <>`_
+News are published to the `wps mailing list <https://lists.dkrz.de/mailman/listinfo/wps>`_
 
 Presentations & Blog Posts
 ==========================
@@ -57,12 +57,6 @@ License Agreement
 =================
 
 Birdhouse components are distributed under the `Apache License, Version 2.0 <http://opensource.org/licenses/Apache-2.0>`_.
-
-Birdhouse FAQ
-=============
-
-Glossary
-========
 
 
 Indices and tables
