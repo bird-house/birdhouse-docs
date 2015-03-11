@@ -9,7 +9,7 @@ Introduction
 Birdhouse is a collection of OGC Web Processing Service (WPS) related
 Python components to support data processing in the climate science
 community. The aim of Birdhouse is to make the usage of WPS easy. Most
-of the OGC/WPS related software comes from the `GeoPython project <http://geopython.github.io/>`_. 
+of the OGC/WPS related software comes from the `GeoPython <http://geopython.github.io/>`_ project. 
 
 Birdhouse is the home of the following WPS components (birds):
 
@@ -17,7 +17,7 @@ Birdhouse is the home of the following WPS components (birds):
 * :ref:`Malleefowl <malleefowl:introduction>`: access to climate data (ESGF, ...) as a service and library
 * :ref:`Flyingpigeon <flyingpigeon:introduction>`: services for the climate impact community
 * :ref:`Hummingbird <hummingbird:introduction>`: provides cdo and cfchecker as a service
-* `Emu <http://emu.readthedocs.org/en/latest/>`_: some example WPS processes
+* :ref:`Emu <emu:introduction>`_: some example WPS processes
 * `Birdy <http://birdy.readthedocs.org/en/latest/>`_: a WPS command line tool
 
 You can find the source code for all Birdhouse components on
