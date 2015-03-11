@@ -3,7 +3,7 @@
 IPython Notebooks
 =================
 
-`IPython Notebooks <http://ipython.org/notebook.html>`_ with example on howto use a Web Processing Service.
+`IPython Notebooks <http://ipython.org/notebook.html>`_ with examples on howto use a Web Processing Service.
 You need a running `Emu WPS service <http://emu.readthedocs.org/en/latest/>`_ with some test process 
 to run the notebook examples:
 
