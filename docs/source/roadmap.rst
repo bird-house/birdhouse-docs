@@ -26,6 +26,30 @@ Security
   - Token should be part of the url http://localhost/wps/emu/auhbgt3n or http://localhost/wps/emu?request=getcapabilities&token=auhbgt3n
   - using a security proxy service in front of WPS servers.
 
+Data Sources
+------------
+
+* OpenStack
+
+  - using python swift client
+
+* PyCSW:
+
+  - already there but needs to be refactored
+  - CSW is used for publishing results
+
+* ESGF/Thredds:
+
+  - opendap without aggregations (mostly not available)
+
+* Observational Climate Data:
+
+  - which are available for public access and usage (license issuses)
+
+* local file archives:
+
+  - make them searchable ... pattern matching ... index service ...
+
 Docs & Testing
 --------------
 
