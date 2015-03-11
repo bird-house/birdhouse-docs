@@ -1,26 +1,24 @@
-=============
-Birdhouse FAQ
-=============
+.. _faq:
 
-Table of contents:
-==================
+==========================
+Frequently Asked Questions
+==========================
 
-#. :ref:`general-questions`
-#. :ref:`getting-help`
+.. contents::
+   :local:
+   :depth: 2
+   :backlinks: none
 
-.. _general-questions:
-
-General questions
+General Questions
 =================
 
-#. What is Birdhouse?
+*What is "Birdhouse"?*
+----------------------
 
-   *Birdhouse* is collection of Python packages to make the usage of Web Processing Services easy.
-   The available packages are used in the climate science community.
+*Birdhouse* is collection of Python packages to make the usage of Web Processing Services easy.
+The available packages are used in the climate science community.
 
-.. _getting-help:
-
-Getting help
+Getting Help
 ============ 
 
 
