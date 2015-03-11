@@ -36,6 +36,8 @@ Getting started
    notebooks
    faq
    glossary
+   release_notes
+   roadmap
    appendix
 
 
