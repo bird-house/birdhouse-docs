@@ -1,2 +1,2 @@
 # birdhouse-docs
-Birdhouse documentation
+Birdhouse Sphinx documentation and IPython Notebooks with examples.
