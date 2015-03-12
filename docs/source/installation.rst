@@ -3,7 +3,19 @@
 Installation
 ============
 
+.. contents::
+    :local:
+    :depth: 2
+
 Birdhouse consists of several components like :ref:`Malleefowl <malleefowl:introduction>` and :ref:`Emu <emu:introduction>`. Each of them can be installed individually. The installation is done using the Python-based build system `Buildout`_. Most of the dependencies are maintained in the `Anaconda Python distribution`_. For convience each Birdhouse component has a `Makefile` to ease the installation so you don't need to know how to call the Buildout build tool.
+
+Requirements
+------------
+
+Linux 64-bit ...
+
+Installing from source
+----------------------
 
 The installation of Birdhouse components from source is basically a three-liner. Here is an example for the Emu WPS service::
 
@@ -31,6 +43,11 @@ On the WPS server side we have:
 * :ref:`Hummingbird <hummingbird:installation>`: providing WPS services for CDO and climate metadata checks.
 * :ref:`Emu <emu:installation>`: just some WPS processes for testing.
 
+Nginx, gunicorn and supervisor
+------------------------------
+
+[..]
+
 .. _docker:
 
 Using Birdhouse with Docker
@@ -49,7 +66,7 @@ The aim of Birdhouse is to take care of all these dependencies so that the user 
 
 In this situation the `Anaconda Python distribution`_ comes helpful. Anaconda has already a lot of Python related packages available for different platforms (Linux, MacOSX, Windows) and there is no compilation needed on the installation host. Anaconda makes it easy to build own packages (*conda recipes*) and to upload them to the free Anaconda server on `Binstar <https://binstar.org/>`_.
 
-Birdhouse is using Anaconda and it is integrated into the `Buildout`_ build tool. The additional *conda recipes* used by Birdhouse are available on `GitHub <https://github.com/bird-house/conda-recipes>`_. The build packages can be installed from the `Birdhouse organisation on Binstar <https://binstar.org/birdhouse>`_. For example if you have already Anaconda available you can install `CDO` with the following command::
+Birdhouse is using Anaconda and it is integrated into the `Buildout`_ build tool. The additional *conda recipes* used by Birdhouse are available on `GitHub <https://github.com/bird-house/conda-recipes>`_. The build packages can be installed from the `Birdhouse organisation on Binstar <https://binstar.org/birdhouse>`_. For example if you are already using Anaconda, you can install `CDO` with the following command::
 
     $ conda install -c birdhouse cdo
 
@@ -60,7 +77,7 @@ Alternative package manager to Anaconda are for example `Homebrew <http://brew.s
 Buildout Recipes provided by Birdhouse
 --------------------------------------
 
-`Buildout`_ has a plugin mechanism to extend the build tool functionality with `recipes <http://www.buildout.org/en/latest/docs/recipe.html>`_. Birdhouse provides a Buildout recipe to install Anaconda packages. There is also a set of recipes to set up Web Processing Service with PyWPS, Nginx, gunicorn and supervisor. All these recipes are on `GitHub <https://github.com/bird-house>`_ and can be installed from `PyPi <https://pypi.python.org/pypi?%3Aaction=search&term=birdhousebuilder.recipe&submit=search>`_. 
+`Buildout`_ has a plugin mechanism to extend the build tool functionality with `recipes <http://www.buildout.org/en/latest/docs/recipe.html>`_. Birdhouse provides a Buildout recipe to install Anaconda packages. There is also a set of recipes to set up Web Processing Service with PyWPS, Nginx, gunicorn and supervisor. All these recipes are on `GitHub <https://github.com/bird-house>`_ and can be `found on PyPi <https://pypi.python.org/pypi?%3Aaction=search&term=birdhousebuilder.recipe&submit=search>`_. 
 
 Here is the list of currently used Buildout recipes by Birdhouse:
 
