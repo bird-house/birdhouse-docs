@@ -32,7 +32,6 @@ Getting started
    overview
    installation
    tutorial
-   notebooks
    faq
    glossary
    release_notes
