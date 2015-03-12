@@ -1,0 +1,84 @@
+.. _installation:
+
+Installation
+============
+
+Birdhouse consists of several components like :ref:`Malleefowl <malleefowl:introduction>` and :ref:`Emu <emu:introduction>`. Each of them can be installed individually. The installation is done using the Python-based build system `Buildout`_. Most of the dependencies are maintained in the `Anaconda Python distribution`_. For convience each Birdhouse component has a `Makefile` to ease the installation so you don't need to know how to call the Buildout build tool.
+
+The installation of Birdhouse components from source is basically a three-liner. Here is an example for the Emu WPS service::
+
+    $ git clone https://github.com/bird-house/emu.git
+    $ cd emu
+    $ make
+
+All the Birdhouse components follow the same installation pattern. If you want to see all the options of the `Makefile` then type::
+ 
+    $ make help 
+
+You will find more information about these options in the :ref:`Makefile documentation <bootstrap:makefile>`.
+
+Read the documention of each Birdhouse component for the details of the installation and how to configure the components.
+
+On the WPS client side we have:
+
+* :ref:`Phoenix <phoenix:installation>`: a Pyramid web application.
+* :ref:`Birdy <birdy:installation>`: a simple WPS command line tool.
+
+On the WPS server side we have:
+
+* :ref:`Malleefowl <malleefowl:installation>`: providing base WPS services to access data.
+* :ref:`Flyingpigeon <flyingpigeon:installation>`: providing WPS services for the climate impact community.
+* :ref:`Hummingbird <hummingbird:installation>`: providing WPS services for CDO and climate metadata checks.
+* :ref:`Emu <emu:installation>`: just some WPS processes for testing.
+
+.. _docker:
+
+Using Birdhouse with Docker
+---------------------------
+
+An alternative way to install and deploy Birdhouse Web Processing Services is using `Docker <https://www.docker.com/>`_. The Birdhouse WPS servers are available as Docker image on `Docker Hub <https://registry.hub.docker.com/repos/birdhouse/>`_. See an example on how to use them with the :ref:`Emu WPS Docker image <emu:tutorial>`
+
+.. _anaconda:
+
+Birdhouse Anaconda Packages
+---------------------------
+
+The installation of the Birdhouse components and especially the processes involve many software dependencies. The core dependencies are of course the WPS related packages like `PyWPS` and `OWSLib` from the GeoPython project. But most dependencies come from the processes itself served by the WPS like `numpy`, `R`, `NetCDF`, `CDO`, `matplotlib`, ... and many more. 
+
+The aim of Birdhouse is to take care of all these dependencies so that the user does not need to install them manually. If these dependencies would only be *pure* Python packages then using the `Buildout`_ build tool together with the Python package index `PyPi`_ would be sufficient. But many Python packages have `C` extensions and there are also non-Python packages we need to install like `R` and `netcdflib`.
+
+In this situation the `Anaconda Python distribution`_ comes helpful. Anaconda has already a lot of Python related packages available for different platforms (Linux, MacOSX, Windows) and there is no compilation needed on the installation host. Anaconda makes it easy to build own packages (*conda recipes*) and to upload them to the free Anaconda server on `Binstar <https://binstar.org/>`_.
+
+Birdhouse is using Anaconda and it is integrated into the `Buildout`_ build tool. The additional *conda recipes* used by Birdhouse are available on `GitHub <https://github.com/bird-house/conda-recipes>`_. The build packages can be installed from the `Birdhouse organisation on Binstar <https://binstar.org/birdhouse>`_. For example if you have already Anaconda available you can install `CDO` with the following command::
+
+    $ conda install -c birdhouse cdo
+
+If Anaconda would not be available one could also provide these packages from source and compile them on each installation host. Buildout does provide ways to do so. But an initial installation with most of the software used in climate science could *easily take hours*. 
+
+Alternative package manager to Anaconda are for example `Homebrew <http://brew.sh/>`_ (MacOSX only) and `Linuxbrew <http://brew.sh/linuxbrew/>`_ (a fork of Homebrew for Linux).
+
+Buildout Recipes provided by Birdhouse
+--------------------------------------
+
+`Buildout`_ has a plugin mechanism to extend the build tool functionality with `recipes <http://www.buildout.org/en/latest/docs/recipe.html>`_. Birdhouse provides a Buildout recipe to install Anaconda packages. There is also a set of recipes to set up Web Processing Service with PyWPS, Nginx, gunicorn and supervisor. All these recipes are on `GitHub <https://github.com/bird-house>`_ and can be installed from `PyPi <https://pypi.python.org/pypi?%3Aaction=search&term=birdhousebuilder.recipe&submit=search>`_. 
+
+Here is the list of currently used Buildout recipes by Birdhouse:
+
+* `birdhousebuilder.recipe.conda <https://pypi.python.org/pypi/birdhousebuilder.recipe.conda>`_: A Buildout recipe to install Anaconda packages.
+* `birdhousebuilder.recipe.pywps <https://pypi.python.org/pypi/birdhousebuilder.recipe.pywps>`_: A Buildout recipe to install and configure PyWPS Web Processing Service with Anaconda.
+* `birdhousebuilder.recipe.pycsw <https://pypi.python.org/pypi/birdhousebuilder.recipe.pycsw>`_: A Buildout recipe to install and configure pycsw Catalog Service (CSW) with Anaconda.
+* `birdhousebuilder.recipe.nginx <https://pypi.python.org/pypi/birdhousebuilder.recipe.nginx>`_: A Buildout recipe to install and configure Nginx with Anaconda.
+* `birdhousebuilder.recipe.supervisor <https://pypi.python.org/pypi/birdhousebuilder.recipe.supervisor>`_: A Buildout recipe to install and configure supervisor for Anaconda.
+* `birdhousebuilder.recipe.docker <https://pypi.python.org/pypi/birdhousebuilder.recipe.docker>`_: A Buildout recipe to generate a Dockerfile for Birdhouse applications.
+
+.. _`Anaconda Python distribution`: http://www.continuum.io/
+.. _`Buildout`: http://www.buildout.org/en/latest/
+.. _`PyPi`: https://pypi.python.org/pypi
+
+
+
+ 
+
+
+
+

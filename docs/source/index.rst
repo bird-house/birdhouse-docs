@@ -20,8 +20,8 @@ Birdhouse is the home of the following WPS components (birds):
 * :ref:`Emu <emu:introduction>`: some example WPS processes
 * :ref:`Birdy <emu:introduction>`: a WPS command line tool
 
-You can find the source code for all Birdhouse components on
-`our github page <http://github.com/bird-house>`_.
+You can find the source code of all Birdhouse components on
+`our GitHub page <http://github.com/bird-house>`_.
 
 Getting started
 ===============
@@ -30,9 +30,8 @@ Getting started
    :maxdepth: 1
 
    overview
+   installation
    tutorial
-   anaconda
-   docker
    notebooks
    faq
    glossary

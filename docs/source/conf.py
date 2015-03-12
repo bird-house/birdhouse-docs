@@ -271,4 +271,6 @@ intersphinx_mapping = {'python': ('http://docs.python.org/', None),
                        'flyingpigeon': ('http://flyingpigeon.readthedocs.org/en/latest/', None),
                        'hummingbird': ('http://birdhouse-hummingbird.readthedocs.org/en/latest/', None),
                        'emu': ('http://emu.readthedocs.org/en/latest/', None),
-                       'birdy': ('http://birdy.readthedocs.org/en/latest/', None)}
+                       'birdy': ('http://birdy.readthedocs.org/en/latest/', None),
+                       'bootstrap': ('http://birdhousebuilderbootstrap.readthedocs.org/en/latest/', None),
+			}
