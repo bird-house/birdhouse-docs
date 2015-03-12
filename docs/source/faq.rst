@@ -21,13 +21,15 @@ The available packages are used in the climate science community.
 *What is "WPS"?*
 ----------------
 
-The very short answer: 
+The very short answer 
+    WPS is the acronym for Web Processing Service.
 
-WPS is the acronym for Web Processing Service.
+The sligthly longer answer
+    So, let's say you have a function (maybe written in Python) which might calculate the **"summer days in Finland since 1990"**. Then this function has probably input parameters (region, from-date, to-date, NetCDF files, ...) and an output (or even more ...) which might be just an integer number or a text document or even a nice diagram. Now, you would like to provide this function as a web service, so that other people can call it with just a simple URL like:: 
 
-The sligthly longer answer:
+        http://myhost/wps/identifier=summer_days&region=finland&from=1990 
 
-So, let's say you have a function (maybe written in Python) which might calculate the "summer days in finland since 1990". Then this function has probably input parameters (region, from-date, to-date, NetCDF files, ...) and an output (or even more ...) which might be just a interger number or a text document or even a diagram. Now, you would like to provide this function as a web service, so that other people can call it with just a simpel URL like http://myhost/wps/identifier=summer_days&region=finland ... ok ... then you should have a deeper look at this WPS thing  ... 
+    ... ok ... then you should have a deeper look at this :term:`WPS` thing. 
 
 Getting Help
 ============ 
