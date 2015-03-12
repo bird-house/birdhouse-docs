@@ -32,17 +32,12 @@ Getting started
    overview
    installation
    tutorial
+   contributing
    faq
    glossary
    release_notes
    roadmap
    appendix
-
-
-Getting involved
-================
-
-News are published to the `wps mailing list <https://lists.dkrz.de/mailman/listinfo/wps>`_
 
 Presentations & Blog Posts
 ==========================
