@@ -77,7 +77,7 @@ Alternative package manager to Anaconda are for example `Homebrew <http://brew.s
 Buildout Recipes provided by Birdhouse
 --------------------------------------
 
-`Buildout`_ has a plugin mechanism to extend the build tool functionality with `recipes <http://www.buildout.org/en/latest/docs/recipe.html>`_. Birdhouse provides a Buildout recipe to install Anaconda packages. There is also a set of recipes to set up Web Processing Service with PyWPS, Nginx, gunicorn and supervisor. All these recipes are on `GitHub <https://github.com/bird-house>`_ and can be `found on PyPi <https://pypi.python.org/pypi?%3Aaction=search&term=birdhousebuilder.recipe&submit=search>`_. 
+`Buildout`_ has a plugin mechanism to extend the build tool functionality with `recipes <http://www.buildout.org/en/latest/docs/recipe.html>`_. Birdhouse provides a Buildout recipe to install Anaconda packages. There is also a set of recipes to set up Web Processing Service with PyWPS, Nginx, gunicorn and supervisor. All these `Buildout recipes are on GitHub <https://github.com/bird-house?query=birdhousebuilder.recipe>`_ and can be `found on PyPi <https://pypi.python.org/pypi?%3Aaction=search&term=birdhousebuilder.recipe&submit=search>`_. 
 
 Here is the list of currently used Buildout recipes by Birdhouse:
 
