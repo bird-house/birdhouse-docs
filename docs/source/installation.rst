@@ -7,7 +7,7 @@ Installation
     :local:
     :depth: 2
 
-Birdhouse consists of several components like :ref:`Malleefowl <malleefowl:introduction>` and :ref:`Emu <emu:introduction>`. Each of them can be installed individually. The installation is done using the Python-based build system `Buildout`_. Most of the dependencies are maintained in the `Anaconda Python distribution`_. For convience each Birdhouse component has a `Makefile` to ease the installation so you don't need to know how to call the Buildout build tool.
+Birdhouse consists of several components like :ref:`Malleefowl <malleefowl:introduction>` and :ref:`Emu <emu:introduction>`. Each of them can be installed individually. The installation is done using the Python-based build system :term:`Buildout`. Most of the dependencies are maintained in the `Anaconda Python distribution`_. For convience each Birdhouse component has a `Makefile` to ease the installation so you don't need to know how to call the Buildout build tool.
 
 Requirements
 ------------
@@ -52,7 +52,9 @@ On the WPS server side we have:
 Nginx, gunicorn and supervisor
 ------------------------------
 
-[..]
+Birdhouse setups a `PyWPS`_ server (and also the Phoenix web application) using :term:`Buildout`. We use the :term:`Gunicorn` HTTP application server (similar to Tomcat for Java servlet applications ) to run these web applications with the :term:`WSGI` interface. In front of the Gunicorn application server we use the :term:`Nginx` HTTP server (similar to Apache web server). All these web services are started/stopped and monitored by a :term:`Supervisor` service. 
+
+When installing a Birdhouse WPS service you don't need to care about this setup. This is all done by Buildout and using some extensions provided by Birdhouse. 
 
 .. _docker:
 
@@ -68,11 +70,11 @@ Birdhouse Anaconda Packages
 
 The installation of the Birdhouse components and especially the processes involve many software dependencies. The core dependencies are of course the WPS related packages like `PyWPS` and `OWSLib` from the GeoPython project. But most dependencies come from the processes itself served by the WPS like `numpy`, `R`, `NetCDF`, `CDO`, `matplotlib`, ... and many more. 
 
-The aim of Birdhouse is to take care of all these dependencies so that the user does not need to install them manually. If these dependencies would only be *pure* Python packages then using the `Buildout`_ build tool together with the Python package index `PyPi`_ would be sufficient. But many Python packages have `C` extensions and there are also non-Python packages we need to install like `R` and `netcdflib`.
+The aim of Birdhouse is to take care of all these dependencies so that the user does not need to install them manually. If these dependencies would only be *pure* Python packages then using the :term:`Buildout` build tool together with the Python package index `PyPi`_ would be sufficient. But many Python packages have `C` extensions and there are also non-Python packages we need to install like `R` and `netcdflib`.
 
 In this situation the `Anaconda Python distribution`_ comes helpful. Anaconda has already a lot of Python related packages available for different platforms (Linux, MacOSX, Windows) and there is no compilation needed on the installation host. Anaconda makes it easy to build own packages (*conda recipes*) and to upload them to the free Anaconda server on `Binstar <https://binstar.org/>`_.
 
-Birdhouse is using Anaconda and it is integrated into the `Buildout`_ build tool. The additional *conda recipes* used by Birdhouse are available on `GitHub <https://github.com/bird-house/conda-recipes>`_. The build packages can be installed from the `Birdhouse organisation on Binstar <https://binstar.org/birdhouse>`_. For example if you are already using Anaconda, you can install `CDO` with the following command::
+Birdhouse is using Anaconda and it is integrated into the Buildout build tool. The additional *conda recipes* used by Birdhouse are available on `GitHub <https://github.com/bird-house/conda-recipes>`_. The build packages can be installed from the `Birdhouse organisation on Binstar <https://binstar.org/birdhouse>`_. For example if you are already using Anaconda, you can install `CDO` with the following command::
 
     $ conda install -c birdhouse cdo
 
@@ -83,7 +85,7 @@ Alternative package manager to Anaconda are for example `Homebrew <http://brew.s
 Buildout Recipes provided by Birdhouse
 --------------------------------------
 
-`Buildout`_ has a plugin mechanism to extend the build tool functionality with `recipes <http://www.buildout.org/en/latest/docs/recipe.html>`_. Birdhouse provides a Buildout recipe to install Anaconda packages. There is also a set of recipes to set up Web Processing Service with PyWPS, Nginx, gunicorn and supervisor. All these `Buildout recipes are on GitHub <https://github.com/bird-house?query=birdhousebuilder.recipe>`_ and can be `found on PyPi <https://pypi.python.org/pypi?%3Aaction=search&term=birdhousebuilder.recipe&submit=search>`_. 
+:term:`Buildout` has a plugin mechanism to extend the build tool functionality with `recipes <http://www.buildout.org/en/latest/docs/recipe.html>`_. Birdhouse provides a Buildout recipe to install Anaconda packages. There is also a set of recipes to set up Web Processing Service with PyWPS, Nginx, gunicorn and supervisor. All these `Buildout recipes are on GitHub <https://github.com/bird-house?query=birdhousebuilder.recipe>`_ and can be `found on PyPi <https://pypi.python.org/pypi?%3Aaction=search&term=birdhousebuilder.recipe&submit=search>`_. 
 
 Here is the list of currently used Buildout recipes by Birdhouse:
 
@@ -95,8 +97,8 @@ Here is the list of currently used Buildout recipes by Birdhouse:
 * `birdhousebuilder.recipe.docker <https://pypi.python.org/pypi/birdhousebuilder.recipe.docker>`_: A Buildout recipe to generate a Dockerfile for Birdhouse applications.
 
 .. _`Anaconda Python distribution`: http://www.continuum.io/
-.. _`Buildout`: http://www.buildout.org/en/latest/
 .. _`PyPi`: https://pypi.python.org/pypi
+.. _`PyWPS`: http://pywps.wald.intevation.org/
 
 
 
