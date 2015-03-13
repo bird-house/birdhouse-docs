@@ -60,6 +60,26 @@ See the following image on how this looks like:
 
 When installing a Birdhouse WPS service you don't need to care about this setup. This is all done by Buildout and using some extensions provided by Birdhouse. 
 
+The Makefile of a Birdhouse application has convenience targets to start/stop a WPS service controlled by Supervisor and to check the status::
+
+    $ make start    # start wps service
+    $ make stop     # stop wps service
+    $ make status   # show status of wps service
+    Supervisor status ...
+    /home/pingu/.conda/envs/birdhouse/bin/supervisorctl status
+    emu                              RUNNING   pid 25698, uptime 0:00:02
+    malleefowl                       RUNNING   pid 25702, uptime 0:00:02
+    mongodb                          RUNNING   pid 25691, uptime 0:00:02
+    nginx                            RUNNING   pid 25699, uptime 0:00:02
+    phoenix                          RUNNING   pid 25694, uptime 0:00:02
+    pycsw                            RUNNING   pid 25700, uptime 0:00:02
+    tomcat                           RUNNING   pid 25693, uptime 0:00:02
+
+
+You can also use the Supervisor monitor web service which by default is available on port http://localhost/9001. The Supervisor monitor app looks like in the following screenshot.
+
+.. image:: _images/supervisor-monitor.png
+
 .. _docker:
 
 Using Birdhouse with Docker
