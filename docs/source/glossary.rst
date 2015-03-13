@@ -4,7 +4,8 @@
 Glossary
 ========
 
-.. glossary::
+.. glossary:: 
+   :sorted:
 
    WPS
    Web Processing Service
