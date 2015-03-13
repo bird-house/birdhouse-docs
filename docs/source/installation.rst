@@ -7,12 +7,12 @@ Installation
     :local:
     :depth: 2
 
-Birdhouse consists of several components like :ref:`Malleefowl <malleefowl:introduction>` and :ref:`Emu <emu:introduction>`. Each of them can be installed individually. The installation is done using the Python-based build system :term:`Buildout`. Most of the dependencies are maintained in the `Anaconda Python distribution`_. For convience each Birdhouse component has a `Makefile` to ease the installation so you don't need to know how to call the Buildout build tool.
+Birdhouse consists of several components like :ref:`Malleefowl <malleefowl:introduction>` and :ref:`Emu <emu:introduction>`. Each of them can be installed individually. The installation is done using the Python-based build system :term:`Buildout`. Most of the dependencies are maintained in the :term:`Anaconda Python distribution`. For convience each Birdhouse component has a `Makefile` to ease the installation so you don't need to know how to call the Buildout build tool.
 
 Requirements
 ------------
 
-Birdhouse uses `Anaconda Python distribution`_ for most of the dependencies. If Anaconda is not already installed it will be installed during the installation process. Anaconda has packages for Linux, MacOSX and Windows. But not all packages used by Birdhouse are already available in the default package channel of Anaconda. The missing packages are supplied by Birdhouse on Binstar. But we currently maintain only packages for Linux 64-bit and partly for MacOSX.
+Birdhouse uses :term:`Anaconda Python distribution` for most of the dependencies. If Anaconda is not already installed it will be installed during the installation process. Anaconda has packages for Linux, MacOSX and Windows. But not all packages used by Birdhouse are already available in the default package channel of Anaconda. The missing packages are supplied by Birdhouse on Binstar. But we currently maintain only packages for Linux 64-bit and partly for MacOSX.
 
 So the short answer to the requirements is: you need a **Linux 64-bit installation**. 
 
@@ -52,7 +52,7 @@ On the WPS server side we have:
 Nginx, gunicorn and supervisor
 ------------------------------
 
-Birdhouse setups a `PyWPS`_ server (and also the Phoenix web application) using :term:`Buildout`. We use the :term:`Gunicorn` HTTP application server (similar to Tomcat for Java servlet applications ) to run these web applications with the :term:`WSGI` interface. In front of the Gunicorn application server we use the :term:`Nginx` HTTP server (similar to Apache web server). All these web services are started/stopped and monitored by a :term:`Supervisor` service. 
+Birdhouse setups a :term:`PyWPS` server (and also the Phoenix web application) using :term:`Buildout`. We use the :term:`Gunicorn` HTTP application server (similar to Tomcat for Java servlet applications ) to run these web applications with the :term:`WSGI` interface. In front of the Gunicorn application server we use the :term:`Nginx` HTTP server (similar to Apache web server). All these web services are started/stopped and monitored by a :term:`Supervisor` service. 
 
 See the following image on how this looks like:
 
@@ -109,7 +109,7 @@ Alternative package manager to Anaconda are for example `Homebrew <http://brew.s
 Buildout Recipes provided by Birdhouse
 --------------------------------------
 
-:term:`Buildout` has a plugin mechanism to extend the build tool functionality with `recipes <http://www.buildout.org/en/latest/docs/recipe.html>`_. Birdhouse provides a Buildout recipe to install Anaconda packages. There is also a set of recipes to set up Web Processing Service with PyWPS, Nginx, gunicorn and supervisor. All these `Buildout recipes are on GitHub <https://github.com/bird-house?query=birdhousebuilder.recipe>`_ and can be `found on PyPi <https://pypi.python.org/pypi?%3Aaction=search&term=birdhousebuilder.recipe&submit=search>`_. 
+:term:`Buildout` has a plugin mechanism to extend the build tool functionality with `recipes <http://www.buildout.org/en/latest/docs/recipe.html>`_. Birdhouse provides a Buildout recipe to install Anaconda packages. There is also a set of recipes to set up Web Processing Service with PyWPS, Nginx, Gunicorn and Supervisor. All these `Buildout recipes are on GitHub <https://github.com/bird-house?query=birdhousebuilder.recipe>`_ and can be `found on PyPi <https://pypi.python.org/pypi?%3Aaction=search&term=birdhousebuilder.recipe&submit=search>`_. 
 
 Here is the list of currently used Buildout recipes by Birdhouse:
 
@@ -120,9 +120,8 @@ Here is the list of currently used Buildout recipes by Birdhouse:
 * `birdhousebuilder.recipe.supervisor <https://pypi.python.org/pypi/birdhousebuilder.recipe.supervisor>`_: A Buildout recipe to install and configure supervisor for Anaconda.
 * `birdhousebuilder.recipe.docker <https://pypi.python.org/pypi/birdhousebuilder.recipe.docker>`_: A Buildout recipe to generate a Dockerfile for Birdhouse applications.
 
-.. _`Anaconda Python distribution`: http://www.continuum.io/
 .. _`PyPi`: https://pypi.python.org/pypi
-.. _`PyWPS`: http://pywps.wald.intevation.org/
+
 
 
 
