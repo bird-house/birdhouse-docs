@@ -7,7 +7,7 @@ Installation
     :local:
     :depth: 2
 
-Birdhouse consists of several components like :ref:`Malleefowl <malleefowl:introduction>` and :ref:`Emu <emu:introduction>`. Each of them can be installed individually. The installation is done using the Python-based build system :term:`Buildout`. Most of the dependencies are maintained in the :term:`Anaconda Python distribution`. For convience each Birdhouse component has a `Makefile` to ease the installation so you don't need to know how to call the Buildout build tool.
+Birdhouse consists of several components like :ref:`Malleefowl <malleefowl:introduction>` and :ref:`Emu <emu:introduction>`. Each of them can be installed individually. The installation is done using the Python-based build system :term:`Buildout`. Most of the dependencies are maintained in the :term:`Anaconda Python distribution`. For convience each Birdhouse component has a :ref:`Makefile <bootstrap:makefile>` to ease the installation so you don't need to know how to call the Buildout build tool.
 
 Requirements
 ------------
@@ -35,7 +35,7 @@ All the Birdhouse components follow the same installation pattern. If you want t
 
 You will find more information about these options in the :ref:`Makefile documentation <bootstrap:makefile>`.
 
-Read the documention of each Birdhouse component for the details of the installation and how to configure the components.
+Read the documention of each Birdhouse component for the details of the installation and how to configure the components. The :ref:`Birdhouse bootstrap documentation <bootstrap:introduction>` gives some :ref:`examples <bootstrap:examples>` on the different ways of the installation.
 
 On the WPS client side we have:
 
