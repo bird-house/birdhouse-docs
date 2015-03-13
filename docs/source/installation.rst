@@ -12,7 +12,13 @@ Birdhouse consists of several components like :ref:`Malleefowl <malleefowl:intro
 Requirements
 ------------
 
-Linux 64-bit ...
+Birdhouse uses `Anaconda Python distribution`_ for most of the dependencies. If Anaconda is not already installed it will be installed during the installation process. Anaconda has packages for Linux, MacOSX and Windows. But not all packages used by Birdhouse are already available in the default package channel of Anaconda. The missing packages are supplied by Birdhouse on Binstar. But we currently maintain only packages for Linux 64-bit and partly for MacOSX.
+
+So the short answer to the requirements is: you need a **Linux 64-bit installation**. 
+
+Birdhouse is currently used on Ubuntu 14.04 and CentOS 6.x. It should also work on Debian, LinuxMint and Fedora.
+
+Birdhouse is also installing a few system packages using `apt-get` on Debian based distributions and `yum` on RedHat/CentOS based distributions. For this you need a user account with `sudo` permissions. Installing system packages can be done in a separate step. So your installation user does not need any special permissions. All installed files will go into a Birdhouse Anaconda environment in the home folder of the installation user.
 
 Installing from source
 ----------------------
