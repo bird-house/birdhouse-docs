@@ -47,6 +47,6 @@ Glossary
       Python distribution for large-scale data processing, predictive analytics, and scientific computing. 
       http://www.continuum.io/
 
-  Binstar
+   Binstar
       Binstar is a service that allows you to create and manage public and private :term:`Anaconda` package repositories. 
       https://binstar.org/
