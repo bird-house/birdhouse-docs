@@ -50,3 +50,7 @@ Glossary
    Binstar
       Binstar is a service that allows you to create and manage public and private :term:`Anaconda` package repositories. 
       https://binstar.org/
+
+   Docker
+      *Docker* - An open platform for distributed applications for developers and sysadmins.
+      https://www.docker.com/

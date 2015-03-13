@@ -14,7 +14,7 @@ Requirements
 
 Birdhouse uses :term:`Anaconda Python distribution` for most of the dependencies. If Anaconda is not already installed it will be installed during the installation process. Anaconda has packages for Linux, MacOSX and Windows. But not all packages used by Birdhouse are already available in the default package channel of Anaconda. The missing packages are supplied by Birdhouse on :term:`Binstar`. But we currently maintain only packages for Linux 64-bit and partly for MacOSX.
 
-So the short answer to the requirements is: you need a **Linux 64-bit installation**. 
+So the short answer to the requirements is: **you need a Linux 64-bit installation**. 
 
 Birdhouse is currently used on Ubuntu 14.04 and CentOS 6.x. It should also work on Debian, LinuxMint and Fedora.
 
@@ -85,7 +85,7 @@ You can also use the Supervisor monitor web service which by default is availabl
 Using Birdhouse with Docker
 ---------------------------
 
-An alternative way to install and deploy Birdhouse Web Processing Services is using `Docker <https://www.docker.com/>`_. The Birdhouse WPS servers are available as Docker image on `Docker Hub <https://registry.hub.docker.com/repos/birdhouse/>`_. See an example on how to use them with the :ref:`Emu WPS Docker image <emu:tutorial>`
+An alternative way to install and deploy Birdhouse Web Processing Services is using :term:`Docker`. The Birdhouse WPS servers are available as Docker image on `Docker Hub <https://registry.hub.docker.com/repos/birdhouse/>`_. See an example on how to use them with the :ref:`Emu WPS Docker image <emu:tutorial>`
 
 .. _anaconda:
 
