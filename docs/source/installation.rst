@@ -54,6 +54,10 @@ Nginx, gunicorn and supervisor
 
 Birdhouse setups a `PyWPS`_ server (and also the Phoenix web application) using :term:`Buildout`. We use the :term:`Gunicorn` HTTP application server (similar to Tomcat for Java servlet applications ) to run these web applications with the :term:`WSGI` interface. In front of the Gunicorn application server we use the :term:`Nginx` HTTP server (similar to Apache web server). All these web services are started/stopped and monitored by a :term:`Supervisor` service. 
 
+See the following image on how this looks like:
+
+.. image:: _images/WsgiApp.png
+
 When installing a Birdhouse WPS service you don't need to care about this setup. This is all done by Buildout and using some extensions provided by Birdhouse. 
 
 .. _docker:

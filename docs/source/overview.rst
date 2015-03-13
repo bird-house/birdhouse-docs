@@ -11,14 +11,14 @@ WPS Use Case
 
 A user runs a WPS processes remotely on a machine with direct access to climate data archives.
 
-.. image:: images/wps-use-case.png
+.. image:: _images/wps-use-case.png
 
 .. _birdhouse_overview:
 
 Birdhouse with WPS components
 =============================
 
-.. image:: images/birdhouse.png
+.. image:: _images/birdhouse.png
 
 ESGF is currently the main climate data resource (but more resources are possible). ESGF Solr-index is used to find ESGF data. The ESGF identity provider with OpenIDs and X509 certificate is used for authenticatin.
 
