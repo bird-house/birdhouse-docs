@@ -12,7 +12,7 @@ Birdhouse consists of several components like :ref:`Malleefowl <malleefowl:intro
 Requirements
 ------------
 
-Birdhouse uses :term:`Anaconda Python distribution` for most of the dependencies. If Anaconda is not already installed it will be installed during the installation process. Anaconda has packages for Linux, MacOSX and Windows. But not all packages used by Birdhouse are already available in the default package channel of Anaconda. The missing packages are supplied by Birdhouse on Binstar. But we currently maintain only packages for Linux 64-bit and partly for MacOSX.
+Birdhouse uses :term:`Anaconda Python distribution` for most of the dependencies. If Anaconda is not already installed it will be installed during the installation process. Anaconda has packages for Linux, MacOSX and Windows. But not all packages used by Birdhouse are already available in the default package channel of Anaconda. The missing packages are supplied by Birdhouse on :term:`Binstar`. But we currently maintain only packages for Linux 64-bit and partly for MacOSX.
 
 So the short answer to the requirements is: you need a **Linux 64-bit installation**. 
 
@@ -96,7 +96,7 @@ The installation of the Birdhouse components and especially the processes involv
 
 The aim of Birdhouse is to take care of all these dependencies so that the user does not need to install them manually. If these dependencies would only be *pure* Python packages then using the :term:`Buildout` build tool together with the Python package index `PyPi`_ would be sufficient. But many Python packages have `C` extensions and there are also non-Python packages we need to install like `R` and `netcdflib`.
 
-In this situation the `Anaconda Python distribution`_ comes helpful. Anaconda has already a lot of Python related packages available for different platforms (Linux, MacOSX, Windows) and there is no compilation needed on the installation host. Anaconda makes it easy to build own packages (*conda recipes*) and to upload them to the free Anaconda server on `Binstar <https://binstar.org/>`_.
+In this situation the :term:`Anaconda Python distribution` comes helpful. Anaconda has already a lot of Python related packages available for different platforms (Linux, MacOSX, Windows) and there is no compilation needed on the installation host. Anaconda makes it easy to build own packages (*conda recipes*) and to upload them to the free Anaconda server on `Binstar <https://binstar.org/>`_.
 
 Birdhouse is using Anaconda and it is integrated into the Buildout build tool. The additional *conda recipes* used by Birdhouse are available on `GitHub <https://github.com/bird-house/conda-recipes>`_. The build packages can be installed from the `Birdhouse organisation on Binstar <https://binstar.org/birdhouse>`_. For example if you are already using Anaconda, you can install `CDO` with the following command::
 
