@@ -50,6 +50,9 @@ Data Sources
 
   - make them searchable ... pattern matching ... index service ...
 
+* CERA climate database
+* OGC data services like WCS and SOS, ...
+
 Docs & Testing
 --------------
 
