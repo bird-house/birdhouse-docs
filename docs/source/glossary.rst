@@ -10,7 +10,8 @@ Glossary
    OGC
    Open Geospatial Consortium
       The *Open Geospatial Consortium (OGC)* is an international voluntary consensus standards organization, originated in 1994. 
-      https://en.wikipedia.org/wiki/Open_Geospatial_Consortium
+      https://en.wikipedia.org/wiki/Open_Geospatial_Consortium,
+      http://www.opengeospatial.org/standards/wps
       
    WPS
    Web Processing Service
@@ -54,3 +55,13 @@ Glossary
    Docker
       *Docker* - An open platform for distributed applications for developers and sysadmins.
       https://www.docker.com/
+
+   GeoPython
+      GitHub organisation of Python projects related to geospatial.
+      https://geopython.github.io/
+
+   OWSLib
+      OWSLib is a Python package for client programming with :term:`Open Geospatial Consortium` web service interface standards, and their related content models. OWSLib has :term:`WPS` client library which is used in Birdhouse to access WPS services.
+      http://geopython.github.io/OWSLib/,
+      http://geopython.github.io/OWSLib/#wps
+      

@@ -1,19 +1,25 @@
 .. _devguide:
 
-***************
 Developer Guide
-***************
+===============
 
-*Please* read the documentation of `PyWPS Tutorial`_, `OWSLib WPS`_ and `OGC WPS`_.
+.. contents::
+    :local:
+    :depth: 2
 
-To set up PyWPS with example processes you can use the `Emu WPS`_ from Birdhouse.
+Writing a WPS process
+---------------------
+
+In Birdhouse we are using the :term:`PyWPS` implementation of a :term:`Web Processing Service`. Writing a WPS process in Birdhouse is the same as in PyWPS. The PyWPS documentation has a `tutorial on writing a process <http://pywps.wald.intevation.org/documentation/course/process/index.html>`_. *Please* follow this PyWPS tutorial. 
+
+To get easier started you can install :ref:`Emu <emu:installation>` with some example processes for PyWPS.
+
+
  
-.. _`OGC WPS`: http://www.opengeospatial.org/standards/wps
-.. _`PyWPS`: http://pywps.wald.intevation.org/index.html
-.. _`PyWPS Tutorial`: http://pywps.wald.intevation.org/documentation/course/process/index.html
-.. _`OWSLib WPS`: http://geopython.github.io/OWSLib/#wps
-.. _`Emu WPS`: https://github.com/bird-house/emu/blob/master/README.rst
-.. _`Birdhouse`: http://bird-house.github.io/
+
+
+
+
 
 
 

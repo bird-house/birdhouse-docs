@@ -32,6 +32,7 @@ Getting started
    overview
    installation
    tutorial
+   dev_guide
    contributing
    faq
    glossary
