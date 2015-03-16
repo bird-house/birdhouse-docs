@@ -64,4 +64,9 @@ Glossary
       OWSLib is a Python package for client programming with :term:`Open Geospatial Consortium` web service interface standards, and their related content models. OWSLib has :term:`WPS` client library which is used in Birdhouse to access WPS services.
       http://geopython.github.io/OWSLib/,
       http://geopython.github.io/OWSLib/#wps
+
+   PyCSW
+      pycsw is an :term:`OGC` CSW server implementation written in Python. Started in 2010 (more formally announced in 2011), pycsw allows for the publishing and discovery of geospatial metadata, providing a standards-based metadata and catalogue component of spatial data infrastructures.
+      http://pycsw.org/, https://github.com/geopython/pycsw 
+      
       
