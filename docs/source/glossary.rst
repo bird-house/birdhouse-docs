@@ -68,5 +68,15 @@ Glossary
    PyCSW
       pycsw is an :term:`OGC` CSW server implementation written in Python. Started in 2010 (more formally announced in 2011), pycsw allows for the publishing and discovery of geospatial metadata, providing a standards-based metadata and catalogue component of spatial data infrastructures.
       http://pycsw.org/, https://github.com/geopython/pycsw 
+
+   ESGF
+   Earth System Grid Federation
+      An open source effort providing a robust, distributed data and computation platform, enabling world wide access to Peta/Exa-scale scientific data.
+      http://esgf.llnl.gov/
+
+   OpenID
+      OpenID (OID) is an open standard and decentralized protocol by the non-profit OpenID Foundation that allows users to be authenticated by certain co-operating sites (known as Relying Parties or RP) using a third party service.
+      https://en.wikipedia.org/wiki/OpenID, http://openid.net/
+     
       
       
