@@ -77,6 +77,9 @@ Glossary
    OpenID
       OpenID (OID) is an open standard and decentralized protocol by the non-profit OpenID Foundation that allows users to be authenticated by certain co-operating sites (known as Relying Parties or RP) using a third party service.
       https://en.wikipedia.org/wiki/OpenID, http://openid.net/
-     
+
+   Pyramid
+      Pyramid is a Python web framework.
+      http://www.pylonsproject.org/
       
       
