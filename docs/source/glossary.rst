@@ -85,6 +85,17 @@ Glossary
    Bokeh
       Bokeh is a Python interactive visualization library that targets modern web browsers for presentation. Its goal is to provide elegant, concise construction of novel graphics in the style of D3.js, but also deliver this capability with high-performance interactivity over very large or streaming datasets.
       http://bokeh.pydata.org/en/latest/
-      
+
+   CMIP5
+      In climatology, the Coupled Model Intercomparison Project (CMIP) is a framework and the analog of the Atmospheric Model Intercomparison Project (AMIP) for global coupled ocean-atmosphere general circulation models. 
+      https://en.wikipedia.org/wiki/Coupled_model_intercomparison_project
+
+   CORDEX
+      The CORDEX vision is to advance and coordinate the science and application of regional climate downscaling through global partnerships.
+      http://wcrp-cordex.ipsl.jussieu.fr/
+
+   x509
+      In cryptography, X.509 is an ITU-T standard for a public key infrastructure (PKI) and Privilege Management Infrastructure (PMI).
+      https://en.wikipedia.org/wiki/X.509
       
       
