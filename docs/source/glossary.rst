@@ -81,5 +81,10 @@ Glossary
    Pyramid
       Pyramid is a Python web framework.
       http://www.pylonsproject.org/
+
+   Bokeh
+      Bokeh is a Python interactive visualization library that targets modern web browsers for presentation. Its goal is to provide elegant, concise construction of novel graphics in the style of D3.js, but also deliver this capability with high-performance interactivity over very large or streaming datasets.
+      http://bokeh.pydata.org/en/latest/
+      
       
       
