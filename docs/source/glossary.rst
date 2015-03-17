@@ -97,5 +97,14 @@ Glossary
    x509
       In cryptography, X.509 is an ITU-T standard for a public key infrastructure (PKI) and Privilege Management Infrastructure (PMI).
       https://en.wikipedia.org/wiki/X.509
+
+   NetCDF
+      NetCDF (Network Common Data Form) is a set of software libraries and self-describing, machine-independent data formats that support the creation, access, and sharing of array-oriented scientific data. 
+      https://en.wikipedia.org/wiki/NetCDF
+
+   Workflow
+   Workflow Management System
+       A workflow management system (WfMS) is a software system for the set-up, performance and monitoring of a defined sequence of tasks, arranged as a workflow.
+       https://en.wikipedia.org/wiki/Workflow_management_system
       
       
