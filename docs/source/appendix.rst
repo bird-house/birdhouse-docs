@@ -18,15 +18,18 @@ WPS Server Software:
 
 WPS Client Software:
 
-* OWSLib - http://geopython.github.io/OWSLib/
+* OWSLib Python Client - http://geopython.github.io/OWSLib/
 * OpenLayers WPS Plugin - http://dev.openlayers.org/docs/files/OpenLayers/WPSClient-js.html
 * GeoTools WPS Module - http://docs.geotools.org/latest/userguide/unsupported/wps.html
+* 52 North Java Client - http://52north.org/communities/geoprocessing/wps/index.html
+* 52 North Javascript Client - http://geoprocessing.demo.52north.org:8080
 
 Scientific Workflow Tools
 =========================
     
 Workflow Engines:
 
+* Dispel4py - http://www2.epcc.ed.ac.uk/~amrey/VERCE/Dispel4Py/index.html
 * RestFlow - https://github.com/restflow-org/restflow/wiki
 * Taverna - http://www.taverna.org.uk/
 * VisTrails - http://www.vistrails.org/index.php/Main_Page
@@ -113,7 +116,8 @@ List of available Web Processing Services:
 * KNMI climate4impact Portal - http://climate4impact.eu//impactportal/WPS?request=GetCapabilities&service=WPS
 * BADC CEDA - http://ceda-wps2.badc.rl.ac.uk/wps?request=GetCapabilities&service=WPS 
 * delatres - http://dtvirt5.deltares.nl/wps/?Request=GetCapabilities&Service=WPS
-* 52 North - http://geoprocessing.demo.52north.org:8081/wps/WebProcessingService
+* 52 North - http://geoprocessing.demo.52north.org:8080/52n-wps-webapp-3.3.1/WebProcessingService?Request=GetCapabilities&Service=WPS
+* 52 North - http://geoprocessing.demo.52north.org:8080/52n-wps-webapp-3.3.1-gt/WebProcessingService?Request=GetCapabilities&Service=WPS
 
 Using WPS ...
 =============
