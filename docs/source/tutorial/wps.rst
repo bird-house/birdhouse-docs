@@ -12,11 +12,44 @@ Defining a function
 
 Having this function::
 
-    def summer_days(files, from, to, region=None):
+    def summer_days(files, from_date, to_date, region=None):
         """Calculates number of summer days.
         """
-        num_days = ...
-        return num_days
+        num_days = 0
+        plot = None
+        return num_days, plot
+
+Parts of the function:
+
+* identifier: summer_days
+* description: Calculates number of summer days
+* input parameters:
+* output parameters: num_days (integer)
+
+WPS definition
+--------------
+
+Chaining WPS
+------------
+
+WPS definition with PyWPS
+-------------------------
+
+Using WPS
+---------
+
+* getcaps
+* describe
+* execute
+
+Calling with Birdy
+------------------
+
+Showing on a Map
+----------------
+
+using ipython notebook ...
+
 
 WPS Documentation
 -----------------
