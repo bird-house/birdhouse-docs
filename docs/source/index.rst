@@ -18,7 +18,7 @@ Birdhouse is the home of the following WPS components (birds):
 * :ref:`Flyingpigeon <flyingpigeon:introduction>`: services for the climate impact community
 * :ref:`Hummingbird <hummingbird:introduction>`: provides cdo and cfchecker as a service
 * :ref:`Emu <emu:introduction>`: some example WPS processes
-* :ref:`Birdy <emu:introduction>`: a WPS command line tool
+* :ref:`Birdy <birdy:introduction>`: a WPS command line tool
 
 You can find the source code of all Birdhouse components on
 `our GitHub page <http://github.com/bird-house>`_.
