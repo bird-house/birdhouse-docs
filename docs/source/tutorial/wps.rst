@@ -7,6 +7,17 @@ What is WPS?
     :local:
     :depth: 2
 
+Defining a function
+-------------------
+
+Having this function::
+
+    def summer_days(files, from, to, region=None):
+        """Calculates number of summer days.
+        """
+        num_days = ...
+        return num_days
+
 WPS Documentation
 -----------------
 
