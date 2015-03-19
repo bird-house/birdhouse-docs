@@ -106,5 +106,19 @@ Glossary
    Workflow Management System
        A workflow management system (WfMS) is a software system for the set-up, performance and monitoring of a defined sequence of tasks, arranged as a workflow.
        https://en.wikipedia.org/wiki/Workflow_management_system
+
+   PyPi 
+   Python Package Index
+       The Python Package Index is a repository of software for the Python programming language.
+       https://pypi.python.org/pypi
+
+   Homebrew
+       The missing package manager for OS X.
+       http://brew.sh/
+
+   Linuxbrew 
+       Linuxbrew is a fork of Homebrew, the Mac OS package manager, for Linux.
+       http://brew.sh/linuxbrew/`
+
       
       
