@@ -48,14 +48,23 @@ Glossary
       Python distribution for large-scale data processing, predictive analytics, and scientific computing. 
       http://www.continuum.io/
 
+   Conda
+      The *conda* command is the primary interface for managing Anaconda installations.
+      http://conda.pydata.org/docs/index.html
+
    Binstar
       Binstar is a service that allows you to create and manage public and private :term:`Anaconda` package repositories. 
       https://binstar.org/
+      http://docs.binstar.org/
 
    Docker
       *Docker* - An open platform for distributed applications for developers and sysadmins.
       https://www.docker.com/
 
+   Docker Hub
+      Docker Hub manages the lifecycle of distributed apps with cloud services for building and sharing containers and automating workflows.
+      https://hub.docker.com/
+      
    GeoPython
       GitHub organisation of Python projects related to geospatial.
       https://geopython.github.io/
@@ -118,7 +127,12 @@ Glossary
 
    Linuxbrew 
        Linuxbrew is a fork of Homebrew, the Mac OS package manager, for Linux.
-       http://brew.sh/linuxbrew/`
+       http://brew.sh/linuxbrew/
+
+   GitHub
+      GitHub is a web-based Git repository hosting service.
+      https://github.com/ 
+      https://en.wikipedia.org/wiki/GitHub
 
       
       
