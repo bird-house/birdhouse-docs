@@ -60,10 +60,37 @@ Alternative package manager to Anaconda are for example :term:`Homebrew` (MacOSX
 Using Buildout in Birdhouse
 ---------------------------
 
+Birdhouse uses the :term:`Buildout` build tool to install and configure all Birdhouse components (:term:`Phoenix`, :term:`Malleefowl`, :term:`Emu`...). The main configuration file is ``buildout.cfg`` which is in the root folder of the application. 
+As an example have a look at the `buildout.cfg from Emu <https://github.com/bird-house/emu/blob/master/buildout.cfg>`_. 
+
+Before building an application with Buildout you have an initial bootstrap step::
+
+    $ python bootstrap-buildout.py -c buildout.cfg
+
+This will generate the ``bin/buildout`` script.
+Now you can build the application::
+
+    $ bin/buildout -c buildout.cfg
+
+The default configuration in the ``buildout.cfg`` should always work to run your application on ``localhost`` with default ports. You can customize the configuration by editing the ``custom.cfg`` which extends and overwrites the settings of ``buildout.cfg``. You may have a look at the
+`custom.cfg example of Emu <https://github.com/bird-house/emu/blob/master/custom.cfg.example>`_. So, instead of using ``buildout.cfg`` you should use ``custom.cfg`` for the build::
+
+    $ bin/buildout -c custom.cfg
+
+For convenience Birdhouse has a Makefile which hides all these steps. If you want to build an application you just need to run::
+
+    $ make install
+
+See the `Makefile example of Emu <https://github.com/bird-house/emu/blob/master/Makefile>`_
+For more details see the :ref:`installation` section and the :ref:`Makefile documentation <bootstrap:makefile>`.
+
+
 Buildout Recipes by Birdhouse
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-:term:`Buildout` has a plugin mechanism to extend the build tool functionality with `recipes <http://www.buildout.org/en/latest/docs/recipe.html>`_. Birdhouse provides a Buildout recipe to install Anaconda packages. There is also a set of recipes to set up Web Processing Service with PyWPS, Nginx, Gunicorn and Supervisor. All these `Buildout recipes are on GitHub <https://github.com/bird-house?query=birdhousebuilder.recipe>`_ and can be `found on PyPi <https://pypi.python.org/pypi?%3Aaction=search&term=birdhousebuilder.recipe&submit=search>`_. 
+:term:`Buildout` has a plugin mechanism to extend the build tool functionality with `recipes <http://www.buildout.org/en/latest/docs/recipe.html>`_. Buildout can handle Python dependencies by its own. But in Birdhouse we install most dependencies with Anaconda. We are using a Buildout extension to install conda packages with Buildout. Buildout does use these Python packages instead of downloading them from :term:`PyPi`. 
+There is also a set of recipes to set up Web Processing Service with :term:`PyWPS`, :term:`Nginx`, :term:`Gunicorn` and :term:`Supervisor`. 
+All these `Buildout recipes are on GitHub <https://github.com/bird-house?query=birdhousebuilder.recipe>`_ and can be `found on PyPi <https://pypi.python.org/pypi?%3Aaction=search&term=birdhousebuilder.recipe&submit=search>`_. 
 
 Here is the list of currently used Buildout recipes by Birdhouse:
 

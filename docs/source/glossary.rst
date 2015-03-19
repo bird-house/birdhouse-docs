@@ -134,5 +134,20 @@ Glossary
       https://github.com/ 
       https://en.wikipedia.org/wiki/GitHub
 
+   Phoenix
+      Pyramid *Phoenix* is a web-application build with the Python web-framework pyramid. 
+      Phoenix has a user interface to make it easier to interact with :term:`Web Processing Services <wps>`.
+      http://pyramid-phoenix.readthedocs.org/en/latest
+
+   Malleefowl
+      *Malleefowl* is a Python package to simplify the usage of :term:`Web Processing Services <wps>`.
+      http://malleefowl.readthedocs.org/en/latest/
+
+   Emu
+      *Emu* is a Python package with some test proccess for :term:`Web Processing Services <wps>`.
+      http://emu.readthedocs.org/en/latest/
+
+      
+
       
       
