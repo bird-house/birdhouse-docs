@@ -48,6 +48,10 @@ In Birdhouse we usually use the remote build on Binstar which is triggered by co
 But sometimes the docker image for Linux-64 provided by Binstar fails for some packages. 
 That is why `Birdhouse has in addition its own Linux-64 build image <https://registry.hub.docker.com/u/birdhouse/binstar-linux-64/>`_ which is based on the Binstar image. 
 The `Dockerfile for this image <https://github.com/bird-house/birdhouse-build/tree/master/docker/binstar-linux-64>`_ is on GitHub.
+
+.. warning::
+
+   When you build conda packages for Linux-64 you need to be very careful to ensure that these packages will run on most Linux distributions (like :term:`CentOS`, :term:`Debian`, :term:`Ubuntu`, ...). Our experience is that packages build on CentOS 6.x will also run on recent Debian/Ubuntu distributions. The Docker build images are also CentOS 6.x based.  
  
 
 Anaconda Alternatives
