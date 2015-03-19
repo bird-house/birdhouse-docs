@@ -24,21 +24,21 @@ Conda recipes by Birdhouse
 Birdhouse is using :term:`Anaconda` to maintain package dependencies. 
 Anaconda gives you the possibility to write your own `conda recipes <http://conda.pydata.org/docs/build.html>`_.
 In Birdhouse we have written several conda recipes for the packages that were not available on Anaconda.  
-These `additional conda recipes by Birdhouse <https://github.com/bird-house/conda-recipes>`_ are available on :term:`GitHub`. 
-Some of the missing packages are: PyWPS, OWSLib, CDO, ocgis/icclim, cfchecker, nginx, ...
+These `additional conda recipes by Birdhouse <https://github.com/bird-house/conda-recipes>`_ are available on GitHub. 
+Some of the missing packages are: :term:`PyWPS`, :term:`OWSLib`, :term:`CDO`, :term:`ocgis`/:term:`icclim`, :term:`cfchecker`, :term:`Nginx`, ...
 
 Anaconda provides a free Anaconda Server on :term:`Binstar`. Here you can upload your builded conda packages for different platforms (Linux, MacOX, Windows). These packages are then available for installation with the :term:`conda` installer.
 
 `Birdhouse has a Binstar organisation <https://binstar.org/birdhouse>`_ where all conda packages are collected which are 
 builded from the conda recipes on GitHub. These packages can be installed with the :term:`conda` installer using the `birdhouse` channel.
-For example if you are already using Anaconda, you can install `CDO` with the following command::
+For example if you are already using Anaconda, you can install :term:`CDO` with the following command::
 
     $ conda install --channel birdhouse cdo
 
 Building conda packages
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-There are several ways to build conda packages and upload them to Binstar.
+There are several ways to build conda packages and upload them to Binstar:
 
 * You can `build packages locally <http://docs.binstar.org/conda.html>`_ and upload them with the Binstar command line tool.
 * You can also `build packages remotely on Binstar <http://docs.binstar.org/draft/examples.html#SubmitYourFirstBuild>`_. Additionally you can set a GitHub Webhook so that on each commit of your recipe a build will be run on Binstar. 

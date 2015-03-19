@@ -147,6 +147,37 @@ Glossary
       *Emu* is a Python package with some test proccess for :term:`Web Processing Services <wps>`.
       http://emu.readthedocs.org/en/latest/
 
+   CDO
+   Climate Data Operators
+      *CDO* is a collection of command line Operators to manipulate and analyse Climate and NWP model Data.
+      https://code.zmaw.de/projects/cdo
+
+   ocgis
+   OpenClimateGIS
+      *OpenClimateGIS* (OCGIS) is a Python package designed for geospatial manipulation, subsetting, computation, and translation of climate datasets stored in local :term:`NetCDF` files or files served through :term:`THREDDS` data servers.
+      https://www.earthsystemcog.org/projects/openclimategis/
+      https://github.com/NCPP/ocgis
+
+   ICCLIM
+   Indice Calculation CLIMate
+      *ICCLIM* (Indice Calculation CLIMate) is a Python library for computing a number of :term:`climate indices <climate indice>`.
+      http://icclim.readthedocs.org/en/latest/
+
+   climate indice
+      A climate index is a calculated value that can be used to describe the state and the changes in the climate system.
+      http://icclim.readthedocs.org/en/latest/intro.html#climate-indices-label
+
+   TDS
+   THREDDS
+      The THREDDS Data Server (TDS) is a web server that provides metadata and data access for scientific datasets, using a variety of remote data access protocols. 
+      http://www.unidata.ucar.edu/software/thredds/current/tds/
+
+   cfchecker
+       The NetCDF Climate Forcast Conventions compliance checker.
+       https://pypi.python.org/pypi/cfchecker
+
+     
+     
       
 
       
