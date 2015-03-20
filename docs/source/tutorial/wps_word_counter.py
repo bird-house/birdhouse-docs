@@ -5,7 +5,7 @@ class Process(WPSProcess):
     ##
     # Process initialization
     WPSProcess.__init__(self,
-        identifier = "word_counter",
+        identifier = "wordcount",
         title="Word Counter",
         abstract="""Counts words in text document.""",
         )
@@ -14,7 +14,7 @@ class Process(WPSProcess):
     # Adding process inputs
 
     self.resource = self.addComplexInput(identifier="resource",
-              title="Input Text Document",
+              title="Text Document",
               formats = [{'mimeType':'text/plain'}])
 
 
@@ -22,7 +22,7 @@ class Process(WPSProcess):
     # Adding process outputs
 
     self.output = self.addComplexOutput(identifier = "output",
-            title="JSON Document with occurrences of Words")
+            title="Word count result")
 
     ##
     # Execution part of the process
