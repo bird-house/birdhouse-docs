@@ -13,7 +13,7 @@ class Process(WPSProcess):
     ##
     # Adding process inputs
 
-    self.resource = self.addComplexInput(identifier="resource",
+    self.text = self.addComplexInput(identifier="text",
               title="Text Document",
               formats = [{'mimeType':'text/plain'}])
 
@@ -29,6 +29,6 @@ class Process(WPSProcess):
     def execute(self):
 
         # count words and save result
-        self.output.setValue( count_words( self.resource.getValue() )  )
+        self.output.setValue( count_words( self.text.getValue() )  )
 
         return

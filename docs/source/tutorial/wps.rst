@@ -95,7 +95,7 @@ In `PyWPS` the `Word Counter` process could look like the following:
 
 .. literalinclude:: wps_word_counter.py
     :language: python
-    :emphasize-lines: 16,24,32
+    :emphasize-lines: 8,16,24,32
     :linenos:
 
 You can see the definition of the input and output parameters and the ``execute()`` method where the real ``count_words()`` function is called. You will find more details about implementing a WPS process in the `PyWPS Tutorial <http://pywps.wald.intevation.org/documentation/course/process/index.html>`_.
