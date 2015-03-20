@@ -3,21 +3,23 @@
 What is WPS?
 ============
 
-The Web Processing Service (WPS) offers a simple web-based method of finding, accessing, and using all kinds of calculations and models.
+**Geographic Information Processing for the Web**
+    *The Web Processing Service (WPS) offers a simple web-based method of finding, accessing, and using all kinds of calculations and models* ([#what_is_wps]_)
 
-http://geoprocessing.info/wpsdoc/Concepts#what
+Web Processing Service offers you the following:
 
+* **simple web service** to enable remote call of calcualtions. 
+* WPS services are **self-describing**. 
+* WPS is an **interface description**. Several implementations exist.
+* WPS is part of the :term:`OGC` **open standards** family: :term:`wms`, wfc, wcs, sos, csw, ...
+* can be called with **simple HTTP requests** with key/value pairs or
+* can be called with HTTP post-requests with XML documents.
+* a **lightweight specification**. Comparable to :term:`XML-RPC` ... but XML-RPC is not self-describing.
+* can be registered in :term:`Catalog Services <csw>`.
 
-* Offering your functions as simple web service. 
-* The service is self-describing. 
-* can be called sync and async. 
-* wps is just an interface description. several implementations can exist.
-* is part of the :term:`OGC` standards family: :term:`wms`, wfc, wcs, sos, ...
-* can be called with simple http get-requests with key/value pairs or
-* can be called with http post-requests with xml documents.
-* a lightweight specification. Comparable to :term:`xml-rpc` ... but xml-rpc is not self-describing.
+You will find further information in the appendix: :ref:`appendix_wps_docs`.
 
-Further reading: :ref:`appendix_wps_docs`.
+In the following we show an example with a `Word Counter` function which is enabled as a web-service using WPS.
 
 .. contents::
     :local:
@@ -142,8 +144,8 @@ For more details see the following `WPS Tutorial`_.
 There are also some `IPython notebooks <http://nbviewer.ipython.org/github/bird-house/birdhouse-docs/tree/master/notebooks/tutorial/>`_ which show the usage of WPS.
 
 
-Calling with Birdy
-------------------
+Calling `Word Counter` with Birdy
+---------------------------------
 
 Now, we are using :ref:`Birdy wps command line client <birdy:introduction>` to access the `wordcount` process.
 
@@ -184,3 +186,6 @@ Run `wordcount` with a text document (`Execute`)::
 
 ..  _WPS Tutorial: http://wiki.ieee-earth.org/Documents/GEOSS_Tutorials/GEOSS_Provider_Tutorials/Web_Processing_Service_Tutorial_for_GEOSS_Providers/Section_2:_Introduction_to_WPS
 
+.. rubric:: Footnotes
+
+.. [#what_is_wps] What is WPS? - http://geoprocessing.info/wpsdoc/Concepts#what
