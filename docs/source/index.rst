@@ -6,10 +6,10 @@
 Introduction
 ============
 
-Birdhouse is a collection of OGC Web Processing Service (WPS) related
+Birdhouse is a collection of :term:`Web Processing Service` (WPS) related
 Python components to support data processing in the climate science
 community. The aim of Birdhouse is to make the usage of WPS easy. Most
-of the OGC/WPS related software comes from the `GeoPython <http://geopython.github.io/>`_ project. 
+of the :term:`OGC`/:term:`WPS` related software comes from the :term:`GeoPython` project. 
 
 Birdhouse is the home of the following WPS components (birds):
 
