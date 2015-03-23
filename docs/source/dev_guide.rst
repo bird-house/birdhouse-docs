@@ -52,7 +52,53 @@ The `Dockerfile for this image <https://github.com/bird-house/birdhouse-build/tr
 .. warning::
 
    When you build conda packages for Linux-64 you need to be very careful to ensure that these packages will run on most Linux distributions (like :term:`CentOS`, :term:`Debian`, :term:`Ubuntu`, ...). Our experience is that packages build on CentOS 6.x will also run on recent Debian/Ubuntu distributions. The Docker build images are also CentOS 6.x based.  
+
+Example: building conda package for geolinks
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Geolinks is a Python package available on :term:`PyPi`. Generate conda package files using ``conda skeleton``::
+
+    $ conda skeleton pypi geolinks
+    $ cd geolinks
+    $ vim meta.yaml  # check dependencies, test, build number
+    $ vim build.sh   # in case of non-python packges here is most of the work to do
+    
+Enable binstar build::
+     
+    $ cd geolinks
+    $ binstar-build init
+    $ vim .binstar.yaml
+    
+Edit the following highlighted lines (user, conda build, target):
+
+.. literalinclude:: binstar.yml
+    :language: yaml
+    :emphasize-lines: 8,17-19,21-22,36-37
+    :linenos:
+
+Run binstar build for the first time::
+
+    $ binstar package --create birdhouse/geolinks
+    $ binstar-build submit .
+    $ binstar-build tail -f birdhouse/geolinks 1    # checks logs
+
+On successful build go to the birdhouse channel on binstar and search for the `geolinks package <https://binstar.org/birdhouse/geolinks/files>`_. 
+Go to the ``files`` tab and add the channel `main` for the successfully builded package. 
+All packages on the `main` channel are available for public usage.
+
+.. image:: _images/binstar_channel.png
+
+Register GitHub webhook for geolinks: 
+
+on binstar go to `Settings/Continuous Integration <https://binstar.org/birdhouse/geolinks/settings/ci>`_ of the geolinks package. 
+
+Edit the fields:
+
+* `github.com/` = `bird-house/geolinks`
+* Subdirectory = geolinks
  
+.. image:: _images/binstar_ci.png
+
 
 Anaconda Alternatives
 ~~~~~~~~~~~~~~~~~~~~~
