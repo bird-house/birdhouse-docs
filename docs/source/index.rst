@@ -21,7 +21,9 @@ Birdhouse is the home of the following WPS components (birds):
 * :ref:`Birdy <birdy:introduction>`: a WPS command line tool
 
 You can find the source code of all Birdhouse components on
-`our GitHub page <http://github.com/bird-house>`_.
+`our GitHub page <http://github.com/bird-house>`_. 
+:term:`Conda` packages for Birdhouse are available on the `birdhouse channel <https://binstar.org/birdhouse>`_ on Binstar.
+:term:`Docker` images with Birdhouse components are on `Docker Hub <https://registry.hub.docker.com/repos/birdhouse/>`_ 
 
 Getting started
 ===============
