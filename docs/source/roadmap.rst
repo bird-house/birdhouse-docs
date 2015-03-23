@@ -58,7 +58,9 @@ Web Processing Service
 ----------------------
 
 * usage of other WPS implementations: COWS, GeoServer, Zoo, ...
-  * process integration interace (with python decorators) which generates the integration code for other WPS services.
+
+  - process integration interface (with python decorators) which generates the integration code for other WPS services.
+
 * extensions: cancel (comes with wps 2.0), dry-run, ... cows and maybe geoserver have some of these
 * caching process execution: cows has cachings ... but should be independent of the wps implementation  
 
