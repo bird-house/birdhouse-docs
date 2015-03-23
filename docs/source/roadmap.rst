@@ -25,6 +25,7 @@ Security
   - using OAuth Token generation
   - Token should be part of the url http://localhost/wps/emu/auhbgt3n or http://localhost/wps/emu?request=getcapabilities&token=auhbgt3n
   - using a security proxy service in front of WPS servers.
+  - `GetCapabilities` and `DescribeProcess` should be available without a security token.
 
 Data Sources
 ------------
@@ -53,13 +54,32 @@ Data Sources
 * CERA climate database
 * OGC data services like WCS and SOS, ...
 
+Web Processing Service
+----------------------
+
+* usage of other WPS implementations: COWS, GeoServer, Zoo, ...
+  * process integration interace (with python decorators) which generates the integration code for other WPS services.
+* extensions: cancel (comes with wps 2.0), dry-run, ... cows and maybe geoserver have some of these
+* caching process execution: cows has cachings ... but should be independent of the wps implementation  
+
+Deployment
+----------
+
+* deployment with saltstack and/or docker ...
+
+Highload Processing
+-------------------
+
+* integration of scheduler ... slurm ... (cows has an example for that)
+* using load balancing ...
+
 Docs & Testing
 --------------
 
 * tests:
 
   - improved unit tests
-  - continous integration with github+travisCI
+  - continous integration with github + travisCI + binstar + docker
   - complete install tests with docker builds
 
 * complete sphinx documentation
