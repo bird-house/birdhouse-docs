@@ -19,16 +19,16 @@ WPS Software
 
 WPS Server Software:
 
-* PyWPS - https://github.com/geopython/PyWPS
+* :term:`PyWPS`
 * GeoServer - http://docs.geoserver.org/stable/en/user/extensions/wps/processes.html
 * Zoo - http://www.zoo-project.org
-* COWS - http://ceda-wps2.badc.rl.ac.uk/docs/cows_wps/intro.html
+* :term:`COWS`
 * Deegree - http://www.deegree.org/
 * 52 North - http://52north.org/communities/geoprocessing/wps/
 
 WPS Client Software:
 
-* OWSLib Python Client - http://geopython.github.io/OWSLib/
+* :term:`OWSLib Python Client <OWSLib>`
 * OpenLayers WPS Plugin - http://dev.openlayers.org/docs/files/OpenLayers/WPSClient-js.html
 * GeoTools WPS Module - http://docs.geotools.org/latest/userguide/unsupported/wps.html
 * 52 North Java Client - http://52north.org/communities/geoprocessing/wps/index.html
@@ -39,10 +39,10 @@ Scientific Workflow Tools
     
 Workflow Engines:
 
-* Dispel4py - http://www2.epcc.ed.ac.uk/~amrey/VERCE/Dispel4Py/index.html
-* RestFlow - https://github.com/restflow-org/restflow/wiki
-* Taverna - http://www.taverna.org.uk/
-* VisTrails - http://www.vistrails.org/index.php/Main_Page
+* :term:`Dispel4py`
+* :term:`RestFlow`
+* :term:`Taverna`
+* :term:`VisTrails`
 * Kepler - https://kepler-project.org/
 * KNIME - http://www.knime.org/
 

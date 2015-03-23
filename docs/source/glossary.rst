@@ -56,6 +56,10 @@ Glossary
       *Python Web Processing Service* is an implementation of the :term:`Web processing Service` standard from :term:`Open Geospatial Consortium`.
       http://pywps.wald.intevation.org/
 
+   COWS
+      The COWS Web Processing Service (WPS) is a *generic* web service and offline processing tool developed within the Centre for Environmental Data Archival (CEDA).
+      http://ceda-wps2.badc.rl.ac.uk/docs/cows_wps/intro.html
+
    Anaconda
    Anaconda Python distribution
       Python distribution for large-scale data processing, predictive analytics, and scientific computing. 
@@ -188,6 +192,26 @@ Glossary
    cfchecker
        The NetCDF Climate Forcast Conventions compliance checker.
        https://pypi.python.org/pypi/cfchecker
+
+   Taverna
+       *Taverna* is an open source and domain-independent Workflow Management System – a suite of tools used to design and execute scientific workflows.
+       http://www.taverna.org.uk/
+
+   VisTrails
+       *VisTrails* is an open-source scientific workflow and provenance management system that supports data exploration and visualization. 
+       http://www.vistrails.org/index.php/Main_Page
+
+   Dispel4py
+       *Dispel4Py* is a Python library for describing abstract workflows for distributed data-intensive applications.
+       http://www2.epcc.ed.ac.uk/~amrey/VERCE/Dispel4Py/index.html
+
+   RestFlow
+       *RestFlow* is a dataflow programming language and runtime engine designed to make it easy for scientists to build and execute computational pipelines.
+       https://github.com/restflow-org/restflow/wiki
+
+   GeoServer
+       GeoServer is an open source software server written in Java that allows users to share and edit geospatial data. 
+       http://docs.geoserver.org/stable/en/user/index.html
 
      
      
