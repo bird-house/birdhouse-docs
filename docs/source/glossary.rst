@@ -58,7 +58,7 @@ Glossary
 
    COWS
       The COWS Web Processing Service (WPS) is a *generic* web service and offline processing tool developed within the Centre for Environmental Data Archival (CEDA).
-      http://ceda-wps2.badc.rl.ac.uk/docs/cows_wps/intro.html
+      http://cows.ceda.ac.uk/cows_wps.html
 
    Anaconda
    Anaconda Python distribution
