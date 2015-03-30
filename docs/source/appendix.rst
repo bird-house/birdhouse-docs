@@ -14,6 +14,14 @@ WPS Documentation
 * `OGC Web Processing Service Standard <http://www.opengeospatial.org/standards/wps>`_
 * `GeoServer tutorial <http://geoserver.geo-solutions.it/edu/en/wps/index.html>`_
 
+Talks:
+
+* `The WPS 2.0 standard (preliminary information) <http://www.slideshare.net/Bender82/2014-0715the-wps-20-standardpreliminary?related=2>`_
+* `WPS Application Patterns <http://www.slideshare.net/nuest/wps-application-patterns?related=1>`_
+* `Using WPS (PyWPS) with Taverna Orchestration <http://www.slideshare.net/JorgeMendesdeJesus/taverna?related=2>`_
+* `Pywps a tutorial for beginners and developers <http://www.slideshare.net/JorgeMendesdeJesus/pywps-a-tutorial-for-beginners-and-developers?related=3>`_
+* `Zoo presentation foss4g.jp-2011 <http://www.slideshare.net/masarunarazaki/zoo-presentation-foss4gjp2011?related=4>`_
+
 WPS Software
 ============
 
