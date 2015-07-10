@@ -70,9 +70,10 @@ Glossary
       http://conda.pydata.org/docs/index.html
 
    Binstar
+   Anaconda Server
       Binstar is a service that allows you to create and manage public and private :term:`Anaconda` package repositories. 
-      https://binstar.org/
-      http://docs.binstar.org/
+      https://anaconda.org/
+      http://docs.anaconda.org/
 
    Docker
       *Docker* - An open platform for distributed applications for developers and sysadmins.

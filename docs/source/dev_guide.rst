@@ -29,7 +29,7 @@ Some of the missing packages are: :term:`PyWPS`, :term:`OWSLib`, :term:`CDO`, :t
 
 Anaconda provides a free Anaconda Server on :term:`Binstar`. Here you can upload your builded conda packages for different platforms (Linux, MacOX, Windows). These packages are then available for installation with the :term:`conda` installer.
 
-`Birdhouse has a Binstar organisation <https://binstar.org/birdhouse>`_ where all conda packages are collected which are 
+`Birdhouse has a Binstar organisation <https://anaconda.org/birdhouse>`_ where all conda packages are collected which are 
 builded from the conda recipes on GitHub. These packages can be installed with the :term:`conda` installer using the `birdhouse` channel.
 For example if you are already using Anaconda, you can install :term:`CDO` with the following command::
 
@@ -40,8 +40,8 @@ Building conda packages
 
 There are several ways to build conda packages and upload them to Binstar:
 
-* You can `build packages locally <http://docs.binstar.org/conda.html>`_ and upload them with the Binstar command line tool.
-* You can also `build packages remotely on Binstar <http://docs.binstar.org/draft/examples.html#SubmitYourFirstBuild>`_. Additionally you can set a GitHub Webhook so that on each commit of your recipe a build will be run on Binstar. 
+* You can `build packages locally <http://docs.anaconda.org/conda.html>`_ and upload them with the Binstar command line tool.
+* You can also `build packages remotely on Binstar <http://docs.anaconda.org/draft/examples.html#SubmitYourFirstBuild>`_. Additionally you can set a GitHub Webhook so that on each commit of your recipe a build will be run on Binstar. 
 * The remote build on Binstar are done using Docker images. The `Binstar docker image for Linux-64 <https://registry.hub.docker.com/u/binstar/linux-64/>`_ is available on :term:`Docker Hub`.  
 
 In Birdhouse we usually use the remote build on Binstar which is triggered by commits to GitHub. 
@@ -82,7 +82,7 @@ Run binstar build for the first time::
     $ binstar-build submit .
     $ binstar-build tail -f birdhouse/geolinks 1    # checks logs
 
-On successful build go to the birdhouse channel on binstar and search for the `geolinks package <https://binstar.org/birdhouse/geolinks/files>`_. 
+On successful build go to the birdhouse channel on binstar and search for the `geolinks package <https://anaconda.org/birdhouse/geolinks/files>`_. 
 Go to the ``files`` tab and add the channel `main` for the successfully builded package. 
 All packages on the `main` channel are available for public usage.
 
@@ -90,7 +90,7 @@ All packages on the `main` channel are available for public usage.
 
 Register GitHub webhook for geolinks: 
 
-on binstar go to `Settings/Continuous Integration <https://binstar.org/birdhouse/geolinks/settings/ci>`_ of the geolinks package. 
+on binstar go to `Settings/Continuous Integration <https://anaconda.org/birdhouse/geolinks/settings/ci>`_ of the geolinks package. 
 
 Edit the fields:
 
