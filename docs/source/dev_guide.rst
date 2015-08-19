@@ -73,7 +73,6 @@ Edit the following highlighted lines (user, conda build, target):
 
 .. literalinclude:: binstar.yml
     :language: yaml
-    :emphasize-lines: 8,17-19,21-22,36-37
     :linenos:
 
 Run binstar build for the first time::
