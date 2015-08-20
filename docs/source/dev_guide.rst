@@ -69,7 +69,7 @@ Enable binstar build::
     $ binstar-build init
     $ vim .binstar.yaml
     
-Edit the following highlighted lines (user, conda build, target):
+Edit the binstar config to have the following entries (change the package name for a different recipe):
 
 .. literalinclude:: binstar.yml
     :language: yaml
