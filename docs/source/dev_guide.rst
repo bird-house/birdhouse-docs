@@ -40,7 +40,7 @@ Building conda packages
 
 There are several ways to build conda packages and upload them to Binstar:
 
-* You can `build packages locally <http://docs.anaconda.org/conda.html>`_ and upload them with the Binstar command line tool.
+* You can `build packages locally <http://conda.readthedocs.org/en/latest/#building-your-own-packages>`_ and upload them with the Binstar command line tool.
 * You can also `build packages remotely on Binstar <http://docs.anaconda.org/draft/examples.html#SubmitYourFirstBuild>`_. Additionally you can set a GitHub Webhook so that on each commit of your recipe a build will be run on Binstar. 
 * The remote build on Binstar are done using Docker images. The `Binstar docker image for Linux-64 <https://registry.hub.docker.com/u/binstar/linux-64/>`_ is available on :term:`Docker Hub`.  
 
@@ -66,7 +66,7 @@ Geolinks is a Python package available on :term:`PyPi`. Generate conda package f
 Enable binstar build::
      
     $ cd geolinks
-    $ binstar-build init
+    $ anaconda-build init
     $ vim .binstar.yaml
     
 Edit the binstar config to have the following entries (change the package name for a different recipe):
@@ -78,8 +78,8 @@ Edit the binstar config to have the following entries (change the package name f
 Run binstar build for the first time::
 
     $ binstar package --create birdhouse/geolinks
-    $ binstar-build submit .
-    $ binstar-build tail -f birdhouse/geolinks 1    # checks logs
+    $ anaconda-build submit .
+    $ anaconda-build tail -f birdhouse/geolinks 1    # checks logs
 
 On successful build go to the birdhouse channel on binstar and search for the `geolinks package <https://anaconda.org/birdhouse/geolinks/files>`_. 
 Go to the ``files`` tab and add the channel `main` for the successfully builded package. 
