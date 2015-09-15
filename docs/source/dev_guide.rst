@@ -53,6 +53,11 @@ The `Dockerfile for this image <https://github.com/bird-house/birdhouse-build/tr
 
    When you build conda packages for Linux-64 you need to be very careful to ensure that these packages will run on most Linux distributions (like :term:`CentOS`, :term:`Debian`, :term:`Ubuntu`, ...). Our experience is that packages build on CentOS 6.x will also run on recent Debian/Ubuntu distributions. The Docker build images are also CentOS 6.x based.  
 
+
+.. note::
+
+   You can build a conda package with the provided docker image for Linux-64. See the `readme <https://github.com/bird-house/birdhouse-build/tree/master/docker/binstar-linux-64>`_ on how to use it.
+
 Example: building conda package for geolinks
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
