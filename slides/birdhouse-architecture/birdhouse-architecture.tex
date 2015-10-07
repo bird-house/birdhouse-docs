@@ -1,14 +1,72 @@
 \documentclass{beamer}
 
+%% docs: https://en.wikibooks.org/wiki/LaTeX/Presentations#Introductory_example
+
+%% Title Page
+
+\title{Birdhouse Architecture}
+%\subtitle{subtitle}
+\author{
+Carsten Ehbrecht\\
+\medskip
+{\scriptsize \url{ehbrecht@dkrz.de}}
+}
+\institute{German Climate Computing Center (DKRZ)}
+\date{October 2015}
+\subject{Climate Science, Web Processing Service}
+
 \begin{document}
+
+  \begin{frame}[plain]
+    \titlepage
+  \end{frame}
+
+  \begin{frame} % shrink
+    \frametitle{Outline}
+    \tableofcontents[subsectionstyle=hide/hide]
+  \end{frame}
+
+  \section{Motivation}
+
   \begin{frame}
     \frametitle{This is the first slide}
     %Content goes here
   \end{frame}
+
   \begin{frame}
     \frametitle{This is the second slide}
     \framesubtitle{A bit more information about this}
     %More content goes here
   \end{frame}
-% etc
+
+  \section{Birdhouse Components}
+
+  \begin{frame}
+    \frametitle{components ...}
+    %Content goes here
+  \end{frame}
+
+  \section{Birdhouse Builder}
+
+  \begin{frame}
+    \frametitle{conda and buildout}
+    %Content goes here
+  \end{frame}
+
+
+  \section{Deployment with Docker}
+
+  \begin{frame}
+    \frametitle{docker containers and linkage}
+    %Content goes here
+  \end{frame}
+
+
+  \section{Security and Interoperability}
+
+  \begin{frame}
+    \frametitle{security proxy and best practises to make wps interchangeable}
+    %Content goes here
+  \end{frame}
+
 \end{document}
