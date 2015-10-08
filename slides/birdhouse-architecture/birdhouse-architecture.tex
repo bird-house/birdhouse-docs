@@ -2,6 +2,10 @@
 
 %% docs: https://en.wikibooks.org/wiki/LaTeX/Presentations#Introductory_example
 
+\usetheme{Berlin}
+%\usecolortheme{beaver}
+
+
 %% Title Page
 
 \title{Birdhouse Architecture}
@@ -21,29 +25,37 @@ Carsten Ehbrecht\\
     \titlepage
   \end{frame}
 
-  \begin{frame} % shrink
-    \frametitle{Outline}
-    \tableofcontents[subsectionstyle=hide/hide]
-  \end{frame}
+  \AtBeginSection[]
+  {
+    \begin{frame} % shrink
+      \frametitle{Outline}
+      \tableofcontents[subsectionstyle=hide/hide]
+    \end{frame}
+  }
 
   \section{Motivation}
 
-  \begin{frame}
-    \frametitle{This is the first slide}
-    %Content goes here
-  \end{frame}
-
-  \begin{frame}
-    \frametitle{This is the second slide}
-    \framesubtitle{A bit more information about this}
-    %More content goes here
+  \begin{frame}[plain]
+    \frametitle{WPS Use Case}
+    \begin{figure}
+      \includegraphics[width=11cm]{images/wps-use-case.png}
+    \end{figure}
   \end{frame}
 
   \section{Birdhouse Components}
 
   \begin{frame}
-    \frametitle{components ...}
-    %Content goes here
+    \frametitle{Birdhouse Components}
+     \begin{figure}
+      \includegraphics[width=10cm]{images/birdhouse.png}
+    \end{figure}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{WSGI Application controlled with Supervisor}
+     \begin{figure}
+      \includegraphics[width=8cm]{images/WsgiApp.png}
+    \end{figure}
   \end{frame}
 
   \section{Birdhouse Builder}
