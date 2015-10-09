@@ -6,8 +6,20 @@
 %\usecolortheme{beaver}
 
 \usepackage{listings}
-\lstset{language=bash}
-
+\lstset{
+  basicstyle=\ttfamily\footnotesize,
+  numberstyle=\ttfamily\tiny,
+  frame=single,
+  numbers=left,
+  numbersep=1em,
+  xleftmargin=2em,
+  language=C,
+  breaklines=true,
+  breakatwhitespace=true,
+  postbreak=\hbox{$\hookrightarrow$ },
+  showstringspaces=false,
+  tabsize=2
+}
 
 %% Title Page
 
@@ -196,14 +208,25 @@ Carsten Ehbrecht\\
     \end{figure}
   \end{frame}
 
-  \begin{frame}[shrink]
+  \begin{frame}[fragile,shrink]
     \frametitle{Dockerfile}
-    %\lstinputlisting{recipe.py}
+    \lstinputlisting{Dockerfile}
 \end{frame}
 
-  \begin{frame}[shrink]
+  \begin{frame}[fragile,shrink]
     \frametitle{Try a Docker ...}
-    %\lstinputlisting{recipe.py}
+    \begin{block}{Images are available on DockerHub}
+      https://hub.docker.com/u/birdhouse/
+    \end{block}
+    \begin{block}{Start a docker image with Emu WPS}
+      \begin{lstlisting}
+>> docker run -it -p 8090:8090 -p 8094:8094 --name=emu_wps birdhouse/emu  
+      \end{lstlisting}
+    \end{block}
+    \begin{block}{Run WPS GetCapabilities Request}
+http://localhost:8094/wps? \
+    service=WPS&version=1.0.0&request=getcapabilities
+    \end{block}
 \end{frame}
 
   \section{Security and Interoperability}
