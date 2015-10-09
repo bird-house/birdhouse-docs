@@ -124,12 +124,24 @@ Carsten Ehbrecht\\
 \end{frame}
 
   \begin{frame}
+    \frametitle{Buildout}
+    \begin{itemize}
+      \item Python based build system
+      \item creates application with multiple components including configuration files
+      \item works also for non-Python parts
+      \item using a buildout configuration 
+      \item can be extended with recipes
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}
     \frametitle{Why Buildout?}
     \begin{itemize}
       \item many components: WPS, WMS, web-server, solr, ...
       \item lots of dependencies: cdo, cfchecker, ocgis, numpy, R, ...
       \item many different kinds of config files need to be configured 
-      \item installation needs to be reproducible add more then one location
+      \item installation needs to be reproducible at different locations
+      \item should work with different Linux distributions (Centos, Fedora, Debian, Ubuntu, ...)
     \end{itemize}
   \end{frame}
 
