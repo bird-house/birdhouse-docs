@@ -228,9 +228,18 @@ Carsten Ehbrecht\\
 
 %------------------------------------------------
 
-  \begin{frame}[fragile, shrink]
+  \begin{frame}[fragile]
     \frametitle{conda recipe}
-    \lstinputlisting{conda.yaml}
+    \begin{block}{meta.yaml}
+      \lstinputlisting{conda.yaml}
+    \end{block}
+    \begin{block}{build conda package}
+      \begin{verbatim}
+>> ls  
+meta.yaml build.sh
+>> conda build .
+      \end{verbatim}
+    \end{block}
 \end{frame}
 
 %------------------------------------------------
@@ -274,7 +283,7 @@ Carsten Ehbrecht\\
 
 %------------------------------------------------
 
-  \begin{frame}[shrink]
+  \begin{frame}[fragile]
     \frametitle{Buildout configuration}
     \begin{block}{buildout.cfg}
       \lstinputlisting{buildout.cfg}
@@ -283,7 +292,7 @@ Carsten Ehbrecht\\
 
 %------------------------------------------------
 
-  \begin{frame}[shrink]
+  \begin{frame}[fragile]
     \frametitle{Buildout Recipe}
     \begin{block}{birdhousebuilder.recipe.pywps}
       \lstinputlisting{recipe.py}
@@ -291,6 +300,29 @@ Carsten Ehbrecht\\
 \end{frame}
 
 %------------------------------------------------
+
+  \begin{frame}[fragile]
+    \frametitle{Install Birdhouse Component with Buildout}
+    \begin{itemize}
+      \item for convienience there is a Makefile to call the buildout commands
+      \item all Birdhouse components (WPS, Phoenix) are installed in the same way
+    \end{itemize}
+    \begin{block}{First installation}
+      \begin{verbatim}
+>> git clone https://github.com/bird-house/emu.git  
+>> cd emu
+>> make clean install
+>> make start
+      \end{verbatim}
+    \end{block}
+\begin{block}{Update configuration like hostname, port}
+      \begin{verbatim}
+>> vim custom.cfg   
+>> make update
+>> make restart
+      \end{verbatim}
+    \end{block}
+\end{frame}
 
   \section{Deployment with Docker}
 
