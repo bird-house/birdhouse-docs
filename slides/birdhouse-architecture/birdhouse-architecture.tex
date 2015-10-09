@@ -69,15 +69,21 @@
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
 
+\usepackage{color}
 \usepackage{listings}
 \lstset{
+  %basicstyle=\ttfamily\bfseries,
   basicstyle=\ttfamily\footnotesize,
+  commentstyle=\color{red}\itshape,
+  stringstyle=\color{green},
+  showstringspaces=false,
+  keywordstyle=\color{blue}\bfseries,
   numberstyle=\ttfamily\tiny,
   frame=single,
   numbers=left,
   numbersep=1em,
   xleftmargin=2em,
-  language=Bash,
+  language=Python,
   breaklines=true,
   breakatwhitespace=true,
   postbreak=\hbox{$\hookrightarrow$ },
@@ -143,7 +149,7 @@ Carsten Ehbrecht\\
 %------------------------------------------------
 
   \begin{frame}
-    \frametitle{What does a WPS provide?}
+    \frametitle{What does WPS provide?}
     \begin{itemize}
       \item web access to your algorithms (GET request with key-value, POST request with xml)
       \item WPS knows about the inputs and outpus of a process
@@ -156,32 +162,52 @@ Carsten Ehbrecht\\
     \end{itemize}
   \end{frame}
 
-%------------------------------------------------
-
-  \begin{frame}[plain]
-    \frametitle{Example: Textgenerator + Word Counter}
-    \begin{columns}[T] % contents are top vertically aligned
-      \begin{column}[T]{5cm} % each column can also be its own environment
-        \begin{figure}
-          \includegraphics[height=6cm]{images/WpsTextGenerator.png}
-        \end{figure}
-      \end{column}
-      \begin{column}[T]{5cm} % alternative top-align that's better for graphics
-        \begin{figure}
-          \includegraphics[height=6cm]{images/WpsInOut.png}
-        \end{figure}
-      \end{column}
-    \end{columns}
-  \end{frame}
 
 %------------------------------------------------
 
-  \begin{frame}[plain]
-    \frametitle{Example: WPS Chain}
-    \begin{figure}
-      \includegraphics[height=6cm]{images/WpsChain.png}
-    \end{figure}
-  \end{frame}
+  \begin{frame}[fragile]
+    \frametitle{Enable your code as WPS process}
+    \begin{block}{Use wps decorator of your function}
+      \tiny
+      \lstset{language=python}
+      \lstinputlisting{wps_myplot.py}
+    \end{block}
+    \begin{block}{Execute your function with WPS}
+      \begin{verbatim}
+http://localhost/wps?service=WPS&version=1.0.0 \
+   &request=execute \ 
+   &identifier=myplot \
+   &DataInputs=nc_file=http://;variable=tas
+      \end{verbatim}
+    \end{block}
+\end{frame}
+
+%------------------------------------------------
+
+  % \begin{frame}[plain]
+  %   \frametitle{Example: Textgenerator + Word Counter}
+  %   \begin{columns}[T] % contents are top vertically aligned
+  %     \begin{column}[T]{5cm} % each column can also be its own environment
+  %       \begin{figure}
+  %         \includegraphics[height=6cm]{images/WpsTextGenerator.png}
+  %       \end{figure}
+  %     \end{column}
+  %     \begin{column}[T]{5cm} % alternative top-align that's better for graphics
+  %       \begin{figure}
+  %         \includegraphics[height=6cm]{images/WpsInOut.png}
+  %       \end{figure}
+  %     \end{column}
+  %   \end{columns}
+  % \end{frame}
+
+%------------------------------------------------
+
+  % \begin{frame}[plain]
+  %   \frametitle{Example: WPS Chain}
+  %   \begin{figure}
+  %     \includegraphics[height=6cm]{images/WpsChain.png}
+  %   \end{figure}
+  % \end{frame}
 
 %------------------------------------------------
 
@@ -307,7 +333,7 @@ Carsten Ehbrecht\\
   \begin{frame}[fragile]
     \frametitle{conda recipe}
     \begin{block}{meta.yaml}
-      \lstinputlisting{conda.yaml}
+      \lstinputlisting{meta.yaml}
     \end{block}
     \begin{block}{build conda package}
       \begin{verbatim}
