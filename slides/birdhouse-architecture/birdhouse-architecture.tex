@@ -123,6 +123,30 @@ Carsten Ehbrecht\\
     \end{block}
 \end{frame}
 
+  \begin{frame}
+    \frametitle{Why Buildout?}
+    \begin{itemize}
+      \item many components: WPS, WMS, web-server, solr, ...
+      \item lots of dependencies: cdo, cfchecker, ocgis, numpy, R, ...
+      \item many different kinds of config files need to be configured 
+      \item installation needs to be reproducible add more then one location
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}[shrink]
+    \frametitle{Buildout configuration}
+    \begin{block}{buildout.cfg}
+      \lstinputlisting{buildout.cfg}
+    \end{block}
+\end{frame}
+
+  \begin{frame}[shrink]
+    \frametitle{Buildout Recipe}
+    \begin{block}{birdhousebuilder.recipe.pywps}
+      \lstinputlisting{recipe.py}
+    \end{block}
+\end{frame}
+
 
   \section{Deployment with Docker}
 
@@ -153,7 +177,11 @@ Carsten Ehbrecht\\
     \bibitem{wps-cct}
       Web Processing Service
       \newblock http://www.slideshare.net/GasperiJerome/20130530-web-processing-service-cct-cloud-toulouse-29423710
+    \bibitem{buildout}
+      Buildout
+      \newblock http://www.buildout.org/en/latest/
     \end{thebibliography}
+    
   \end{frame}
   
 
