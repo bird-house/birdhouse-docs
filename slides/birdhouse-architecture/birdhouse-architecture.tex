@@ -5,6 +5,9 @@
 \usetheme{Berlin}
 %\usecolortheme{beaver}
 
+\usepackage{listings}
+\lstset{language=bash}
+
 
 %% Title Page
 
@@ -35,7 +38,7 @@ Carsten Ehbrecht\\
 
   \section{Motivation}
 
-  \begin{frame}
+  \begin{frame}[plain]
     \frametitle{Web Processing Service}
     A web service interface to standardize the way that algorithms are made available on the Internet
     \begin{figure}
@@ -75,7 +78,7 @@ Carsten Ehbrecht\\
 
   \section{Birdhouse Components}
 
-  \begin{frame}
+  \begin{frame}[plain]
     \frametitle{Birdhouse Components}
     \begin{figure}
       \begin{center}
@@ -84,14 +87,14 @@ Carsten Ehbrecht\\
     \end{figure}
   \end{frame}
 
-  \begin{frame}
+  \begin{frame}[plain]
     \frametitle{WSGI Application controlled with Supervisor}
     \begin{figure}
       \includegraphics[width=8cm]{images/WsgiApp.png}
     \end{figure}
   \end{frame}
 
-  \begin{frame}
+  \begin{frame}[plain]
     \frametitle{Workflow Process}
     \begin{figure}
       \includegraphics[width=11.5cm]{images/WpsWorkflow.png}
@@ -100,10 +103,25 @@ Carsten Ehbrecht\\
 
   \section{Birdhouse Builder}
 
-  \begin{frame}
-    \frametitle{conda and buildout}
-    %Content goes here
-  \end{frame}
+  \begin{frame}[fragile]
+    \frametitle{conda package manager}
+    \begin{itemize}
+      \item originally for python ... but has a general concept
+      \item does not need admin rights
+      \item manages dependencies
+    \end{itemize}
+    \begin{block}{install from birdhouse channel}
+      \begin{lstlisting}
+>> conda install -c birdhouse pywps cdo 
+      \end{lstlisting}
+    \end{block}
+    \begin{block}{create conda environment=emu}
+      \begin{lstlisting}
+>> conda create -n emu -c birdhouse \
+        python=2.7 cdo pywps 
+      \end{lstlisting}
+    \end{block}
+\end{frame}
 
 
   \section{Deployment with Docker}
