@@ -1,9 +1,73 @@
+%----------------------------------------------------------------------------------------
+%       PACKAGES AND THEMES
+%
+% docs: https://en.wikibooks.org/wiki/LaTeX/Presentations#Introductory_example
+%----------------------------------------------------------------------------------------
+
+
 \documentclass{beamer}
 
-%% docs: https://en.wikibooks.org/wiki/LaTeX/Presentations#Introductory_example
+\mode<presentation> {
 
-\usetheme{Berlin}
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
 %\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
 
 \usepackage{listings}
 \lstset{
@@ -13,7 +77,7 @@
   numbers=left,
   numbersep=1em,
   xleftmargin=2em,
-  language=C,
+  language=Bash,
   breaklines=true,
   breakatwhitespace=true,
   postbreak=\hbox{$\hookrightarrow$ },
@@ -34,11 +98,17 @@ Carsten Ehbrecht\\
 \date{October 2015}
 \subject{Climate Science, Web Processing Service}
 
+%------------------------------------------------
+
 \begin{document}
+
+%------------------------------------------------
 
   \begin{frame}[plain]
     \titlepage
   \end{frame}
+
+%------------------------------------------------
 
   \AtBeginSection[]
   {
@@ -47,6 +117,8 @@ Carsten Ehbrecht\\
       \tableofcontents[subsectionstyle=hide/hide]
     \end{frame}
   }
+
+%------------------------------------------------
 
   \section{Motivation}
 
@@ -58,12 +130,16 @@ Carsten Ehbrecht\\
     \end{figure}
   \end{frame}
 
+%------------------------------------------------
+
   \begin{frame}[plain]
     \frametitle{WPS Use Case}
     \begin{figure}
       \includegraphics[width=11.5cm]{images/WpsUseCase.png}
     \end{figure}
   \end{frame}
+
+%------------------------------------------------
 
   \begin{frame}[plain]
     \frametitle{Example: Textgenerator + Word Counter}
@@ -81,6 +157,8 @@ Carsten Ehbrecht\\
     \end{columns}
   \end{frame}
 
+%------------------------------------------------
+
   \begin{frame}[plain]
     \frametitle{Example: WPS Chain}
     \begin{figure}
@@ -88,7 +166,11 @@ Carsten Ehbrecht\\
     \end{figure}
   \end{frame}
 
+%------------------------------------------------
+
   \section{Birdhouse Components}
+
+%------------------------------------------------
 
   \begin{frame}[plain]
     \frametitle{Birdhouse Components}
@@ -99,12 +181,16 @@ Carsten Ehbrecht\\
     \end{figure}
   \end{frame}
 
+%------------------------------------------------
+
   \begin{frame}[plain]
     \frametitle{WSGI Application controlled with Supervisor}
     \begin{figure}
       \includegraphics[width=8cm]{images/WsgiApp.png}
     \end{figure}
   \end{frame}
+
+%------------------------------------------------
 
   \begin{frame}[plain]
     \frametitle{Workflow Process}
@@ -113,8 +199,12 @@ Carsten Ehbrecht\\
     \end{figure}
   \end{frame}
 
+%------------------------------------------------
+
   \section{Birdhouse Builder}
   \subsection{Conda}
+
+%------------------------------------------------
 
   \begin{frame}[fragile]
     \frametitle{conda package manager}
@@ -124,22 +214,26 @@ Carsten Ehbrecht\\
       \item manages dependencies
     \end{itemize}
     \begin{block}{install from birdhouse channel}
-      \begin{lstlisting}
+      \begin{verbatim}
 >> conda install -c birdhouse pywps cdo 
-      \end{lstlisting}
+      \end{verbatim}
     \end{block}
     \begin{block}{create conda environment=emu}
-      \begin{lstlisting}
+      \begin{verbatim}
 >> conda create -n emu -c birdhouse \
         python=2.7 cdo pywps 
-      \end{lstlisting}
+      \end{verbatim}
     \end{block}
 \end{frame}
+
+%------------------------------------------------
 
   \begin{frame}[fragile, shrink]
     \frametitle{conda recipe}
     \lstinputlisting{conda.yaml}
 \end{frame}
+
+%------------------------------------------------
 
   \begin{frame}[plain]
     \frametitle{Anaconda Cloud}
@@ -148,7 +242,11 @@ Carsten Ehbrecht\\
     \end{figure}
   \end{frame}
 
+%------------------------------------------------
+
   \subsection{Buildout}
+
+%------------------------------------------------
 
   \begin{frame}
     \frametitle{Buildout}
@@ -161,6 +259,8 @@ Carsten Ehbrecht\\
     \end{itemize}
   \end{frame}
 
+%------------------------------------------------
+
   \begin{frame}
     \frametitle{Why Buildout?}
     \begin{itemize}
@@ -172,12 +272,16 @@ Carsten Ehbrecht\\
     \end{itemize}
   \end{frame}
 
+%------------------------------------------------
+
   \begin{frame}[shrink]
     \frametitle{Buildout configuration}
     \begin{block}{buildout.cfg}
       \lstinputlisting{buildout.cfg}
     \end{block}
 \end{frame}
+
+%------------------------------------------------
 
   \begin{frame}[shrink]
     \frametitle{Buildout Recipe}
@@ -186,8 +290,11 @@ Carsten Ehbrecht\\
     \end{block}
 \end{frame}
 
+%------------------------------------------------
 
   \section{Deployment with Docker}
+
+%------------------------------------------------
 
   \begin{frame}
     \frametitle{What is Docker?}
@@ -201,6 +308,8 @@ Carsten Ehbrecht\\
     \end{itemize}
   \end{frame}
 
+%------------------------------------------------
+
   \begin{frame}[plain]
     \frametitle{Deploy Birdhouse with Docker}
     \begin{figure}
@@ -208,33 +317,46 @@ Carsten Ehbrecht\\
     \end{figure}
   \end{frame}
 
+%------------------------------------------------
+
   \begin{frame}[fragile,shrink]
     \frametitle{Dockerfile}
     \lstinputlisting{Dockerfile}
 \end{frame}
 
+%------------------------------------------------
+
   \begin{frame}[fragile,shrink]
     \frametitle{Try a Docker ...}
     \begin{block}{Images are available on DockerHub}
-      https://hub.docker.com/u/birdhouse/
+      \url{https://hub.docker.com/u/birdhouse/}
     \end{block}
     \begin{block}{Start a docker image with Emu WPS}
-      \begin{lstlisting}
->> docker run -it -p 8090:8090 -p 8094:8094 --name=emu_wps birdhouse/emu  
-      \end{lstlisting}
+      \begin{verbatim}
+>> docker run -it -p 8090:8090 -p 8094:8094 \
+         --name=emu_wps birdhouse/emu  
+      \end{verbatim}
     \end{block}
     \begin{block}{Run WPS GetCapabilities Request}
+      \begin{verbatim}
 http://localhost:8094/wps? \
-    service=WPS&version=1.0.0&request=getcapabilities
+   service=WPS&version=1.0.0&request=getcapabilities
+      \end{verbatim}
     \end{block}
 \end{frame}
 
+%------------------------------------------------
+
   \section{Security and Interoperability}
+
+%------------------------------------------------
 
   \begin{frame}
     \frametitle{security proxy and best practises to make wps interchangeable}
     %Content goes here
   \end{frame}
+
+%------------------------------------------------
 
   \appendix
 
@@ -246,16 +368,23 @@ http://localhost:8094/wps? \
       \beamertemplatearticlebibitems
     \bibitem{foos4g-ebrahim}
       Evaluation of WPS Frameworks
-      \newblock http://www.slideshare.net/mepa1363/foss4g-ebrahim
+      \newblock \url{http://www.slideshare.net/mepa1363/foss4g-ebrahim}
     \bibitem{wps-cct}
       Web Processing Service
       \newblock http://www.slideshare.net/GasperiJerome/20130530-web-processing-service-cct-cloud-toulouse-29423710
     \bibitem{buildout}
       Buildout
-      \newblock http://www.buildout.org/en/latest/
+      \newblock \url{http://www.buildout.org/}
     \end{thebibliography}
     
   \end{frame}
   
+%------------------------------------------------
+
+  \begin{frame}
+    \Huge{\centerline{The End}}
+  \end{frame}
+
+%------------------------------------------------
 
 \end{document}
