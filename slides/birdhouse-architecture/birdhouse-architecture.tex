@@ -139,6 +139,23 @@ Carsten Ehbrecht\\
     \end{figure}
   \end{frame}
 
+
+%------------------------------------------------
+
+  \begin{frame}
+    \frametitle{What does a WPS provide?}
+    \begin{itemize}
+      \item web access to your algorithms (GET request with key-value, POST request with xml)
+      \item WPS knows about the inputs and outpus of a process
+      \item processes are self-describing (GetCapabilites, DescribeProcess)
+      \item sync and async calls (async calls with status document)
+      \item its a standard interface ... several implementations are available (PyWPS, GeoServer, COWS, ...)
+      \item process definition is easy to write
+      \item not restricted to a specific programming language
+      \item can be used internally to provide enhanced functionality to web portals
+    \end{itemize}
+  \end{frame}
+
 %------------------------------------------------
 
   \begin{frame}[plain]
@@ -184,6 +201,42 @@ Carsten Ehbrecht\\
 %------------------------------------------------
 
   \begin{frame}[plain]
+    \frametitle{Phoenix web-based WPS client}
+    \begin{figure}
+      \includegraphics[width=11.5cm]{images/phoenix.png}
+    \end{figure}
+  \end{frame}
+
+%------------------------------------------------
+
+  \begin{frame}[fragile]
+    \frametitle{Birdy command line WPS client}
+    \begin{verbatim}
+>> conda install -c birdhouse birdhouse-birdy
+>> export WPS_SERVICS=http://localhost:8094/wps
+>> birdy -h
+    \end{verbatim}
+    \begin{figure}
+      \includegraphics[width=11.5cm]{images/birdy-terminal.png}
+    \end{figure}
+\end{frame}
+
+%------------------------------------------------
+
+  \begin{frame}
+    \frametitle{Birdhouse WPS serivces}
+    \begin{itemize}
+      \item Malleefowl (for internal use): download data with cache, workflows ...
+      \item Emu: processes for testing and demo
+      \item Hummingbird: processes for general tools used in the climate science community like cdo and cfchecker
+      \item Flyingpigeon: processes for climate data, indices and extreme events
+    \end{itemize}
+  \end{frame}
+
+
+%------------------------------------------------
+
+  \begin{frame}[plain]
     \frametitle{WSGI Application controlled with Supervisor}
     \begin{figure}
       \includegraphics[width=8cm]{images/WsgiApp.png}
@@ -193,7 +246,14 @@ Carsten Ehbrecht\\
 %------------------------------------------------
 
   \begin{frame}[plain]
-    \frametitle{Workflow Process}
+    \frametitle{Workflow Process in Birdhouse}
+    \begin{itemize}
+      \item the chain of WPS processes is controlled by a Workflow Engine (dispel4py) 
+      \item The Workflow Process itself is a WPS process
+      \item data-search, download and publish are internal processes (provided by Malleefowl)
+      \item Compute is a process choosen by the user ... for example cfchecker
+      \item The Phoenix wizard is used to collect the parameters for the workflow process
+    \end{itemize}
     \begin{figure}
       \includegraphics[width=11.5cm]{images/WpsWorkflow.png}
     \end{figure}
@@ -202,6 +262,22 @@ Carsten Ehbrecht\\
 %------------------------------------------------
 
   \section{Birdhouse Builder}
+
+%------------------------------------------------
+
+  \begin{frame}
+    \frametitle{Why conda and Buildout?}
+    \begin{itemize}
+      \item many components: WPS, WMS, web-server, solr, ...
+      \item lots of dependencies: cdo, cfchecker, ocgis, numpy, R, ...
+      \item many different kinds of config files need to be configured 
+      \item installation needs to be reproducible at different locations
+      \item should work with different Linux distributions (Centos, Fedora, Debian, Ubuntu, ...)
+    \end{itemize}
+  \end{frame}
+
+%------------------------------------------------
+
   \subsection{Conda}
 
 %------------------------------------------------
@@ -270,19 +346,6 @@ meta.yaml build.sh
 
 %------------------------------------------------
 
-  \begin{frame}
-    \frametitle{Why Buildout?}
-    \begin{itemize}
-      \item many components: WPS, WMS, web-server, solr, ...
-      \item lots of dependencies: cdo, cfchecker, ocgis, numpy, R, ...
-      \item many different kinds of config files need to be configured 
-      \item installation needs to be reproducible at different locations
-      \item should work with different Linux distributions (Centos, Fedora, Debian, Ubuntu, ...)
-    \end{itemize}
-  \end{frame}
-
-%------------------------------------------------
-
   \begin{frame}[fragile]
     \frametitle{Buildout configuration}
     \begin{block}{buildout.cfg}
@@ -344,6 +407,11 @@ meta.yaml build.sh
 
   \begin{frame}[plain]
     \frametitle{Deploy Birdhouse with Docker}
+    \begin{itemize}
+      \item each service is running in a Docker container
+      \item docker containers can be \emph{linked} to other containers
+      \item only some containers (Phonix, WPS Proxy) need to be exposed to external use
+    \end{itemize}
     \begin{figure}
       \includegraphics[width=11.5cm]{images/BirdhouseDocker.png}
     \end{figure}
