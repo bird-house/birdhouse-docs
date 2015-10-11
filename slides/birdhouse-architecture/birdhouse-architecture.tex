@@ -96,6 +96,8 @@
   tabsize=2
 }
 
+
+
 %% Title Page
 
 \title{Birdhouse Architecture}
@@ -108,6 +110,13 @@ Carsten Ehbrecht\\
 \institute{German Climate Computing Center (DKRZ)}
 \date{October 2015}
 \subject{Climate Science, Web Processing Service}
+
+% page numbers
+%\insertframenumber
+
+% don't count title page
+%\addtocounter{framenumber}{-1}
+
 
 %------------------------------------------------
 
@@ -134,7 +143,7 @@ Carsten Ehbrecht\\
 
   \section{Motivation}
 
-  \begin{frame}[plain]
+  \begin{frame}
     \frametitle{Web Processing Service}
     A web service interface to standardize the way that algorithms are made available on the Internet
     \begin{figure}
@@ -144,7 +153,7 @@ Carsten Ehbrecht\\
 
 %------------------------------------------------
 
-  \begin{frame}[plain]
+  \begin{frame}
     \frametitle{WPS Use Case}
     \begin{figure}
       \includegraphics[width=11.5cm]{images/WpsUseCase.png}
@@ -232,7 +241,7 @@ http://localhost/wps?service=WPS&version=1.0.0 \
 
 %------------------------------------------------
 
-  \begin{frame}[plain]
+  \begin{frame}
     \frametitle{Phoenix web-based WPS client}
     \begin{figure}
       \includegraphics[width=11.5cm]{images/phoenix.png}
@@ -268,7 +277,7 @@ http://localhost/wps?service=WPS&version=1.0.0 \
 
 %------------------------------------------------
 
-  \begin{frame}[plain]
+  \begin{frame}
     \frametitle{WSGI Application controlled with Supervisor}
     \begin{figure}
       \includegraphics[width=8cm]{images/WsgiApp.png}
@@ -277,7 +286,7 @@ http://localhost/wps?service=WPS&version=1.0.0 \
 
 %------------------------------------------------
 
-  \begin{frame}[plain]
+  \begin{frame}
     \frametitle{Workflow Process in Birdhouse}
     \begin{itemize}
       \item the chain of WPS processes is controlled by a Workflow Engine (dispel4py) 
@@ -298,7 +307,7 @@ http://localhost/wps?service=WPS&version=1.0.0 \
 %------------------------------------------------
 
   \begin{frame}
-    \frametitle{Why conda and Buildout?}
+    \frametitle{Why Conda and Buildout?}
     \begin{itemize}
       \item many components: WPS, WMS, web-server, solr, ...
       \item lots of dependencies: cdo, cfchecker, ocgis, numpy, R, ...
@@ -306,6 +315,9 @@ http://localhost/wps?service=WPS&version=1.0.0 \
       \item installation needs to be reproducible at different locations
       \item should work with different Linux distributions (Centos, Fedora, Debian, Ubuntu, ...)
     \end{itemize}
+    \begin{figure}
+      \includegraphics[width=4cm]{images/chaos.png}
+    \end{figure}
   \end{frame}
 
 %------------------------------------------------
@@ -433,6 +445,18 @@ meta.yaml build.sh
       \item rapid startup time
       \item only changed parts of docker image need to loaded on update
     \end{itemize}
+    \begin{figure}
+      \includegraphics[width=4cm]{images/docker-container.png}
+    \end{figure}
+  \end{frame}
+
+%------------------------------------------------
+
+  \begin{frame}
+    \frametitle{Containers vs VMs (slide taken from docker)}
+    \begin{figure}
+      \includegraphics[width=11.5cm]{images/docker-vs-vms.jpg}
+    \end{figure}
   \end{frame}
 
 %------------------------------------------------
@@ -445,7 +469,7 @@ meta.yaml build.sh
       \item only some containers (Phonix, WPS Proxy) need to be exposed to external use
     \end{itemize}
     \begin{figure}
-      \includegraphics[width=11.5cm]{images/BirdhouseDocker.png}
+      \includegraphics[width=10cm]{images/BirdhouseDocker.png}
     \end{figure}
   \end{frame}
 
@@ -483,7 +507,7 @@ http://localhost:8094/wps? \
 
 %------------------------------------------------
 
-  \begin{frame}[plain]
+  \begin{frame}
     \frametitle{WPS Security Proxy (planned)}
     \begin{itemize}
       \item using string token (uuid) as part of URL to protect WPS execute access
