@@ -24,13 +24,13 @@
 %\usetheme{Copenhagen}
 %\usetheme{Darmstadt}
 %\usetheme{Dresden}
-%\usetheme{Frankfurt}
+\usetheme{Frankfurt}
 %\usetheme{Goettingen}
 %\usetheme{Hannover}
 %\usetheme{Ilmenau}
 %\usetheme{JuanLesPins}
 %\usetheme{Luebeck}
-\usetheme{Madrid}
+%\usetheme{Madrid}
 %\usetheme{Malmoe}
 %\usetheme{Marburg}
 %\usetheme{Montpellier}
@@ -65,6 +65,11 @@
 
 %\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
 }
+
+%\usepackage[german]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{alltt}
+\usepackage{beamerthemesplit}
 
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
@@ -116,7 +121,8 @@ Carsten Ehbrecht\\
 
 %------------------------------------------------
 
-  \AtBeginSection[]
+  %\AtBeginSection[]
+  \AtBeginSection[]{\frame{\frametitle{Overview}\tableofcontents[current]}}
   {
     \begin{frame} % shrink
       \frametitle{Outline}
@@ -420,7 +426,7 @@ meta.yaml build.sh
   \begin{frame}
     \frametitle{What is Docker?}
     \begin{itemize}
-      \item a lightweight Virtual-Maschine using Linux Containers
+      \item a lightweight Virtual-Machine using Linux Containers
       \item isolated environment for your Linux installation
       \item runs on the same hardware as the host
       \item run latest Ubuntu on an older Centos
