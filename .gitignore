@@ -11,7 +11,7 @@
 
 # Latex
 *.dvi
-*.pdf
+#*.pdf
 *.log
 *.aux
 *.out
