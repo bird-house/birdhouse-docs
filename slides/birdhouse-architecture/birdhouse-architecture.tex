@@ -480,8 +480,8 @@ http://localhost:8094/wps? \
   \begin{frame}[plain]
     \frametitle{WPS Security Proxy (planned)}
     \begin{itemize}
-      \item using string tokens (uuid) as part of URL to protect WPS execute access
-      \item X509 certificates to access (remote) data from ESGF are provided by proxy
+      \item using string token (uuid) as part of URL to protect WPS execute access
+      \item X509 certificates to access (remote) data from ESGF are provided by proxy (using environ)
       \item implemented as WSGI application layer
     \end{itemize}
     \begin{figure}
@@ -511,15 +511,22 @@ http://localhost:8094/wps? \
     \frametitle<presentation>{Further Reading}    
     \begin{thebibliography}{10}    
       \beamertemplatearticlebibitems
+    \bibitem{birdhouse}
+      Birdhouse
+      \newblock \url{http://bird-house.github.io/}
+    \bibitem{buildout}
+      Buildout
+      \newblock \url{http://www.buildout.org/}
+    \bibitem{anaconda}
+      Anaconda
+      \newblock \url{https://www.continuum.io/why-anaconda}
     \bibitem{foos4g-ebrahim}
       Evaluation of WPS Frameworks
       \newblock \url{http://www.slideshare.net/mepa1363/foss4g-ebrahim}
     \bibitem{wps-cct}
       Web Processing Service
       \newblock http://www.slideshare.net/GasperiJerome/20130530-web-processing-service-cct-cloud-toulouse-29423710
-    \bibitem{buildout}
-      Buildout
-      \newblock \url{http://www.buildout.org/}
+   
     \end{thebibliography}
     
   \end{frame}
