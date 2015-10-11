@@ -477,9 +477,28 @@ http://localhost:8094/wps? \
 
 %------------------------------------------------
 
+  \begin{frame}[plain]
+    \frametitle{WPS Security Proxy (planned)}
+    \begin{itemize}
+      \item using string tokens (uuid) as part of URL to protect WPS execute access
+      \item X509 certificates to access (remote) data from ESGF are provided by proxy
+      \item implemented as WSGI application layer
+    \end{itemize}
+    \begin{figure}
+      %\includegraphics[width=11.5cm]{images/BirdhouseDocker.png}
+    \end{figure}
+  \end{frame}
+
   \begin{frame}
-    \frametitle{security proxy and best practises to make wps interchangeable}
-    %Content goes here
+    \frametitle{Best Practises to make WPS interchangeable}
+    \begin{itemize}
+      \item support of complete WPS protocol (literal type, complex types, ...)
+      \item separation of WPS definition and functional code (provided as Python library)
+      \item convenience and integration code provided as library (e.a. Malleefowl provides functions used by WPS processes)
+      \item using WPS profiles (common WPS process definitions)
+      \item use self-describing possibilities of WPS
+      \item parameters relevant for the process should be part of the process definition
+    \end{itemize}
   \end{frame}
 
 %------------------------------------------------
