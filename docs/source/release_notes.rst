@@ -9,6 +9,24 @@ Release Notes
    :depth: 2
    :backlinks: none
 
+
+Paris (October 2015)
+====================
+
+* updated documents on readthedocs
+* OAuth2 used for login with GitHub, Ceda, ...
+* LDAP support for login
+* using ncWMS and adagucwms 
+* register and use Thredds catalogs as data source
+* publish local netcdf files and Thredds catalogs to birdhouse Solr
+* qualtiy check processes added (cfchecker, qa-dkrz)
+* generation of docker images for each Birdhouse component
+* using dispel4py as workflow engine in Malleefowl
+* using Celery task scheduler/queue to run and monitor WPS processes
+* improved Phoenix web client
+* using birdy wps command line client
+
+
 Paris (September 2014)
 ======================
 
