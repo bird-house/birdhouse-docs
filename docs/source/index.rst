@@ -45,6 +45,7 @@ Getting started
 Presentations & Blog Posts
 ==========================
 
+* `Paris Coding Spring at IPSL <https://github.com/bird-house/birdhouse-docs/blob/master/slides/birdhouse-architecture/birdhouse-architecture.pdf>`_
 * Helsinki
 * Prag
 * CSC 2.0 Hamburg
