@@ -13,6 +13,7 @@ Milestone December 2015
 * improved birdy command line (https, argcomplete)
 * caching of wps requests
 * deployment with docker using docker-compose
+* minimal bird example and skeleton function
 
 Milestone March 2015
 ====================
