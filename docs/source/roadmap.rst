@@ -4,6 +4,16 @@
 Roadmap
 =======
 
+Milestone December 2015
+=======================
+
+* prototype for wps security proxy
+* update ncWMS2 and adagucserver wms
+* update sphinx with api references
+* improved birdy command line (https, argcomplete)
+* caching of wps requests
+* deployment with docker using docker-compose
+
 Milestone March 2015
 ====================
 
