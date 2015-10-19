@@ -18,9 +18,9 @@ A user runs a WPS processes remotely on a machine with direct access to climate 
 Birdhouse with WPS components
 =============================
 
-.. image:: _images/birdhouse.png
+.. image:: _images/birdhouse-components.png
 
-ESGF is currently the main climate data resource (but more resources are possible). ESGF Solr-index is used to find ESGF data. The ESGF identity provider with OpenIDs and X509 certificate is used for authenticatin.
+ESGF is currently the main climate data resource (but more resources are possible). ESGF Solr-index is used to find ESGF data. The ESGF identity provider with OpenIDs and X509 certificate is used for authentication.
 
 There are several WPS services. Malleefowl is the main one for the Phoenix client. Malleefowl is used to search, download (with caching) ESGF data and to retrieve certificates. Malleefowl has also a workflow engine (dispel4py) to chain WPS processes. 
 
