@@ -14,6 +14,7 @@ Milestone December 2015
 * caching of wps requests
 * deployment with docker using docker-compose
 * minimal bird example and skeleton function
+* unit tests with sample netcdf data
 
 Milestone March 2015
 ====================
