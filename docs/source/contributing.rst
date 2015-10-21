@@ -10,8 +10,8 @@ You can also register on the mailing list to retrieve announcements.
 Mailing list
 ------------
 
-* News are published to the `wps mailing list <https://lists.dkrz.de/mailman/listinfo/wps>`_. 
-* Technical discussions take place in `wps-dev mailing list <https://lists.dkrz.de/mailman/listinfo/wps-dev>`_.
+* News are published to the `wps mailing list <https://lists.dkrz.de/mailman/listinfo/wps>`_ (`Archive <https://lists.dkrz.de/mailman/private/wps/>`_). 
+* Technical discussions take place in `wps-dev mailing list <https://lists.dkrz.de/mailman/listinfo/wps-dev>`_ (`Archive <https://lists.dkrz.de/mailman/private/wps-dev/>`_).
 
 Feel free to register.
 
