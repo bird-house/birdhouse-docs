@@ -118,9 +118,9 @@ Documentation at http://icclim.readthedocs.org/
 Python Web Frameworks and Utils
 ===============================
 
+* Pyramid - http://www.pylonsproject.org/
 * Authomatic - http://peterhudec.github.io/authomatic/
 * Bootstrap - http://getbootstrap.com/
-* Bootstrap 2.x - http://getbootstrap.com/2.3.2/index.html
 
 Example WPS Services
 ====================
@@ -137,5 +137,9 @@ List of available Web Processing Services:
 * 52 North - http://geoprocessing.demo.52north.org:8080/52n-wps-webapp-3.3.1/WebProcessingService?Request=GetCapabilities&Service=WPS
 * 52 North - http://geoprocessing.demo.52north.org:8080/52n-wps-webapp-3.3.1-gt/WebProcessingService?Request=GetCapabilities&Service=WPS
 
+Alternatives to WPS
+===================
 
+* XML-RPX: Simple cross-platform distributed computing, based on the standards of the Internet. - http://xmlrpc.scripting.com/
+* Swagger is a simple yet powerful representation of your RESTful API.  - http://swagger.io/
 
