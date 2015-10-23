@@ -7,14 +7,15 @@ Roadmap
 Milestone December 2015
 =======================
 
-* prototype for wps security proxy
-* update ncWMS2 and adagucserver wms
-* update sphinx with api references
-* improved birdy command line (https, argcomplete)
+* `prototype for wps security proxy <https://github.com/bird-house/pywps-proxy>`_
+* `update ncWMS2 and adagucserver wms <https://github.com/bird-house/birdhousebuilder.recipe.adagucserver>`_
+* `update sphinx with api references <https://github.com/bird-house/birdhousebuilder.recipe.sphinx>`_
+* `improved birdy command line (https, argcomplete) <https://github.com/bird-house/birdy>`_
 * caching of wps requests
 * deployment with docker using docker-compose
-* minimal bird example and skeleton function
+* `minimal bird example and skeleton function <https://github.com/bird-house/babybird>`_
 * unit tests with sample netcdf data
+* `wps decorator <https://github.com/bird-house/malleefowl/issues/16>`_
 
 Milestone March 2015
 ====================
