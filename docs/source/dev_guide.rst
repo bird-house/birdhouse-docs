@@ -7,6 +7,18 @@ Developer Guide
     :local:
     :depth: 2
 
+
+.. _writing_docs:
+	    
+Writing Documentation
+---------------------
+
+Documentation is written in `ReStructuredText <http://sphinx-doc.org/rest.html>`_ and generated with `Sphinx <http://sphinx-doc.org/index.html>`_. The Birdhouse components use the buildout recipe `birdhousebuilder.recipe.sphinx <https://pypi.python.org/pypi/birdhousebuilder.recipe.sphinx>`_ which sets up Sphinx and a minimal ``docs`` folder. With ``make docs`` the documentation is generated locally. The documentation is published to `Read the Docs <https://readthedocs.org/>`_ with each commit to the `master` branch. The API reference is generated automatically using the Sphinx plugin `AutoAPI <http://sphinx-autoapi.readthedocs.org/en/latest/index.html>`_.
+
+* http://sphinx-doc.org/tutorial.html
+* https://pythonhosted.org/an_example_pypi_project/sphinx.html
+* http://docs.geoserver.org/latest/en/docguide/
+
 .. _anaconda:
 
 Using Anaconda in Birdhouse
@@ -103,7 +115,9 @@ Edit the fields:
  
 .. image:: _images/binstar_ci.png
 
-**Note / Todo**: If you're logged into anaconda with your own rather than the `birdhouse` organization account, the ``anaconda-build submit .`` way mentioned above seem to cause some problems (as of October 2015). A more reliable way to upload your package is to build it locally, upload it to your own account and then transfer the ownership to `birdhouse` via the web interface::
+.. warning::
+   
+   If you're logged into anaconda with your own rather than the `birdhouse` organization account then the ``anaconda-build submit .`` way mentioned above seem to cause some problems (as of October 2015). A more reliable way to upload your package is to build it locally, upload it to your own account and then transfer the ownership to `birdhouse` via the web interface::
 
     $ anaconda-build init # just as before
     $ vim .binstar.yaml
@@ -111,7 +125,7 @@ Edit the fields:
     $ conda build .       # build locally
     $ anaconda upload /your/path/to/conda-bld/platform/packagename-version.tar.bz2 # full path is listed in conda build output
 
-Now switch to `anaconda.org/yourname/packagename` and go to `Settings` -> `Admin` -> `Transfer` to transfer the package to `birdhouse`. (You could use ``-u birdhouse`` to upload it to `birdhouse` directly, but it seems to make some difference e.g. some fields in the web interface will not be filled in automatically, so I figured the other workaround to be more reliable.)
+   Now switch to `anaconda.org/yourname/packagename` and go to `Settings` -> `Admin` -> `Transfer` to transfer the package to `birdhouse`. (You could use ``-u birdhouse`` to upload it to `birdhouse` directly, but it seems to make some difference e.g. some fields in the web interface will not be filled in automatically, so I figured the other workaround to be more reliable.)
 
 Anaconda Alternatives
 ~~~~~~~~~~~~~~~~~~~~~
