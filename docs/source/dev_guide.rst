@@ -103,6 +103,15 @@ Edit the fields:
  
 .. image:: _images/binstar_ci.png
 
+**Note / Todo**: If you're logged into anaconda with your own rather than the `birdhouse` organization account, the ``anaconda-build submit .`` way mentioned above seem to cause some problems (as of October 2015). A more reliable way to upload your package is to build it locally, upload it to your own account and then transfer the ownership to `birdhouse` via the web interface::
+
+    $ anaconda-build init # just as before
+    $ vim .binstar.yaml
+    $                     # skip package creation here
+    $ conda build .       # build locally
+    $ anaconda upload /your/path/to/conda-bld/platform/packagename-version.tar.bz2 # full path is listed in conda build output
+
+Now switch to `anaconda.org/yourname/packagename` and go to `Settings` -> `Admin` -> `Transfer` to transfer the package to `birdhouse`. (You could use ``-u birdhouse`` to upload it to `birdhouse` directly, but it seems to make some difference e.g. some fields in the web interface will not be filled in automatically, so I figured the other workaround to be more reliable.)
 
 Anaconda Alternatives
 ~~~~~~~~~~~~~~~~~~~~~
