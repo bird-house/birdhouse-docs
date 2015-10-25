@@ -177,6 +177,9 @@ Here is the list of currently used Buildout recipes by Birdhouse:
 * `birdhousebuilder.recipe.nginx <https://pypi.python.org/pypi/birdhousebuilder.recipe.nginx>`_: A Buildout recipe to install and configure Nginx with Anaconda.
 * `birdhousebuilder.recipe.supervisor <https://pypi.python.org/pypi/birdhousebuilder.recipe.supervisor>`_: A Buildout recipe to install and configure supervisor for Anaconda.
 * `birdhousebuilder.recipe.docker <https://pypi.python.org/pypi/birdhousebuilder.recipe.docker>`_: A Buildout recipe to generate a Dockerfile for Birdhouse applications.
+* `birdhousebuilder.recipe.sphinx <https://pypi.python.org/pypi/birdhousebuilder.recipe.sphinx>`_: A Buildout recipe to generate documentation with Sphinx.
+* `birdhousebuilder.recipe.ncwms <https://pypi.python.org/pypi/birdhousebuilder.recipe.ncwms>`_: A Buildout recipe to install and configure ncWMS2 Web Map Service.
+* `birdhousebuilder.recipe.adagucserver <https://pypi.python.org/pypi/birdhousebuilder.recipe.adagucserver>`_: A Buildout recipe to install and configure Adagucserver Web Map Service.
 
 
 Writing a WPS process
