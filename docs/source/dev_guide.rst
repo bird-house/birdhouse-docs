@@ -9,7 +9,7 @@ Developer Guide
 
 
 .. _writing_docs:
-	    
+            
 Writing Documentation
 ---------------------
 
@@ -126,6 +126,22 @@ Edit the fields:
     $ anaconda upload /your/path/to/conda-bld/platform/packagename-version.tar.bz2 # full path is listed in conda build output
 
    Now switch to `anaconda.org/yourname/packagename` and go to `Settings` -> `Admin` -> `Transfer` to transfer the package to `birdhouse`. (You could use ``-u birdhouse`` to upload it to `birdhouse` directly, but it seems to make some difference e.g. some fields in the web interface will not be filled in automatically, so I figured the other workaround to be more reliable.)
+
+Using Conda
+~~~~~~~~~~~
+
+See the `conda documentation <http://conda.pydata.org/docs/index.html>`_.
+
+.. warning::
+
+   To fix the SSL cert issues in conda when updating to python 2.7.9 do the following::
+
+     $ conda config --set ssl_verify False
+     $ conda update requests openssl
+     $ conda config --set ssl_verify True
+
+   See this conda issue at https://github.com/conda/conda/issues/1624
+
 
 Anaconda Alternatives
 ~~~~~~~~~~~~~~~~~~~~~
