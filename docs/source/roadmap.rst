@@ -16,6 +16,8 @@ Milestone December 2015
 * `minimal bird example and skeleton function <https://github.com/bird-house/babybird>`_
 * unit tests with sample netcdf data
 * `wps decorator <https://github.com/bird-house/malleefowl/issues/16>`_
+* enable wps for `apache-climate <https://github.com/apache/climate>`_ processes
+* try `sci-wms <https://github.com/sci-wms/sci-wms>`_ web map service
 
 Milestone March 2015
 ====================
