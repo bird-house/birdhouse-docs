@@ -4,6 +4,10 @@
 Overview
 ========
 
+.. contents::
+    :local:
+    :depth: 2
+
 .. _wps_use_case:
 
 WPS Use Case
