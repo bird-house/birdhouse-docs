@@ -268,9 +268,10 @@ texinfo_documents = [
 intersphinx_mapping = {'python': ('http://docs.python.org/', None),
                        'phoenix': ('http://pyramid-phoenix.readthedocs.org/en/latest/', None),
                        'malleefowl': ('http://malleefowl.readthedocs.org/en/latest/', None),
+                       'twitcher': ('http://twitcher.readthedocs.org/en/latest/', None),
                        'flyingpigeon': ('http://flyingpigeon.readthedocs.org/en/latest/', None),
                        'hummingbird': ('http://birdhouse-hummingbird.readthedocs.org/en/latest/', None),
                        'emu': ('http://emu.readthedocs.org/en/latest/', None),
                        'birdy': ('http://birdy.readthedocs.org/en/latest/', None),
                        'bootstrap': ('http://birdhousebuilderbootstrap.readthedocs.org/en/latest/', None),
-			}
+            }

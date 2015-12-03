@@ -32,3 +32,8 @@ The PyCSW Catalog Service is used to register WPS services and also to publish W
 
 WPS serivces can be accessed through web-applications like Phoenix or from scripts.
 
+
+Birdhouse Architecture
+======================
+
+See the `Birdhouse Architecture Talk <https://github.com/bird-house/birdhouse-docs/blob/master/slides/birdhouse-architecture/birdhouse-architecture.pdf>`_
