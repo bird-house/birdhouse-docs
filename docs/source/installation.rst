@@ -23,13 +23,17 @@ Birdhouse is also installing a few system packages using `apt-get` on Debian bas
 Installing from source
 ----------------------
 
-The installation of Birdhouse components from source is basically a three-liner. Here is an example for the Emu WPS service::
+The installation of Birdhouse components from source is basically a three-liner. Here is an example for the Emu WPS service:
+
+.. code-block:: sh
 
     $ git clone https://github.com/bird-house/emu.git
     $ cd emu
     $ make
 
-All the Birdhouse components follow the same installation pattern. If you want to see all the options of the `Makefile` then type::
+All the Birdhouse components follow the same installation pattern. If you want to see all the options of the `Makefile` then type:
+
+.. code-block:: sh
  
     $ make help 
 
@@ -60,7 +64,9 @@ See the following image on how this looks like:
 
 When installing a Birdhouse WPS service you don't need to care about this setup. This is all done by Buildout and using some extensions provided by Birdhouse. 
 
-The Makefile of a Birdhouse application has convenience targets to start/stop a WPS service controlled by Supervisor and to check the status::
+The Makefile of a Birdhouse application has convenience targets to start/stop a WPS service controlled by Supervisor and to check the status:
+
+.. code-block:: sh
 
     $ make start    # start wps service
     $ make stop     # stop wps service

@@ -43,7 +43,9 @@ Anaconda provides a free Anaconda Server on :term:`Binstar`. Here you can upload
 
 `Birdhouse has a Binstar organisation <https://anaconda.org/birdhouse>`_ where all conda packages are collected which are 
 builded from the conda recipes on GitHub. These packages can be installed with the :term:`conda` installer using the `birdhouse` channel.
-For example if you are already using Anaconda, you can install :term:`CDO` with the following command::
+For example if you are already using Anaconda, you can install :term:`CDO` with the following command:
+
+.. code-block:: sh
 
     $ conda install --channel birdhouse cdo
 
@@ -92,7 +94,9 @@ Edit the binstar config to have the following entries (change the package name f
     :language: yaml
     :linenos:
 
-Run binstar build for the first time::
+Run binstar build for the first time:
+
+.. code-block:: sh
 
     $ binstar package --create birdhouse/geolinks
     $ anaconda-build submit .
@@ -117,7 +121,9 @@ Edit the fields:
 
 .. warning::
    
-   If you're logged into anaconda with your own rather than the `birdhouse` organization account then the ``anaconda-build submit .`` way mentioned above seem to cause some problems (as of October 2015). A more reliable way to upload your package is to build it locally, upload it to your own account and then transfer the ownership to `birdhouse` via the web interface::
+   If you're logged into anaconda with your own rather than the `birdhouse` organization account then the ``anaconda-build submit .`` way mentioned above seem to cause some problems (as of October 2015). A more reliable way to upload your package is to build it locally, upload it to your own account and then transfer the ownership to `birdhouse` via the web interface:
+
+.. code-block:: sh
 
     $ anaconda-build init # just as before
     $ vim .binstar.yaml
@@ -156,21 +162,29 @@ Using Buildout in Birdhouse
 Birdhouse uses the :term:`Buildout` build tool to install and configure all Birdhouse components (:term:`Phoenix`, :term:`Malleefowl`, :term:`Emu`...). The main configuration file is ``buildout.cfg`` which is in the root folder of the application. 
 As an example have a look at the `buildout.cfg from Emu <https://github.com/bird-house/emu/blob/master/buildout.cfg>`_. 
 
-Before building an application with Buildout you have an initial bootstrap step::
+Before building an application with Buildout you have an initial bootstrap step:
+
+.. code-block:: sh
 
     $ python bootstrap-buildout.py -c buildout.cfg
 
 This will generate the ``bin/buildout`` script.
-Now you can build the application::
+Now you can build the application:
+
+.. code-block:: sh
 
     $ bin/buildout -c buildout.cfg
 
 The default configuration in the ``buildout.cfg`` should always work to run your application on ``localhost`` with default ports. You can customize the configuration by editing the ``custom.cfg`` which extends and overwrites the settings of ``buildout.cfg``. You may have a look at the
-`custom.cfg example of Emu <https://github.com/bird-house/emu/blob/master/custom.cfg.example>`_. So, instead of using ``buildout.cfg`` you should use ``custom.cfg`` for the build::
+`custom.cfg example of Emu <https://github.com/bird-house/emu/blob/master/custom.cfg.example>`_. So, instead of using ``buildout.cfg`` you should use ``custom.cfg`` for the build:
+
+.. code-block:: sh
 
     $ bin/buildout -c custom.cfg
 
-For convenience Birdhouse has a Makefile which hides all these steps. If you want to build an application you just need to run::
+For convenience Birdhouse has a Makefile which hides all these steps. If you want to build an application you just need to run:
+
+.. code-block:: sh
 
     $ make install
 
