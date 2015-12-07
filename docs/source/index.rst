@@ -27,6 +27,7 @@ WPS services and libraries with algorithms used in climate science analysis:
 
 * :ref:`Flyingpigeon <flyingpigeon:introduction>`: services for the climate impact community
 * :ref:`Hummingbird <hummingbird:introduction>`: provides cdo and cfchecker as a service
+* :ref:`Dodrio <https://github.com/bird-house/dodrio>`: WPS for KIT
 * :ref:`Emu <emu:introduction>`: some example WPS processes
 
 
