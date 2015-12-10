@@ -211,6 +211,22 @@ Here is the list of currently used Buildout recipes by Birdhouse:
 * `birdhousebuilder.recipe.ncwms <https://pypi.python.org/pypi/birdhousebuilder.recipe.ncwms>`_: A Buildout recipe to install and configure ncWMS2 Web Map Service.
 * `birdhousebuilder.recipe.adagucserver <https://pypi.python.org/pypi/birdhousebuilder.recipe.adagucserver>`_: A Buildout recipe to install and configure Adagucserver Web Map Service.
 
+Python Packaging
+----------------
+
+Links:
+
+* https://python-packaging-user-guide.readthedocs.org/en/latest/
+
+Example:
+
+.. code-block:: sh
+
+    $ python setup.py sdist
+    $ python setup.py bdist_wheel
+    $ python setup.py register -r pypi
+    $ twine upload dist/*
+
 
 Writing a WPS process
 ---------------------
