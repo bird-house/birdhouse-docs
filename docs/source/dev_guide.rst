@@ -227,6 +227,16 @@ Example:
     $ python setup.py register -r pypi
     $ twine upload dist/*
 
+Check the rst docs in the long_description of ``setup.py``:
+
+* https://github.com/collective/collective.checkdocs
+
+Example:
+
+.. code-block:: sh
+
+    $ python setup.py checkdocs
+
 
 Writing a WPS process
 ---------------------
