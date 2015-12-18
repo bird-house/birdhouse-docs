@@ -127,6 +127,7 @@ Example WPS Services
 
 List of available Web Processing Services:
 
+* Zoo WPS for PublicaMundi project - http://zoo.dev.publicamundi.eu/cgi-bin/zoo_loader.cgi?service=WPS&version=1.0.0&request=GetCapabilities
 * GeoServer Demo WPS - http://demo.opengeo.org/geoserver/wps?request=GetCapabilities&service=WPS
 * Plymoth Marine Laboratory - http://rsg.pml.ac.uk/wps/generic.cgi?request=GetCapabilities&service=WPS
 * Plymoth Marine Laboratory - http://rsg.pml.ac.uk/wps/vector.cgi?request=GetCapabilities&service=WPS
