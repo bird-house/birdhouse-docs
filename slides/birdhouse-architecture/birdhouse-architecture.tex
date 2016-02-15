@@ -170,7 +170,7 @@ Carsten Ehbrecht\\
       \item WPS knows about the inputs and outpus of a process
       \item processes are self-describing (GetCapabilites, DescribeProcess)
       \item sync and async calls (async calls with status document)
-      \item its a standard interface ... several implementations are available (PyWPS, GeoServer, COWS, ...)
+      \item its a standard interface ... several implementations are available (PyWPS, GeoServer, 52 North, COWS, ...)
       \item process definition is easy to write
       \item not restricted to a specific programming language
       \item can be used internally to provide enhanced functionality to web portals
@@ -227,6 +227,18 @@ http://localhost/wps?service=WPS&version=1.0.0 \
 %------------------------------------------------
 
   \section{Birdhouse Components}
+
+%------------------------------------------------
+
+\begin{frame}
+    \frametitle{Birdhouse Aims}
+    \begin{itemize}
+      \item Making it easier to setup WPS services (Birdhouse-Builder).
+      \item Providing Python library and WPS processes to access climate data.
+      \item Providing a workflow to chain data fetching and data processing.
+      \item Providing a web and command line client to interact with WPS services.
+    \end{itemize}
+  \end{frame}
 
 %------------------------------------------------
 
@@ -508,14 +520,21 @@ http://localhost:8094/wps? \
 %------------------------------------------------
 
   \begin{frame}
-    \frametitle{WPS Security Proxy (planned)}
+    \frametitle{WPS Security Proxy}
     \begin{itemize}
-      \item using string token (uuid) as part of URL to protect WPS execute access
+      \item using string token (uuid) as part of URL or in request header to protect WPS execute access
       \item X509 certificates to access (remote) data from ESGF are provided by proxy (using environ)
       \item implemented as WSGI application layer
     \end{itemize}
     \begin{figure}
       \includegraphics[width=11.5cm]{images/WpsProxy.png}
+    \end{figure}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Twitcher OWS Security Proxy (prototype)}
+    \begin{figure}
+      \includegraphics[width=11.5cm]{images/twitcher-overview.png}
     \end{figure}
   \end{frame}
 
