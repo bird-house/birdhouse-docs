@@ -7,7 +7,7 @@ python:
   - "2.7"
 sudo: false 
 install:
-  - make clean
+  - make install
 script:
   - make docs 
 #after_success:
