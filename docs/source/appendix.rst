@@ -65,9 +65,9 @@ Taverna with WPS:
 
 VisTrails with WPS:
 
-* http://code.google.com/p/eo4vistrails/
+* https://github.com/ict4eo/eo4vistrails
 * http://proj.badc.rl.ac.uk/cows/wiki/CowsWps/CDOWPSWorkingGroup/WPSAndWorkflows  
-* http://www.kitware.com/source/home/post/105
+* ``http://www.kitware.com/source/home/post/105``
 
 Kepler with WPS:
 
@@ -75,8 +75,8 @@ Kepler with WPS:
 
 Other Workflow Engines:
 
-* http://www.yawlfoundation.org/
-* http://en.wikipedia.org/wiki/Scientific_workflow_system
+* ``http://www.yawlfoundation.org/``
+* https://en.wikipedia.org/wiki/Scientific_workflow_system
 * http://airavata.apache.org/
 * http://search.cpan.org/~nuffin/Class-Workflow-0.11/
 
@@ -91,7 +91,7 @@ Related Projects:
 Scientific Python
 =================
 
-* Anaconda - https://store.continuum.io/cshop/anaconda/
+* Anaconda - https://www.continuum.io/downloads
 
 Completely free enterprise-ready Python distribution for large-scale
 data processing, predictive analytics, and scientific computing
@@ -110,7 +110,7 @@ manipulation, subsetting, computation, and translation of climate
 datasets stored in local NetCDF files or files served through THREDDS
 data servers. [..]
 
-* ICCLIM (i see clim ...) - https://github.com/tatarinova/icclim
+* ICCLIM (i see clim ...) - https://github.com/cerfacs-globc/icclim
 
 Python library for climate indices calculation. 
 Documentation at http://icclim.readthedocs.org/en/latest/
