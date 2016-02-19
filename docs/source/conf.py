@@ -275,3 +275,8 @@ intersphinx_mapping = {'python': ('http://docs.python.org/', None),
                        'birdy': ('http://birdy.readthedocs.org/en/latest/', None),
                        'bootstrap': ('http://birdhousebuilderbootstrap.readthedocs.org/en/latest/', None),
             }
+
+# linkcheck options
+# http://www.sphinx-doc.org/en/stable/config.html?highlight=linkchecker#options-for-the-linkcheck-builder
+linkcheck_ignore = [r'http://localhost:\d+/']
+
