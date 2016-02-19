@@ -33,7 +33,7 @@ Glossary
 
    WSGI
       WSGI is an interface specification by which server and application communicate.
-      http://webpython.codepoint.net/wsgi_tutorial
+      http://wsgi.tutorial.codepoint.net/
 
    Gunicorn
       Gunicorn *Green Unicorn* is a Python WSGI HTTP Server for UNIX.
@@ -54,7 +54,7 @@ Glossary
 
    PyWPS
       *Python Web Processing Service* is an implementation of the :term:`Web processing Service` standard from :term:`Open Geospatial Consortium`.
-      http://pywps.wald.intevation.org/
+      http://pywps.org/
 
    COWS
       The COWS Web Processing Service (WPS) is a *generic* web service and offline processing tool developed within the Centre for Environmental Data Archival (CEDA).
@@ -63,7 +63,7 @@ Glossary
    Anaconda
    Anaconda Python distribution
       Python distribution for large-scale data processing, predictive analytics, and scientific computing. 
-      http://www.continuum.io/
+      https://www.continuum.io/
 
    Conda
       The *conda* command is the primary interface for managing Anaconda installations.
@@ -119,7 +119,7 @@ Glossary
 
    CORDEX
       The CORDEX vision is to advance and coordinate the science and application of regional climate downscaling through global partnerships.
-      http://wcrp-cordex.ipsl.jussieu.fr/
+      http://www.cordex.org/
 
    x509
       In cryptography, X.509 is an ITU-T standard for a public key infrastructure (PKI) and Privilege Management Infrastructure (PMI).

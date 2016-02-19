@@ -18,7 +18,7 @@ Feel free to register.
 Source code
 -----------
 
-The source code of all Birdhouse components is available on `our Github page <http://github.com/bird-house>`_.
+The source code of all Birdhouse components is available on `our Github page <https://github.com/bird-house>`_.
 
 Issue tracker
 -------------

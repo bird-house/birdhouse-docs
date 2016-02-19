@@ -7,7 +7,7 @@ Roadmap
 Milestone December 2015
 =======================
 
-* `prototype for wps security proxy <https://github.com/bird-house/pywps-proxy>`_
+* `prototype for wps security proxy <https://github.com/bird-house/twitcher/>`_
 * `update ncWMS2 and adagucserver wms <https://github.com/bird-house/birdhousebuilder.recipe.adagucserver>`_
 * `update sphinx with api references <https://github.com/bird-house/birdhousebuilder.recipe.sphinx>`_
 * `improved birdy command line (https, argcomplete) <https://github.com/bird-house/birdy>`_
@@ -38,7 +38,7 @@ Security
 
   - wps client and services should not be changed
   - using OAuth Token generation
-  - Token should be part of the url http://localhost/wps/emu/auhbgt3n or http://localhost/wps/emu?request=getcapabilities&token=auhbgt3n
+  - Token should be part of the url ``http://localhost/wps/emu/auhbgt3n`` or ``http://localhost/wps/emu?request=getcapabilities&token=auhbgt3n``
   - using a security proxy service in front of WPS servers.
   - `GetCapabilities` and `DescribeProcess` should be available without a security token.
 

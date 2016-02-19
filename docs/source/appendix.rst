@@ -29,7 +29,7 @@ WPS Server Software:
 
 * :term:`PyWPS`
 * GeoServer - http://docs.geoserver.org/stable/en/user/extensions/wps/processes.html
-* Zoo - http://www.zoo-project.org
+* Zoo - ``http://www.zoo-project.org/``
 * :term:`COWS`
 * Deegree - http://www.deegree.org/
 * 52 North - http://52north.org/communities/geoprocessing/wps/
@@ -56,8 +56,8 @@ Workflow Engines:
 
 Taverna with WPS:
 
-* http://rsg.pml.ac.uk/wps/generic.cgi?request=GetCapabilities&service=WPS
-* http://www.youtube.com/watch?v=JNAtoOejVIo
+* ``http://rsg.pml.ac.uk/wps/generic.cgi?request=GetCapabilities&service=WPS``
+* https://www.youtube.com/watch?v=JNAtoOejVIo
 * http://www.taverna.org.uk/introduction/services-in-taverna/  
 * https://github.com/myGrid/small-area-estimator
 * http://comments.gmane.org/gmane.science.biology.informatics.taverna.user/1415
@@ -113,7 +113,7 @@ data servers. [..]
 * ICCLIM (i see clim ...) - https://github.com/tatarinova/icclim
 
 Python library for climate indices calculation. 
-Documentation at http://icclim.readthedocs.org/
+Documentation at http://icclim.readthedocs.org/en/latest/
 
 Python Web Frameworks and Utils
 ===============================
@@ -127,16 +127,14 @@ Example WPS Services
 
 List of available Web Processing Services:
 
-* Zoo WPS for PublicaMundi project - http://zoo.dev.publicamundi.eu/cgi-bin/zoo_loader.cgi?service=WPS&version=1.0.0&request=GetCapabilities
-* GeoServer Demo WPS - http://demo.opengeo.org/geoserver/wps?request=GetCapabilities&service=WPS
-* Plymoth Marine Laboratory - http://rsg.pml.ac.uk/wps/generic.cgi?request=GetCapabilities&service=WPS
-* Plymoth Marine Laboratory - http://rsg.pml.ac.uk/wps/vector.cgi?request=GetCapabilities&service=WPS
-* USGS Geo Data Portal- http://cida.usgs.gov/climate/gdp/process/WebProcessingService
-* KNMI climate4impact Portal - http://climate4impact.eu//impactportal/WPS?request=GetCapabilities&service=WPS
-* BADC CEDA - http://ceda-wps2.badc.rl.ac.uk/wps?request=GetCapabilities&service=WPS 
-* delatres - http://dtvirt5.deltares.nl/wps/?Request=GetCapabilities&Service=WPS
-* 52 North - http://geoprocessing.demo.52north.org:8080/52n-wps-webapp-3.3.1/WebProcessingService?Request=GetCapabilities&Service=WPS
-* 52 North - http://geoprocessing.demo.52north.org:8080/52n-wps-webapp-3.3.1-gt/WebProcessingService?Request=GetCapabilities&Service=WPS
+* Zoo WPS for PublicaMundi project - ``http://zoo.dev.publicamundi.eu/cgi-bin/zoo_loader.cgi?service=WPS&version=1.0.0&request=GetCapabilities``
+* GeoServer Demo WPS - ``http://demo.opengeo.org/geoserver/wps?request=GetCapabilities&service=WPS``
+* USGS Geo Data Portal- ``http://cida.usgs.gov/climate/gdp/process/WebProcessingService``
+* KNMI climate4impact Portal - ``http://climate4impact.eu//impactportal/WPS?request=GetCapabilities&service=WPS``
+* BADC CEDA - ``http://ceda-wps2.badc.rl.ac.uk/wps?request=GetCapabilities&service=WPS`` 
+* delatres - ``http://dtvirt5.deltares.nl/wps/?Request=GetCapabilities&Service=WPS``
+* 52 North - ``http://geoprocessing.demo.52north.org:8080/52n-wps-webapp-3.3.1/WebProcessingService?Request=GetCapabilities&Service=WPS``
+* 52 North - ``http://geoprocessing.demo.52north.org:8080/52n-wps-webapp-3.3.1-gt/WebProcessingService?Request=GetCapabilities&Service=WPS``
 
 Alternatives to WPS
 ===================

@@ -100,7 +100,7 @@ In `PyWPS` the `Word Counter` process could look like the following:
     :emphasize-lines: 8,16,24,32
     :linenos:
 
-You can see the definition of the input and output parameters and the ``execute()`` method where the real ``count_words()`` function is called. You will find more details about implementing a WPS process in the `PyWPS Tutorial <http://pywps.wald.intevation.org/documentation/course/process/index.html>`_.
+You can see the definition of the input and output parameters and the ``execute()`` method where the real ``count_words()`` function is called. You will find more details about implementing a WPS process in the `PyWPS Tutorial <http://pywps.org/docs/>`_.
 
 Using WPS
 ---------
@@ -141,7 +141,7 @@ communication details (process, parameters, ...).
 
 For more details see the following `WPS Tutorial`_.
 
-There are also some `IPython notebooks <http://nbviewer.ipython.org/github/bird-house/birdhouse-docs/tree/master/notebooks/tutorial/>`_ which show the usage of WPS.
+There are also some `IPython notebooks <http://nbviewer.jupyter.org/github/bird-house/birdhouse-docs/tree/master/notebooks/tutorial/>`_ which show the usage of WPS.
 
 
 Calling `Word Counter` with Birdy

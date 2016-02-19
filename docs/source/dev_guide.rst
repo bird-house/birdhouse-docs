@@ -55,12 +55,12 @@ Building conda packages
 There are several ways to build conda packages and upload them to Binstar:
 
 * You can `build packages locally <http://conda.readthedocs.org/en/latest/#building-your-own-packages>`_ and upload them with the Binstar command line tool.
-* You can also `build packages remotely on Binstar <http://docs.anaconda.org/draft/examples.html#SubmitYourFirstBuild>`_. Additionally you can set a GitHub Webhook so that on each commit of your recipe a build will be run on Binstar. 
-* The remote build on Binstar are done using Docker images. The `Binstar docker image for Linux-64 <https://registry.hub.docker.com/u/binstar/linux-64/>`_ is available on :term:`Docker Hub`.  
+* You can also `build packages remotely on Binstar <http://docs.anaconda.org/draft/using.html>`_. Additionally you can set a GitHub Webhook so that on each commit of your recipe a build will be run on Binstar. 
+* The remote build on Binstar are done using Docker images. The `Binstar docker image for Linux-64 <https://hub.docker.com/r/binstar/linux-64/>`_ is available on :term:`Docker Hub`.  
 
 In Birdhouse we usually use the remote build on Binstar which is triggered by commits to GitHub. 
 But sometimes the docker image for Linux-64 provided by Binstar fails for some packages. 
-That is why `Birdhouse has in addition its own Linux-64 build image <https://registry.hub.docker.com/u/birdhouse/binstar-linux-64/>`_ which is based on the Binstar image. 
+That is why `Birdhouse has in addition its own Linux-64 build image <https://hub.docker.com/r/birdhouse/binstar-linux-64/>`_ which is based on the Binstar image. 
 The `Dockerfile for this image <https://github.com/bird-house/birdhouse-build/tree/master/docker/binstar-linux-64>`_ is on GitHub.
 
 .. warning::
@@ -102,7 +102,7 @@ Run binstar build for the first time:
     $ anaconda-build submit .
     $ anaconda-build tail -f birdhouse/geolinks 1    # checks logs
 
-On successful build go to the birdhouse channel on binstar and search for the `geolinks package <https://anaconda.org/birdhouse/geolinks/files>`_. 
+On successful build go to the birdhouse channel on binstar and search for the `geolinks package` (``http://anaconda.org/birdhouse/geolinks/files``). 
 Go to the ``files`` tab and add the channel `main` for the successfully builded package. 
 All packages on the `main` channel are available for public usage.
 
@@ -110,7 +110,7 @@ All packages on the `main` channel are available for public usage.
 
 Register GitHub webhook for geolinks: 
 
-on binstar go to `Settings/Continuous Integration <https://anaconda.org/birdhouse/geolinks/settings/ci>`_ of the geolinks package. 
+on binstar go to `Settings/Continuous Integration` of the geolinks package. 
 
 Edit the fields:
 
@@ -241,7 +241,7 @@ Example:
 Writing a WPS process
 ---------------------
 
-In Birdhouse we are using the :term:`PyWPS` implementation of a :term:`Web Processing Service`. Writing a WPS process in Birdhouse is the same as in PyWPS. The PyWPS documentation has a `tutorial on writing a process <http://pywps.wald.intevation.org/documentation/course/process/index.html>`_. *Please* follow this PyWPS tutorial. 
+In Birdhouse we are using the :term:`PyWPS` implementation of a :term:`Web Processing Service`. Writing a WPS process in Birdhouse is the same as in PyWPS. The PyWPS documentation has a `tutorial on writing a process <http://pywps.org/docs/>`_. *Please* follow this PyWPS tutorial. 
 
 To get easier started you can install :ref:`Emu <emu:installation>` with some example processes for PyWPS.
 

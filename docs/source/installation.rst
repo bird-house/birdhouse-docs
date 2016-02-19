@@ -82,7 +82,7 @@ The Makefile of a Birdhouse application has convenience targets to start/stop a 
     tomcat                           RUNNING   pid 25693, uptime 0:00:02
 
 
-You can also use the Supervisor monitor web service which by default is available on port http://localhost/9001. The Supervisor monitor app looks like in the following screenshot.
+You can also use the Supervisor monitor web service which by default is available on port http://localhost:9001/. The Supervisor monitor app looks like in the following screenshot.
 
 .. image:: _images/supervisor-monitor.png
 
@@ -91,7 +91,7 @@ You can also use the Supervisor monitor web service which by default is availabl
 Using Birdhouse with Docker
 ---------------------------
 
-An alternative way to install and deploy Birdhouse Web Processing Services is using :term:`Docker`. The Birdhouse WPS servers are available as Docker image on `Docker Hub <https://registry.hub.docker.com/repos/birdhouse/>`_. See an example on how to use them with the :ref:`Emu WPS Docker image <emu:tutorial>`. 
+An alternative way to install and deploy Birdhouse Web Processing Services is using :term:`Docker`. The Birdhouse WPS servers are available as Docker image on `Docker Hub <https://hub.docker.com/r/birdhouse/>`_. See an example on how to use them with the :ref:`Emu WPS Docker image <emu:tutorial>`. 
 
 When you have Docker installed you can just start the Birdhouse WPS (Emu for example) with the following command::
 

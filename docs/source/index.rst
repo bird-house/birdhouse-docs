@@ -32,9 +32,9 @@ WPS services and libraries with algorithms used in climate science analysis:
 
 
 You can find the source code of all Birdhouse components on
-`our GitHub page <http://github.com/bird-house>`_. 
+`our GitHub page <https://github.com/bird-house>`_. 
 :term:`Conda` packages for Birdhouse are available on the `birdhouse channel <https://anaconda.org/birdhouse>`_ on Binstar.
-:term:`Docker` images with Birdhouse components are on `Docker Hub <https://registry.hub.docker.com/repos/birdhouse/>`_ 
+:term:`Docker` images with Birdhouse components are on `Docker Hub <https://hub.docker.com/r/birdhouse/>`_ 
 
 Getting started
 ===============
@@ -66,7 +66,7 @@ Presentations & Blog Posts
 License Agreement
 =================
 
-Birdhouse components are distributed under the `Apache License, Version 2.0 <http://opensource.org/licenses/Apache-2.0>`_.
+Birdhouse components are distributed under the `Apache License, Version 2.0 <https://opensource.org/licenses/Apache-2.0/>`_.
 
 
 Indices and tables
