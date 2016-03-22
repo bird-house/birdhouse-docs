@@ -12,6 +12,7 @@ WPS Documentation
 * `What is WPS? <http://geoprocessing.info/wpsdoc/Concepts#what>`_
 * `WPS tutorial <http://wiki.ieee-earth.org/Documents/GEOSS_Tutorials/GEOSS_Provider_Tutorials/Web_Processing_Service_Tutorial_for_GEOSS_Providers/Section_2:_Introduction_to_WPS>`_
 * `OGC Web Processing Service Standard <http://www.opengeospatial.org/standards/wps>`_
+* `PyWPS Wiki <http://wiki.rsg.pml.ac.uk/pywps/Main_Page>`_
 * `GeoServer tutorial <http://geoserver.geo-solutions.it/edu/en/wps/index.html>`_
 
 Talks:
