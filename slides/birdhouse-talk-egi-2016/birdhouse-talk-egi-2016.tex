@@ -18,7 +18,7 @@
 %\usetheme{Antibes}
 %\usetheme{Bergen}
 %\usetheme{Berkeley}
-\usetheme{Berlin}
+%\usetheme{Berlin}
 %\usetheme{Boadilla}
 %\usetheme{CambridgeUS}
 %\usetheme{Copenhagen}
@@ -30,7 +30,7 @@
 %\usetheme{Ilmenau}
 %\usetheme{JuanLesPins}
 %\usetheme{Luebeck}
-%\usetheme{Madrid}
+\usetheme{Madrid}
 %\usetheme{Malmoe}
 %\usetheme{Marburg}
 %\usetheme{Montpellier}
@@ -97,25 +97,33 @@
 }
 
 
+%% pdf options
+\hypersetup{pdfstartview={Fit}} % fits the presentation to the window when first displayed
+
+
+%% page numbers
+%\insertframenumber
+
+% don't count title page
+%\addtocounter{framenumber}{-1}
 
 %% Title Page
 
-\title{Birdhouse Web Processing Services}
-\subtitle{EGI Workshop: Design your e-Infrastructure}
+\title[Birdhouse]
+{Birdhouse Web Processing Services}
+\subtitle{A Use Case for the Climate Science Community}
 \author{
 Carsten Ehbrecht\\
 \medskip
 {\scriptsize \url{ehbrecht@dkrz.de}}
 }
 \institute{German Climate Computing Center (DKRZ)}
-\date{April 2016}
+\date[April 2016]
+{EGI Workshop: Design your e-Infrastructure\\
+April 2016, Amsterdam}
 \subject{Climate Science, Web Processing Service}
 
-% page numbers
-%\insertframenumber
 
-% don't count title page
-%\addtocounter{framenumber}{-1}
 
 
 %------------------------------------------------
@@ -153,9 +161,9 @@ Carsten Ehbrecht\\
 
 %------------------------------------------------
 
-  \begin{frame}
+  \begin{frame}[plain]
     \frametitle{WPS Use Case}
-    WPS: A web service interface to standardize the way that algorithms are made available on the Internet
+    WPS: A web service interface to standardize the way that algorithms are made available on the Internet.
     \begin{figure}
       \includegraphics[width=11.5cm]{images/WpsUseCase.png}
     \end{figure}
@@ -163,20 +171,23 @@ Carsten Ehbrecht\\
 
 %------------------------------------------------
 
-  \begin{frame}
+  \begin{frame}[plain]
     \frametitle{Example: Ensemble Robustness Process}
-    \begin{figure}
-      \includegraphics[width=11.5cm]{images/wps-ensemble-robustness.png}
-    \end{figure}
-  \end{frame}
+    \includegraphics[width=11.5cm]{images/wps-ensemble-robustness.png}
+   \end{frame}
 
 %------------------------------------------------
 
   \begin{frame}
     \frametitle{Birdhouse Overview}
-    \begin{figure}
-      \includegraphics[width=4cm]{images/birdhouse-simple.png}
-    \end{figure}
+    \begin{columns}[T] % contents are top vertically aligned
+     \begin{column}[T]{5cm} % each column can also be its own environment
+     Contents of first column \\ split into two lines
+     \end{column}
+     \begin{column}[T]{5cm} % alternative top-align that's better for graphics
+        \includegraphics[width=3.5cm]{images/birdhouse-simple.png}
+     \end{column}
+   \end{columns}
   \end{frame}
 
 %------------------------------------------------
@@ -185,22 +196,27 @@ Carsten Ehbrecht\\
 
   \begin{frame}
     \frametitle{Background}
-    \begin{itemize}
-      \item Who is the community the use case belongs to?
-      \item What's the timeline for development, tests and large-scale operation?
-      \item What's your role in the use case? Any experience/link to EGI? 
-    \end{itemize}
+    \begin{block}{Who is the community the use case belongs to?}
+      Climate scientists, climate data producers (metadata checks), climate impact modellers, users of climate data (forestry, biodiversity, ...), decision makers (Copernicus) 
+    \end{block}
+    \begin{block}{What's the timeline for development, tests and large-scale operation?}
+      First productive usage would be in Copernicus, starting in summer 2016, operational in 2019. 
+    \end{block}
+    \begin{block}{What's your role in the use case?}
+      Providing the WPS infrastructure: deployment environment, security, test environment, attaching WPS to job schedulers like slurm, ... 
+    \end{block}
   \end{frame}
 
 %------------------------------------------------
 
    \begin{frame}
     \frametitle{Users}
-    \begin{itemize}
-      \item Who will be the users of the planned community-specific e-infrastructure? How many of them?
-      \item How will the users interact with the system - Show this on a system architecture diagram
-      \item Who and how would validate the system? 
-    \end{itemize}
+    \begin{block}{Who will be the users of the planned community-specific e-infrastructure? How many of them?}
+    \end{block}
+    \begin{block}{How will the users interact with the system - Show this on a system architecture diagram}
+    \end{block}
+    \begin{block}{Who and how would validate the system?}
+    \end{block}
   \end{frame}
 
 %------------------------------------------------
