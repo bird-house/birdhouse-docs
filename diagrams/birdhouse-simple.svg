@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="14cm" height="25cm" viewBox="211 186 270 481" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <g>
+      <rect style="fill: #1e90ff" x="213" y="313" width="267" height="183"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #1e90ff" x="213" y="313" width="267" height="183"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="346.5" y="408.4">
+        <tspan x="346.5" y="408.4"></tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #1e90ff" x="250.85" y="318" width="192.3" height="38"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #1e90ff" x="250.85" y="318" width="192.3" height="38"/>
+      <text font-size="12.8" style="fill: #ffffff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="347" y="340.9">
+        <tspan x="347" y="340.9">Web Processing Service</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #fed623" x="223" y="374" width="118.5" height="36" rx="20" ry="20"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="223" y="374" width="118.5" height="36" rx="20" ry="20"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="282.25" y="395.9">
+        <tspan x="282.25" y="395.9">Climate Indices</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #fed623" x="357.2" y="365.8" width="115.75" height="52" rx="20" ry="20"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="357.2" y="365.8" width="115.75" height="52" rx="20" ry="20"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="415.075" y="387.7">
+        <tspan x="415.075" y="387.7">CF Compliance</tspan>
+        <tspan x="415.075" y="403.7">Checker</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #fed623" x="233.2" y="429.8" width="95.45" height="52" rx="20" ry="20"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="233.2" y="429.8" width="95.45" height="52" rx="20" ry="20"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="280.925" y="451.7">
+        <tspan x="280.925" y="451.7">Species</tspan>
+        <tspan x="280.925" y="467.7">Biodiversity</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #fed623" x="366.2" y="433.8" width="93.4" height="52" rx="20" ry="20"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="366.2" y="433.8" width="93.4" height="52" rx="20" ry="20"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="412.9" y="455.7">
+        <tspan x="412.9" y="455.7">Ensemble</tspan>
+        <tspan x="412.9" y="471.7">Robustness</tspan>
+      </text>
+    </g>
+  </g>
+  <g>
+    <g>
+      <rect style="fill: #008000" x="214" y="519" width="266" height="147"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #008000" x="214" y="519" width="266" height="147"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="347" y="596.4">
+        <tspan x="347" y="596.4"></tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ee7614" x="236" y="564" width="80" height="36" rx="10" ry="10"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="236" y="564" width="80" height="36" rx="10" ry="10"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="276" y="585.9">
+        <tspan x="276" y="585.9">ESGF</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ee7614" x="361.2" y="565.8" width="92.1" height="36" rx="10" ry="10"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="361.2" y="565.8" width="92.1" height="36" rx="10" ry="10"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="407.25" y="587.7">
+        <tspan x="407.25" y="587.7">Swift Cloud</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ee7614" x="234.4" y="616.6" width="107.45" height="36" rx="10" ry="10"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="234.4" y="616.6" width="107.45" height="36" rx="10" ry="10"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="288.125" y="638.5">
+        <tspan x="288.125" y="638.5">Local Storage</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ee7614" x="374.2" y="617.8" width="80" height="36" rx="10" ry="10"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="374.2" y="617.8" width="80" height="36" rx="10" ry="10"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="414.2" y="639.7">
+        <tspan x="414.2" y="639.7">Thredds</tspan>
+      </text>
+    </g>
+    <text font-size="12.8" style="fill: #ffffff;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:700" x="277" y="543.5">
+      <tspan x="277" y="543.5">Climate Data Source</tspan>
+    </text>
+  </g>
+  <g>
+    <g>
+      <rect style="fill: #4a2ce3" x="213" y="186" width="267" height="95"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #4a2ce3" x="213" y="186" width="267" height="95"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="346.5" y="237.4">
+        <tspan x="346.5" y="237.4"></tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #bbb417" x="241" y="221" width="80" height="52" rx="10" ry="10"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="241" y="221" width="80" height="52" rx="10" ry="10"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="281" y="242.9">
+        <tspan x="281" y="242.9">Phoenix</tspan>
+        <tspan x="281" y="258.9">Web App</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #bbb417" x="368" y="222" width="89.6" height="52" rx="10" ry="10"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="368" y="222" width="89.6" height="52" rx="10" ry="10"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="412.8" y="243.9">
+        <tspan x="412.8" y="243.9">Terminal</tspan>
+        <tspan x="412.8" y="259.9">WPS Client</tspan>
+      </text>
+    </g>
+    <text font-size="12.8" style="fill: #ffffff;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:700" x="270.5" y="205.5">
+      <tspan x="270.5" y="205.5">Web Processing Client</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="346.5" y1="281" x2="346.5" y2="303.264"/>
+    <polygon style="fill: #000000" points="346.5,310.764 341.5,300.764 346.5,303.264 351.5,300.764 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="346.5,310.764 341.5,300.764 346.5,303.264 351.5,300.764 "/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="346.5" y1="496" x2="347" y2="519"/>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:700" x="359" y="300">
+    <tspan x="359" y="300">Execute</tspan>
+  </text>
+</svg>
