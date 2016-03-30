@@ -138,34 +138,22 @@ April 2016, Amsterdam}
 
 %------------------------------------------------
 
-  %\AtBeginSection[]
-  \AtBeginSection[]{\frame{\frametitle{Overview}\tableofcontents[current]}}
-  {
-    \begin{frame} % shrink
-      \frametitle{Outline}
-      \tableofcontents[subsectionstyle=hide/hide]
-    \end{frame}
-  }
+\begin{frame}
+\frametitle{Overview} % Table of contents slide, comment this block out to remove it
+\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+\end{frame}
 
 %------------------------------------------------
 
-  \section{Use Case}
-
-  % \begin{frame}
-  %   \frametitle{Web Processing Service}
-  %   A web service interface to standardize the way that algorithms are made available on the Internet
-  %   \begin{figure}
-  %     \includegraphics[width=7cm]{images/Wps.png}
-  %   \end{figure}
-  % \end{frame}
+  \section{Use Case of WPS in Climate Science}
 
 %------------------------------------------------
 
   \begin{frame}[plain]
-    \frametitle{WPS Use Case}
-    WPS: A web service interface to standardize the way that algorithms are made available on the Internet.
+    \frametitle{Web Processing Service}
+    A web service interface to standardize the way that algorithms are made available on the Internet.
     \begin{figure}
-      \includegraphics[width=11.5cm]{images/WpsUseCase.png}
+      \includegraphics[width=12cm]{images/WpsUseCase.png}
     \end{figure}
   \end{frame}
 
@@ -173,21 +161,36 @@ April 2016, Amsterdam}
 
   \begin{frame}[plain]
     \frametitle{Example: Ensemble Robustness Process}
-    \includegraphics[width=11.5cm]{images/wps-ensemble-robustness.png}
+    \begin{figure}
+      \includegraphics[width=12cm]{images/wps-ensemble-robustness.png}
+    \end{figure}
    \end{frame}
 
 %------------------------------------------------
 
-  \begin{frame}
+  \begin{frame}[plain]
     \frametitle{Birdhouse Overview}
-    \begin{columns}[T] % contents are top vertically aligned
-     \begin{column}[T]{5cm} % each column can also be its own environment
-     Contents of first column \\ split into two lines
-     \end{column}
-     \begin{column}[T]{5cm} % alternative top-align that's better for graphics
-        \includegraphics[width=3.5cm]{images/birdhouse-simple.png}
-     \end{column}
-   \end{columns}
+    \begin{figure}
+      \includegraphics[width=12cm]{images/birdhouse-components.png}
+    \end{figure}
+  \end{frame}
+
+%------------------------------------------------
+
+  \begin{frame}[plain]
+    \frametitle{Using WPS in Copernicus}
+    \begin{figure}
+      \includegraphics[width=9cm]{images/wps-copernicus-use-case.png}
+    \end{figure}
+  \end{frame}
+
+%------------------------------------------------
+
+  \begin{frame}[plain]
+    \frametitle{Twitcher: WPS Secruity Proxy}
+    \begin{figure}
+      \includegraphics[width=12cm]{images/twitcher-overview.png}
+    \end{figure}
   \end{frame}
 
 %------------------------------------------------
@@ -209,13 +212,26 @@ April 2016, Amsterdam}
 
 %------------------------------------------------
 
-   \begin{frame}
+   \begin{frame}[plain]
     \frametitle{Users}
     \begin{block}{Who will be the users of the planned community-specific e-infrastructure? How many of them?}
+      \begin{itemize}
+        \item Scientists who work with or produce climate data (few to many).
+        \item Decision makers (use a portal only, WPS is called via batch jobs).
+      \end{itemize} 
     \end{block}
-    \begin{block}{How will the users interact with the system - Show this on a system architecture diagram}
+    \begin{block}{How will the users interact with the system} % Show this on a system architecture diagram
+      \begin{itemize}
+        \item Most users will probably use a Web Portal which has access to the WPS services.
+        \item Advanced users will use a command line and interact with the WPS services directly using scripts.
+        %\item See next slide with the Copernicus Use Case.
+      \end{itemize}
     \end{block}
     \begin{block}{Who and how would validate the system?}
+      \begin{itemize}
+        \item Scientists write algorithms which are published as WPS services.
+        \item Functional tests provided by scientists to validate the results of the algorithms can be run in a continous integration enviroment (travis).
+      \end{itemize}
     \end{block}
   \end{frame}
 
@@ -223,49 +239,30 @@ April 2016, Amsterdam}
 
    \begin{frame}
     \frametitle{Status}
-    \begin{itemize}
-      \item Which components/services already exist in your architecture?
-      \item Which components/services are under development (and by who)?
-      \item Which components/services do you expect to get from EGI? 
-    \end{itemize}
-  \end{frame}
-
-%------------------------------------------------
-
-  \begin{frame}
-    \frametitle{Birdhouse Components}
-    \begin{figure}
-      \includegraphics[width=10cm]{images/birdhouse-components.png}
-    \end{figure}
-  \end{frame}
-
-%------------------------------------------------
-
-  \begin{frame}
-    \frametitle{Copernicus}
-    \begin{figure}
-      \includegraphics[width=8cm]{images/wps-copernicus-use-case.png}
-    \end{figure}
-  \end{frame}
-
-%------------------------------------------------
-
-  \begin{frame}
-    \frametitle{Twitcher}
-    \begin{figure}
-      \includegraphics[width=10cm]{images/twitcher-overview.png}
-    \end{figure}
+    \begin{block}{Which components/services already exist in your architecture?}
+      Setup for WPS, access to climate data sources, WPS clients (web based and terminal), ...
+    \end{block}
+    \begin{block}{Which components/services are under development (and by who)?}
+      Security proxy for WPS services (DKRZ, KNMI), attaching job scheduler to WPS (DKRZ, BADC) 
+    \end{block}
+    \begin{block}{Which components/services do you expect to get from EGI?}
+      Usage of the EGI cloud resources?
+    \end{block} 
   \end{frame}
 
 %------------------------------------------------
 
    \begin{frame}
     \frametitle{Plans for today}
-    \begin{itemize}
-      \item What questions would you like to get answered today?
-      \item What issues you would like to solve today?
-      \item Other outcomes that you would like to get out from the workshop? 
-    \end{itemize}
+    \begin{block}{What questions would you like to get answered today?}
+      Is it possible to setup WPS on EGI cloud resources.
+    \end{block}
+    \begin{block}{What issues you would like to solve today?}
+      Try an installation of a WPS service on EGI cloud.
+    \end{block}
+    \begin{block}{Other outcomes that you would like to get out from the workshop?}
+      I'm new to EGI ... so just curious about the other Use Cases.
+    \end{block}
   \end{frame}
 
 %------------------------------------------------
@@ -281,18 +278,12 @@ April 2016, Amsterdam}
     \bibitem{birdhouse}
       Birdhouse
       \newblock \url{http://bird-house.github.io/}
-    \bibitem{buildout}
-      Buildout
-      \newblock \url{http://www.buildout.org/}
-    \bibitem{anaconda}
-      Anaconda
-      \newblock \url{https://www.continuum.io/why-anaconda}
-    \bibitem{foos4g-ebrahim}
-      Evaluation of WPS Frameworks
-      \newblock \url{http://www.slideshare.net/mepa1363/foss4g-ebrahim}
+    \bibitem{c4i}
+      Climate4Impact Portal
+      \newblock \url{http://climate4impact.eu/impactportal/general/index.jsp}
     \bibitem{wps-cct}
       Web Processing Service
-      \newblock http://www.slideshare.net/GasperiJerome/20130530-web-processing-service-cct-cloud-toulouse-29423710
+      \newblock \url{http://www.slideshare.net/GasperiJerome/20130530-web-processing-service-cct-cloud-toulouse-29423710}
    
     \end{thebibliography}
     
