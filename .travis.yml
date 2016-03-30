@@ -2,7 +2,6 @@ language: python
 branches:
   only:
     - master
-    - develop
 python:
   - "2.7"
 sudo: false 
