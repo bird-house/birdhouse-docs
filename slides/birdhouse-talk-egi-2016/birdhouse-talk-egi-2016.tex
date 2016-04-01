@@ -1,7 +1,9 @@
 %----------------------------------------------------------------------------------------
 %       PACKAGES AND THEMES
 %
-% docs: https://en.wikibooks.org/wiki/LaTeX/Presentations#Introductory_example
+% docs: 
+% https://en.wikibooks.org/wiki/LaTeX/Presentations#Introductory_example
+% http://www.math-linux.com/latex-26/article/how-to-make-a-presentation-with-latex-introduction-to-beamer
 %----------------------------------------------------------------------------------------
 
 
@@ -100,13 +102,6 @@
 %% pdf options
 \hypersetup{pdfstartview={Fit}} % fits the presentation to the window when first displayed
 
-
-%% page numbers
-%\insertframenumber
-
-% don't count title page
-%\addtocounter{framenumber}{-1}
-
 %% Title Page
 
 \title[Birdhouse]
@@ -145,7 +140,7 @@ April 2016, Amsterdam}
 
 %------------------------------------------------
 
-  \section{Use Case of WPS in Climate Science}
+  \section{Use Case: Web Processing Service for Climate Data Processing}
 
 %------------------------------------------------
 
@@ -155,6 +150,8 @@ April 2016, Amsterdam}
     \begin{figure}
       \includegraphics[width=12cm]{images/WpsUseCase.png}
     \end{figure}
+    \setcounter{framenumber}{1}
+    %\insertframenumber
   \end{frame}
 
 %------------------------------------------------
@@ -164,7 +161,18 @@ April 2016, Amsterdam}
     \begin{figure}
       \includegraphics[width=12cm]{images/wps-ensemble-robustness.png}
     \end{figure}
+    %\insertframenumber
    \end{frame}
+
+%------------------------------------------------
+
+  \begin{frame}[plain]
+    \frametitle{Birdhouse WPS}
+    \begin{figure}
+      \includegraphics[width=4.5cm]{images/birdhouse-simple.png}
+    \end{figure}
+  \end{frame}
+
 
 %------------------------------------------------
 
@@ -187,7 +195,7 @@ April 2016, Amsterdam}
 %------------------------------------------------
 
   \begin{frame}[plain]
-    \frametitle{Twitcher: WPS Secruity Proxy}
+    \frametitle{Twitcher: WPS Security Proxy}
     \begin{figure}
       \includegraphics[width=12cm]{images/twitcher-overview.png}
     \end{figure}
@@ -197,13 +205,20 @@ April 2016, Amsterdam}
 
   \section{Question and Answers}
 
-  \begin{frame}
+  \begin{frame}[shrink]
     \frametitle{Background}
     \begin{block}{Who is the community the use case belongs to?}
-      Climate scientists, climate data producers (metadata checks), climate impact modellers, users of climate data (forestry, biodiversity, ...), decision makers (Copernicus) 
+      \begin{itemize}
+        \item Climate data producers (metadata checks). 
+        \item Users of climate data (impact modelers, forestry, biodiversity, ...).
+        \item Decision makers (Copernicus).
+      \end{itemize}
     \end{block}
     \begin{block}{What's the timeline for development, tests and large-scale operation?}
-      First productive usage would be in Copernicus, starting in summer 2016, operational in 2019. 
+      \begin{itemize}
+        \item Processing backend for Copernicus, starting in summer 2016, operational in 2019. 
+        \item Climate metadata quality checks, development till summer 2016, operational end of 2016.
+      \end{itemize}
     \end{block}
     \begin{block}{What's your role in the use case?}
       Providing the WPS infrastructure: deployment environment, security, test environment, attaching WPS to job schedulers like slurm, ... 
@@ -212,7 +227,7 @@ April 2016, Amsterdam}
 
 %------------------------------------------------
 
-   \begin{frame}[plain]
+   \begin{frame}[shrink]
     \frametitle{Users}
     \begin{block}{Who will be the users of the planned community-specific e-infrastructure? How many of them?}
       \begin{itemize}
@@ -220,7 +235,7 @@ April 2016, Amsterdam}
         \item Decision makers (use a portal only, WPS is called via batch jobs).
       \end{itemize} 
     \end{block}
-    \begin{block}{How will the users interact with the system} % Show this on a system architecture diagram
+    \begin{block}{How will the users interact with the system?} % Show this on a system architecture diagram
       \begin{itemize}
         \item Most users will probably use a Web Portal which has access to the WPS services.
         \item Advanced users will use a command line and interact with the WPS services directly using scripts.
@@ -230,20 +245,27 @@ April 2016, Amsterdam}
     \begin{block}{Who and how would validate the system?}
       \begin{itemize}
         \item Scientists write algorithms which are published as WPS services.
-        \item Functional tests provided by scientists to validate the results of the algorithms can be run in a continous integration enviroment (travis).
+        \item Functional tests provided by scientists to validate the results of the algorithms can be run in a continous integration environment (travis).
       \end{itemize}
     \end{block}
   \end{frame}
 
 %------------------------------------------------
 
-   \begin{frame}
+   \begin{frame}[shrink]
     \frametitle{Status}
     \begin{block}{Which components/services already exist in your architecture?}
-      Setup for WPS, access to climate data sources, WPS clients (web based and terminal), ...
+      \begin{itemize}
+         \item Deployment of WPS system (conda, buildout, docker). 
+         \item Access to climate data sources (ESGF, Thredds, Cloud, ...).
+         \item WPS clients (web based and terminal).
+      \end{itemize}
     \end{block}
     \begin{block}{Which components/services are under development (and by who)?}
-      Security proxy for WPS services (DKRZ, KNMI), attaching job scheduler to WPS (DKRZ, BADC) 
+      \begin{itemize}
+        \item Security proxy for WPS services (DKRZ, KNMI).
+        \item Attaching job scheduler to WPS (DKRZ, BADC). 
+       \end{itemize}
     \end{block}
     \begin{block}{Which components/services do you expect to get from EGI?}
       Usage of the EGI cloud resources?
@@ -252,10 +274,10 @@ April 2016, Amsterdam}
 
 %------------------------------------------------
 
-   \begin{frame}
+   \begin{frame}[shrink]
     \frametitle{Plans for today}
     \begin{block}{What questions would you like to get answered today?}
-      Is it possible to setup WPS on EGI cloud resources.
+      Is it possible to setup WPS on EGI cloud resources?
     \end{block}
     \begin{block}{What issues you would like to solve today?}
       Try an installation of a WPS service on EGI cloud.
