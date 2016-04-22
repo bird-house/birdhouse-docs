@@ -1,4 +1,4 @@
-VERSION := 0.2.15
+VERSION := 0.2.19
 RELEASE := master
 
 # Application
@@ -9,9 +9,13 @@ APP_NAME := $(shell basename $(APP_ROOT))
 OS_NAME := $(shell uname -s 2>/dev/null || echo "unknown")
 CPU_ARCH := $(shell uname -m 2>/dev/null || uname -p 2>/dev/null || echo "unknown")
 
+# Python
+SETUPTOOLS_VERSION=20.1.1
+BUILDOUT_VERSION=2.5.0
+
 # Anaconda 
 ANACONDA_HOME ?= $(HOME)/anaconda
-CONDA_ENV := birdhouse
+CONDA_ENV ?= birdhouse
 CONDA_ENVS_DIR ?= $(HOME)/.conda/envs
 PREFIX := $(CONDA_ENVS_DIR)/$(CONDA_ENV)
 
@@ -126,7 +130,7 @@ downloads:
 	@test -d $(DOWNLOAD_CACHE) || mkdir -v -p $(DOWNLOAD_CACHE)
 
 .PHONY: init
-init: .gitignore custom.cfg downloads
+init: custom.cfg downloads
 
 bootstrap-buildout.py:
 	@echo "Update buildout bootstrap-buildout.py ..."
@@ -148,11 +152,11 @@ conda_config: anaconda
 	@"$(ANACONDA_HOME)/bin/conda" config --set ssl_verify false
 	@"$(ANACONDA_HOME)/bin/conda" config --add channels defaults
 	@"$(ANACONDA_HOME)/bin/conda" config --add channels birdhouse
-	@"$(ANACONDA_HOME)/bin/conda" config --add channels ioos
 
 .PHONY: conda_env
 conda_env: anaconda conda_config
-	@test -d $(PREFIX) || "$(ANACONDA_HOME)/bin/conda" create -m -p $(PREFIX) -c ioos --yes python setuptools curl pyopenssl genshi mako
+	@test -d $(PREFIX) || "$(ANACONDA_HOME)/bin/conda" create -m -p $(PREFIX) -c ioos --yes python setuptools=$(SETUPTOOLS_VERSION) curl pyopenssl cryptography=1.0.2 genshi mako pyyaml
+	"$(ANACONDA_HOME)/bin/conda" install -y -n $(CONDA_ENV) setuptools=$(SETUPTOOLS_VERSION)
 
 .PHONY: conda_pinned
 conda_pinned: conda_env
@@ -168,7 +172,7 @@ conda_clean: anaconda conda_config
 .PHONY: bootstrap
 bootstrap: init conda_env conda_pinned bootstrap-buildout.py
 	@echo "Bootstrap buildout ..."
-	@test -f bin/buildout || bash -c "source $(ANACONDA_HOME)/bin/activate $(CONDA_ENV);python bootstrap-buildout.py -c custom.cfg --allow-site-packages --setuptools-version=17.1.1 --buildout-version=2.4.0"
+	@test -f bin/buildout || bash -c "source $(ANACONDA_HOME)/bin/activate $(CONDA_ENV);python bootstrap-buildout.py -c custom.cfg --allow-site-packages --setuptools-version=$(SETUPTOOLS_VERSION) --buildout-version=$(BUILDOUT_VERSION)"
 
 .PHONY: sysinstall
 sysinstall:
@@ -208,6 +212,8 @@ clean:
 	@-for i in $(BUILDOUT_FILES); do \
             test -e $$i && rm -v -rf $$i; \
         done
+	@echo "Removing *.pyc files ..."
+	@-find $(APP_ROOT) -type f -name "*.pyc" -print0 | xargs -0r rm
 
 .PHONY: distclean
 distclean: backup clean
