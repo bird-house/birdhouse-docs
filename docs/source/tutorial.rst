@@ -5,7 +5,7 @@ Tutorials
 * `PyWPS Tutorial <http://pywps.org/docs/>`_
 * :ref:`Emu Example with Docker <emu:tutorial>`
 * :ref:`Phoenix Tutorial <phoenix:tutorial>`
-* `Flyingpigeon Tutorial <http://flyingpigeon.readthedocs.io/en/latest/tutorial.html/>`_
+* `Flyingpigeon Tutorial <http://flyingpigeon.readthedocs.io/en/latest/tutorial.html>`_
 * :ref:`Example with Birdy WPS command line tool <birdy:tutorial>`
 
 .. _notebooks:
