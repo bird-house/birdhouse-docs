@@ -5,6 +5,7 @@ Tutorials
 * `PyWPS Tutorial <http://pywps.org/docs/>`_
 * :ref:`Emu Example with Docker <emu:tutorial>`
 * :ref:`Phoenix Tutorial <phoenix:tutorial>`
+* :ref:`Flyingpigeon Tutorials <flyingpigeon:tutorials`
 * :ref:`Example with Birdy WPS command line tool <birdy:tutorial>`
 
 .. _notebooks:
@@ -18,5 +19,5 @@ to run the notebook examples:
 
 * `Tutorial on nbviewer: <http://nbviewer.jupyter.org/github/bird-house/birdhouse-docs/tree/master/notebooks/tutorial/>`_
 * `Tutorial Notebooks on GitHub <https://github.com/bird-house/birdhouse-docs/tree/master/notebooks/tutorial/>`_
-
+* `Flyingpigeon Notebooks on GitHub <https://github.com/bird-house/flyingpigeon/tree/master/notebooks/>`_
 

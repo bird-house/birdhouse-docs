@@ -56,6 +56,7 @@ Getting started
 Presentations & Blog Posts
 ==========================
 
+* Model Animation LSCE
 * `Talk on USGS WebEx 2016/02/18 <https://my.usgs.gov/confluence/pages/viewpage.action?pageId=542482181>`_
 * `Paris Coding Spring at IPSL <https://github.com/bird-house/birdhouse-docs/blob/master/slides/birdhouse-architecture/birdhouse-architecture.pdf>`_
 * Helsinki
