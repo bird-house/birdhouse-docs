@@ -136,6 +136,8 @@ List of available Web Processing Services:
 * delatres - ``http://dtvirt5.deltares.nl/wps/?Request=GetCapabilities&Service=WPS``
 * 52 North - ``http://geoprocessing.demo.52north.org:8080/52n-wps-webapp-3.3.1/WebProcessingService?Request=GetCapabilities&Service=WPS``
 * 52 North - ``http://geoprocessing.demo.52north.org:8080/52n-wps-webapp-3.3.1-gt/WebProcessingService?Request=GetCapabilities&Service=WPS``
+* ZOO Demo WPS - ``http://zoo-project.org/cgi-bin/zoo_loader3.cgi?Request=GetCapabilities&Service=WPS``
+* British Antarctic Survey WPS for Meteorological Data - ``http://sosmet.nerc-bas.ac.uk:8080/wpsmet/WebProcessingService?Request=GetCapabilities&Service=WPS``
 
 Alternatives to WPS
 ===================

@@ -1,4 +1,4 @@
-package: geolinks
+package: pygbif
 user: birdhouse 
 before_script:
   - conda update -n root conda-build
@@ -6,4 +6,4 @@ before_script:
 script:
   - conda build .
 build_targets:
-  - conda
+   - conda

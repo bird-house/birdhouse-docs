@@ -36,30 +36,30 @@ Birdhouse is using :term:`Anaconda` to maintain package dependencies.
 Anaconda gives you the possibility to write your own `conda recipes <http://conda.pydata.org/docs/build.html>`_.
 In Birdhouse we have written several conda recipes for the packages that were not available on Anaconda.  
 These `additional conda recipes by Birdhouse <https://github.com/bird-house/conda-recipes>`_ are available on GitHub. 
-Some of the missing packages are: :term:`PyWPS`, :term:`OWSLib`, :term:`CDO`, :term:`ocgis`/:term:`icclim`, :term:`cfchecker`, :term:`Nginx`, ...
+Some of the missing packages are: :term:`PyWPS`, :term:`OWSLib`, :term:`cfchecker`, :term:`Nginx`, ...
 
-Anaconda provides a free Anaconda Server on :term:`Binstar`. Here you can upload your builded conda packages for different platforms (Linux, MacOX, Windows). These packages are then available for installation with the :term:`conda` installer.
+Anaconda provides a free :term:`Anaconda Server`. Here you can upload your builded conda packages for different platforms (Linux, MacOX, Windows). These packages are then available for installation with the :term:`conda` installer.
 
-`Birdhouse has a Binstar organisation <https://anaconda.org/birdhouse>`_ where all conda packages are collected which are 
+`Birdhouse has an organisation <https://anaconda.org/birdhouse>`_ where all conda packages are collected which are 
 builded from the conda recipes on GitHub. These packages can be installed with the :term:`conda` installer using the `birdhouse` channel.
 For example if you are already using Anaconda, you can install :term:`CDO` with the following command:
 
 .. code-block:: sh
 
-    $ conda install --channel birdhouse cdo
+    $ conda install --channel birdhouse pywps
 
 Building conda packages
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-There are several ways to build conda packages and upload them to Binstar:
+There are several ways to build conda packages and upload them to *Anaconda Server*:
 
-* You can `build packages locally <http://conda.readthedocs.org/en/latest/#building-your-own-packages>`_ and upload them with the Binstar command line tool.
-* You can also `build packages remotely on Binstar <http://docs.anaconda.org/draft/using.html>`_. Additionally you can set a GitHub Webhook so that on each commit of your recipe a build will be run on Binstar. 
-* The remote build on Binstar are done using Docker images. The `Binstar docker image for Linux-64 <https://hub.docker.com/r/binstar/linux-64/>`_ is available on :term:`Docker Hub`.  
+* You can `build packages locally <http://conda.readthedocs.io/en/latest/#building-your-own-packages>`_ and upload them with the Binstar command line tool.
+* You can also `build packages remotely on Anaconda <http://docs.anaconda.org/draft/using.html>`_. Additionally you can set a GitHub Webhook so that on each commit of your recipe a build will be run on Binstar. 
+* The remote build on Anaconda are done using Docker images. The `Anaconda docker image for Linux-64 <https://hub.docker.com/r/binstar/linux-64/>`_ is available on :term:`Docker Hub`.  
 
-In Birdhouse we usually use the remote build on Binstar which is triggered by commits to GitHub. 
+In Birdhouse we usually use the remote build on Anaconda which is triggered by commits to GitHub. 
 But sometimes the docker image for Linux-64 provided by Binstar fails for some packages. 
-That is why `Birdhouse has in addition its own Linux-64 build image <https://hub.docker.com/r/birdhouse/binstar-linux-64/>`_ which is based on the Binstar image. 
+That is why `Birdhouse has in addition its own Linux-64 build image <https://hub.docker.com/r/birdhouse/binstar-linux-64/>`_ which is based on the Anaconda image. 
 The `Dockerfile for this image <https://github.com/bird-house/birdhouse-build/tree/master/docker/binstar-linux-64>`_ is on GitHub.
 
 .. warning::
@@ -71,23 +71,23 @@ The `Dockerfile for this image <https://github.com/bird-house/birdhouse-build/tr
 
    You can build a conda package with the provided docker image for Linux-64. See the `readme <https://github.com/bird-house/birdhouse-build/tree/master/docker/binstar-linux-64>`_ on how to use it.
 
-Example: building conda package for geolinks
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Example: building conda package for pygbif
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Geolinks is a Python package available on :term:`PyPi`. Generate conda package files using ``conda skeleton``::
+``pygbif`` is a Python package available on :term:`PyPi`. Generate conda package files using ``conda skeleton``::
 
-    $ conda skeleton pypi geolinks
-    $ cd geolinks
+    $ conda skeleton pypi pygbif
+    $ cd pygbif
     $ vim meta.yaml  # check dependencies, test, build number
     $ vim build.sh   # in case of non-python packges here is most of the work to do
     
-Enable binstar build::
+Enable anaconda build::
      
-    $ cd geolinks
+    $ cd pygbif
     $ anaconda-build init
-    $ vim .binstar.yaml
+    $ vim .binstar.yml
     
-Edit the binstar config to have the following entries (change the package name for a different recipe):
+Edit the anaconda config (``binstar.yml``) to have the following entries (change the package name for a different recipe):
 
 .. literalinclude:: binstar.yml
     :language: yaml
@@ -97,11 +97,11 @@ Run binstar build for the first time:
 
 .. code-block:: sh
 
-    $ binstar package --create birdhouse/geolinks
+    $ binstar package --create birdhouse/pygbif
     $ anaconda-build submit .
-    $ anaconda-build tail -f birdhouse/geolinks 1    # checks logs
+    $ anaconda-build tail -f birdhouse/pygbif 1    # checks logs
 
-On successful build go to the birdhouse channel on binstar and search for the `geolinks package` (``http://anaconda.org/birdhouse/geolinks/files``). 
+On successful build go to the birdhouse channel on binstar and search for the `pygbif package` (``http://anaconda.org/birdhouse/pygbif/files``). 
 Go to the ``files`` tab and add the channel `main` for the successfully builded package. 
 All packages on the `main` channel are available for public usage.
 
@@ -109,12 +109,12 @@ All packages on the `main` channel are available for public usage.
 
 Register GitHub webhook for geolinks: 
 
-on binstar go to `Settings/Continuous Integration` of the geolinks package. 
+on binstar go to `Settings/Continuous Integration` of the ``pygbif`` package. 
 
 Edit the fields:
 
-* `github.com/` = `bird-house/geolinks`
-* Subdirectory = geolinks
+* `github.com/` = `bird-house/conda-recipes`
+* Subdirectory = pygbif
  
 .. image:: _images/binstar_ci.png
 
