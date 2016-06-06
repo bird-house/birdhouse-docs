@@ -30,7 +30,7 @@ WPS Server Software:
 
 * :term:`PyWPS`
 * GeoServer - http://docs.geoserver.org/stable/en/user/services/wps/index.html
-* Zoo - http://www.zoo-project.org/
+* Zoo - ``http://www.zoo-project.org/``
 * :term:`COWS`
 * Deegree - http://www.deegree.org/
 * 52 North - http://52north.org/communities/geoprocessing/wps/

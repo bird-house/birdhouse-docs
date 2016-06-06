@@ -27,7 +27,7 @@ The installation of the Birdhouse components and especially the processes involv
 
 The aim of Birdhouse is to take care of all these dependencies so that the user does not need to install them manually. If these dependencies would only be *pure* Python packages then using the :term:`Buildout` build tool together with the Python package index :term:`PyPi` would be sufficient. But many Python packages have `C` extensions and there are also non-Python packages we need to install like `R` and :term:`NetCDF`.
 
-In this situation the :term:`Anaconda Python distribution` comes helpful. Anaconda has already a lot of Python related packages available for different platforms (Linux, MacOSX, Windows) and there is no compilation needed on the installation host. Anaconda makes it easy to build own packages (*conda recipes*) and to upload them to the free Anaconda server on :term:`Binstar`.
+In this situation the :term:`Anaconda Python distribution` comes helpful. Anaconda has already a lot of Python related packages available for different platforms (Linux, MacOSX, Windows) and there is no compilation needed on the installation host. Anaconda makes it easy to build own packages (*conda recipes*) and to upload them to the free :term:`Anaconda Server`.
 
 Conda recipes by Birdhouse
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -42,7 +42,7 @@ Anaconda provides a free :term:`Anaconda Server`. Here you can upload your build
 
 `Birdhouse has an organisation <https://anaconda.org/birdhouse>`_ where all conda packages are collected which are 
 builded from the conda recipes on GitHub. These packages can be installed with the :term:`conda` installer using the `birdhouse` channel.
-For example if you are already using Anaconda, you can install :term:`CDO` with the following command:
+For example if you are already using Anaconda, you can install :term:`PyWPS` with the following command:
 
 .. code-block:: sh
 
@@ -92,6 +92,8 @@ Edit the anaconda config (``binstar.yml``) to have the following entries (change
 .. literalinclude:: binstar.yml
     :language: yaml
     :linenos:
+
+See the conda recipe on `GitHub <https://github.com/bird-house/conda-recipes/tree/master/pygbif>`_.
 
 Run binstar build for the first time:
 
