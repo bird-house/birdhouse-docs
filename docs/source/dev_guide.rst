@@ -107,9 +107,9 @@ All packages on the `main` channel are available for public usage.
 
 .. image:: _images/binstar_channel.png
 
-Register GitHub webhook for geolinks: 
+Register GitHub webhook for pygbif: 
 
-on binstar go to `Settings/Continuous Integration` of the ``pygbif`` package. 
+on Anaconda Server go to `Settings/Continuous Integration` of the ``pygbif`` package. 
 
 Edit the fields:
 
