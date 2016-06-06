@@ -156,15 +156,15 @@ Glossary
    Phoenix
       Pyramid *Phoenix* is a web-application build with the Python web-framework pyramid. 
       Phoenix has a user interface to make it easier to interact with :term:`Web Processing Services <wps>`.
-      http://pyramid-phoenix.readthedocs.org/en/latest
+      http://pyramid-phoenix.readthedocs.io/en/latest
 
    Malleefowl
       *Malleefowl* is a Python package to simplify the usage of :term:`Web Processing Services <wps>`.
-      http://malleefowl.readthedocs.org/en/latest/
+      http://malleefowl.readthedocs.io/en/latest/
 
    Emu
       *Emu* is a Python package with some test proccess for :term:`Web Processing Services <wps>`.
-      http://emu.readthedocs.org/en/latest/
+      http://emu.readthedocs.io/en/latest/
 
    CDO
    Climate Data Operators
@@ -180,11 +180,11 @@ Glossary
    ICCLIM
    Indice Calculation CLIMate
       *ICCLIM* (Indice Calculation CLIMate) is a Python library for computing a number of :term:`climate indices <climate indice>`.
-      http://icclim.readthedocs.org/en/latest/
+      http://icclim.readthedocs.io/en/latest/
 
    climate indice
       A climate index is a calculated value that can be used to describe the state and the changes in the climate system.
-      http://icclim.readthedocs.org/en/latest/intro.html#climate-indices-label
+      http://icclim.readthedocs.io/en/latest/intro.html#climate-indices-label
 
    TDS
    THREDDS

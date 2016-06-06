@@ -59,7 +59,7 @@ Taverna with WPS:
 
 * ``http://rsg.pml.ac.uk/wps/generic.cgi?request=GetCapabilities&service=WPS``
 * https://www.youtube.com/watch?v=JNAtoOejVIo
-* http://www.taverna.org.uk/introduction/services-in-taverna/  
+* https://taverna.incubator.apache.org/introduction/services-in-taverna.html
 * https://github.com/myGrid/small-area-estimator
 * http://comments.gmane.org/gmane.science.biology.informatics.taverna.user/1415
 * http://dev.mygrid.org.uk/wiki/display/developer/SCUFL2
@@ -114,7 +114,7 @@ data servers. [..]
 * ICCLIM (i see clim ...) - https://github.com/cerfacs-globc/icclim
 
 Python library for climate indices calculation. 
-Documentation at http://icclim.readthedocs.org/en/latest/
+Documentation at http://icclim.readthedocs.io/en/latest/
 
 Python Web Frameworks and Utils
 ===============================

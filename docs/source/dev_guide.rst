@@ -13,10 +13,10 @@ Developer Guide
 Writing Documentation
 ---------------------
 
-Documentation is written in `ReStructuredText <http://sphinx-doc.org/rest.html>`_ and generated with `Sphinx <http://sphinx-doc.org/index.html>`_. The Birdhouse components use the buildout recipe `birdhousebuilder.recipe.sphinx <https://pypi.python.org/pypi/birdhousebuilder.recipe.sphinx>`_ which sets up Sphinx and a minimal ``docs`` folder. With ``make docs`` the documentation is generated locally. The documentation is published to `Read the Docs <https://readthedocs.org/>`_ with each commit to the `master` branch. The API reference is generated automatically using the Sphinx plugin `AutoAPI <http://sphinx-autoapi.readthedocs.org/en/latest/index.html>`_.
+Documentation is written in `ReStructuredText <http://sphinx-doc.org/rest.html>`_ and generated with `Sphinx <http://sphinx-doc.org/index.html>`_. The Birdhouse components use the buildout recipe `birdhousebuilder.recipe.sphinx <https://pypi.python.org/pypi/birdhousebuilder.recipe.sphinx>`_ which sets up Sphinx and a minimal ``docs`` folder. With ``make docs`` the documentation is generated locally. The documentation is published to `Read the Docs <https://readthedocs.org/>`_ with each commit to the `master` branch. The API reference is generated automatically using the Sphinx plugin `AutoAPI <http://sphinx-autoapi.readthedocs.io/en/latest/index.html>`_.
 
 * http://sphinx-doc.org/tutorial.html
-* http://quick-sphinx-tutorial.readthedocs.org/en/latest/
+* http://quick-sphinx-tutorial.readthedocs.io/en/latest/
 
 .. _anaconda:
 
@@ -215,7 +215,7 @@ Python Packaging
 
 Links:
 
-* https://python-packaging-user-guide.readthedocs.org/en/latest/
+* https://python-packaging-user-guide.readthedocs.io/en/latest/
 
 Example:
 
