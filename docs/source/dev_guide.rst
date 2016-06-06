@@ -71,6 +71,11 @@ The `Dockerfile for this image <https://github.com/bird-house/birdhouse-build/tr
 
    You can build a conda package with the provided docker image for Linux-64. See the `readme <https://github.com/bird-house/birdhouse-build/tree/master/docker/binstar-linux-64>`_ on how to use it.
 
+
+.. note::
+
+   For future conda packages one should use the community driven `conda-forge channel <https://conda-forge.github.io/>`_.
+
 .. _conda_example:
 
 Example: building conda package for pygbif
