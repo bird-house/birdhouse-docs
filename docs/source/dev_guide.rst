@@ -54,7 +54,7 @@ Building conda packages
 There are several ways to build conda packages and upload them to *Anaconda Server*:
 
 * You can `build packages locally <http://conda.readthedocs.io/en/latest/#building-your-own-packages>`_ and upload them with the Binstar command line tool.
-* You can also `build packages remotely on Anaconda <http://docs.anaconda.org/draft/using.html>`_. Additionally you can set a GitHub Webhook so that on each commit of your recipe a build will be run on Binstar. 
+* You can also `build packages remotely on Anaconda <https://docs.continuum.io/anaconda-cloud/build>`_. Additionally you can set a GitHub Webhook so that on each commit of your recipe a build will be run on Binstar. 
 * The remote build on Anaconda are done using Docker images. The `Anaconda docker image for Linux-64 <https://hub.docker.com/r/binstar/linux-64/>`_ is available on :term:`Docker Hub`.  
 
 In Birdhouse we usually use the remote build on Anaconda which is triggered by commits to GitHub. 

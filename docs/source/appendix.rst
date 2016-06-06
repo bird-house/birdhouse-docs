@@ -29,7 +29,7 @@ WPS Software
 WPS Server Software:
 
 * :term:`PyWPS`
-* GeoServer - http://docs.geoserver.org/stable/en/user/extensions/wps/processes.html
+* GeoServer - http://docs.geoserver.org/stable/en/user/services/wps/index.html
 * Zoo - ``http://www.zoo-project.org/``
 * :term:`COWS`
 * Deegree - http://www.deegree.org/
