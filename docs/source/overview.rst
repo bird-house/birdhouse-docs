@@ -15,7 +15,7 @@ WPS Use Case
 
 A user runs a WPS processes remotely on a machine with direct access to climate data archives.
 
-.. image:: _images/wps-use-case.png
+.. image:: _images/wps-use-case2.png
 
 .. _birdhouse_overview:
 
