@@ -7,6 +7,7 @@ Birdhouse is at an early stage. Things are not clearly setup yet.
 The main contributions can be provided via GitHub issues and providing patches. 
 You can also register on the mailing list to retrieve announcements.
 
+
 Mailing list
 ------------
 
@@ -14,6 +15,10 @@ Mailing list
 * Technical discussions take place in `wps-dev mailing list <https://lists.dkrz.de/mailman/listinfo/wps-dev>`_ (`Archive <https://lists.dkrz.de/mailman/private/wps-dev/>`_).
 
 Feel free to register.
+
+Chat-room
+---------
+If you want to have a quick chat with one of the developers, or just follow the discussions, feel welcome to join the `chat room <https://gitter.im/bird-house/birdhouse>`_
 
 Source code
 -----------
