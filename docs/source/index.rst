@@ -15,20 +15,20 @@ Birdhouse is the home of Web Procssing Services used in climate science and comp
 
 WPS client side:
 
-* :ref:`Phoenix`_: a web-based WPS client with ESGF data access
-* :ref:`Birdy`_: a WPS command line tool
+* `Phoenix`_: a web-based WPS client with ESGF data access
+* `Birdy`_: a WPS command line tool
 
 WPS supporting services and libraries:
 
-* :ref:`Twitcher`_: a simple OWS Security Proxy
-* :ref:`Malleefowl`_: access to climate data (ESGF, ...) as a service and library
+* `Twitcher`_: a simple OWS Security Proxy
+* `Malleefowl`_: access to climate data (ESGF, ...) as a service and library
 
 WPS services and libraries with algorithms used in climate science analysis: 
 
-* :ref:`Flyingpigeon`_: services for the climate impact community
-* :ref:`Hummingbird`_: provides cdo and cfchecker as a service
+* `Flyingpigeon`_: services for the climate impact community
+* `Hummingbird`_: provides cdo and cfchecker as a service
 * `Dodrio <https://github.com/bird-house/dodrio>`_: WPS for KIT
-* :ref:`Emu`_: some example WPS processes
+* `Emu`_: some example WPS processes
 
 
 You can find the source code of all Birdhouse components on
