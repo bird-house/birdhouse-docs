@@ -43,6 +43,18 @@ WPS Client Software:
 * 52 North Java Client - http://52north.org/communities/geoprocessing/wps/index.html
 * 52 North Javascript Client - http://geoprocessing.demo.52north.org:8080
 
+QGIS Desktop GIS with wps plugins:
+
+* http://www.qgis.org/en/site/
+* http://plugins.qgis.org/plugins/wps/
+* http://geolabs.fr/plugins.xml
+
+uDig Desktop GIS with wps plugins:
+
+* http://udig.refractions.net/
+* https://udig.github.io/docs/user/reference/Using%20the%20WPS%20plugin.html
+* https://github.com/52North/uDig-WPS-plugin   (outdated)
+
 Scientific Workflow Tools
 =========================
     
