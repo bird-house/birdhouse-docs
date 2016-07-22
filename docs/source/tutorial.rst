@@ -7,6 +7,7 @@ Tutorials
 * :ref:`Phoenix Tutorial <phoenix:tutorial>`
 * `Flyingpigeon Tutorial <http://flyingpigeon.readthedocs.io/en/latest/tutorials/index.html>`_
 * :ref:`Example with Birdy WPS command line tool <birdy:tutorial>`
+* `Conda for Data Science <https://www.continuum.io/content/conda-data-science>`
 
 .. _notebooks:
 
