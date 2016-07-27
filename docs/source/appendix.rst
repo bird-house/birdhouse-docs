@@ -58,9 +58,18 @@ uDig Desktop GIS with wps plugins:
 WMS Software
 ============
 
+WMS server:
+
 * ncWMS2 - http://reading-escience-centre.github.io/edal-java/
 * adaguc - http://adaguc.knmi.nl/
 * sci-wms - http://sci-wms.github.io/sci-wms/
+
+WMS clients:
+
+* OpenLayers - http://openlayers.org/
+* Leaflet - http://leafletjs.com/
+    * time dimension - http://apps.socib.es/Leaflet.TimeDimension/examples/ 
+* GeoExt - http://geoext.github.io/geoext2/
 
 Scientific Workflow Tools
 =========================
