@@ -3,6 +3,7 @@ Tutorials
 
 * :ref:`wps_tutorial`
 * `PyWPS Tutorial <http://pywps.org/docs/>`_
+* `PyWPS on OSGeo Live <http://live.osgeo.org/en/overview/pywps_overview.html>`_
 * :ref:`Emu Example with Docker <emu:tutorial>`
 * :ref:`Phoenix Tutorial <phoenix:tutorial>`
 * `Flyingpigeon Tutorial <http://flyingpigeon.readthedocs.io/en/latest/tutorials/index.html>`_
