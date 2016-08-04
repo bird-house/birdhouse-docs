@@ -166,10 +166,11 @@ List of available Web Processing Services:
 * 52 North - ``http://geoprocessing.demo.52north.org:8080/52n-wps-webapp-3.3.1-gt/WebProcessingService?Request=GetCapabilities&Service=WPS``
 * ZOO Demo WPS - ``http://zoo-project.org/cgi-bin/zoo_loader3.cgi?Request=GetCapabilities&Service=WPS``
 * British Antarctic Survey WPS for Meteorological Data - ``http://sosmet.nerc-bas.ac.uk:8080/wpsmet/WebProcessingService?Request=GetCapabilities&Service=WPS``
+* PyWPS Demo - ``http://apps.esdi-humboldt.cz/pywps/?request=GetCapabilities&service=WPS&version=1.0.0``
 
 Alternatives to WPS
 ===================
 
-* XML-RPX: Simple cross-platform distributed computing, based on the standards of the Internet. - http://xmlrpc.scripting.com/
+* XML-RPC: Simple cross-platform distributed computing, based on the standards of the Internet. - http://xmlrpc.scripting.com/
 * Swagger is a simple yet powerful representation of your RESTful API.  - http://swagger.io/
 
