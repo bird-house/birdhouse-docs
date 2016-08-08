@@ -144,12 +144,15 @@ data servers. [..]
 Python library for climate indices calculation. 
 Documentation at http://icclim.readthedocs.io/en/latest/
 
-Python Web Frameworks and Utils
-===============================
+Python Web Frameworks
+=====================
 
 * Pyramid - http://www.pylonsproject.org/
 * Authomatic - http://peterhudec.github.io/authomatic/
 * Bootstrap - http://getbootstrap.com/
+* Bootstrap Tutorial - http://www.w3schools.com/bootstrap/default.asp
+* Deform with Bootstrap demo - http://deform2demo.repoze.org/
+* Colander - http://docs.pylonsproject.org/projects/colander/en/latest/index.html
 
 Example WPS Services
 ====================
