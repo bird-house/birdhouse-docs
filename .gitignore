@@ -78,4 +78,5 @@ testdata.json
 *.mod
 *.out
 
-
+# macos
+.DS_Store
