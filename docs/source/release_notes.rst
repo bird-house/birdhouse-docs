@@ -9,6 +9,16 @@ Release Notes
    :depth: 2
    :backlinks: none
 
+Bonn (August 2016)
+==================
+
+* Leaflet map with time-dimension plugin.
+* using twitcher security proxy.
+* using conda environments for each birdhouse compartment.
+* using ansible to deploy birdhouse compartments.
+* added weather-regimes and analogs detection processes.
+* allow upload of files to processes.
+* updated Phoenix user interface.
 
 Paris (October 2015)
 ====================
@@ -16,7 +26,7 @@ Paris (October 2015)
 * updated documents on readthedocs
 * OAuth2 used for login with GitHub, Ceda, ...
 * LDAP support for login
-* using ncWMS and adagucwms 
+* using ncWMS and adagucwms
 * register and use Thredds catalogs as data source
 * publish local netcdf files and Thredds catalogs to birdhouse Solr
 * qualtiy check processes added (cfchecker, qa-dkrz)
@@ -58,4 +68,3 @@ Vienna (April 2014)
 
 * presentation of Birdhouse at EGU, Vienna
 * "quality check" workflow for cordex data
-
