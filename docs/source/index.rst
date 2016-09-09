@@ -11,7 +11,7 @@ Python components to support data processing in the climate science
 community. The aim of Birdhouse is to make the usage of WPS easy. Most
 of the :term:`OGC`/:term:`WPS` related software comes from the :term:`GeoPython` project. 
 
-Birdhouse is the home of Web Procssing Services used in climate science and components to support them (the birds).
+Birdhouse is the home of Web Processing Services used in climate science and components to support them (the birds).
 
 WPS client side:
 
@@ -56,7 +56,7 @@ Getting started
 Presentations & Blog Posts
 ==========================
 
-* `FOSS4G 2016 at Bonn <http://2016.foss4g.org/talks.html#035>`_
+* `FOSS4G 2016 at Bonn <https://github.com/bird-house/birdhouse-docs/blob/master/slides/birdhouse-foss4g-2016/Hempelmann_foss4g2016.pdf>`_
 * `ICRC-COEDEX 2016 <https://github.com/bird-house/birdhouse-docs/blob/master/slides/Hempelmann_CORDEX2016_datatoinformation.pdf>`_
 * Model Animation LSCE
 * `Talk on USGS WebEx 2016/02/18 <https://my.usgs.gov/confluence/pages/viewpage.action?pageId=542482181>`_
