@@ -21,8 +21,8 @@ It is recommended to collect the repositories in a seperate folder (e.g. birdhou
   cd birdhouse
 
 
-* **fetch the source code::** 
-
+* **fetch the source code** 
+::
   git clone https://github.com/bird-house/flyingpigeon.git
   git clone https://github.com/bird-house/pyramid-phoenix.git
   git clone https://github.com/bird-house/malleefowl.git
@@ -65,6 +65,7 @@ in **one** of the birds run::
 
   make start 
 or::
+
   make restart
 
 and to check if the services are running, run: 
@@ -76,6 +77,7 @@ If the services are running, you can launch the GUI in a common web browser. By 
 
   firefox http://phoenix:8081
 or::
+
   firefox https://localhost:8443/
 
 Now you can log in (upper right corner) with your Phoenix password created previously. 
