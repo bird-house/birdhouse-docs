@@ -15,10 +15,10 @@ The installation is done as **normal user**, root rights are not required.
 clone the repositories from gitHub: 
 ...................................
 
-It is recommended to collect the repositories in a seperate folder (e.g. birdhouse, but can have a name of your choice):
+It is recommended to collect the repositories in a seperate folder (e.g. birdhouse, but can have a name of your choice)::
 
-mkdir birdhouse  
-cd birdhouse
+  mkdir birdhouse  
+  cd birdhouse
 
 
 * **fetch the source code:** 
@@ -30,9 +30,9 @@ cd birdhouse
 * **phoenix password**
 
 To be able to log into the Phoenix GUI once the services are running, it is necessary to generate a password: 
-go into the pyramid-phoenix folder and run: 
+go into the pyramid-phoenix folder and run::
 
-make passwd
+  make passwd
 
 This will automatically write a password hash into pyramid-phoenix/custom.cfg
 
@@ -41,42 +41,42 @@ This will automatically write a password hash into pyramid-phoenix/custom.cfg
 
 You can run the installation with default settings.
 It will create an anaconda environment into your HOME direcory and deploy all required software dependecies there. 
-*read the ''changing the default configuration' first if you would like to change the defaults.*
+  *read the ''changing the default configuration' first if you would like to change the defaults.*
 
-In **all** of the tree folders (malleefowl, flyingpigeon and pyramid-phoenix) run:
+In **all** of the tree folders (malleefowl, flyingpigeon and pyramid-phoenix) run::
 
-make install
+  make install
 
 This installation will take some minutes to fetch all dependencies and install them into seperate conda environments.
-With the default settings, the installation creates the following folders: 
+With the default settings, the installation creates the following folders::
 
-*~/anaconda/*
+  ls ~/anaconda/
 contains general software required by anaconda
-
-*~/.conda/envs/*
+::
+  ls ~/.conda/envs/
 contains the seperate environments of the birds for their specific software dependencies
-
-*~/birdhouse/var/*
+::
+  ls ~/birdhouse/var/
 the local cache for fetched input files, output files and logs. This folder is growing (while fetching files and storing job outputs) under productive usage of birdhouse.
 
 * **start the services**
 
-in **one** of the birds run 
+in **one** of the birds run::
 
-make start 
-or 
-make restart
+  make start 
+or::
+  make restart
 
 and to check if the services are running, run: 
 make status
 
 * **launching the Phoenix GUI**
 
-If the services are running, you can launch the GUI in a common web browser. By default, phoenix is set to port 8081
+If the services are running, you can launch the GUI in a common web browser. By default, phoenix is set to port 8081::
 
-firefox http://phoenix:8081
-or 
-firefox https://localhost:8443/
+  firefox http://phoenix:8081
+or::
+  firefox https://localhost:8443/
 
 Now you can log in (upper right corner) with your Phoenix password created previously. 
 Phoenix is just a graphical interface with no more function than looking nice ;-). 
@@ -88,9 +88,9 @@ In the upper right corner is a tool symbol to open the 'settings'. Click on 'Ser
 
 flyingpigeon is per default at port 8093. 
 
-the appropriate url is: 
+the appropriate url is::
 
-http://localhost:8093/wps
+  http://localhost:8093/wps
 
 Provide service title and name as you like: 
 Service Title: Flyingpigeon
@@ -109,9 +109,9 @@ Launching a job can be performed as a process (Process menu) or with the wizard.
 
 * **changing the default configuration:**
 
-The default configuration can be changed by creating a Makefile.config file. There is an example provided to be used:  
+The default configuration can be changed by creating a Makefile.config file. There is an example provided to be used::
 
-cp Makefile.config.example Makefile.config
+  cp Makefile.config.example Makefile.config
 and set the appropriate path. You have to **do this in all** bird repositories. 
 
 Furthermore, you might change the hostname (to provide your service to the outside), ESGF-node connection, the port or the log-level for more/less information in the administrator logfiles. 
