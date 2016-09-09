@@ -21,11 +21,11 @@ It is recommended to collect the repositories in a seperate folder (e.g. birdhou
   cd birdhouse
 
 
-* **fetch the source code:** 
+* **fetch the source code::** 
 
-| git clone https://github.com/bird-house/flyingpigeon.git
-| git clone https://github.com/bird-house/pyramid-phoenix.git
-| git clone https://github.com/bird-house/malleefowl.git
+  git clone https://github.com/bird-house/flyingpigeon.git
+  git clone https://github.com/bird-house/pyramid-phoenix.git
+  git clone https://github.com/bird-house/malleefowl.git
 
 * **phoenix password**
 
@@ -142,11 +142,3 @@ Here is an example pyramid-phoenix/custom.cfg:
 In case of questions or trouble shooting, feel welcome to join the birdhouse chat and get into contact with the developers directly: 
 
 `Birdhouse-Chatroom <https://gitter.im/bird-house/birdhouse>`_
-
-
-
-
-
-
-
-
