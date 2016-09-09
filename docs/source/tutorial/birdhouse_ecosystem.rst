@@ -23,9 +23,9 @@ cd birdhouse
 
 * **fetch the source code:** 
 
-git clone `<https://github.com/bird-house/flyingpigeon.git>`_
-git clone `<https://github.com/bird-house/pyramid-phoenix.git>`_
-git clone `<https://github.com/bird-house/malleefowl.git>`_
+| git clone https://github.com/bird-house/flyingpigeon.git
+| git clone https://github.com/bird-house/pyramid-phoenix.git
+| git clone https://github.com/bird-house/malleefowl.git
 
 * **phoenix password**
 
