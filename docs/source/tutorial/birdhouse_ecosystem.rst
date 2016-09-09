@@ -3,13 +3,13 @@
 Set up a birdhouse ecosystem server
 ===================================
 
-If you are already familliar with installing single standalone WPS (follow the installation guides in the documentations of e.g. emu), then you are ready to set up a birdhouse containing flyingpigeon (providing scientific analyses methods), malleefowl (to search and fetch data) and the pheonix (a graphic interface for a web browser). 
+If you are already familliar with installing single standalone WPS (follow the installation guides in the documentations of e.g. emu), then you are ready to set up a birdhouse containing flyingpigeon (providing scientific analyses methods), malleefowl (to search and fetch data) and the pheonix (a graphic interface for a web browser including a WMS). 
 
 general remarks:  
 ..................
 
-Check the ref:`requirements`_ of your system!
-The installation is done as **normal user**, root rights are not required. 
+| Check the ref:`requirements`_ of your system!
+| The installation is done as **normal user**, root rights are not required. 
 
 
 clone the repositories from gitHub: 
