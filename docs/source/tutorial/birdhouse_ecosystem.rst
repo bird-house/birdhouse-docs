@@ -68,8 +68,9 @@ or::
 
   make restart
 
-and to check if the services are running, run: 
-make status
+and to check if the services are running, run::
+
+  make status
 
 * **launching the Phoenix GUI**
 
