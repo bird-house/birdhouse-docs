@@ -49,10 +49,10 @@ This tmp folder is going to be removed after job is successfully executed. To re
 .. image:: _images/module_chain.png
 
 
-In pracitice, the functions should be capsulated in **try** and **except** calls and appropriate information given to the logfile or shown as a status message::
+In pracitice, the functions should be capsulated in **try** and **except** calls and appropriate information given to the logfile or shown as a status message:
 
-.. highlight:: python
-   :linenothreshold: 5
+.. code-block:: python
+   :linenos
    from pywps.Process import WPSProcess
    import logging
    logger = logging.getLogger(__name__)
@@ -65,7 +65,7 @@ In pracitice, the functions should be capsulated in **try** and **except** calls
        result = 42
        logger.info('found the answer of life')
    except Exception as e: 
-       msg = 'This failed but is obligatoy for the output. The process stops now, because: %s ' % e
+       msg = 'This failed but is obligatory for the output. The process stops now, because: %s ' % e
        logger.error(msg)  
        raise Exception(msg) 
     
