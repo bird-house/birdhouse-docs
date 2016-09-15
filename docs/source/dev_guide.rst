@@ -29,7 +29,7 @@ forms some input data into output data*. And can be illustrated like the followi
 .. image:: _images/process_schema_1.png
 
 The specific nature of web processing services is that processes can be described in a standardised way (see: 
-:ref:`writing_WPS_process`_ ). In case of the flyingpigeon repository, the process descriptions are located in::
+:ref:`writing_WPS_process`). In case of the flyingpigeon repository, the process descriptions are located in::
 
     ./flyingpigeon/flyingpigeon/processes
 
@@ -106,7 +106,7 @@ The log file can than look like::
   PyWPS [2016-09-14 11:49:14,349] INFO: ocgis module call as ops.execute()
   PyWPS [2016-09-14 11:49:16,648] INFO: Succeeded with ocgis module call function
 
-Another point to think about by designing a process is the possibillity of chaining processes itself. The result of a process can be a final result or be used as an input for another process. Chaining processes is a common praxis. Here is a tutorial to follow: :ref:`chaining_WPS`_  . but very depending on the user you are designing the service for:
+Another point to think about by designing a process is the possibillity of chaining processes itself. The result of a process can be a final result or be used as an input for another process. Chaining processes is a common praxis. Here is a tutorial to follow: :ref:`chaining_WPS`. but very depending on the user you are designing the service for:
 
 .. image:: _images/WpsChain.png
 
