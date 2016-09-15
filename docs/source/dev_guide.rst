@@ -7,6 +7,17 @@ Developer Guide
     :local:
     :depth: 2
 
+    
+.. _writing_WPS_process:
+    
+Writing a WPS process
+---------------------
+
+In Birdhouse we are using the :term:`PyWPS` implementation of a :term:`Web Processing Service`. Writing a WPS process in Birdhouse is the same as in PyWPS. The PyWPS documentation has a `tutorial on writing a process <http://pywps.org/docs/>`_. *Please* follow this PyWPS tutorial. 
+
+To get easier started you can install :ref:`Emu <emu:installation>` with some example processes for PyWPS.
+
+    
 .. _processdesign:
 
 Designing a process
@@ -79,6 +90,26 @@ In pracitice, the functions should be encapsulated in **try** and **except** cal
        msg = 'This failed but is not obligatory for the output. The process will continue. Reason for the failure: %s ' % e
        logger.debug(msg)  
         
+The log file can than look like::
+  
+  tail -f  ~/birdhouse/var/log/pywps/flyingpigeon.log
+  
+  PyWPS [2016-09-14 11:49:13,819] INFO: Start ocgis module call function
+  PyWPS [2016-09-14 11:49:13,820] INFO: Execute ocgis module call function
+  PyWPS [2016-09-14 11:49:13,828] DEBUG: input has Lambert_Conformal projection and can not subsetted with geom
+  PyWPS [2016-09-14 11:49:13,828] DEBUG: failed for point ['2.356138', ' 48.846450'] Validation failed on the parameter "uri" with the message: Cannot be None
+  PyWPS [2016-09-14 11:49:13,993] INFO: Start ocgis module call function
+  PyWPS [2016-09-14 11:49:13,994] INFO: Execute ocgis module call function
+  PyWPS [2016-09-14 11:49:14,029] INFO: OcgOperations set
+  PyWPS [2016-09-14 11:49:14,349] INFO: tas as variable dedected
+  PyWPS [2016-09-14 11:49:14,349] INFO: data_mb  = 0.0417938232422 ; memory_limit = 1660.33984375 
+  PyWPS [2016-09-14 11:49:14,349] INFO: ocgis module call as ops.execute()
+  PyWPS [2016-09-14 11:49:16,648] INFO: Succeeded with ocgis module call function
+
+
+Another point to think about by designing a process is the possibillity of chaining processes itself. The result of a process can be a final result or be used as an input for another process. Chaining processes is a very common praxis and very depending on the user you are designing the service for:
+
+.. image:: _images/WpsChain.png
 
    
    
@@ -318,15 +349,6 @@ Example:
 .. code-block:: sh
 
     $ python setup.py checkdocs
-
-.. _writing_WPS_process:
-    
-Writing a WPS process
----------------------
-
-In Birdhouse we are using the :term:`PyWPS` implementation of a :term:`Web Processing Service`. Writing a WPS process in Birdhouse is the same as in PyWPS. The PyWPS documentation has a `tutorial on writing a process <http://pywps.org/docs/>`_. *Please* follow this PyWPS tutorial. 
-
-To get easier started you can install :ref:`Emu <emu:installation>` with some example processes for PyWPS.
 
 
  
