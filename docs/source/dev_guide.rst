@@ -52,7 +52,7 @@ This tmp folder is going to be removed after job is successfully executed. To re
 In pracitice, the functions should be capsulated in **try** and **except** calls and appropriate information given to the logfile or shown as a status message:
 
 .. code-block:: python
-   :linenos
+   
    from pywps.Process import WPSProcess
    import logging
    logger = logging.getLogger(__name__)
@@ -78,7 +78,14 @@ In pracitice, the functions should be capsulated in **try** and **except** calls
        msg = 'This failed but is not obligatoy for the output. The process will continue. Reason for the failure: %s ' % e
        logger.debug(msg)  
         
-        
+  
+  
+.. code-block:: python
+   :linenos:
+
+   Some more Ruby code.
+   
+   
 .. _writing_docs:
             
 Writing Documentation
