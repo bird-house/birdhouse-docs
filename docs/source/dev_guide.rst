@@ -16,11 +16,11 @@ For desinging a process it is necessary to know some basic consepts of how data 
 
 A basic process 
 
-.. image:: ../_images/process_schema_1.png
+.. image:: _images/process_schema_1.png
 
 inside the execution, several stepps are performed: 
 
-.. image:: ../_images/module_chain.png
+.. image:: _images/module_chain.png
 
     
 
