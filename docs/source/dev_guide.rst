@@ -12,12 +12,12 @@ Developer Guide
 Designing a process
 -------------------
 
-For designing a process it is necessary to know some basic concepts of how data are produced in birdhouse. Following are some basic explanations to help developing appropriate processes to provide a scientific method as an service. The word **process** is used in the same sense as in the OGC standard: *for any algorithm, calculation or model that either generates new data or trans-
+For designing a process it is necessary to know some basic concepts of how data are produced in birdhouse. Following are some basic explanations to help developing appropriate processes to provide a scientific method as a service. The word **process** is used in the same sense as in the OGC standard: *for any algorithm, calculation or model that either generates new data or trans-
 forms some input data into output data*. And can be illustrated like the following graphic:
 
 .. image:: _images/process_schema_1.png
 
-The specific nature of web processing services, is that this processes can be described in a standardised way (see: 
+The specific nature of web processing services is that processes can be described in a standardised way (see: 
 :ref:`writing_WPS_process`). In case of the flyingpigeon repository, the process descriptions are located in::
 
     ./flyingpigeon/flyingpigeon/processes
@@ -31,27 +31,28 @@ As part of the process description there is an **execute** function:
        import pythonlib
        from flyingpigeon import aflyingpigeonlib as afl
         
-       result = afl.nicefunction(indata, prameter1=argument1, parameter2=argumer2)
+       result = afl.nicefunction(indata, parameter1=argument1, parameter2=argument2)
         
        self.output.setValue( result )
        
 
-It is recommended practise to seperate the functions ( the actual dataprocessing ) from the process description. This creates a modulatity and enables multiple usage of functions when designing several processes. The modules in flyingpigeon are located here::
+It is a recommended practice to separate the functions ( the actual data processing ) from the process description. This creates modulatity and enables multiple usage of functions when designing several processes. The modules in flyingpigeon are located here::
 
     ./flyingpigeon/flyingpigeon
 
-Generally the execution of a process contains several processing stepps, where temporary files and memorie values are generated. Birdhouse is running each job in a seperate folder, by default situated in::
+Generally, the execution of a process contains several processing steps, where temporary files and memory values are generated. Birdhouse runs each job in a separate folder, by default situated in::
 
     ~/birdhouse/var/lib/pywps/tmp/$bird/
 
-This tmp folder is going to be removed after job is successfully executed. To reuse temporary files it is necessary to declare them as output files. Further more during an execution, there are steps which are necessary to be successfully performed and a result is called back. If this particulary step fails, the whole process should exited with an appropriate error message. While in other cases it is not relevent for producing the final result. The following image shows a theoretical chain of functions: 
+This tmp folder is removed after job is successfully executed. To reuse temporary files, it is necessary to declare them as output files. Furthermore, during an execution, there are steps which are necessary to be successfully performed and a result is called back. If this particulary step fails, the whole process should exit with an appropriate error message, while in other cases it is not relevent for producing the final result. The following image shows a theoretical chain of functions: 
 
 .. image:: _images/module_chain.png
 
 
-In pracitice, the functions should be capsulated in **try** and **except** calls and appropriate information given to the logfile or shown as a status message:
+In pracitice, the functions should be encapsulated in **try** and **except** calls and appropriate information given to the logfile or shown as a status message:
 
 .. code-block:: python
+   :linenos:
    
    from pywps.Process import WPSProcess
    import logging
@@ -75,15 +76,10 @@ In pracitice, the functions should be capsulated in **try** and **except** calls
        # or generate a temporary file 
        logger.info(' another step is done ')
    except Exception as e: 
-       msg = 'This failed but is not obligatoy for the output. The process will continue. Reason for the failure: %s ' % e
+       msg = 'This failed but is not obligatory for the output. The process will continue. Reason for the failure: %s ' % e
        logger.debug(msg)  
         
-  
-  
-.. code-block:: python
-   :linenos:
 
-   Some more Ruby code.
    
    
 .. _writing_docs:
