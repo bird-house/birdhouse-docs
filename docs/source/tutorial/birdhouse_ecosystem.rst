@@ -3,13 +3,13 @@
 Set up a birdhouse ecosystem server
 ===================================
 
-If you are already familliar with installing single standalone WPS (follow the installation guides in the documentations of e.g. emu), then you are ready to set up a birdhouse containing flyingpigeon (providing scientific analyses methods), malleefowl (to search and fetch data) and the pheonix (a graphic interface for a web browser). 
+If you are already familliar with installing single standalone WPS (follow the installation guides in the documentations of e.g. emu), then you are ready to set up a birdhouse containing flyingpigeon (providing scientific analyses methods), malleefowl (to search and fetch data) and the pheonix (a graphic interface for a web browser including a WMS). 
 
 general remarks:  
 ..................
 
-Check the ref:`requirements`_ of your system!
-The installation is done as **normal user**, root rights are not required. 
+| Check the ref:`requirements`_ of your system!
+| The installation is done as **normal user**, root rights are not required. 
 
 
 clone the repositories from gitHub: 
@@ -21,11 +21,11 @@ It is recommended to collect the repositories in a seperate folder (e.g. birdhou
   cd birdhouse
 
 
-* **fetch the source code:** 
+* **fetch the source code:**
 
-| git clone https://github.com/bird-house/flyingpigeon.git
-| git clone https://github.com/bird-house/pyramid-phoenix.git
-| git clone https://github.com/bird-house/malleefowl.git
+|  git clone https://github.com/bird-house/flyingpigeon.git
+|  git clone https://github.com/bird-house/pyramid-phoenix.git
+|  git clone https://github.com/bird-house/malleefowl.git
 
 * **phoenix password**
 
@@ -65,10 +65,12 @@ in **one** of the birds run::
 
   make start 
 or::
+
   make restart
 
-and to check if the services are running, run: 
-make status
+and to check if the services are running, run::
+
+  make status
 
 * **launching the Phoenix GUI**
 
@@ -76,6 +78,7 @@ If the services are running, you can launch the GUI in a common web browser. By 
 
   firefox http://phoenix:8081
 or::
+
   firefox https://localhost:8443/
 
 Now you can log in (upper right corner) with your Phoenix password created previously. 
@@ -142,7 +145,3 @@ Here is an example pyramid-phoenix/custom.cfg:
 In case of questions or trouble shooting, feel welcome to join the birdhouse chat and get into contact with the developers directly: 
 
 `Birdhouse-Chatroom <https://gitter.im/bird-house/birdhouse>`_
-
-
-
-
