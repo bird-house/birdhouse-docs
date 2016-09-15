@@ -7,6 +7,22 @@ Developer Guide
     :local:
     :depth: 2
 
+    
+Desinging a process
+-------------------
+
+
+For desinging a process it is necessary to know some basic consepts of how data are produced in birdhouse. Following are some basic explanations to help developing appropriate processes to provide a scientific method as an service. 
+
+A basic process 
+
+.. image:: ../_images/process_schema_1.png
+
+inside the execution, several stepps are performed: 
+
+.. image:: ../_images/module_chain.png
+
+    
 
 .. _writing_docs:
             
