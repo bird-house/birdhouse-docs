@@ -7,22 +7,80 @@ Developer Guide
     :local:
     :depth: 2
 
-    
-Desinging a process
+.. _processdesign:
+
+Designing a process
 -------------------
 
 
-For desinging a process it is necessary to know some basic consepts of how data are produced in birdhouse. Following are some basic explanations to help developing appropriate processes to provide a scientific method as an service. 
-
-A basic process 
+For designing a process it is necessary to know some basic consepts of how data are produced in birdhouse. Following are some basic explanations to help developing appropriate processes to provide a scientific method as an service. The word **process** is used in the same sense as in the OGC standard: *for any algorithm, calculation or model that either generates new data or trans-
+forms some input data into output data*. And can be illustrated like the following graphic:
 
 .. image:: _images/process_schema_1.png
 
-inside the execution, several stepps are performed: 
+The specific nature of web processing services, is that this processes can be described in a standardised way (see: 
+:ref:`writing_WPS_process`). In case of the flyingpigeon repository, the process descriptions are located in::
+
+    ~/flyingpigeon/flyingpigeon/processes
+
+As part of the process description there is an **execute** function: 
+
+.. code-block:: python
+   :linenothreshold: 5
+   
+   def execute(self):
+       # here starts the actual data processing
+       import pythonlib
+       from flyingpigeon import aflyingpigeonlib as afl
+       
+       result = afl.nicefunction(indata, prameter1=argument1, parameter2=argumer2)
+       
+       self.output.setValue( result )
+       
+
+It is recommended practise to seperate the functions ( the actual dataprocessing ) from the process description. This creates a modulatity and enables multiple usage of functions when designing several processes. The modules in flyingpigeon are located here::
+
+    ./flyingpigeon/flyingpigeon
+
+Generally the execution of a process contains several processing stepps, where temporary files and memorie values are generated. Birdhouse is running each job in a seperate folder, by default situated in::
+
+    ~/birdhouse/var/lib/pywps/tmp/$bird/
+
+This tmp folder is going to be removed after job is successfully executed. To reuse temporary files it is necessary to declare them as output files. Further more during an execution, there are stepps which are necessary to be successfully performed and an result is called back. If this particulary step fails, the whole process should exited with an appropriate error message. While in other cases it is not relevent for producing the final result. The following image shows a theoretical chain of functions: 
 
 .. image:: _images/module_chain.png
 
+
+In pracitice, the functions should be capsulated in **try** and **except** calls and appropriate information given to the logfile or shown as a status message: 
+
+.. code-block:: python
+    :linenothreshold: 5
+
+    from pywps.Process import WPSProcess
+    import logging
+    logger = logging.getLogger(__name__)
     
+    # set a status message 
+    self.status.set('execution started at : %s ' % dt.now(),5)
+    
+    try:
+        self.status.set('the process is doing something : %s '  % dt.now(),10)
+        result = 42
+        logger.info('found the answer of life')
+    except Exception as e: 
+        msg = 'This failed but is obligatoy for the output. The process stopps now, because: %s ' % e
+        logger.error(msg)  
+        raise Exception(msg) 
+    
+    try:
+        self.status.set('the process is doing something else : %s '  % dt.now(),20)
+        interesting = True
+        # or generate a temporary file 
+        logger.info(' another step is done ')
+    except Exception as e: 
+        msg = 'This failed but is not obligatoy for the output. The process will continue. Reason for the failture: %s ' % e
+        logger.debug(msg)  
+        
 
 .. _writing_docs:
             
@@ -261,7 +319,8 @@ Example:
 
     $ python setup.py checkdocs
 
-
+.. _writing_WPS_process:
+    
 Writing a WPS process
 ---------------------
 
