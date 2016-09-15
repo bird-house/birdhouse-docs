@@ -21,9 +21,9 @@ forms some input data into output data*. And can be illustrated like the followi
 The specific nature of web processing services, is that this processes can be described in a standardised way (see: 
 :ref:`writing_WPS_process`). In case of the flyingpigeon repository, the process descriptions are located in::
 
-    ~/flyingpigeon/flyingpigeon/processes
+    ./flyingpigeon/flyingpigeon/processes
 
-As part of the process description there is an **execute** function: 
+As part of the process description there is an **execute** function::
 
 .. code-block:: python
    :linenothreshold: 5
@@ -51,7 +51,7 @@ This tmp folder is going to be removed after job is successfully executed. To re
 .. image:: _images/module_chain.png
 
 
-In pracitice, the functions should be capsulated in **try** and **except** calls and appropriate information given to the logfile or shown as a status message:
+In pracitice, the functions should be capsulated in **try** and **except** calls and appropriate information given to the logfile or shown as a status message::
 
 .. highlight:: python
     :linenothreshold: 5
