@@ -51,7 +51,7 @@ This tmp folder is going to be removed after job is successfully executed. To re
 .. image:: _images/module_chain.png
 
 
-In pracitice, the functions should be capsulated in **try** and **except** calls and appropriate information given to the logfile or shown as a status message:: 
+In pracitice, the functions should be capsulated in **try** and **except** calls and appropriate information given to the logfile or shown as a status message::
 
 .. highlight:: python
     :linenothreshold: 5
