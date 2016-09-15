@@ -25,6 +25,26 @@ The specific nature of web processing services, is that this processes can be de
 
 As part of the process description there is an **execute** function::
 
+.. code-block:: python
+   :emphasize-lines: 3,5
+
+   def some_function():
+       interesting = False
+       print 'This line is highlighted.'
+       print 'This one is not...'
+       print '...but this one is.'
+
+       
+.. code-block:: python
+   :emphasize-lines: 3,5
+
+   def some_function():
+       interesting = False
+       print 'This line is highlighted.'
+       print 'This one is not...'
+       print '...but this one is.'
+       
+
     .. code-block:: python
         :linenothreshold: 5
         
