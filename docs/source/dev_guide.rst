@@ -25,17 +25,17 @@ The specific nature of web processing services, is that this processes can be de
 
 As part of the process description there is an **execute** function::
 
-.. code-block:: python
-   :linenothreshold: 5
-   
-   def execute(self):
-       # here starts the actual data processing
-       import pythonlib
-       from flyingpigeon import aflyingpigeonlib as afl
-       
-       result = afl.nicefunction(indata, prameter1=argument1, parameter2=argumer2)
-       
-       self.output.setValue( result )
+    .. code-block:: python
+        :linenothreshold: 5
+        
+        def execute(self):
+            # here starts the actual data processing
+            import pythonlib
+            from flyingpigeon import aflyingpigeonlib as afl
+            
+            result = afl.nicefunction(indata, prameter1=argument1, parameter2=argumer2)
+            
+            self.output.setValue( result )
        
 
 It is recommended practise to seperate the functions ( the actual dataprocessing ) from the process description. This creates a modulatity and enables multiple usage of functions when designing several processes. The modules in flyingpigeon are located here::
@@ -53,32 +53,32 @@ This tmp folder is going to be removed after job is successfully executed. To re
 
 In pracitice, the functions should be capsulated in **try** and **except** calls and appropriate information given to the logfile or shown as a status message::
 
-.. highlight:: python
-    :linenothreshold: 5
-    from pywps.Process import WPSProcess
-    import logging
-    logger = logging.getLogger(__name__)
-    
-    # set a status message 
-    self.status.set('execution started at : %s ' % dt.now(),5)
-    
-    try:
-        self.status.set('the process is doing something : %s '  % dt.now(),10)
-        result = 42
-        logger.info('found the answer of life')
-    except Exception as e: 
-        msg = 'This failed but is obligatoy for the output. The process stopps now, because: %s ' % e
-        logger.error(msg)  
-        raise Exception(msg) 
-    
-    try:
-        self.status.set('the process is doing something else : %s '  % dt.now(),20)
-        interesting = True
-        # or generate a temporary file 
-        logger.info(' another step is done ')
-    except Exception as e: 
-        msg = 'This failed but is not obligatoy for the output. The process will continue. Reason for the failture: %s ' % e
-        logger.debug(msg)  
+    .. highlight:: python
+        :linenothreshold: 5
+        from pywps.Process import WPSProcess
+        import logging
+        logger = logging.getLogger(__name__)
+        
+        # set a status message 
+        self.status.set('execution started at : %s ' % dt.now(),5)
+        
+        try:
+            self.status.set('the process is doing something : %s '  % dt.now(),10)
+            result = 42
+            logger.info('found the answer of life')
+        except Exception as e: 
+            msg = 'This failed but is obligatoy for the output. The process stopps now, because: %s ' % e
+            logger.error(msg)  
+            raise Exception(msg) 
+        
+        try:
+            self.status.set('the process is doing something else : %s '  % dt.now(),20)
+            interesting = True
+            # or generate a temporary file 
+            logger.info(' another step is done ')
+        except Exception as e: 
+            msg = 'This failed but is not obligatoy for the output. The process will continue. Reason for the failture: %s ' % e
+            logger.debug(msg)  
         
 
 .. _writing_docs:
