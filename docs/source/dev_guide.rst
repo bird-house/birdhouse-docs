@@ -85,7 +85,7 @@ In pracitice, the functions should be encapsulated in **try** and **except** cal
        self.status.set('the process is doing something else : %s '  % dt.now(),20)
        interesting = True
        # or generate a temporary file 
-       logger.info(' another step is done ')
+       logger.info(' Thanks for reading the guidelines ')
    except Exception as e: 
        msg = 'This failed but is not obligatory for the output. The process will continue. Reason for the failure: %s ' % e
        logger.debug(msg)  
@@ -106,11 +106,8 @@ The log file can than look like::
   PyWPS [2016-09-14 11:49:14,349] INFO: ocgis module call as ops.execute()
   PyWPS [2016-09-14 11:49:16,648] INFO: Succeeded with ocgis module call function
 
-Another point to think about by designing a process is the possibillity of chaining processes itself. The result of a process can be a final result or be used as an input for another process. Chaining processes is a common praxis. Here is a tutorial to follow: :ref:`chaining_WPS`. but very depending on the user you are designing the service for:
+Another point to think about by designing a process is the possibillity of chaining processes itself. The result of a process can be a final result or be used as an input for another process. Chaining processes is a common praxis but very depending on the user you are designing the service for. Here is a tutorial to follow: :ref:`chaining_WPS`.
 
-.. image:: _images/WpsChain.png
-
-   
    
 .. _writing_docs:
             
