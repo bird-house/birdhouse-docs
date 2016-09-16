@@ -73,6 +73,7 @@ An input/output parameter has:
 For more details see the following `WPS Tutorial`_.
 
 .. _chaining_WPS:
+
 Chaining WPS processes
 ----------------------
 
