@@ -23,67 +23,42 @@ To get easier started you can install :ref:`Emu <emu:installation>` with some ex
 Files and Folders
 -----------------
 
-WPS is designed to reduce data transport and enables dataporcessing close to the data archive. Nevertheless files are stored within birdhouse in a structued way. For designing a WPS process or process chain, the location of input, output and temporary files are illustraded like:
+WPS is designed to reduce data transport and enables data processing close to the data archive. Nevertheless, files are stored within birdhouse in a structued way. For designing a WPS process or process chain, the location of input, output and temporary files are illustrated like:
 
 .. image:: _images/filelocations.png
 
-Resources, wich are already on the local disc system (output of other processes or locally stored data archives) are linked into the cache simply with a soft link to avoid data transport and disc space usage.
 
-The locations are the follwing:
+Resources, which are already on the local disc system (output by other processes or as locally stored data archives) are linked into the cache simply with a soft link to avoid data transport and disc space usage.
+
+The locations are the following:
 
 * Reources: 
 
-|  Any kind of accessable data. Like ESGF, thredd server or files stored on the server side disc system
+|  Any kind of accessable data. Like ESGF, thredd server or files stored on the server-side disc system
 
-* Cache::
+* Cache: ``~/birdhouse/var/lib/pywps/cache/``
 
-  ls ~/birdhouse/var/lib/pywps/cache/
+The files of the cache are separated by the birds performing the data fetch and keep the folder structure of the original data archive. 
 
-The files of the cache is seperated by the birds performing the datafetch and keeping then folder structure of the original data archive. 
+* temporary files: ``~/birdhouse/var/lib/pywps/tmp/${bird}/``
 
-* temporary files::
+Each process is running in a temporary folder which is removed after the process is successfully executed. Like the cache, tmp folders are separated by birds as well.
 
-  ls ~/birdhouse/var/lib/pywps/tmp/${bird}/
-
-Each process is running in a temporary folder which is removed after the process is successfully executed. Like the cache, tmp folders are seperated by birds as well.
-
-* output files::
-
-  ls ~/birdhouse/var/lib/pywps/outputs/
+* output files:: ``~/birdhouse/var/lib/pywps/outputs/``
   
-The output files are as well stored seperatly of the birds, producing the files. 
-Further more there are **log files** situated at::
-
-  ls ~/birdhouse/var/log/pywps/${bird}.log
+The output files are also stored separately from the birds producing the files. 
+Furthermore, there are **log files** situated at:: ``~/birdhouse/var/log/pywps/${bird}.log``
   
-And in some special cases, static files are used (e. g. html files to provide gereral information). This files are located in the repository, in case of flyingpigeon located at::
+And in some special cases, static files are used (e.g. html files to provide general information). These files are located in the repository. In case of flyingpigeon, they are located at: ``./flyingpigeon/flyingpigeon/static/``
 
-  ls ./flyingpigeon/flyingpigeon/static/
-
-and copied during the installation (or update) to::
-
-  ls ~/birdhouse/var/www/
-
-
-
-
-
-
-
-
-
-  
-
-
-
+and copied during the installation (or update) to: ``~/birdhouse/var/www/``
     
 .. _processdesign:
 
 Designing a process
 -------------------
 
-For designing a process it is necessary to know some basic concepts of how data are produced in birdhouse. Following are some basic explanations to help developing appropriate processes to provide a scientific method as a service. The word **process** is used in the same sense as in the OGC standard: *for any algorithm, calculation or model that either generates new data or trans-
-forms some input data into output data*. And can be illustrated like the following graphic:
+For designing a process it is necessary to know some basic concepts about how data are produced in birdhouse. The following are some basic explanations to help in developing appropriate processes to provide a scientific method as a service. The word **process** is used in the same sense as in the OGC standard: *for any algorithm, calculation or model that either generates new data or transforms some input data into output data*. And can be illustrated like the following graphic:
 
 .. image:: _images/process_schema_1.png
 
@@ -106,7 +81,7 @@ As part of the process description there is an **execute** function:
        self.output.setValue( result )
        
 
-It is a recommended practice to separate the functions ( the actual data processing ) from the process description. This creates modulatity and enables multiple usage of functions when designing several processes. The modules in flyingpigeon are located here::
+It is a recommended practice to separate the functions (the actual data processing) from the process description. This creates modularity and enables multiple usage of functions when designing several processes. The modules in flyingpigeon are located here::
 
     ./flyingpigeon/flyingpigeon
 
@@ -114,7 +89,7 @@ Generally, the execution of a process contains several processing steps, where t
 
     ~/birdhouse/var/lib/pywps/tmp/$bird/
 
-This tmp folder is removed after job is successfully executed. To reuse temporary files, it is necessary to declare them as output files. Furthermore, during an execution, there are steps which are necessary to be successfully performed and a result is called back. If this particulary step fails, the whole process should exit with an appropriate error message, while in other cases it is not relevent for producing the final result. The following image shows a theoretical chain of functions: 
+This tmp folder is removed after job is successfully executed. To reuse temporary files, it is necessary to declare them as output files. Furthermore, during an execution, there are steps which are necessary to be successfully performed and a result is called back. If this particular step fails, the whole process should exit with an appropriate error message, while in other cases it is not relevent for producing the final result. The following image shows a theoretical chain of functions: 
 
 .. image:: _images/module_chain.png
 
@@ -149,7 +124,7 @@ In pracitice, the functions should be encapsulated in **try** and **except** cal
        msg = 'This failed but is not obligatory for the output. The process will continue. Reason for the failure: %s ' % e
        logger.debug(msg)  
         
-The log file can than look like::
+The log file then looks like::
   
   tail -f  ~/birdhouse/var/log/pywps/flyingpigeon.log
   
@@ -165,18 +140,18 @@ The log file can than look like::
   PyWPS [2016-09-14 11:49:14,349] INFO: ocgis module call as ops.execute()
   PyWPS [2016-09-14 11:49:16,648] INFO: Succeeded with ocgis module call function
 
-Another point to think about by designing a process is the possibillity of chaining processes itself. The result of a process can be a final result or be used as an input for another process. Chaining processes is a common praxis but very depending on the user you are designing the service for.
-Technically for the development of WPS process chaining a few points to summarize:   
+Another point to think about when designing a process is the possibility of chaining processes together. The result of a process can be a final result or be used as an input for another process. Chaining processes is a common practice but depends on the user you are designing the service for.
+Technically, for the development of WPS process chaining, here are a few summary points:   
 
-*    the functional code should be modular and providing an interface/method for each single task
-*    providing a wps process for each task
+*    the functional code should be modular and provide an interface/method for each single task
+*    provide a wps process for each task
 *    wps processes can be chained, manually or programmatically, to run a complete workflow
 *    wps chaining can be done manually, with workflow tools, direct wps chaining or with code scripts
 *    a complete workflow chain could also be started by a wps process.
 
 .. image:: _images/wps_chain.png
 
-In birdhouse restflow and dispel4py are intgrated and a WPS chaing is realized as the wizard of phoenix. This WPS chain is fetching data and running a process (selected by the user) with the fetched data : http://pyramid-phoenix.readthedocs.io/en/latest/user_guide.html#wizard
+In birdhouse restflow and dispel4py are intgrated and WPS chaining is used in the wizard of phoenix. This WPS chain fetches data and runs a process (selected by the user) with the fetched data : http://pyramid-phoenix.readthedocs.io/en/latest/user_guide.html#wizard
 
 
 Here is a tutorial to follow: :ref:`chaining_WPS`.
