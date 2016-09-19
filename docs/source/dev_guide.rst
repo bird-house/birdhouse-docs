@@ -23,8 +23,7 @@ To get easier started you can install :ref:`Emu <emu:installation>` with some ex
 Designing a process
 -------------------
 
-For designing a process it is necessary to know some basic concepts of how data are produced in birdhouse. Following are some basic explanations to help developing appropriate processes to provide a scientific method as a service. The word **process** is used in the same sense as in the OGC standard: *for any algorithm, calculation or model that either generates new data or trans-
-forms some input data into output data*. And can be illustrated like the following graphic:
+For designing a process it is necessary to know some basic concepts about how data are produced in birdhouse. The following are some basic explanations to help in developing appropriate processes to provide a scientific method as a service. The word **process** is used in the same sense as in the OGC standard: *for any algorithm, calculation or model that either generates new data or transforms some input data into output data*. And can be illustrated like the following graphic:
 
 .. image:: _images/process_schema_1.png
 
@@ -47,7 +46,7 @@ As part of the process description there is an **execute** function:
        self.output.setValue( result )
        
 
-It is a recommended practice to separate the functions ( the actual data processing ) from the process description. This creates modulatity and enables multiple usage of functions when designing several processes. The modules in flyingpigeon are located here::
+It is a recommended practice to separate the functions (the actual data processing) from the process description. This creates modularity and enables multiple usage of functions when designing several processes. The modules in flyingpigeon are located here::
 
     ./flyingpigeon/flyingpigeon
 
@@ -55,7 +54,7 @@ Generally, the execution of a process contains several processing steps, where t
 
     ~/birdhouse/var/lib/pywps/tmp/$bird/
 
-This tmp folder is removed after job is successfully executed. To reuse temporary files, it is necessary to declare them as output files. Furthermore, during an execution, there are steps which are necessary to be successfully performed and a result is called back. If this particulary step fails, the whole process should exit with an appropriate error message, while in other cases it is not relevent for producing the final result. The following image shows a theoretical chain of functions: 
+This tmp folder is removed after job is successfully executed. To reuse temporary files, it is necessary to declare them as output files. Furthermore, during an execution, there are steps which are necessary to be successfully performed and a result is called back. If this particular step fails, the whole process should exit with an appropriate error message, while in other cases it is not relevent for producing the final result. The following image shows a theoretical chain of functions: 
 
 .. image:: _images/module_chain.png
 
@@ -90,7 +89,7 @@ In pracitice, the functions should be encapsulated in **try** and **except** cal
        msg = 'This failed but is not obligatory for the output. The process will continue. Reason for the failure: %s ' % e
        logger.debug(msg)  
         
-The log file can than look like::
+The log file then looks like::
   
   tail -f  ~/birdhouse/var/log/pywps/flyingpigeon.log
   
@@ -106,18 +105,18 @@ The log file can than look like::
   PyWPS [2016-09-14 11:49:14,349] INFO: ocgis module call as ops.execute()
   PyWPS [2016-09-14 11:49:16,648] INFO: Succeeded with ocgis module call function
 
-Another point to think about by designing a process is the possibillity of chaining processes itself. The result of a process can be a final result or be used as an input for another process. Chaining processes is a common praxis but very depending on the user you are designing the service for.
-Technically for the development of WPS process chaining a few points to summarize:   
+Another point to think about when designing a process is the possibility of chaining processes together. The result of a process can be a final result or be used as an input for another process. Chaining processes is a common practice but depends on the user you are designing the service for.
+Technically, for the development of WPS process chaining, here are a few summary points:   
 
-*    the functional code should be modular and providing an interface/method for each single task
-*    providing a wps process for each task
+*    the functional code should be modular and provide an interface/method for each single task
+*    provide a wps process for each task
 *    wps processes can be chained, manually or programmatically, to run a complete workflow
 *    wps chaining can be done manually, with workflow tools, direct wps chaining or with code scripts
 *    a complete workflow chain could also be started by a wps process.
 
 .. image:: _images/wps_chain.png
 
-In birdhouse restflow and dispel4py are intgrated and a WPS chaing is realized as the wizard of phoenix. This WPS chain is fetching data and running a process (selected by the user) with the fetched data : http://pyramid-phoenix.readthedocs.io/en/latest/user_guide.html#wizard
+In birdhouse restflow and dispel4py are intgrated and WPS chaining is used in the wizard of phoenix. This WPS chain fetches data and runs a process (selected by the user) with the fetched data : http://pyramid-phoenix.readthedocs.io/en/latest/user_guide.html#wizard
 
 
 Here is a tutorial to follow: :ref:`chaining_WPS`.
