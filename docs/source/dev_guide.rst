@@ -18,15 +18,14 @@ In Birdhouse we are using the :term:`PyWPS` implementation of a :term:`Web Proce
 To get easier started you can install :ref:`Emu <emu:installation>` with some example processes for PyWPS.
 
 
-.. _filelocation:
+.. _fileandfolder:
 
-Location of files
+Files and Folders
 -----------------
 
 WPS is designed to reduce data transport and enables dataporcessing close to the data archive. Nevertheless files are stored within birdhouse in a structued way. For designing a WPS process or process chain, the location of input, output and temporary files are illustraded like:
 
 .. image:: _images/filelocations.png
-
 
 Resources, wich are already on the local disc system (output of other processes or locally stored data archives) are linked into the cache simply with a soft link to avoid data transport and disc space usage.
 
