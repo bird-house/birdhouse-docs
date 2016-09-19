@@ -106,7 +106,25 @@ The log file can than look like::
   PyWPS [2016-09-14 11:49:14,349] INFO: ocgis module call as ops.execute()
   PyWPS [2016-09-14 11:49:16,648] INFO: Succeeded with ocgis module call function
 
-Another point to think about by designing a process is the possibillity of chaining processes itself. The result of a process can be a final result or be used as an input for another process. Chaining processes is a common praxis but very depending on the user you are designing the service for. Here is a tutorial to follow: :ref:`chaining_WPS`.
+Another point to think about by designing a process is the possibillity of chaining processes itself. The result of a process can be a final result or be used as an input for another process. Chaining processes is a common praxis but very depending on the user you are designing the service for.
+Technically for the development of WPS process chaining a few points to summarize:   
+
+*    the functional code should be modular and providing an interface/method for each single task
+*    providing a wps process for each task
+*    wps processes can be chained, manually or programmatically, to run a complete workflow
+*    wps chaining can be done manually, with workflow tools, direct wps chaining or with code scripts
+*    a complete workflow chain could also be started by a wps process.
+
+.. image:: _images/wps_chain.png
+
+In birdhouse restflow and dispel4py are intgrated and a WPS chaing is realized as the wizard of phoenix. This WPS chain is fetching data and running a process (selected by the user) with the fetched data : http://pyramid-phoenix.readthedocs.io/en/latest/user_guide.html#wizard
+
+
+Here is a tutorial to follow: :ref:`chaining_WPS`.
+
+or: 
+
+http://birdhouse.readthedocs.io/en/latest/appendix.html#scientific-workflow-tools
 
    
 .. _writing_docs:
