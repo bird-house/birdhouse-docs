@@ -103,19 +103,16 @@ Kepler with WPS:
 
 * https://kepler-project.org/users/sample-workflows
 
+Workflows with PyWPS:
+
+* https://github.com/AnnaHomolka/PyWPS/blob/master/doc/tutorial_process_chaining.pdf
+
 Other Workflow Engines:
 
 * ``http://www.yawlfoundation.org/``
 * https://en.wikipedia.org/wiki/Scientific_workflow_system
 * http://airavata.apache.org/
 * http://search.cpan.org/~nuffin/Class-Workflow-0.11/
-
-Related Projects:
-
-* http://climate4impact.eu/impactportal/general/index.jsp
-* http://adaguc.knmi.nl/
-* http://evolvingweb.github.io/ajax-solr/examples/reuters/index.html
-* http://ceda-wps2.badc.rl.ac.uk/ui/home
 
 
 Scientific Python
@@ -177,9 +174,22 @@ List of available Web Processing Services:
 * British Antarctic Survey WPS for Meteorological Data - ``http://sosmet.nerc-bas.ac.uk:8080/wpsmet/WebProcessingService?Request=GetCapabilities&Service=WPS``
 * PyWPS Demo - ``http://apps.esdi-humboldt.cz/pywps/?request=GetCapabilities&service=WPS&version=1.0.0``
 
+
 Alternatives to WPS
 ===================
 
 * XML-RPC: Simple cross-platform distributed computing, based on the standards of the Internet. - http://xmlrpc.scripting.com/
 * Swagger is a simple yet powerful representation of your RESTful API.  - http://swagger.io/
 
+
+Related Projects
+================
+
+* http://geopython.github.io/
+* http://geonode.org/
+* http://esgf.llnl.gov/
+* http://climate4impact.eu/impactportal/general/index.jsp
+* http://adaguc.knmi.nl/
+* http://wps-web1.ceda.ac.uk/ui/home
+* https://freva.met.fu-berlin.de/
+* https://climate.apache.org/ 
