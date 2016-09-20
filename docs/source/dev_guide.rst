@@ -23,6 +23,34 @@ To get easier started you can install :ref:`Emu <emu:installation>` with some ex
 Files and Folders
 -----------------
 
+Birdhouse is a framework with several compartments. They can be installed due to the specefic needs of the user.
+here is a short overview of the order of the most important files and folders: 
+
+Environment
+...........
+
+
+Three folder places has to be pointed out: 
+
+* **repository clones:**  the fetched code by ``git clone``. it is recommended to store the repositories in ``~/birdhouse``
+
+* **anaconda**: by default the installation process is creating a folder ``~/anaconda`` for general anaconda specific software (see also :ref:`anaconda` ). 
+
+* **conda environments:** All birds (repositories) are build with an own environment to avoid missmatch of dependencies.
+By default the conda environments are in ``~/.conda/envs/``.
+
+To change the default settings, create a ``Makefile.config`` with::
+  cp Makefile.config.example Makefile.config 
+
+and change the pathes accordingly to your needs.
+
+Further more in ``environment.yml`` the conda packages can be defined. It is recommended to pinn the version. 
+
+
+Dataproduction
+..............
+
+
 WPS is designed to reduce data transport and enables data processing close to the data archive. Nevertheless, files are stored within birdhouse in a structued way. For designing a WPS process or process chain, the location of input, output and temporary files are illustrated like:
 
 .. image:: _images/filelocations.png
@@ -40,7 +68,7 @@ The locations are the following:
 
 The files of the cache are separated by the birds performing the data fetch and keep the folder structure of the original data archive. 
 
-* temporary files: ``~/birdhouse/var/lib/pywps/tmp/${bird}/``
+* temporary files: ``~/birdhouse/var/lib/pywps/tmp/``
 
 Each process is running in a temporary folder which is removed after the process is successfully executed. Like the cache, tmp folders are separated by birds as well.
 
@@ -87,7 +115,7 @@ It is a recommended practice to separate the functions (the actual data processi
 
 Generally, the execution of a process contains several processing steps, where temporary files and memory values are generated. Birdhouse runs each job in a separate folder, by default situated in::
 
-    ~/birdhouse/var/lib/pywps/tmp/$bird/
+    ~/birdhouse/var/lib/pywps/tmp/
 
 This tmp folder is removed after job is successfully executed. To reuse temporary files, it is necessary to declare them as output files. Furthermore, during an execution, there are steps which are necessary to be successfully performed and a result is called back. If this particular step fails, the whole process should exit with an appropriate error message, while in other cases it is not relevent for producing the final result. The following image shows a theoretical chain of functions: 
 
