@@ -29,27 +29,28 @@ here is a short overview of the order of the most important files and folders:
 Environment
 ...........
 
+Three folder locations have to be pointed out: 
 
-Three folder places has to be pointed out: 
+* **repository clones:**  The fetched code by ``git clone``. It is recommended to store the repositories in ``~/birdhouse``
 
-* **repository clones:**  the fetched code by ``git clone``. it is recommended to store the repositories in ``~/birdhouse``
+* **anaconda**: By default, the installation process creates a folder ``~/anaconda`` for general anaconda-specific software (see also :ref:`anaconda` ). 
 
-* **anaconda**: by default the installation process is creating a folder ``~/anaconda`` for general anaconda specific software (see also :ref:`anaconda` ). 
-
-* **conda environments:** All birds (repositories) are build with an own environment to avoid missmatch of dependencies.
-By default the conda environments are in ``~/.conda/envs/``.
+* **conda environments:** All birds (repositories) are built with their own environment to avoid missmatch of dependencies.
+By default, the conda environments are in ``~/.conda/envs/``.
 
 To change the default settings, create a ``Makefile.config`` with::
+
   cp Makefile.config.example Makefile.config 
 
 and change the pathes accordingly to your needs.
 
-Further more in ``environment.yml`` the conda packages can be defined. It is recommended to pinn the version. 
+Further more in ``environment.yml`` the conda packages can be defined. It is recommended to pinn the version.
+
+There are **log files** situated at:: ``~/birdhouse/var/log/pywps/``
 
 
-Dataproduction
-..............
-
+Data production
+...............
 
 WPS is designed to reduce data transport and enables data processing close to the data archive. Nevertheless, files are stored within birdhouse in a structued way. For designing a WPS process or process chain, the location of input, output and temporary files are illustrated like:
 
@@ -60,24 +61,22 @@ Resources, which are already on the local disc system (output by other processes
 
 The locations are the following:
 
-* Reources: 
+* **Reources:** Any kind of accessable data. Like ESGF, thredd server or files stored on the server-side disc system
 
-|  Any kind of accessable data. Like ESGF, thredd server or files stored on the server-side disc system
+* cache: ``~/birdhouse/var/lib/pywps/cache/`` The cache is for external data which are not located on the server side. The files of the cache are separated by the birds performing the data fetch and keep the folder structure of the original data archive. Once a file is already in the cache, the data will not be refetched if a second request is made. The cache can be seen as a local data archive. Under productive usage of birdhouse, this folder is growing, since all requested external data are stored here. 
 
-* Cache: ``~/birdhouse/var/lib/pywps/cache/``
+* working directory: ``~/birdhouse/var/lib/pywps/tmp/`` Each process is running in a temporary folder (= working directory) which is removed after the process is successfully executed. Like the cache, the working directories are separated by birds. Resource files are linked into the directory. 
 
-The files of the cache are separated by the birds performing the data fetch and keep the folder structure of the original data archive. 
+* output files:: ``~/birdhouse/var/lib/pywps/outputs/`` The output files are also stored in output folders separated by the birds producing the files. In the case of flyingpigeon, you can get the paths with:
 
-* temporary files: ``~/birdhouse/var/lib/pywps/tmp/``
+.. code-block:: python
 
-Each process is running in a temporary folder which is removed after the process is successfully executed. Like the cache, tmp folders are separated by birds as well.
+   from flyingpigeon import config
+   output_path = config.output_path()        # returns the output folder path
+   outputUrl_path = config.outputUrl_path()  # returns the URL address of the output folder
 
-* output files:: ``~/birdhouse/var/lib/pywps/outputs/``
-  
-The output files are also stored separately from the birds producing the files. 
-Furthermore, there are **log files** situated at:: ``~/birdhouse/var/log/pywps/${bird}.log``
-  
-And in some special cases, static files are used (e.g. html files to provide general information). These files are located in the repository. In case of flyingpigeon, they are located at: ``./flyingpigeon/flyingpigeon/static/``
+
+And in some special cases, static files are used (e.g. html files to provide general information). These files are located in the repository. In the case of flyingpigeon, they are located at: ``./flyingpigeon/flyingpigeon/static/``
 
 and copied during the installation (or update) to: ``~/birdhouse/var/www/``
     
