@@ -33,7 +33,7 @@ Three folder locations have to be pointed out:
 
 * **repository clones:**  The fetched code by ``git clone``. It is recommended to store the repositories in ``~/birdhouse``
 
-* **anaconda**: By default, the installation process creates a folder ``~/anaconda`` for general anaconda-specific software (see also :ref:`anaconda` ). 
+* **anaconda**: By default, the installation process creates a folder ``~/anaconda`` for general anaconda-specific software (see also :ref:`anaconda`_ ). 
 
 * **conda environments:** All birds (repositories) are built with their own environment to avoid missmatch of dependencies.
 By default, the conda environments are in ``~/.conda/envs/``.
@@ -44,7 +44,7 @@ To change the default settings, create a ``Makefile.config`` with::
 
 and change the pathes accordingly to your needs.
 
-Further more in ``environment.yml`` the conda packages can be defined. It is recommended to pinn the version.
+Further more in ``environment.yml`` the conda packages can be defined. It is recommended to pinn the version. Here the bird specific packages are defined, while in ``requirements/conda_pinned`` general versions are set.
 
 There are **log files** situated at:: ``~/birdhouse/var/log/pywps/``
 
