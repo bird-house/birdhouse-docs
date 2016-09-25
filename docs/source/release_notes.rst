@@ -30,7 +30,7 @@ Paris (October 2015)
 * register and use Thredds catalogs as data source
 * publish local netcdf files and Thredds catalogs to birdhouse Solr
 * qualtiy check processes added (cfchecker, qa-dkrz)
-* generation of docker images for each Birdhouse component
+* generation of docker images for each birdhouse component
 * using dispel4py as workflow engine in Malleefowl
 * using Celery task scheduler/queue to run and monitor WPS processes
 * improved Phoenix web client
@@ -53,18 +53,18 @@ Paris (September 2014)
 * Installation based on anaconda and buildout
 * buildout recipes (birdhousebuilder) available on PyPI to simplify installation and configuration of multiple WPS server
 * Monitoring of all used services (WPS, WMS, CSW, Phoenix) with supervisor
-* moved source code and documentation to Birdhouse on GitHub
+* moved source code and documentation to birdhouse on GitHub
 
 
 Helsinki (May 2014)
 ===================
 
-* presentation of Birdhouse at EGI, Helsinki
-* stabilized Birdhouse and CSC processes
+* presentation of birdhouse at EGI, Helsinki
+* stabilized birdhouse and CSC processes
 * updated documenation and tutorials
 
 Vienna (April 2014)
 ===================
 
-* presentation of Birdhouse at EGU, Vienna
-* "quality check" workflow for cordex data
+* presentation of birdhouse at EGU, Vienna
+* "quality check" workflow for CORDEX data

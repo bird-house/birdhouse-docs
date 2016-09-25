@@ -94,7 +94,7 @@ and the `GeoServer Tutorial <http://geoserver.geo-solutions.it/edu/en/wps/chaini
 WPS process implementation with PyWPS
 -------------------------------------
 
-There are several WPS implementations available (:term:`GeoServer`, :term:`COWS`, ...). In Birdhouse we use the Python implementation :term:`PyWPS`.
+There are several WPS implementations available (:term:`GeoServer`, :term:`COWS`, ...). In birdhouse, we use the Python implementation :term:`PyWPS`.
 In `PyWPS` the `Word Counter` process could look like the following:
 
 .. literalinclude:: wps_word_counter.py
