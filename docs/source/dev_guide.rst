@@ -13,7 +13,7 @@ Developer Guide
 Writing a WPS process
 ---------------------
 
-In Birdhouse, we are using the :term:`PyWPS` implementation of a :term:`Web Processing Service`. Writing a WPS process in Birdhouse is the same as in PyWPS. The PyWPS documentation has a `tutorial on writing a process <http://pywps.org/docs/>`_. *Please* follow this PyWPS tutorial. 
+In birdhouse, we are using the :term:`PyWPS` implementation of a :term:`Web Processing Service`. Writing a WPS process in birdhouse is the same as in PyWPS. The PyWPS documentation has a `tutorial on writing a process <http://pywps.org/docs/>`_. *Please* follow this PyWPS tutorial. 
 
 To get started more easily, you can install :ref:`Emu <emu:installation>` with some example processes for PyWPS.
 
@@ -192,29 +192,29 @@ http://birdhouse.readthedocs.io/en/latest/appendix.html#scientific-workflow-tool
 Writing Documentation
 ---------------------
 
-Documentation is written in `ReStructuredText <http://sphinx-doc.org/rest.html>`_ and generated with `Sphinx <http://sphinx-doc.org/index.html>`_. The Birdhouse components use the buildout recipe `birdhousebuilder.recipe.sphinx <https://pypi.python.org/pypi/birdhousebuilder.recipe.sphinx>`_ which sets up Sphinx and a minimal ``docs`` folder. With ``make docs`` the documentation is generated locally. The documentation is published to `Read the Docs <https://readthedocs.org/>`_ with each commit to the `master` branch. The API reference is generated automatically using the Sphinx plugin `AutoAPI <http://sphinx-autoapi.readthedocs.io/en/latest/index.html>`_.
+Documentation is written in `ReStructuredText <http://sphinx-doc.org/rest.html>`_ and generated with `Sphinx <http://sphinx-doc.org/index.html>`_. The birdhouse components use the Buildout recipe `birdhousebuilder.recipe.sphinx <https://pypi.python.org/pypi/birdhousebuilder.recipe.sphinx>`_ which sets up Sphinx and a minimal ``docs`` folder. With ``make docs`` the documentation is generated locally. The documentation is published to `Read the Docs <https://readthedocs.org/>`_ with each commit to the `master` branch. The API reference is generated automatically using the Sphinx plugin `AutoAPI <http://sphinx-autoapi.readthedocs.io/en/latest/index.html>`_.
 
 * http://sphinx-doc.org/tutorial.html
 * http://quick-sphinx-tutorial.readthedocs.io/en/latest/
 
 .. _anaconda:
 
-Using Anaconda in Birdhouse
+Using Anaconda in birdhouse
 ---------------------------
 
-The installation of the Birdhouse components and especially the processes involve many software dependencies. The core dependencies are of course the WPS-related packages like :term:`PyWPS` and :term:`OWSLib` from the :term:`GeoPython` project. But most dependencies come from the processes themselves served by the WPS, such as `numpy`, `R`, `NetCDF`, `CDO`, `matplotlib`, `ncl`, `cdat`, and many more. 
+The installation of the birdhouse components and especially the processes involve many software dependencies. The core dependencies are of course the WPS-related packages like :term:`PyWPS` and :term:`OWSLib` from the :term:`GeoPython` project. But most dependencies come from the processes themselves served by the WPS, such as `numpy`, `R`, `NetCDF`, `CDO`, `matplotlib`, `ncl`, `cdat`, and many more. 
 
-The aim of Birdhouse is to take care of all these dependencies so that the user does not need to install them manually. If these dependencies were only *pure* Python packages, then using the :term:`Buildout` build tool, together with the Python package index :term:`PyPi`, would be sufficient. But many Python packages have `C` extensions and there are also non-Python packages that need to be installed like `R` and :term:`NetCDF`.
+The aim of birdhouse is to take care of all these dependencies so that the user does not need to install them manually. If these dependencies were only *pure* Python packages, then using the :term:`Buildout` build tool, together with the Python package index :term:`PyPi`, would be sufficient. But many Python packages have `C` extensions and there are also non-Python packages that need to be installed like `R` and :term:`NetCDF`.
 
 In this situation, the :term:`Anaconda Python distribution` is helpful. Anaconda already has a lot of Python-related packages available for different platforms (Linux, MacOSX, Windows), and there is no compilation needed on the installation host. Anaconda makes it easy to build own packages (*conda recipes*) and upload them to the free :term:`Anaconda Server`.
 
-Conda recipes by Birdhouse
+Conda recipes by birdhouse
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Birdhouse uses :term:`Anaconda` to maintain package dependencies. 
 Anaconda allows you to write your own `conda recipes <http://conda.pydata.org/docs/build.html>`_.
-In Birdhouse, we have written several conda recipes for the packages that were not available on Anaconda.  
-These `additional conda recipes by Birdhouse <https://github.com/bird-house/conda-recipes>`_ are available on GitHub. 
+In birdhouse, we have written several conda recipes for the packages that were not available on Anaconda.  
+These `additional conda recipes by birdhouse <https://github.com/bird-house/conda-recipes>`_ are available on GitHub. 
 Some of the missing packages are: :term:`PyWPS`, :term:`OWSLib`, :term:`cfchecker`, :term:`Nginx`, ...
 
 Anaconda provides a free :term:`Anaconda Server`. Here you can upload your built conda packages for different platforms (Linux, MacOX, Windows). These packages are then available for installation with the :term:`conda` installer.
@@ -236,9 +236,9 @@ There are several ways to build conda packages and upload them to the *Anaconda 
 * You can also `build packages remotely on Anaconda <https://docs.continuum.io/anaconda-cloud/build>`_. Additionally, you can set a GitHub Webhook so that on each commit of your recipe, a build will be run on Binstar. 
 * The remote builds on Anaconda are done using Docker images. The `Anaconda docker image for Linux-64 <https://hub.docker.com/r/binstar/linux-64/>`_ is available on :term:`Docker Hub`.  
 
-In Birdhouse, we usually use the remote build on Anaconda which is triggered by commits to GitHub. 
+In birdhouse, we usually use the remote build on Anaconda which is triggered by commits to GitHub. 
 But sometimes the docker image for Linux-64 provided by Binstar fails for some packages. 
-That is why `Birdhouse has in addition its own Linux-64 build image <https://hub.docker.com/r/birdhouse/binstar-linux-64/>`_ which is based on the Anaconda image. 
+That is why `birdhouse has in addition its own Linux-64 build image <https://hub.docker.com/r/birdhouse/binstar-linux-64/>`_ which is based on the Anaconda image. 
 The `Dockerfile for this image <https://github.com/bird-house/birdhouse-build/tree/master/docker/binstar-linux-64>`_ is on GitHub.
 
 .. warning::
@@ -320,7 +320,7 @@ Edit the fields:
 
    Now switch to `anaconda.org/yourname/packagename` and go to `Settings` -> `Admin` -> `Transfer` to transfer the package to `birdhouse`. (You could use ``-u birdhouse`` to upload it to `birdhouse` directly, but it seems to make some difference e.g. some fields in the web interface will not be filled in automatically, so I figured the other workaround to be more reliable.)
 
-Using Conda
+Using conda
 ~~~~~~~~~~~
 
 See the `conda documentation <http://conda.pydata.org/docs/index.html>`_.
@@ -336,22 +336,22 @@ See the `conda documentation <http://conda.pydata.org/docs/index.html>`_.
    See this conda issue at https://github.com/conda/conda/issues/1624
 
 
-Anaconda Alternatives
+Anaconda alternatives
 ~~~~~~~~~~~~~~~~~~~~~
 
 If Anaconda is not available, one could also provide these packages from source and compile them on each installation host. Buildout does provide ways to do so, but an initial installation with most of the software used in climate science could *easily take hours*. 
 
 Alternative package managers to Anaconda are for example :term:`Homebrew` (MacOSX only) and :term:`Linuxbrew` (a fork of Homebrew for Linux).
 
-Using Buildout in Birdhouse
+Using Buildout in birdhouse
 ---------------------------
 
-Birdhouse uses the :term:`Buildout` build tool to install and configure all Birdhouse components (:term:`Phoenix`, :term:`Malleefowl`, :term:`Emu`...). The main configuration file is ``buildout.cfg`` which is in the root folder of the application. 
+Birdhouse uses the :term:`Buildout` build tool to install and configure all birdhouse components (:term:`Phoenix`, :term:`Malleefowl`, :term:`Emu`...). The main configuration file is ``buildout.cfg`` which is in the root folder of the application. 
 As an example, have a look at the `buildout.cfg from Emu <https://github.com/bird-house/emu/blob/master/buildout.cfg>`_. 
 
 Before building an application with Buildout, you have an initial bootstrap step:
 
-.. code-block:: sh
+.. code-block:: s
 
     $ python bootstrap-buildout.py -c buildout.cfg
 
@@ -369,7 +369,7 @@ The default configuration in the ``buildout.cfg`` should always work to run your
 
     $ bin/buildout -c custom.cfg
 
-For convenience, Birdhouse has a Makefile which hides all these steps. If you want to build an application, you just need to run:
+For convenience, birdhouse has a Makefile which hides all these steps. If you want to build an application, you just need to run:
 
 .. code-block:: sh
 
@@ -379,21 +379,21 @@ See the `Makefile example of Emu <https://github.com/bird-house/emu/blob/master/
 For more details, see the :ref:`installation` section and the :ref:`Makefile documentation <bootstrap:makefile>`.
 
 
-Buildout Recipes by Birdhouse
+Buildout recipes by birdhouse
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-:term:`Buildout` has a plugin mechanism to extend the build tool functionality with `recipes <http://www.buildout.org/en/latest/docs/recipe.html>`_. Buildout can handle Python dependencies on its own. But in Birdhouse, we install most dependencies with Anaconda. We are using a Buildout extension to install conda packages with Buildout. Buildout does use these Python packages instead of downloading them from :term:`PyPi`. 
+:term:`Buildout` has a plugin mechanism to extend the build tool functionality with `recipes <http://www.buildout.org/en/latest/docs/recipe.html>`_. Buildout can handle Python dependencies on its own. But in birdhouse, we install most dependencies with Anaconda. We are using a Buildout extension to install conda packages with Buildout. Buildout does use these Python packages instead of downloading them from :term:`PyPi`. 
 There is also a set of recipes to set up Web Processing Services with :term:`PyWPS`, :term:`Nginx`, :term:`Gunicorn` and :term:`Supervisor`. 
 All these `Buildout recipes are on GitHub <https://github.com/bird-house?query=birdhousebuilder.recipe>`_ and can be `found on PyPi <https://pypi.python.org/pypi?%3Aaction=search&term=birdhousebuilder.recipe&submit=search>`_. 
 
-Here is the list of currently-used Buildout recipes by Birdhouse:
+Here is the list of currently-used Buildout recipes by birdhouse:
 
 * `birdhousebuilder.recipe.conda <https://pypi.python.org/pypi/birdhousebuilder.recipe.conda>`_: A Buildout recipe to install Anaconda packages.
 * `birdhousebuilder.recipe.pywps <https://pypi.python.org/pypi/birdhousebuilder.recipe.pywps>`_: A Buildout recipe to install and configure PyWPS Web Processing Service with Anaconda.
 * `birdhousebuilder.recipe.pycsw <https://pypi.python.org/pypi/birdhousebuilder.recipe.pycsw>`_: A Buildout recipe to install and configure pycsw Catalog Service (CSW) with Anaconda.
 * `birdhousebuilder.recipe.nginx <https://pypi.python.org/pypi/birdhousebuilder.recipe.nginx>`_: A Buildout recipe to install and configure Nginx with Anaconda.
 * `birdhousebuilder.recipe.supervisor <https://pypi.python.org/pypi/birdhousebuilder.recipe.supervisor>`_: A Buildout recipe to install and configure supervisor for Anaconda.
-* `birdhousebuilder.recipe.docker <https://pypi.python.org/pypi/birdhousebuilder.recipe.docker>`_: A Buildout recipe to generate a Dockerfile for Birdhouse applications.
+* `birdhousebuilder.recipe.docker <https://pypi.python.org/pypi/birdhousebuilder.recipe.docker>`_: A Buildout recipe to generate a Dockerfile for birdhouse applications.
 * `birdhousebuilder.recipe.sphinx <https://pypi.python.org/pypi/birdhousebuilder.recipe.sphinx>`_: A Buildout recipe to generate documentation with Sphinx.
 * `birdhousebuilder.recipe.ncwms <https://pypi.python.org/pypi/birdhousebuilder.recipe.ncwms>`_: A Buildout recipe to install and configure ncWMS2 Web Map Service.
 * `birdhousebuilder.recipe.adagucserver <https://pypi.python.org/pypi/birdhousebuilder.recipe.adagucserver>`_: A Buildout recipe to install and configure Adagucserver Web Map Service.

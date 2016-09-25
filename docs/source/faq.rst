@@ -12,7 +12,7 @@ Frequently Asked Questions
 General Questions
 =================
 
-*What is "Birdhouse"?*
+*What is "birdhouse"?*
 ----------------------
 
 *Birdhouse* is collection of Python packages to make the usage of Web Processing Services (WPS) easy.
