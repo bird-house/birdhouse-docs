@@ -3,9 +3,8 @@
 Contributing
 ============
 
-Birdhouse is at an early stage. Things are not clearly setup yet. 
-The main contributions can be provided via GitHub issues and providing patches. 
-You can also register on the mailing list to retrieve announcements.
+Birdhouse is approaching a stable release. Contributions for bug fixes are always welcome, or for new features or processes for the development branch.
+You can also register for the mailing list to retrieve announcements.
 
 
 Mailing list
