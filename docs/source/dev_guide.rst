@@ -72,6 +72,7 @@ The locations are the following:
 .. code-block:: python
 
    from flyingpigeon import config
+   
    output_path = config.output_path()        # returns the output folder path
    outputUrl_path = config.outputUrl_path()  # returns the URL address of the output folder
 
