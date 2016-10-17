@@ -49,7 +49,7 @@ If you are already familliar with installing single standalone WPS (follow the i
 general remarks:  
 ..................
 
-| Check the ref:`requirements`_ of your system!
+| Check the :ref:`requirements`_ of your system!
 | The installation is done as **normal user**, root rights are causing conflicts. 
 
 
