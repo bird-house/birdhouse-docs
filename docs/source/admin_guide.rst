@@ -87,7 +87,7 @@ and to check if the services are running, run::
 
 If the services are running, you can launch the GUI in a common web browser. By default, phoenix is set to port 8081::
 
-  firefox http://phoenix:8081
+  firefox http://localhost:8081
 or::
 
   firefox https://localhost:8443/

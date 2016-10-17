@@ -8,7 +8,7 @@ Introduction
 
 Birdhouse is a collection of :term:`Web Processing Service` (WPS) related
 Python components to support data processing in the climate science
-community. The aim of Birdhouse is to make the usage of WPS easy. Most
+community. The aim of birdhouse is to make the usage of WPS easy. Most
 of the :term:`OGC`/:term:`WPS` related software comes from the :term:`GeoPython` project. 
 
 Birdhouse is the home of Web Processing Services used in climate science and components to support them (the birds).
@@ -31,10 +31,10 @@ WPS services and libraries with algorithms used in climate science analysis:
 * `Emu`_: some example WPS processes
 
 
-You can find the source code of all Birdhouse components on
+You can find the source code of all birdhouse components on
 `our GitHub page <https://github.com/bird-house>`_. 
-:term:`Conda` packages for Birdhouse are available on the `birdhouse channel <https://anaconda.org/birdhouse>`_ on Binstar.
-:term:`Docker` images with Birdhouse components are on `Docker Hub <https://hub.docker.com/r/birdhouse/>`_ 
+:term:`Conda` packages for birdhouse are available on the `birdhouse channel <https://anaconda.org/birdhouse>`_ on Binstar.
+:term:`Docker` images with birdhouse components are on `Docker Hub <https://hub.docker.com/r/birdhouse/>`_ 
 
 Getting started
 ===============
