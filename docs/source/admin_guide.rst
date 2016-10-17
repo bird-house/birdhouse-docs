@@ -12,7 +12,7 @@ Administrator Guide
 .. _birdhouse_ecosystem:
 
 Set up a birdhouse ecosystem server
-===================================
+-----------------------------------
 
 If you are already familliar with installing single standalone WPS (follow the installation guides in the documentations of e.g. emu), then you are ready to set up a birdhouse containing flyingpigeon (providing scientific analyses methods), malleefowl (to search and fetch data) and the pheonix (a graphic interface for a web browser including a WMS). 
 
