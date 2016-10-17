@@ -7,6 +7,36 @@ Administrator Guide
     :local:
     :depth: 2
 
+.. _fileandfolder:
+
+Files and Folders
+-----------------
+
+Birdhouse is a framework with several compartments. They can be installed according to the specefic needs of the user. Here is a short overview in order of the most important files and folders: 
+
+Environment
+...........
+
+Three folder locations have to be pointed out: 
+
+* **repository clones:**  The fetched code by ``git clone``. It is recommended to store the repositories in ``~/birdhouse``
+
+* **anaconda**: By default, the installation process creates a folder ``~/anaconda`` for general anaconda-specific software (see also :ref:`anaconda`_ ). 
+
+* **conda environments:** All birds (repositories) are built with their own environment to avoid missmatch of dependencies.
+By default, the conda environments are in ``~/.conda/envs/``.
+
+To change the default settings, create a ``Makefile.config`` with::
+
+  cp Makefile.config.example Makefile.config 
+
+and change the paths accordingly to your needs.
+
+Furthermore, in ``environment.yml``, the conda packages can be defined. It is recommended to pin the version. The bird-specific packages are defined here, while in ``requirements/conda_pinned``, general versions are set.
+
+There are **log files** situated at:: ``~/birdhouse/var/log/pywps/``
+
+
     
 
 .. _birdhouse_ecosystem:
