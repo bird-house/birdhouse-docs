@@ -43,6 +43,7 @@ WPS Client Software:
 * GeoTools WPS Module - http://docs.geotools.org/latest/userguide/unsupported/wps.html
 * 52 North Java Client - http://52north.org/communities/geoprocessing/wps/index.html
 * 52 North Javascript Client - http://geoprocessing.demo.52north.org:8080
+* WPS Javascript Client by Boundless - https://github.com/boundlessgeo/wps-gui
 
 QGIS Desktop GIS with wps plugins:
 
