@@ -1,3 +1,14 @@
+.. _adminguide:
+
+Administrator Guide
+===================
+
+.. contents::
+    :local:
+    :depth: 2
+
+    
+
 .. _birdhouse_ecosystem:
 
 Set up a birdhouse ecosystem server
@@ -9,7 +20,7 @@ general remarks:
 ..................
 
 | Check the ref:`requirements`_ of your system!
-| The installation is done as **normal user**, root rights are not required. 
+| The installation is done as **normal user**, root rights are causing conflicts. 
 
 
 clone the repositories from gitHub: 

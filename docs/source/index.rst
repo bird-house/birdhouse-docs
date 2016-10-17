@@ -45,6 +45,7 @@ Getting started
    overview
    installation
    tutorial
+   admin_guide
    dev_guide
    contributing
    faq
