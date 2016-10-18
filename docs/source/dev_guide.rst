@@ -7,13 +7,13 @@ Developer Guide
     :local:
     :depth: 2
 
-    
+
 .. _writing_WPS_process:
-    
+
 Writing a WPS process
 ---------------------
 
-In birdhouse, we are using the :term:`PyWPS` implementation of a :term:`Web Processing Service`. Writing a WPS process in birdhouse is the same as in PyWPS. The PyWPS documentation has a `tutorial on writing a process <http://pywps.org/docs/>`_. *Please* follow this PyWPS tutorial. 
+In birdhouse, we are using the :term:`PyWPS` implementation of a :term:`Web Processing Service`. Writing a WPS process in birdhouse is the same as in PyWPS. The PyWPS documentation has a `tutorial on writing a process <http://pywps.org/docs/>`_. *Please* follow this PyWPS tutorial.
 
 To get started more easily, you can install :ref:`Emu <emu:installation>` with some example processes for PyWPS.
 
@@ -32,16 +32,16 @@ The locations are defined as follows:
 
 * **Resources:** Any kind of accessable data such as ESGF, thredd server or files stored on the server-side disc system.
 
-* **Cache:** ``~/birdhouse/var/lib/pywps/cache/`` The cache is for external data which are not located on the server side. The files of the cache are separated by the birds performing the data fetch and keep the folder structure of the original data archive. Once a file is already in the cache, the data will not be refetched if a second request is made. The cache can be seen as a local data archive. Under productive usage of birdhouse, this folder is growing, since all requested external data are stored here. 
+* **Cache:** ``~/birdhouse/var/lib/pywps/cache/`` The cache is for external data which are not located on the server side. The files of the cache are separated by the birds performing the data fetch and keep the folder structure of the original data archive. Once a file is already in the cache, the data will not be refetched if a second request is made. The cache can be seen as a local data archive. Under productive usage of birdhouse, this folder is growing, since all requested external data are stored here.
 
-* **Working directory:** ``~/birdhouse/var/lib/pywps/tmp/`` Each process is running in a temporary folder (= working directory) which is removed after the process is successfully executed. Like the cache, the working directories are separated by birds. Resource files are linked into the directory. 
+* **Working directory:** ``~/birdhouse/var/lib/pywps/tmp/`` Each process is running in a temporary folder (= working directory) which is removed after the process is successfully executed. Like the cache, the working directories are separated by birds. Resource files are linked into the directory.
 
 * **Output files:** ``~/birdhouse/var/lib/pywps/outputs/`` The output files are also stored in output folders separated by the birds producing the files. In the case of flyingpigeon, you can get the paths with:
 
 .. code-block:: python
 
    from flyingpigeon import config
-   
+
    output_path = config.output_path()        # returns the output folder path
    outputUrl_path = config.outputUrl_path()  # returns the URL address of the output folder
 
@@ -49,7 +49,7 @@ The locations are defined as follows:
 And in some special cases, static files are used (e.g. html files to provide general information). These files are located in the repository. In the case of flyingpigeon, they are located at: ``./flyingpigeon/flyingpigeon/static/``
 
 and copied during the installation (or update) to: ``~/birdhouse/var/www/``
-    
+
 .. _processdesign:
 
 Designing a process
@@ -59,24 +59,24 @@ For designing a process it is necessary to know some basic concepts about how da
 
 .. image:: _images/process_schema_1.png
 
-The specific nature of web processing services is that processes can be described in a standardised way (see: 
+The specific nature of web processing services is that processes can be described in a standardised way (see:
 :ref:`writing_WPS_process`). In the flyingpigeon repository, the process descriptions are located in::
 
     ./flyingpigeon/flyingpigeon/processes
 
 As part of the process description there is an **execute** function:
-       
+
 .. code-block:: python
 
    def execute(self):
        # here starts the actual data processing
        import pythonlib
        from flyingpigeon import aflyingpigeonlib as afl
-        
+
        result = afl.nicefunction(indata, parameter1=argument1, parameter2=argument2)
-        
+
        self.output.setValue( result )
-       
+
 
 It is a recommended practice to separate the functions (the actual data processing) from the process description. This creates modularity and enables multiple usage of functions when designing several processes. The modules in flyingpigeon are located here::
 
@@ -86,7 +86,7 @@ Generally, the execution of a process contains several processing steps, where t
 
     ~/birdhouse/var/lib/pywps/tmp/
 
-This tmp folder is removed after job is successfully executed. To reuse temporary files, it is necessary to declare them as output files. Furthermore, during execution, there are steps which are necessary to be successfully performed and a result is called back. If this particular step fails, the whole process should exit with an appropriate error message, while in other cases it is not relevent for producing the final result. The following image shows a theoretical chain of functions: 
+This tmp folder is removed after job is successfully executed. To reuse temporary files, it is necessary to declare them as output files. Furthermore, during execution, there are steps which are necessary to be successfully performed and a result is called back. If this particular step fails, the whole process should exit with an appropriate error message, while in other cases it is not relevent for producing the final result. The following image shows a theoretical chain of functions:
 
 .. image:: _images/module_chain.png
 
@@ -95,36 +95,36 @@ In pracitice, the functions should be encapsulated in **try** and **except** cal
 
 .. code-block:: python
    :linenos:
-   
+
    from pywps.Process import WPSProcess
    import logging
    logger = logging.getLogger(__name__)
-    
-   # set a status message 
+
+   # set a status message
    self.status.set('execution started at : %s ' % dt.now(),5)
-    
+
    try:
        self.status.set('the process is doing something : %s '  % dt.now(),10)
        result = 42
        logger.info('found the answer of life')
-   except Exception as e: 
+   except Exception as e:
        msg = 'This failed but is obligatory for the output. The process stops now, because: %s ' % e
-       logger.error(msg)  
-       raise Exception(msg) 
-    
+       logger.error(msg)
+       raise Exception(msg)
+
    try:
        self.status.set('the process is doing something else : %s '  % dt.now(),20)
        interesting = True
-       # or generate a temporary file 
+       # or generate a temporary file
        logger.info(' Thanks for reading the guidelines ')
-   except Exception as e: 
+   except Exception as e:
        msg = 'This failed but is not obligatory for the output. The process will continue. Reason for the failure: %s ' % e
-       logger.debug(msg)  
-        
+       logger.debug(msg)
+
 The log file then looks like::
-  
+
   tail -f  ~/birdhouse/var/log/pywps/flyingpigeon.log
-  
+
   PyWPS [2016-09-14 11:49:13,819] INFO: Start ocgis module call function
   PyWPS [2016-09-14 11:49:13,820] INFO: Execute ocgis module call function
   PyWPS [2016-09-14 11:49:13,828] DEBUG: input has Lambert_Conformal projection and can not subsetted with geom
@@ -133,12 +133,12 @@ The log file then looks like::
   PyWPS [2016-09-14 11:49:13,994] INFO: Execute ocgis module call function
   PyWPS [2016-09-14 11:49:14,029] INFO: OcgOperations set
   PyWPS [2016-09-14 11:49:14,349] INFO: tas as variable dedected
-  PyWPS [2016-09-14 11:49:14,349] INFO: data_mb  = 0.0417938232422 ; memory_limit = 1660.33984375 
+  PyWPS [2016-09-14 11:49:14,349] INFO: data_mb  = 0.0417938232422 ; memory_limit = 1660.33984375
   PyWPS [2016-09-14 11:49:14,349] INFO: ocgis module call as ops.execute()
   PyWPS [2016-09-14 11:49:16,648] INFO: Succeeded with ocgis module call function
 
 Another point to think about when designing a process is the possibility of chaining processes together. The result of a process can be a final result or be used as an input for another process. Chaining processes is a common practice but depends on the user you are designing the service for.
-Technically, for the development of WPS process chaining, here are a few summary points:   
+Technically, for the development of WPS process chaining, here are a few summary points:
 
 *    the functional code should be modular and provide an interface/method for each single task
 *    provide a wps process for each task
@@ -153,13 +153,13 @@ In birdhouse, restflow and dispel4py are integrated, and WPS chaining is used in
 
 Here is a tutorial to follow: :ref:`chaining_WPS`.
 
-or: 
+or:
 
 http://birdhouse.readthedocs.io/en/latest/appendix.html#scientific-workflow-tools
 
-   
+
 .. _writing_docs:
-            
+
 Writing Documentation
 ---------------------
 
@@ -173,7 +173,7 @@ Documentation is written in `ReStructuredText <http://sphinx-doc.org/rest.html>`
 Using Anaconda in birdhouse
 ---------------------------
 
-The installation of the birdhouse components and especially the processes involve many software dependencies. The core dependencies are of course the WPS-related packages like :term:`PyWPS` and :term:`OWSLib` from the :term:`GeoPython` project. But most dependencies come from the processes themselves served by the WPS, such as `numpy`, `R`, `NetCDF`, `CDO`, `matplotlib`, `ncl`, `cdat`, and many more. 
+The installation of the birdhouse components and especially the processes involve many software dependencies. The core dependencies are of course the WPS-related packages like :term:`PyWPS` and :term:`OWSLib` from the :term:`GeoPython` project. But most dependencies come from the processes themselves served by the WPS, such as `numpy`, `R`, `NetCDF`, `CDO`, `matplotlib`, `ncl`, `cdat`, and many more.
 
 The aim of birdhouse is to take care of all these dependencies so that the user does not need to install them manually. If these dependencies were only *pure* Python packages, then using the :term:`Buildout` build tool, together with the Python package index :term:`PyPi`, would be sufficient. But many Python packages have `C` extensions and there are also non-Python packages that need to be installed like `R` and :term:`NetCDF`.
 
@@ -182,15 +182,15 @@ In this situation, the :term:`Anaconda Python distribution` is helpful. Anaconda
 Conda recipes by birdhouse
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Birdhouse uses :term:`Anaconda` to maintain package dependencies. 
+Birdhouse uses :term:`Anaconda` to maintain package dependencies.
 Anaconda allows you to write your own `conda recipes <http://conda.pydata.org/docs/build.html>`_.
-In birdhouse, we have written several conda recipes for the packages that were not available on Anaconda.  
-These `additional conda recipes by birdhouse <https://github.com/bird-house/conda-recipes>`_ are available on GitHub. 
+In birdhouse, we have written several conda recipes for the packages that were not available on Anaconda.
+These `additional conda recipes by birdhouse <https://github.com/bird-house/conda-recipes>`_ are available on GitHub.
 Some of the missing packages are: :term:`PyWPS`, :term:`OWSLib`, :term:`cfchecker`, :term:`Nginx`, ...
 
 Anaconda provides a free :term:`Anaconda Server`. Here you can upload your built conda packages for different platforms (Linux, MacOX, Windows). These packages are then available for installation with the :term:`conda` installer.
 
-`Birdhouse has an organisation <https://anaconda.org/birdhouse>`_ where all conda packages are collected which are 
+`Birdhouse has an organisation <https://anaconda.org/birdhouse>`_ where all conda packages are collected which are
 built from the conda recipes on GitHub. These packages can be installed with the :term:`conda` installer using the `birdhouse` channel.
 For example, if you are already using Anaconda, you can install :term:`PyWPS` with the following command:
 
@@ -204,17 +204,17 @@ Building conda packages
 There are several ways to build conda packages and upload them to the *Anaconda Server*:
 
 * You can `build packages locally <http://conda.readthedocs.io/en/latest/#building-your-own-packages>`_ and upload them with the Binstar command line tool.
-* You can also `build packages remotely on Anaconda <https://docs.continuum.io/anaconda-cloud/build>`_. Additionally, you can set a GitHub Webhook so that on each commit of your recipe, a build will be run on Binstar. 
-* The remote builds on Anaconda are done using Docker images. The `Anaconda docker image for Linux-64 <https://hub.docker.com/r/binstar/linux-64/>`_ is available on :term:`Docker Hub`.  
+* You can also `build packages remotely on Anaconda <https://docs.continuum.io/anaconda-cloud/build>`_. Additionally, you can set a GitHub Webhook so that on each commit of your recipe, a build will be run on Binstar.
+* The remote builds on Anaconda are done using Docker images. The `Anaconda docker image for Linux-64 <https://hub.docker.com/r/binstar/linux-64/>`_ is available on :term:`Docker Hub`.
 
-In birdhouse, we usually use the remote build on Anaconda which is triggered by commits to GitHub. 
-But sometimes the docker image for Linux-64 provided by Binstar fails for some packages. 
-That is why `birdhouse has in addition its own Linux-64 build image <https://hub.docker.com/r/birdhouse/binstar-linux-64/>`_ which is based on the Anaconda image. 
+In birdhouse, we usually use the remote build on Anaconda which is triggered by commits to GitHub.
+But sometimes the docker image for Linux-64 provided by Binstar fails for some packages.
+That is why `birdhouse has in addition its own Linux-64 build image <https://hub.docker.com/r/birdhouse/binstar-linux-64/>`_ which is based on the Anaconda image.
 The `Dockerfile for this image <https://github.com/bird-house/birdhouse-build/tree/master/docker/binstar-linux-64>`_ is on GitHub.
 
 .. warning::
 
-   When you build conda packages for Linux-64, you need to be very careful to ensure that these packages will run on most Linux distributions (like :term:`CentOS`, :term:`Debian`, :term:`Ubuntu`, ...). Our experience is that packages tjat build on CentOS 6.x will also run on recent Debian/Ubuntu distributions. The Docker build images are also CentOS 6.x based.  
+   When you build conda packages for Linux-64, you need to be very careful to ensure that these packages will run on most Linux distributions (like :term:`CentOS`, :term:`Debian`, :term:`Ubuntu`, ...). Our experience is that packages tjat build on CentOS 6.x will also run on recent Debian/Ubuntu distributions. The Docker build images are also CentOS 6.x based.
 
 
 .. note::
@@ -237,13 +237,13 @@ Example: building a conda package for pygbif
     $ cd pygbif
     $ vim meta.yaml  # check dependencies, test, build number
     $ vim build.sh   # for non-python packges, here is most of the work to do
-    
+
 Enable anaconda build::
-     
+
     $ cd pygbif
     $ anaconda-build init
     $ vim .binstar.yml
-    
+
 Edit the anaconda config (``binstar.yml``) to have the following entries (change the package name for a different recipe):
 
 .. literalinclude:: binstar.yml
@@ -260,25 +260,25 @@ Run binstar build for the first time:
     $ anaconda-build submit .
     $ anaconda-build tail -f birdhouse/pygbif 1    # checks logs
 
-On successful build, go to the birdhouse channel on binstar and search for the `pygbif package` (``http://anaconda.org/birdhouse/pygbif/files``). 
-Go to the ``files`` tab and add the channel `main` for the successfully-built package. 
+On successful build, go to the birdhouse channel on binstar and search for the `pygbif package` (``http://anaconda.org/birdhouse/pygbif/files``).
+Go to the ``files`` tab and add the channel `main` for the successfully-built package.
 All packages on the `main` channel are available for public usage.
 
 .. image:: _images/binstar_channel.png
 
-Register GitHub webhook for pygbif: 
+Register GitHub webhook for pygbif:
 
-on the Anaconda Server, go to `Settings/Continuous Integration` of the ``pygbif`` package. 
+on the Anaconda Server, go to `Settings/Continuous Integration` of the ``pygbif`` package.
 
 Edit the fields:
 
 * `github.com/` = `bird-house/conda-recipes`
 * Subdirectory = pygbif
- 
+
 .. image:: _images/binstar_ci.png
 
 .. warning::
-   
+
    If you're logged into anaconda with your own rather than the `birdhouse` organization account, then the ``anaconda-build submit .`` way mentioned above seems to cause some problems (as of October 2015). A more reliable way to upload your package is to build it locally, upload it to your own account and then transfer the ownership to `birdhouse` via the web interface:
 
 .. code-block:: sh
@@ -310,15 +310,15 @@ See the `conda documentation <http://conda.pydata.org/docs/index.html>`_.
 Anaconda alternatives
 ~~~~~~~~~~~~~~~~~~~~~
 
-If Anaconda is not available, one could also provide these packages from source and compile them on each installation host. Buildout does provide ways to do so, but an initial installation with most of the software used in climate science could *easily take hours*. 
+If Anaconda is not available, one could also provide these packages from source and compile them on each installation host. Buildout does provide ways to do so, but an initial installation with most of the software used in climate science could *easily take hours*.
 
 Alternative package managers to Anaconda are for example :term:`Homebrew` (MacOSX only) and :term:`Linuxbrew` (a fork of Homebrew for Linux).
 
 Using Buildout in birdhouse
 ---------------------------
 
-Birdhouse uses the :term:`Buildout` build tool to install and configure all birdhouse components (:term:`Phoenix`, :term:`Malleefowl`, :term:`Emu`...). The main configuration file is ``buildout.cfg`` which is in the root folder of the application. 
-As an example, have a look at the `buildout.cfg from Emu <https://github.com/bird-house/emu/blob/master/buildout.cfg>`_. 
+Birdhouse uses the :term:`Buildout` build tool to install and configure all birdhouse components (:term:`Phoenix`, :term:`Malleefowl`, :term:`Emu`...). The main configuration file is ``buildout.cfg`` which is in the root folder of the application.
+As an example, have a look at the `buildout.cfg from Emu <https://github.com/bird-house/emu/blob/master/buildout.cfg>`_.
 
 Before building an application with Buildout, you have an initial bootstrap step:
 
@@ -353,9 +353,9 @@ For more details, see the :ref:`installation` section and the :ref:`Makefile doc
 Buildout recipes by birdhouse
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-:term:`Buildout` has a plugin mechanism to extend the build tool functionality with `recipes <http://www.buildout.org/en/latest/docs/recipe.html>`_. Buildout can handle Python dependencies on its own. But in birdhouse, we install most dependencies with Anaconda. We are using a Buildout extension to install conda packages with Buildout. Buildout does use these Python packages instead of downloading them from :term:`PyPi`. 
-There is also a set of recipes to set up Web Processing Services with :term:`PyWPS`, :term:`Nginx`, :term:`Gunicorn` and :term:`Supervisor`. 
-All these `Buildout recipes are on GitHub <https://github.com/bird-house?query=birdhousebuilder.recipe>`_ and can be `found on PyPi <https://pypi.python.org/pypi?%3Aaction=search&term=birdhousebuilder.recipe&submit=search>`_. 
+:term:`Buildout` has a plugin mechanism to extend the build tool functionality with `recipes <http://www.buildout.org/en/latest/docs/recipe.html>`_. Buildout can handle Python dependencies on its own. But in birdhouse, we install most dependencies with Anaconda. We are using a Buildout extension to install conda packages with Buildout. Buildout does use these Python packages instead of downloading them from :term:`PyPi`.
+There is also a set of recipes to set up Web Processing Services with :term:`PyWPS`, :term:`Nginx`, :term:`Gunicorn` and :term:`Supervisor`.
+All these `Buildout recipes are on GitHub <https://github.com/bird-house?query=birdhousebuilder.recipe>`_ and can be `found on PyPi <https://pypi.python.org/pypi?%3Aaction=search&term=birdhousebuilder.recipe&submit=search>`_.
 
 Here is the list of currently-used Buildout recipes by birdhouse:
 
@@ -396,14 +396,62 @@ Example:
     $ python setup.py checkdocs
 
 
- 
 
+Python Code Style
+-----------------
 
+Birdhouse uses `PEP8`_ checks to ensure a consistent coding style. Currently the following PEP8 rules are enabled
+in ``setup.cfg``:
 
+.. code-block:: ini
 
+   [flake8]
+   ignore=F401,E402
+   max-line-length=120
+   exclude=tests
 
+To check the coding style run ``flake8``:
 
+.. code-block:: sh
 
+    $ flake8 emu   # emu is the folder with python code
+    # or
+    $ make pep8    # make calls for you flake8
 
+To make it easier to write code according to the PEP8 rules enable PEP8 checking in your editor.
+In the following we give examples how to enable code checking for different editors.
 
+Atom
+~~~~
 
+* Homepage: https://atom.io/
+* PEP8 Atom Plugin: https://github.com/AtomLinter/linter-pep8
+
+.. image:: _images/editor/atom-pep8.png
+
+PyCharm
+~~~~~~~
+
+TODO
+
+Kate
+~~~~
+
+TODO
+
+Emacs
+~~~~~
+
+TODO
+
+Vim
+~~~
+
+TODO
+
+Spyder
+~~~~~~
+
+TODO
+
+.. _PEP8: https://www.python.org/dev/peps/pep-0008/
