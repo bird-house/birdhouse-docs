@@ -5,7 +5,7 @@ Developer Guide
 
 .. contents::
     :local:
-    :depth: 2
+    :depth: 3
 
 
 .. _writing_WPS_process:
@@ -180,7 +180,7 @@ The aim of birdhouse is to take care of all these dependencies so that the user 
 In this situation, the :term:`Anaconda Python distribution` is helpful. Anaconda already has a lot of Python-related packages available for different platforms (Linux, MacOSX, Windows), and there is no compilation needed on the installation host. Anaconda makes it easy to build own packages (*conda recipes*) and upload them to the free :term:`Anaconda Server`.
 
 Conda recipes by birdhouse
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+..........................
 
 Birdhouse uses :term:`Anaconda` to maintain package dependencies.
 Anaconda allows you to write your own `conda recipes <http://conda.pydata.org/docs/build.html>`_.
@@ -199,7 +199,7 @@ For example, if you are already using Anaconda, you can install :term:`PyWPS` wi
     $ conda install --channel birdhouse pywps
 
 Building conda packages
-~~~~~~~~~~~~~~~~~~~~~~~
+.......................
 
 There are several ways to build conda packages and upload them to the *Anaconda Server*:
 
@@ -229,7 +229,7 @@ The `Dockerfile for this image <https://github.com/bird-house/birdhouse-build/tr
 .. _conda_example:
 
 Example: building a conda package for pygbif
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+............................................
 
 ``pygbif`` is a Python package available on :term:`PyPi`. Generate conda package files using ``conda skeleton``::
 
@@ -292,7 +292,7 @@ Edit the fields:
    Now switch to `anaconda.org/yourname/packagename` and go to `Settings` -> `Admin` -> `Transfer` to transfer the package to `birdhouse`. (You could use ``-u birdhouse`` to upload it to `birdhouse` directly, but it seems to make some difference e.g. some fields in the web interface will not be filled in automatically, so I figured the other workaround to be more reliable.)
 
 Using conda
-~~~~~~~~~~~
+...........
 
 See the `conda documentation <http://conda.pydata.org/docs/index.html>`_.
 
@@ -308,7 +308,7 @@ See the `conda documentation <http://conda.pydata.org/docs/index.html>`_.
 
 
 Anaconda alternatives
-~~~~~~~~~~~~~~~~~~~~~
+.....................
 
 If Anaconda is not available, one could also provide these packages from source and compile them on each installation host. Buildout does provide ways to do so, but an initial installation with most of the software used in climate science could *easily take hours*.
 
@@ -351,7 +351,7 @@ For more details, see the :ref:`installation` section and the :ref:`Makefile doc
 
 
 Buildout recipes by birdhouse
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.............................
 
 :term:`Buildout` has a plugin mechanism to extend the build tool functionality with `recipes <http://www.buildout.org/en/latest/docs/recipe.html>`_. Buildout can handle Python dependencies on its own. But in birdhouse, we install most dependencies with Anaconda. We are using a Buildout extension to install conda packages with Buildout. Buildout does use these Python packages instead of downloading them from :term:`PyPi`.
 There is also a set of recipes to set up Web Processing Services with :term:`PyWPS`, :term:`Nginx`, :term:`Gunicorn` and :term:`Supervisor`.
@@ -422,35 +422,35 @@ To make it easier to write code according to the PEP8 rules enable PEP8 checking
 In the following we give examples how to enable code checking for different editors.
 
 Atom
-~~~~
+....
 
 * Homepage: https://atom.io/
 * PEP8 Atom Plugin: https://github.com/AtomLinter/linter-pep8
 
-.. image:: _images/editor/atom-pep8.png
+.. image:: _images/atom-pep8.png
 
 PyCharm
-~~~~~~~
+.......
 
 TODO
 
 Kate
-~~~~
+....
 
 TODO
 
 Emacs
-~~~~~
+.....
 
 TODO
 
 Vim
-~~~
+...
 
 TODO
 
 Spyder
-~~~~~~
+......
 
 TODO
 
