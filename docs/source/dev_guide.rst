@@ -374,7 +374,7 @@ Python Packaging
 
 Links:
 
-* https://python-packaging-user-guide.readthedocs.io/en/latest/
+* https://packaging.python.org/
 
 Example:
 

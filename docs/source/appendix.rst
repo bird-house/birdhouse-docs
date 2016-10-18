@@ -70,12 +70,12 @@ WMS clients:
 
 * OpenLayers - http://openlayers.org/
 * Leaflet - http://leafletjs.com/
-    * time dimension - http://apps.socib.es/Leaflet.TimeDimension/examples/ 
+    * time dimension - http://apps.socib.es/Leaflet.TimeDimension/examples/
 * GeoExt - http://geoext.github.io/geoext2/
 
 Scientific Workflow Tools
 =========================
-    
+
 Workflow Engines:
 
 * :term:`Dispel4py`
@@ -97,7 +97,7 @@ Taverna with WPS:
 VisTrails with WPS:
 
 * https://github.com/ict4eo/eo4vistrails
-* http://proj.badc.rl.ac.uk/cows/wiki/CowsWps/CDOWPSWorkingGroup/WPSAndWorkflows  
+* http://proj.badc.rl.ac.uk/cows/wiki/CowsWps/CDOWPSWorkingGroup/WPSAndWorkflows
 * ``http://www.kitware.com/source/home/post/105``
 
 Kepler with WPS:
@@ -129,7 +129,7 @@ data processing, predictive analytics, and scientific computing
 Python Data Analysis Library
 
 Python in Climate Science
-========================= 
+=========================
 
 * OpenClimateGIS - https://earthsystemcog.org/projects/openclimategis/
 
@@ -140,7 +140,7 @@ data servers. [..]
 
 * ICCLIM (i see clim ...) - https://github.com/cerfacs-globc/icclim
 
-Python library for climate indices calculation. 
+Python library for climate indices calculation.
 Documentation at http://icclim.readthedocs.io/en/latest/
 
 Python Web Frameworks and Utils
@@ -167,7 +167,7 @@ List of available Web Processing Services:
 * GeoServer Demo WPS - ``http://demo.opengeo.org/geoserver/wps?request=GetCapabilities&service=WPS``
 * USGS Geo Data Portal- ``http://cida.usgs.gov/climate/gdp/process/WebProcessingService``
 * KNMI climate4impact Portal - ``http://climate4impact.eu//impactportal/WPS?request=GetCapabilities&service=WPS``
-* BADC CEDA - ``http://ceda-wps2.badc.rl.ac.uk/wps?request=GetCapabilities&service=WPS`` 
+* BADC CEDA - ``http://ceda-wps2.badc.rl.ac.uk/wps?request=GetCapabilities&service=WPS``
 * delatres - ``http://dtvirt5.deltares.nl/wps/?Request=GetCapabilities&Service=WPS``
 * 52 North - ``http://geoprocessing.demo.52north.org:8080/52n-wps-webapp-3.3.1/WebProcessingService?Request=GetCapabilities&Service=WPS``
 * 52 North - ``http://geoprocessing.demo.52north.org:8080/52n-wps-webapp-3.3.1-gt/WebProcessingService?Request=GetCapabilities&Service=WPS``
@@ -192,5 +192,5 @@ Related Projects
 * http://climate4impact.eu/impactportal/general/index.jsp
 * http://adaguc.knmi.nl/
 * http://wps-web1.ceda.ac.uk/ui/home
-* https://freva.met.fu-berlin.de/
-* https://climate.apache.org/ 
+* ``https://freva.met.fu-berlin.de/``
+* https://climate.apache.org/
