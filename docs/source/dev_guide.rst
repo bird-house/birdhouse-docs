@@ -410,6 +410,8 @@ in ``setup.cfg``:
    max-line-length=120
    exclude=tests
 
+See the `flake8`_ documentation on how to configure further options.
+
 To check the coding style run ``flake8``:
 
 .. code-block:: sh
@@ -455,3 +457,4 @@ Spyder
 TODO
 
 .. _PEP8: https://www.python.org/dev/peps/pep-0008/
+.. _flake8: http://flake8.pycqa.org/en/latest/
