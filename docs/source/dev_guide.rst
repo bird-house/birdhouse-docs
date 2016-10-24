@@ -431,6 +431,14 @@ Atom
 
 .. image:: _images/atom-pep8.png
 
+
+Sublime
+.......
+
+* Install package control if you don't already have it: https://packagecontrol.io/installation#st2
+* Follow the instructions here to install Python PEP8 Autoformat: https://packagecontrol.io/packages/Python%20PEP8%20Autoformat
+* Edit the settings to conform to the values used in birdhouse, if necessary
+
 PyCharm
 .......
 
