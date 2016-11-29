@@ -23,13 +23,15 @@ Birdhouse also installs a few system packages using `apt-get` on Debian based di
 Installing from source
 ----------------------
 
-The installation of birdhouse components from source is basically a three-liner. Here is an example for the Emu WPS service:
+The installation of birdhouse components from source is done with some few commands. Here is an example for the Emu WPS service:
 
 .. code-block:: sh
 
     $ git clone https://github.com/bird-house/emu.git
     $ cd emu
-    $ make
+    $ make clean install
+    $ make start
+    $ firefox http://localhost:8094/wps
 
 All the birdhouse components follow the same installation pattern. If you want to see all the options of the `Makefile` then type:
 
