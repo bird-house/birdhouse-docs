@@ -418,7 +418,7 @@ To check the coding style run ``flake8``:
 
     $ flake8 emu   # emu is the folder with python code
     # or
-    $ make pep8    # make calls for you flake8
+    $ make pep8    # make calls flake8
 
 To make it easier to write code according to the PEP8 rules enable PEP8 checking in your editor.
 In the following we give examples how to enable code checking for different editors.
