@@ -82,7 +82,7 @@ This will automatically write a password hash into pyramid-phoenix/custom.cfg
 
 You can run the installation with default settings.
 It will create an anaconda environment into your HOME direcory and deploy all required software dependecies there.
-  *read the ''changing the default configuration' first if you would like to change the defaults.*
+*read the ''changing the default configuration' first if you would like to change the defaults.*
 
 In **all** of the tree folders (malleefowl, flyingpigeon and pyramid-phoenix) run::
 
@@ -92,12 +92,15 @@ This installation will take some minutes to fetch all dependencies and install t
 With the default settings, the installation creates the following folders::
 
   ls ~/anaconda/
-contains general software required by anaconda
-::
+
+contains general software required by anaconda::
+
   ls ~/.conda/envs/
-contains the seperate environments of the birds for their specific software dependencies
-::
+
+contains the seperate environments of the birds for their specific software dependencies::
+
   ls ~/birdhouse/var/
+
 the local cache for fetched input files, output files and logs. This folder is growing (while fetching files and storing job outputs) under productive usage of birdhouse.
 
 * **start the services**
@@ -105,6 +108,7 @@ the local cache for fetched input files, output files and logs. This folder is g
 in **one** of the birds run::
 
   make start
+
 or::
 
   make restart
@@ -118,6 +122,7 @@ and to check if the services are running, run::
 If the services are running, you can launch the GUI in a common web browser. By default, phoenix is set to port 8081::
 
   firefox http://localhost:8081
+
 or::
 
   firefox https://localhost:8443/
