@@ -438,10 +438,10 @@ Sublime
 * Install package control if you don't already have it: https://packagecontrol.io/installation#st2
 * Follow the instructions here to install Python PEP8 Autoformat: https://packagecontrol.io/packages/Python%20PEP8%20Autoformat
 * Edit the settings to conform to the values used in birdhouse, if necessary
-* To show the ruler and make wordwrap default, open Preferences → Settings—User and use the following rules 
+* To show the ruler and make wordwrap default, open Preferences → Settings—User and use the following rules
 
-. code-block:: python
-   
+.. code-block:: python
+
    {
     // set vertical rulers in specified columns.
     "rulers": [79],
