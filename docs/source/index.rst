@@ -57,8 +57,11 @@ Getting started
 Presentations & Blog Posts
 ==========================
 
+
+* `ESGF F2F 2016 at Washington <https://github.com/bird-house/birdhouse-docs/blob/master/slides/birdhouse-esgf-f2f-2016/birdhouse-esgf-f2f-2016_dkrz.pdf>`_
 * `FOSS4G 2016 at Bonn <https://github.com/bird-house/birdhouse-docs/blob/master/slides/birdhouse-foss4g-2016/Hempelmann_foss4g2016.pdf>`_
-* `ICRC-COEDEX 2016 <https://github.com/bird-house/birdhouse-docs/blob/master/slides/Hempelmann_CORDEX2016_datatoinformation.pdf>`_
+* `EGU 2016 at Vienna <https://github.com/bird-house/birdhouse-docs/blob/master/slides/birdhouse-egu-2016/EGU-Processing-DKRZ.pdf>`_
+* `ICRC-CORDEX 2016 <https://github.com/bird-house/birdhouse-docs/blob/master/slides/Hempelmann_CORDEX2016_datatoinformation.pdf>`_
 * Model Animation LSCE
 * `Talk on USGS WebEx 2016/02/18 <https://my.usgs.gov/confluence/pages/viewpage.action?pageId=542482181>`_
 * `Paris Coding Spring 2015 at IPSL <https://github.com/bird-house/birdhouse-docs/blob/master/slides/birdhouse-architecture/birdhouse-architecture.pdf>`_
