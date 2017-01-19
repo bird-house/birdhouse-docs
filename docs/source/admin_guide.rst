@@ -187,3 +187,14 @@ Here is an example pyramid-phoenix/custom.cfg:
 In case of questions or trouble shooting, feel welcome to join the birdhouse chat and get into contact with the developers directly:
 
 `Birdhouse-Chatroom <https://gitter.im/bird-house/birdhouse>`_
+
+
+.. _backups:
+
+Backups
+--------
+
+See the `mongodb documentation <https://docs.mongodb.com/manual/core/backups/>`_ on how to backup the database.
+With the following command you can make a dump of the ``users`` collection of the Phoenix database::
+
+    $ mongodump --port 27027 --db phoenix_db --collection users
