@@ -21,7 +21,7 @@ Three folder locations have to be pointed out:
 
 * **repository clones:**  The fetched code by ``git clone``. It is recommended to store the repositories in ``~/birdhouse``
 
-* **anaconda**: By default, the installation process creates a folder ``~/anaconda`` for general anaconda-specific software (see also :ref:`anaconda`_ ).
+* **anaconda**: By default, the installation process creates a folder ``~/anaconda`` for general anaconda-specific software (see also :ref:`anaconda`).
 
 * **conda environments:** All birds (repositories) are built with their own environment to avoid missmatch of dependencies.
 By default, the conda environments are in ``~/.conda/envs/``.
@@ -49,7 +49,7 @@ If you are already familliar with installing single standalone WPS (follow the i
 general remarks:
 ..................
 
-| Check the :ref:`requirements`_ of your system!
+| Check the :ref:`requirements` of your system!
 | The installation is done as **normal user**, root rights are causing conflicts.
 
 
