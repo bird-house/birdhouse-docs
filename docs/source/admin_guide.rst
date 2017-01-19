@@ -7,7 +7,7 @@ Administrator Guide
     :local:
     :depth: 2
 
-.. _fileandfolder:
+.. _filesandfolder:
 
 Files and Folders
 -----------------
@@ -28,7 +28,7 @@ By default, the conda environments are in ``~/.conda/envs/``.
 
 To change the default settings, create a ``Makefile.config`` with::
 
-  cp Makefile.config.example Makefile.config
+  $ cp Makefile.config.example Makefile.config
 
 and change the paths accordingly to your needs.
 
@@ -58,8 +58,8 @@ clone the repositories from gitHub:
 
 It is recommended to collect the repositories in a seperate folder (e.g. birdhouse, but can have a name of your choice)::
 
-  mkdir birdhouse
-  cd birdhouse
+  $ mkdir birdhouse
+  $ cd birdhouse
 
 
 * **fetch the source code:**
@@ -73,7 +73,7 @@ It is recommended to collect the repositories in a seperate folder (e.g. birdhou
 To be able to log into the Phoenix GUI once the services are running, it is necessary to generate a password:
 go into the pyramid-phoenix folder and run::
 
-  make passwd
+  $ make passwd
 
 This will automatically write a password hash into pyramid-phoenix/custom.cfg
 
@@ -86,20 +86,20 @@ It will create an anaconda environment into your HOME direcory and deploy all re
 
 In **all** of the tree folders (malleefowl, flyingpigeon and pyramid-phoenix) run::
 
-  make install
+  $ make install
 
 This installation will take some minutes to fetch all dependencies and install them into seperate conda environments.
 With the default settings, the installation creates the following folders::
 
-  ls ~/anaconda/
+  $ ls ~/anaconda/
 
 contains general software required by anaconda::
 
-  ls ~/.conda/envs/
+  $ ls ~/.conda/envs/
 
 contains the seperate environments of the birds for their specific software dependencies::
 
-  ls ~/birdhouse/var/
+  $ ls ~/birdhouse/var/
 
 the local cache for fetched input files, output files and logs. This folder is growing (while fetching files and storing job outputs) under productive usage of birdhouse.
 
@@ -107,15 +107,15 @@ the local cache for fetched input files, output files and logs. This folder is g
 
 in **one** of the birds run::
 
-  make start
+  $ make start
 
 or::
 
-  make restart
+  $ make restart
 
 and to check if the services are running, run::
 
-  make status
+  $ make status
 
 * **launching the Phoenix GUI**
 
@@ -160,7 +160,8 @@ Launching a job can be performed as a process (Process menu) or with the wizard.
 
 The default configuration can be changed by creating a Makefile.config file. There is an example provided to be used::
 
-  cp Makefile.config.example Makefile.config
+  $ cp Makefile.config.example Makefile.config
+
 and set the appropriate path. You have to **do this in all** bird repositories.
 
 Furthermore, you might change the hostname (to provide your service to the outside), ESGF-node connection, the port or the log-level for more/less information in the administrator logfiles.
