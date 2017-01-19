@@ -64,9 +64,11 @@ It is recommended to collect the repositories in a seperate folder (e.g. birdhou
 
 * **fetch the source code:**
 
-|  git clone https://github.com/bird-house/flyingpigeon.git
-|  git clone https://github.com/bird-house/pyramid-phoenix.git
-|  git clone https://github.com/bird-house/malleefowl.git
+.. code-block:: ini
+
+  $ git clone https://github.com/bird-house/flyingpigeon.git
+  $ git clone https://github.com/bird-house/pyramid-phoenix.git
+  $ git clone https://github.com/bird-house/malleefowl.git
 
 * **phoenix password**
 
@@ -167,21 +169,21 @@ and set the appropriate path. You have to **do this in all** bird repositories.
 Furthermore, you might change the hostname (to provide your service to the outside), ESGF-node connection, the port or the log-level for more/less information in the administrator logfiles.
 Here is an example pyramid-phoenix/custom.cfg:
 
-| [settings]
-| hostname = localhost
-| http-port = 8081
-| https-port = 8443
-| log-level = DEBUG
-| # run 'make passwd' and to generate password hash
-| phoenix-password = sha256:513....
-| # generate secret
-| # python -c "import os; print(''.join('%02x' % ord(x) for x in os.urandom(16)))"
-| phoenix-secret = d5e8417....30
-| esgf-search-url = https://esgf-data.dkrz.de/esg-search
-| wps-url = http://localhost:8091/wps
-| # register at github: https://github.com/settings/applications/new
-| github-consumer-key = 86......02
-| github-consumer-secret = 2c.........6d4
+.. code-block:: ini
+
+  [settings]
+  hostname = localhost
+  http-port = 8081
+  https-port = 8443
+  log-level = DEBUG
+  # run 'make passwd' and to generate password hash
+  phoenix-password = sha256:513....
+  # generate secret
+  # python -c "import os; print(''.join('%02x' % ord(x) for x in os.urandom(16)))"
+  phoenix-secret = d5e8417....30
+  esgf-search-url = https://esgf-data.dkrz.de/esg-search
+  wps-url = http://localhost:8091/wps
+
 
 * **Administration HELP:**
 
