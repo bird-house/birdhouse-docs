@@ -107,8 +107,8 @@ In pracitice, the functions should be encapsulated in **try** and **except** cal
        self.status.set('the process is doing something : %s '  % dt.now(),10)
        result = 42
        logger.info('found the answer of life')
-   except Exception as e:
-       msg = 'This failed but is obligatory for the output. The process stops now, because: %s ' % e
+   except:
+       msg = 'This failed but is obligatory for the output. The process stops now!'
        logger.error(msg)
        raise Exception(msg)
 
@@ -117,9 +117,29 @@ In pracitice, the functions should be encapsulated in **try** and **except** cal
        interesting = True
        # or generate a temporary file
        logger.info(' Thanks for reading the guidelines ')
-   except Exception as e:
-       msg = 'This failed but is not obligatory for the output. The process will continue. Reason for the failure: %s ' % e
+   except:
+       msg = 'This failed but is not obligatory for the output. The process will continue.'
        logger.debug(msg)
+
+   try:
+       self.status.set('the process is doing something else : %s '  % dt.now(),20)
+       interesting = True
+       # or generate a temporary file
+       logger.info(' Take your time to understand enverything ')
+   except:
+       msg = 'This failed. The process will continue but writes out the reason of the failture'
+       logger.exception(msg)
+
+
+   try:
+       self.status.set('the process is doing something else : %s '  % dt.now(),20)
+       interesting = True
+       # or generate a temporary file
+       logger.info(' This is the right way to do it  ')
+   except:
+       msg = 'Here comes a warning: Are you sure this is the right way to do it??'
+       logger.warn(msg)
+
 
 The log file then looks like::
 
@@ -136,6 +156,8 @@ The log file then looks like::
   PyWPS [2016-09-14 11:49:14,349] INFO: data_mb  = 0.0417938232422 ; memory_limit = 1660.33984375
   PyWPS [2016-09-14 11:49:14,349] INFO: ocgis module call as ops.execute()
   PyWPS [2016-09-14 11:49:16,648] INFO: Succeeded with ocgis module call function
+
+Logging information is written to the logfile depending on the 'log-level' settings in ~/custom.cfg  
 
 Another point to think about when designing a process is the possibility of chaining processes together. The result of a process can be a final result or be used as an input for another process. Chaining processes is a common practice but depends on the user you are designing the service for.
 Technically, for the development of WPS process chaining, here are a few summary points:
