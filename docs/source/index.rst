@@ -58,7 +58,7 @@ Presentations & Blog Posts
 ==========================
 
 
-* `UNCCC Subgroup, Kigali 2017 <https://github.com/bird-house/birdhouse-docs/blob/master/slides/birdhouse-UNCCC/CCNUCC_Kigali2017.pdf>`_
+* `UNCCC Subgroup 2017 at Kigali <https://github.com/bird-house/birdhouse-docs/blob/master/slides/birdhouse-UNCCC/CCNUCC_Kigali2017.pdf>`_
 * `ESGF F2F 2016 at Washington <https://github.com/bird-house/birdhouse-docs/blob/master/slides/birdhouse-esgf-f2f-2016/birdhouse-esgf-f2f-2016_dkrz.pdf>`_
 * `FOSS4G 2016 at Bonn <https://github.com/bird-house/birdhouse-docs/blob/master/slides/birdhouse-foss4g-2016/Hempelmann_foss4g2016.pdf>`_
 * `EGU 2016 at Vienna <https://github.com/bird-house/birdhouse-docs/blob/master/slides/birdhouse-egu-2016/EGU-Processing-DKRZ.pdf>`_
