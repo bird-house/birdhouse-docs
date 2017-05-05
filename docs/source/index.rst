@@ -9,7 +9,7 @@ Introduction
 Birdhouse is a collection of :term:`Web Processing Service` (WPS) related
 Python components to support data processing in the climate science
 community. The aim of birdhouse is to make the usage of WPS easy. Most
-of the :term:`OGC`/:term:`WPS` related software comes from the :term:`GeoPython` project. 
+of the :term:`OGC`/:term:`WPS` related software comes from the :term:`GeoPython` project.
 
 Birdhouse is the home of Web Processing Services used in climate science and components to support them (the birds).
 
@@ -23,7 +23,7 @@ WPS supporting services and libraries:
 * `Twitcher`_: a simple OWS Security Proxy
 * `Malleefowl`_: access to climate data (ESGF, ...) as a service and library
 
-WPS services and libraries with algorithms used in climate science analysis: 
+WPS services and libraries with algorithms used in climate science analysis:
 
 * `Flyingpigeon`_: services for the climate impact community
 * `Hummingbird`_: provides cdo and cfchecker as a service
@@ -32,9 +32,11 @@ WPS services and libraries with algorithms used in climate science analysis:
 
 
 You can find the source code of all birdhouse components on
-`our GitHub page <https://github.com/bird-house>`_. 
+`our GitHub page <https://github.com/bird-house>`_.
 :term:`Conda` packages for birdhouse are available on the `birdhouse channel <https://anaconda.org/birdhouse>`_ on Binstar.
-:term:`Docker` images with birdhouse components are on `Docker Hub <https://hub.docker.com/r/birdhouse/>`_ 
+:term:`Docker` images with birdhouse components are on `Docker Hub <https://hub.docker.com/r/birdhouse/>`_
+
+.. _getting_started:
 
 Getting started
 ===============
@@ -54,11 +56,14 @@ Getting started
    roadmap
    appendix
 
+.. _presentations:
+
 Presentations & Blog Posts
 ==========================
 
 
 * `UNCCC Subgroup 2017 at Kigali <https://github.com/bird-house/birdhouse-docs/blob/master/slides/birdhouse-UNCCC/CCNUCC_Kigali2017.pdf>`_
+* `AGU 2016 at San Francisco <http://www.crim.ca/media/publication/fulltext/agu2016_presentation_short_ouranos.pdf>`_
 * `ESGF F2F 2016 at Washington <https://github.com/bird-house/birdhouse-docs/blob/master/slides/birdhouse-esgf-f2f-2016/birdhouse-esgf-f2f-2016_dkrz.pdf>`_
 * `FOSS4G 2016 at Bonn <https://github.com/bird-house/birdhouse-docs/blob/master/slides/birdhouse-foss4g-2016/Hempelmann_foss4g2016.pdf>`_
 * `EGU 2016 at Vienna <https://github.com/bird-house/birdhouse-docs/blob/master/slides/birdhouse-egu-2016/EGU-Processing-DKRZ.pdf>`_
@@ -84,4 +89,3 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-
