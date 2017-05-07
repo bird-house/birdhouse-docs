@@ -3,6 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+.. _introduction:
+
 Introduction
 ============
 
@@ -76,6 +78,8 @@ Presentations & Blog Posts
 * CSC 2.0 Hamburg
 * Vienna
 * LSDMA
+
+: _licence:
 
 License Agreement
 =================
