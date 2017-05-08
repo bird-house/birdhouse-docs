@@ -95,12 +95,6 @@ You can also use the Supervisor monitor web service which by default is availabl
 Using birdhouse with Docker
 ---------------------------
 
-An alternative way to install and deploy birdhouse Web Processing Services is by using :term:`Docker`. The birdhouse WPS servers are available as a Docker image on `Docker Hub <https://hub.docker.com/r/birdhouse/>`_. See an example on how to use them with the :ref:`Emu WPS Docker image <emu:tutorial>`.
-
-When you have Docker installed, you can just start the birdhouse WPS (Emu for example) with the following command::
-
-   $ docker run -i -d -p 9001:9001 -p 8090:8090 -p 8094:8094 birdhouse/emu
-
-Run a GetCapabilites WPS request:
-
-    http://localhost:8094/wps?service=WPS&version=1.0.0&request=getcapabilities
+An alternative way to install and deploy birdhouse Web Processing Services is by using :term:`Docker`.
+The birdhouse WPS servers are available as a Docker image on `Docker Hub <https://hub.docker.com/r/birdhouse/>`_.
+See an example on how to use them with the :ref:`Emu WPS Docker image <emu:tutorial>`.
