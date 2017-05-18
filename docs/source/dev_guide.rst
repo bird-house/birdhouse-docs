@@ -91,7 +91,7 @@ This tmp folder is removed after job is successfully executed. To reuse temporar
 .. image:: _images/module_chain.png
 
 
-In pracitice, the functions should be encapsulated in **try** and **except** calls and appropriate information given to the log file or shown as a status message:
+In practice, the functions should be encapsulated in **try** and **except** calls and appropriate information given to the log file or shown as a status message:
 
 .. code-block:: python
    :linenos:
@@ -157,7 +157,7 @@ The log file then looks like::
   PyWPS [2016-09-14 11:49:14,349] INFO: ocgis module call as ops.execute()
   PyWPS [2016-09-14 11:49:16,648] INFO: Succeeded with ocgis module call function
 
-Logging information is written to the logfile depending on the 'log-level' settings in ~/custom.cfg  
+Logging information is written to the logfile depending on the 'log-level' settings in ~/custom.cfg
 
 Another point to think about when designing a process is the possibility of chaining processes together. The result of a process can be a final result or be used as an input for another process. Chaining processes is a common practice but depends on the user you are designing the service for.
 Technically, for the development of WPS process chaining, here are a few summary points:
@@ -502,5 +502,15 @@ Spyder
 
 TODO
 
+Coding Style using editorconfig
+-------------------------------
+
+`EditorConfig`_ is used to keep a consistent coding style between different editors.
+The configuration is checked in github in the top level directory ``.editorconfig``.
+See the `EditorConfig <https://github.com/bird-house/pyramid-phoenix/blob/master/.editorconfig>`_ used in Birdhouse.
+Check the `EditorConfig`_ page how to activate it for your editor.
+
+
 .. _PEP8: https://www.python.org/dev/peps/pep-0008/
 .. _flake8: http://flake8.pycqa.org/en/latest/
+.. _EditorConfig: http://editorconfig.org/
