@@ -502,15 +502,14 @@ Spyder
 
 TODO
 
-Coding Style using editorconfig
+Coding Style using EditorConfig
 -------------------------------
 
-`EditorConfig`_ is used to keep a consistent coding style between different editors.
-The configuration is checked in github in the top level directory ``.editorconfig``.
+EditorConfig is used to keep consistent coding styles between different editors.
+The configuration is on github in the top level directory ``.editorconfig``.
 See the `EditorConfig <https://github.com/bird-house/pyramid-phoenix/blob/master/.editorconfig>`_ used in Birdhouse.
-Check the `EditorConfig`_ page how to activate it for your editor.
+Check the `EditorConfig <http://editorconfig.org/>`_ page on how to activate it for your editor.
 
 
 .. _PEP8: https://www.python.org/dev/peps/pep-0008/
 .. _flake8: http://flake8.pycqa.org/en/latest/
-.. _EditorConfig: http://editorconfig.org/
