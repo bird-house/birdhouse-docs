@@ -4,6 +4,14 @@ Diagrams created with draw.io
 * https://www.draw.io
 
 
+Bird Structure
+--------------
+
+Working on new birdhouse bird structure.
+
+https://github.com/bird-house/birdhouse-docs/blob/master/diagrams/draw.io/Birdhouse_bird_structure.png
+
+
 PyWPS Scheduler Extension
 -------------------------
 
