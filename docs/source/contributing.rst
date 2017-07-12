@@ -46,7 +46,8 @@ Build tools:
 Wiki
 ----
 
-The `Wiki on GitHub <https://github.com/bird-house/bird-house.github.io/wiki>`_ is used for meetings and organising. 
+The `Wiki on GitHub <https://github.com/bird-house/bird-house.github.io/wiki>`_ is used
+for `meetings <https://github.com/bird-house/bird-house.github.io/wiki/Meetings>`_ and organising. 
 
 
 Website development
