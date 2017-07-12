@@ -10,7 +10,7 @@ You can also register for the mailing list to retrieve announcements.
 Mailing list
 ------------
 
-* News are published to the `wps mailing list <https://lists.dkrz.de/mailman/listinfo/wps>`_ (`Archive <https://lists.dkrz.de/mailman/private/wps/>`_). 
+* News are published to the `wps mailing list <https://lists.dkrz.de/mailman/listinfo/wps>`_ (`Archive <https://lists.dkrz.de/mailman/private/wps/>`_).
 * Technical discussions take place in `wps-dev mailing list <https://lists.dkrz.de/mailman/listinfo/wps-dev>`_ (`Archive <https://lists.dkrz.de/mailman/private/wps-dev/>`_).
 
 Feel free to register.
@@ -46,7 +46,7 @@ Build tools:
 Wiki
 ----
 
-The `Wiki on GitHub <https://github.com/bird-house/bird-house.github.io/wiki>`_ is used for topics not covered by the Sphinx documentation yet. 
+The `Wiki on GitHub <https://github.com/bird-house/bird-house.github.io/wiki>`_ is used for meetings and organising. 
 
 
 Website development
