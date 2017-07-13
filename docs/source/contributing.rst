@@ -6,7 +6,8 @@ Contributing
 The Birdhouse project openly welcomes contributions
 (bug reports, bug fixes, code enhancements/features, etc.).
 
-There are numerous ways to interact with the Birdhouse community.
+There are numerous ways to interact with the Birdhouse community,
+for example join the chat or the mailing list.
 
 Mailing list
 ------------
@@ -18,8 +19,9 @@ Feel free to register.
 
 Chat-room
 ---------
+
 If you want to have a quick chat with one of the developers,
-or just follow the discussions, feel welcome to join the `chat room`_
+or just follow the discussions, feel welcome to join the Gitter `chat room`_
 
 Source code
 -----------
@@ -39,18 +41,23 @@ WPS client side:
 
 WPS server side:
 
-* `Malleefowl WPS base processes to access data <https://github.com/bird-house/malleefowl/issues>`_
 * `Flyingpigeon WPS for climate impact <https://github.com/bird-house/flyingpigeon/issues>`_
+* `Hummingbird WPS processes for cdo and compliance checking <https://github.com/bird-house/hummingbird/issues>`_
+* `Emu WPS processes for demo and testing <https://github.com/bird-house/emu/issues>`_
+* `Malleefowl WPS base processes to access data <https://github.com/bird-house/malleefowl/issues>`_
 
-Build tools:
+WPS Security:
 
-* `Birdhouse Builder Bootstrap <https://github.com/bird-house/birdhousebuilder.bootstrap/issues>`_
+* `Twitcher, an WPS security proxy <https://github.com/bird-house/twitcher/issues>`_
 
 Wiki
 ----
 
 The birdhouse `wiki`_ provides an area for supporting information that frequently
 changes and / or is outside the scope of the formal documentation.
+
+Meetings
+---------
 
 The wiki is used to organize and document birdhouse `meetings`_.
 
