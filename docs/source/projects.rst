@@ -13,15 +13,15 @@ WPS client side:
 
 WPS supporting services and libraries:
 
-* `Twitcher`_: a simple OWS Security Proxy
-* `Malleefowl`_: access to climate data (ESGF, ...) as a service and library
+* `Twitcher`_: an OWS Security Proxy
+* `Malleefowl`_: access to climate data (ESGF, ...) as a service
 
 WPS services and libraries with algorithms used in climate science analysis:
 
 * `Flyingpigeon`_: services for the climate impact community
-* `Hummingbird`_: provides cdo and cfchecker as a service
+* `Hummingbird`_: provides cdo and compliance-checker as a service
 * `Dodrio <https://github.com/bird-house/dodrio>`_: WPS for KIT
-* `Emu`_: some example WPS processes
+* `Emu`_: some example WPS processes for demo
 
 
 You can find the source code of all birdhouse components on `GitHub`_.
