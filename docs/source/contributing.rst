@@ -3,9 +3,10 @@
 Contributing
 ============
 
-Birdhouse is approaching a stable release. Contributions for bug fixes are always welcome, or for new features or processes for the development branch.
-You can also register for the mailing list to retrieve announcements.
+The Birdhouse project openly welcomes contributions
+(bug reports, bug fixes, code enhancements/features, etc.).
 
+There are numerous ways to interact with the Birdhouse community.
 
 Mailing list
 ------------
@@ -17,12 +18,14 @@ Feel free to register.
 
 Chat-room
 ---------
-If you want to have a quick chat with one of the developers, or just follow the discussions, feel welcome to join the `chat room <https://gitter.im/bird-house/birdhouse>`_
+If you want to have a quick chat with one of the developers,
+or just follow the discussions, feel welcome to join the `chat room`_
 
 Source code
 -----------
 
-The source code of all birdhouse components is available on `our Github page <https://github.com/bird-house>`_.
+The source code of all birdhouse components is available on
+`our Github page <https://github.com/bird-house>`_.
 
 Issue tracker
 -------------
@@ -46,19 +49,31 @@ Build tools:
 Wiki
 ----
 
-The `Wiki on GitHub <https://github.com/bird-house/bird-house.github.io/wiki>`_ is used
-for `meetings <https://github.com/bird-house/bird-house.github.io/wiki/Meetings>`_ and organising. 
+The birdhouse `wiki`_ provides an area for supporting information that frequently
+changes and / or is outside the scope of the formal documentation.
+
+The wiki is used to organize and document birdhouse `meetings`_.
 
 
 Website development
 -------------------
 
-The birdhouse website is on http://bird-house.github.io/. The HTML pages are `maintained on GitHub <https://github.com/bird-house/bird-house.github.io>`_.
+The birdhouse website is on http://bird-house.github.io/.
+The HTML pages are `maintained on GitHub <https://github.com/bird-house/bird-house.github.io>`_.
 
 
 Documentation
 -------------
 
-The documentation is created with `Sphinx <http://sphinx-doc.org/index.html>`_ and is automatically published to `ReadTheDocs <https://readthedocs.org/>`_ with GitHub webhooks.
+The documentation is created with `Sphinx <http://sphinx-doc.org/index.html>`_
+and is automatically published to `ReadTheDocs <https://readthedocs.org/>`_ with GitHub webhooks.
 
-The `main documentation <https://github.com/bird-house/birdhouse-docs>`_ (which you are reading now) is the starting point to get an overview of what birdhouse provides. Each birdhouse component comes with its own Sphinx documentation and is referenced by the main birdhouse document.
+The main `documentation`_ (which you are reading now) is the starting point to
+get an overview of what birdhouse provides. Each birdhouse component comes with
+its own Sphinx documentation and is referenced by the main birdhouse document.
+
+
+.. _`wiki`: https://github.com/bird-house/bird-house.github.io/wiki
+.. _`meetings`: https://github.com/bird-house/bird-house.github.io/wiki/Meetings
+.. _`documentation`: https://github.com/bird-house/birdhouse-docs
+.. _`chat room`: https://gitter.im/bird-house/birdhouse
