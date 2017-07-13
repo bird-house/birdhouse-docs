@@ -51,6 +51,7 @@ Getting started
    tutorial
    admin_guide
    dev_guide
+   community
    contributing
    faq
    glossary
