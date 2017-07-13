@@ -9,5 +9,6 @@ install:
   - make install
 script:
   - make docs 
+#  - make linkcheck
 #after_success:
 # - coveralls
