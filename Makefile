@@ -1,4 +1,4 @@
-VERSION := 0.3.6
+VERSION := 0.3.9
 RELEASE := master
 
 # Include custom config if it is available
@@ -14,7 +14,8 @@ CPU_ARCH := $(shell uname -m 2>/dev/null || uname -p 2>/dev/null || echo "unknow
 
 # Python
 SETUPTOOLS_VERSION := 27.2.0
-CONDA_VERSION := 4.2.12
+CONDA_VERSION := 4.3
+BUILDOUT_VERSION := 2.9.2
 
 # Anaconda
 ANACONDA_HOME ?= $(HOME)/anaconda
@@ -151,10 +152,9 @@ anaconda:
 .PHONY: conda_config
 conda_config: anaconda
 	@echo "Update ~/.condarc"
-	@-"$(ANACONDA_HOME)/bin/conda" install -y conda=$(CONDA_VERSION)
+	@-"$(ANACONDA_HOME)/bin/conda" install -y conda=$(CONDA_VERSION) requests
 	@"$(ANACONDA_HOME)/bin/conda" config --add envs_dirs $(CONDA_ENVS_DIR)
 	@"$(ANACONDA_HOME)/bin/conda" config --set ssl_verify true
-	@"$(ANACONDA_HOME)/bin/conda" config --set update_dependencies false
 	@"$(ANACONDA_HOME)/bin/conda" config --set use_pip true
 	@"$(ANACONDA_HOME)/bin/conda" config --set channel_priority true
 	@"$(ANACONDA_HOME)/bin/conda" config --set auto_update_conda false
@@ -223,13 +223,13 @@ envclean: stop
 .PHONY: srcclean
 srcclean:
 	@echo "Removing *.pyc files ..."
-	@-find $(APP_ROOT) -type f -name "*.pyc" -print0 | xargs -0r rm
+	@-find $(APP_ROOT) -type f -name "*.pyc" -print | xargs rm
 
 .PHONY: distclean
 distclean: backup clean
 	@echo "Cleaning distribution ..."
 	@git diff --quiet HEAD || echo "There are uncommited changes! Not doing 'git clean' ..."
-	@-git clean -dfx --exclude=*.bak
+	@-git clean -dfx -e *.bak -e custom.cfg -e Makefile.config
 
 .PHONY: passwd
 passwd: custom.cfg
