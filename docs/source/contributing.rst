@@ -26,8 +26,7 @@ or just follow the discussions, feel welcome to join the Gitter `chat room`_
 Source code
 -----------
 
-The source code of all birdhouse components is available on
-`our Github page <https://github.com/bird-house>`_.
+The source code of all birdhouse components is available on `Github`_.
 
 Issue tracker
 -------------
@@ -84,3 +83,4 @@ its own Sphinx documentation and is referenced by the main birdhouse document.
 .. _`meetings`: https://github.com/bird-house/bird-house.github.io/wiki/Meetings
 .. _`documentation`: https://github.com/bird-house/birdhouse-docs
 .. _`chat room`: https://gitter.im/bird-house/birdhouse
+.. _`GitHub`: https://github.com/bird-house
