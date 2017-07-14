@@ -23,7 +23,6 @@ Getting started
 
    overview
    projects
-   license
    installation
    tutorial
    admin_guide
@@ -34,6 +33,7 @@ Getting started
    glossary
    release_notes
    roadmap
+   license
    appendix
 
 .. _presentations:
