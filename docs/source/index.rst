@@ -23,6 +23,7 @@ Getting started
 
    overview
    projects
+   license
    installation
    tutorial
    admin_guide
@@ -56,12 +57,10 @@ Presentations & Blog Posts
 * Vienna
 * LSDMA
 
-: _licence:
-
 License Agreement
 =================
 
-Birdhouse components are distributed under the `Apache License, Version 2.0 <https://opensource.org/licenses/Apache-2.0/>`_.
+Birdhouse is Open Source and released under the :ref:`Apache License, Version 2.0 <license>`.
 
 
 Indices and tables
