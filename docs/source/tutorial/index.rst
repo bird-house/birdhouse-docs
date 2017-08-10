@@ -4,6 +4,9 @@ Tutorials
 .. toctree::
    :maxdepth: 1
 
+   wps
+   letsencrypt
+
 External Tutorials
 ------------------
 
