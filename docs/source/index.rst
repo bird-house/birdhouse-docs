@@ -24,7 +24,7 @@ Getting started
    overview
    projects
    installation
-   tutorial
+   tutorial/index
    admin_guide
    dev_guide
    community

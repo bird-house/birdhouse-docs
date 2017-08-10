@@ -1,7 +1,12 @@
 Tutorials
 =========
 
-* :ref:`wps_tutorial`
+.. toctree::
+   :maxdepth: 1
+
+External Tutorials
+------------------
+
 * `PyWPS 4.0.0 Slides <http://www.slideshare.net/jachym/pywps400>`_
 * `PyWPS Tutorial <http://pywps.org/docs/>`_
 * `PyWPS on OSGeo Live <http://live.osgeo.org/en/overview/pywps_overview.html>`_
