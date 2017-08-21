@@ -237,9 +237,8 @@ and upload them to the *Anaconda Server*:
 
 The Anaconda builds are using Docker images. The `Anaconda docker image for Linux-64 <https://hub.docker.com/r/binstar/linux-64/>`_
 is available on :term:`Docker Hub`. But sometimes the docker image for Linux-64 provided by Anaconda fails for some packages.
-That is why `birdhouse has in addition its own Linux-64 build image <https://hub.docker.com/r/birdhouse/binstar-linux-64/>`_
-which is based on the Anaconda image.
-The `Dockerfile for this image <https://github.com/bird-house/birdhouse-build/tree/master/docker/binstar-linux-64>`_ is on GitHub.
+That is why birdhouse has in addition its own Linux-64 build image which is based on the Anaconda image.
+The `Dockerfile for this image <https://github.com/bird-house/birdhouse-docker-images/tree/master/binstar-linux-64>`_ is on GitHub.
 
 .. warning::
 
