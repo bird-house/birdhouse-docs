@@ -241,7 +241,7 @@ The `Dockerfile for this image <https://github.com/bird-house/birdhouse-build/tr
 
 .. note::
 
-   You can build a conda package with the provided docker image for Linux-64. See the `readme <https://github.com/bird-house/birdhouse-build/tree/master/docker/binstar-linux-64>`_ on how to use it.
+   You can build a conda package with the provided docker image for Linux-64. See the `readme <https://github.com/bird-house/birdhouse-docker-images/tree/master/binstar-linux-64>`_ on how to use it.
 
 
 .. note::
