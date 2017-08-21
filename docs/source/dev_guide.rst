@@ -195,11 +195,20 @@ Documentation is written in `ReStructuredText <http://sphinx-doc.org/rest.html>`
 Using Anaconda in birdhouse
 ---------------------------
 
-The installation of the birdhouse components and especially the processes involve many software dependencies. The core dependencies are of course the WPS-related packages like :term:`PyWPS` and :term:`OWSLib` from the :term:`GeoPython` project. But most dependencies come from the processes themselves served by the WPS, such as `numpy`, `R`, `NetCDF`, `CDO`, `matplotlib`, `ncl`, `cdat`, and many more.
+The installation of the birdhouse components and especially the processes involve many software dependencies.
+The core dependencies are of course the WPS-related packages like :term:`PyWPS` and :term:`OWSLib` from
+the :term:`GeoPython` project. But most dependencies come from the processes themselves served by the WPS,
+such as `numpy`, `R`, `NetCDF`, `CDO`, `matplotlib`, `ncl`, `cdat`, and many more.
 
-The aim of birdhouse is to take care of all these dependencies so that the user does not need to install them manually. If these dependencies were only *pure* Python packages, then using the :term:`Buildout` build tool, together with the Python package index :term:`PyPi`, would be sufficient. But many Python packages have `C` extensions and there are also non-Python packages that need to be installed like `R` and :term:`NetCDF`.
+The aim of birdhouse is to take care of all these dependencies so that the user does not need to install them manually.
+If these dependencies were only *pure* Python packages, then using the :term:`Buildout` build tool,
+together with the Python package index :term:`PyPi`, would be sufficient. But many Python packages
+have `C` extensions and there are also non-Python packages that need to be installed like `R` and :term:`NetCDF`.
 
-In this situation, the :term:`Anaconda Python distribution` is helpful. Anaconda already has a lot of Python-related packages available for different platforms (Linux, MacOSX, Windows), and there is no compilation needed on the installation host. Anaconda makes it easy to build own packages (*conda recipes*) and upload them to the free :term:`Anaconda Server`.
+In this situation, the :term:`Anaconda Python distribution` is helpful. Anaconda already has a lot of Python-related
+packages available for different platforms (Linux, MacOSX, Windows), and there is no compilation needed on the
+installation host. Anaconda makes it easy to build own packages (*conda recipes*) and upload them to the
+free :term:`Anaconda Server`.
 
 Conda recipes by birdhouse
 ..........................
@@ -208,9 +217,9 @@ Birdhouse uses :term:`Anaconda` to maintain package dependencies.
 Anaconda allows you to write your own `conda recipes <http://conda.pydata.org/docs/build.html>`_.
 In birdhouse, we have written several conda recipes for the packages that were not available on Anaconda.
 These `additional conda recipes by birdhouse <https://github.com/bird-house/conda-recipes>`_ are available on GitHub.
-Some of the missing packages are: :term:`PyWPS`, :term:`OWSLib`, :term:`cfchecker`, :term:`Nginx`, ...
 
-Anaconda provides a free :term:`Anaconda Server`. Here you can upload your built conda packages for different platforms (Linux, MacOX, Windows). These packages are then available for installation with the :term:`conda` installer.
+Anaconda provides a free :term:`Anaconda Server`. Here you can upload your built conda packages for different
+platforms (Linux, MacOX, Windows). These packages are then available for installation with the :term:`conda` installer.
 
 `Birdhouse has an organisation <https://anaconda.org/birdhouse>`_ where all conda packages are collected which are
 built from the conda recipes on GitHub. These packages can be installed with the :term:`conda` installer using the `birdhouse` channel.
@@ -223,25 +232,27 @@ For example, if you are already using Anaconda, you can install :term:`PyWPS` wi
 Building conda packages
 .......................
 
-There are several ways to build conda packages and upload them to the *Anaconda Server*:
+You can `build packages locally <http://conda.readthedocs.io/en/latest/#building-your-own-packages>`_
+and upload them to the *Anaconda Server*:
 
-* You can `build packages locally <http://conda.readthedocs.io/en/latest/#building-your-own-packages>`_ and upload them with the Binstar command line tool.
-* You can also `build packages remotely on Anaconda <https://docs.continuum.io/anaconda-cloud/build>`_. Additionally, you can set a GitHub Webhook so that on each commit of your recipe, a build will be run on Binstar.
-* The remote builds on Anaconda are done using Docker images. The `Anaconda docker image for Linux-64 <https://hub.docker.com/r/binstar/linux-64/>`_ is available on :term:`Docker Hub`.
-
-In birdhouse, we usually use the remote build on Anaconda which is triggered by commits to GitHub.
-But sometimes the docker image for Linux-64 provided by Binstar fails for some packages.
-That is why `birdhouse has in addition its own Linux-64 build image <https://hub.docker.com/r/birdhouse/binstar-linux-64/>`_ which is based on the Anaconda image.
+The Anaconda builds are using Docker images. The `Anaconda docker image for Linux-64 <https://hub.docker.com/r/binstar/linux-64/>`_
+is available on :term:`Docker Hub`. But sometimes the docker image for Linux-64 provided by Anaconda fails for some packages.
+That is why `birdhouse has in addition its own Linux-64 build image <https://hub.docker.com/r/birdhouse/binstar-linux-64/>`_
+which is based on the Anaconda image.
 The `Dockerfile for this image <https://github.com/bird-house/birdhouse-build/tree/master/docker/binstar-linux-64>`_ is on GitHub.
 
 .. warning::
 
-   When you build conda packages for Linux-64, you need to be very careful to ensure that these packages will run on most Linux distributions (like :term:`CentOS`, :term:`Debian`, :term:`Ubuntu`, ...). Our experience is that packages tjat build on CentOS 6.x will also run on recent Debian/Ubuntu distributions. The Docker build images are also CentOS 6.x based.
+   When you build conda packages for Linux-64, you need to be very careful to ensure that these packages will
+   run on most Linux distributions (like :term:`CentOS`, :term:`Debian`, :term:`Ubuntu`, ...).
+   Our experience is that packages tjat build on CentOS 6.x will also run on recent Debian/Ubuntu distributions.
+   The Docker build images are also CentOS 6.x based.
 
 
 .. note::
 
-   You can build a conda package with the provided docker image for Linux-64. See the `readme <https://github.com/bird-house/birdhouse-docker-images/tree/master/binstar-linux-64>`_ on how to use it.
+   You can build a conda package with the provided docker image for Linux-64.
+   See the `readme <https://github.com/bird-house/birdhouse-docker-images/tree/master/binstar-linux-64>`_ on how to use it.
 
 
 .. note::
@@ -250,91 +261,22 @@ The `Dockerfile for this image <https://github.com/bird-house/birdhouse-build/tr
 
 .. _conda_example:
 
-Example: building a conda package for pygbif
-............................................
-
-``pygbif`` is a Python package available on :term:`PyPi`. Generate conda package files using ``conda skeleton``::
-
-    $ conda skeleton pypi pygbif
-    $ cd pygbif
-    $ vim meta.yaml  # check dependencies, test, build number
-    $ vim build.sh   # for non-python packges, here is most of the work to do
-
-Enable anaconda build::
-
-    $ cd pygbif
-    $ anaconda-build init
-    $ vim .binstar.yml
-
-Edit the anaconda config (``binstar.yml``) to have the following entries (change the package name for a different recipe):
-
-.. literalinclude:: binstar.yml
-    :language: yaml
-    :linenos:
-
-See the conda recipe on `GitHub <https://github.com/bird-house/conda-recipes/tree/master/pygbif>`_.
-
-Run binstar build for the first time:
-
-.. code-block:: sh
-
-    $ binstar package --create birdhouse/pygbif
-    $ anaconda-build submit .
-    $ anaconda-build tail -f birdhouse/pygbif 1    # checks logs
-
-On successful build, go to the birdhouse channel on binstar and search for the `pygbif package` (``http://anaconda.org/birdhouse/pygbif/files``).
-Go to the ``files`` tab and add the channel `main` for the successfully-built package.
-All packages on the `main` channel are available for public usage.
-
-.. image:: _images/binstar_channel.png
-
-Register GitHub webhook for pygbif:
-
-on the Anaconda Server, go to `Settings/Continuous Integration` of the ``pygbif`` package.
-
-Edit the fields:
-
-* `github.com/` = `bird-house/conda-recipes`
-* Subdirectory = pygbif
-
-.. image:: _images/binstar_ci.png
-
-.. warning::
-
-   If you're logged into anaconda with your own rather than the `birdhouse` organization account, then the ``anaconda-build submit .`` way mentioned above seems to cause some problems (as of October 2015). A more reliable way to upload your package is to build it locally, upload it to your own account and then transfer the ownership to `birdhouse` via the web interface:
-
-.. code-block:: sh
-
-    $ anaconda-build init # just as before
-    $ vim .binstar.yaml
-    $                     # skip package creation here
-    $ conda build .       # build locally
-    $ anaconda upload /your/path/to/conda-bld/platform/packagename-version.tar.bz2 # full path is listed in conda build output
-
-   Now switch to `anaconda.org/yourname/packagename` and go to `Settings` -> `Admin` -> `Transfer` to transfer the package to `birdhouse`. (You could use ``-u birdhouse`` to upload it to `birdhouse` directly, but it seems to make some difference e.g. some fields in the web interface will not be filled in automatically, so I figured the other workaround to be more reliable.)
 
 Using conda
 ...........
 
 See the `conda documentation <http://conda.pydata.org/docs/index.html>`_.
 
-.. warning::
-
-   To fix the SSL cert issues in conda when updating to python 2.7.9, do the following::
-
-     $ conda config --set ssl_verify False
-     $ conda update requests openssl
-     $ conda config --set ssl_verify True
-
-   See this conda issue at https://github.com/conda/conda/issues/1624
-
 
 Anaconda alternatives
 .....................
 
-If Anaconda is not available, one could also provide these packages from source and compile them on each installation host. Buildout does provide ways to do so, but an initial installation with most of the software used in climate science could *easily take hours*.
+If Anaconda is not available, one could also provide these packages from source and compile them on each installation host.
+Buildout does provide ways to do so, but an initial installation with most of the software used in climate science
+could *easily take hours*.
 
-Alternative package managers to Anaconda are for example :term:`Homebrew` (MacOSX only) and :term:`Linuxbrew` (a fork of Homebrew for Linux).
+Alternative package managers to Anaconda are for example :term:`Homebrew` (MacOSX only)
+and :term:`Linuxbrew` (a fork of Homebrew for Linux).
 
 Using Buildout in birdhouse
 ---------------------------
