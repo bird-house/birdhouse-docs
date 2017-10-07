@@ -16,11 +16,10 @@ WPS supporting services and libraries:
 * `Twitcher`_: an OWS Security Proxy
 * `Malleefowl`_: access to climate data (ESGF, ...) as a service
 
-WPS services and libraries with algorithms used in climate science analysis:
+WPS services and libraries with libraries used in climate data analysis:
 
 * `Flyingpigeon`_: services for the climate impact community
 * `Hummingbird`_: provides cdo and compliance-checker as a service
-* `Dodrio <https://github.com/bird-house/dodrio>`_: WPS for KIT
 * `Emu`_: some example WPS processes for demo
 
 
