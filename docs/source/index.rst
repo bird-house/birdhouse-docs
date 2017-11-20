@@ -42,6 +42,8 @@ Presentations & Blog Posts
 ==========================
 
 
+* `Flyingpigeon in Computes and Geosciences, January 2018 <https://www.sciencedirect.com/science/article/pii/S0098300416302801>`_
+* `Birdhouse in LSDMA book, 2017 <https://publikationen.bibliothek.kit.edu/1000071931>`_
 * `UNCCC Subgroup 2017 at Kigali <https://github.com/bird-house/birdhouse-docs/blob/master/slides/birdhouse-UNCCC/CCNUCC_Kigali2017.pdf>`_
 * `AGU 2016 at San Francisco <http://www.crim.ca/media/publication/fulltext/agu2016_presentation_short_ouranos.pdf>`_
 * `ESGF F2F 2016 at Washington <https://github.com/bird-house/birdhouse-docs/blob/master/slides/birdhouse-esgf-f2f-2016/birdhouse-esgf-f2f-2016_dkrz.pdf>`_
