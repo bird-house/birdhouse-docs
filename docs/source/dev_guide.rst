@@ -8,6 +8,12 @@ Developer Guide
     :depth: 3
 
 
+Make your own Bird
+------------------
+
+Follow the instructions on the
+`Wiki <https://github.com/bird-house/bird-house.github.io/wiki/Make-Your-Own-Bird>`_.
+
 .. _writing_WPS_process:
 
 Writing a WPS process
