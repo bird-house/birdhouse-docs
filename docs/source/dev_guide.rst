@@ -454,7 +454,7 @@ Coding Style using EditorConfig
 
 EditorConfig is used to keep consistent coding styles between different editors.
 The configuration is on github in the top level directory ``.editorconfig``.
-See the `EditorConfig <https://github.com/bird-house/pyramid-phoenix/blob/master/.editorconfig>`_ used in Birdhouse.
+See the `editor configuration <https://github.com/bird-house/pyramid-phoenix/blob/master/.editorconfig>`_ used in Birdhouse.
 Check the `EditorConfig <http://editorconfig.org/>`_ page on how to activate it for your editor.
 
 
