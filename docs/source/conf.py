@@ -148,12 +148,12 @@ else:  # only import and set the theme if we're building docs locally
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-#html_logo = '../../logos/birdhouse.svg'
+html_logo = "../../logos/birdhouse_128.png"
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
 # pixels large.
-#html_favicon = None
+html_favicon = "../../logos/favicon.ico"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -320,8 +320,8 @@ intersphinx_mapping = {'python': ('http://docs.python.org/', None),
 
 # linkcheck options
 # http://www.sphinx-doc.org/en/stable/config.html?highlight=linkchecker#options-for-the-linkcheck-builder
-linkcheck_ignore = [r'http[s]*://localhost.*/', 'https://mouflon.dkrz.de/', 'https://esgf-data.dkrz.de/', 'https://indico.egi.eu/']
-linkcheck_timeout = 15
+linkcheck_ignore = [r'http[s]*://localhost.*/', 'https://mouflon.dkrz.de/', 'https://esgf-data.dkrz.de/']
+linkcheck_timeout = 5
 
 # Link references always present on RST page.
 rst_epilog = """
@@ -329,7 +329,7 @@ rst_epilog = """
 .. _reStructuredText: http://sphinx-doc.org/rest.html
 .. _Read the Docs: https://readthedocs.org
 .. _Anaconda: https://www.continuum.io/
-.. _Buildout: http://www.buildout.org/en/latest/
+.. _Buildout: http://www.buildout.org/en/latest/ 
 .. _Birdhouse: http://birdhouse.readthedocs.io/en/latest/
 .. _Phoenix: http://pyramid-phoenix.readthedocs.io/en/latest/
 .. _Malleefowl: http://malleefowl.readthedocs.io/en/latest/
@@ -344,3 +344,4 @@ rst_epilog = """
 .. _dispel4py: https://github.com/dispel4py/dispel4py
 .. _esgf-pyclient: https://github.com/ESGF/esgf-pyclient
 """
+
