@@ -9,8 +9,8 @@ for example join the chat or the mailing list.
 Mailing list
 ------------
 
-* News are published to the `wps mailing list <https://lists.dkrz.de/mailman/listinfo/wps>`_ (`Archive <https://lists.dkrz.de/mailman/private/wps/>`_).
-* Technical discussions take place in `wps-dev mailing list <https://lists.dkrz.de/mailman/listinfo/wps-dev>`_ (`Archive <https://lists.dkrz.de/mailman/private/wps-dev/>`_).
+* News are published to the `wps mailing list <https://lists.dkrz.de/mailman/listinfo/wps>`_ (`wps Archive <https://lists.dkrz.de/mailman/private/wps/>`_).
+* Technical discussions take place in `wps-dev mailing list <https://lists.dkrz.de/mailman/listinfo/wps-dev>`_ (`wps-dev Archive <https://lists.dkrz.de/mailman/private/wps-dev/>`_).
 
 Feel free to register.
 

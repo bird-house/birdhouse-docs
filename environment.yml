@@ -1,14 +1,5 @@
 name: birdhouse-docs
 channels:
 - defaults
-- birdhouse
 dependencies:
-- python=2.7.12
-# buildout
-- mako=1.0.4
-# docs
-- sphinx=1.4.1
-- sphinx_rtd_theme
-- pip:
-  - genshi==0.7
-  - sphinx-autoapi==0.4.0
+- sphinx

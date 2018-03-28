@@ -20,11 +20,9 @@ Environment
 Three folder locations have to be pointed out:
 
 * **repository clones:**  The fetched code by ``git clone``. It is recommended to store the repositories in ``~/birdhouse``
-
 * **anaconda**: By default, the installation process creates a folder ``~/anaconda`` for general anaconda-specific software (see also :ref:`anaconda`).
-
 * **conda environments:** All birds (repositories) are built with their own environment to avoid missmatch of dependencies.
-By default, the conda environments are in ``~/.conda/envs/``.
+  By default, the conda environments are in ``~/.conda/envs/``.
 
 To change the default settings, create a ``Makefile.config`` with::
 

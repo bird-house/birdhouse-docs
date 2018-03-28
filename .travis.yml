@@ -1,14 +1,11 @@
 language: python
-branches:
-  only:
-    - master
 python:
-  - "2.7"
-sudo: false 
+  - "3.6"
+sudo: false
 install:
-  - make install
+  - pip install -r rtd.txt
 script:
-  - make docs 
+  - make docs
 #  - make linkcheck
 #after_success:
 # - coveralls

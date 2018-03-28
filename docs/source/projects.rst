@@ -24,8 +24,7 @@ WPS services and libraries with libraries used in climate data analysis:
 
 
 You can find the source code of all birdhouse components on `GitHub`_.
-:term:`Conda` packages for birdhouse are available on the
- `birdhouse channel <https://anaconda.org/birdhouse>`_ on Binstar.
+:term:`Conda` packages for birdhouse are available on the `birdhouse channel <https://anaconda.org/birdhouse>`_ on Binstar.
 :term:`Docker` images with birdhouse components are on `Docker Hub`_
 
 .. _`GitHub`: https://github.com/bird-house
