@@ -17,8 +17,8 @@ Highlighted Changes:
 * Birdhouse has a Logo :)
 * A `Cookiecutter`_ template for Birdhouse WPS birds is available.
 * A new WPS Bird `Black Swan`_ for extreme weather event assessments is started
-  by `LSCE <https://a2c2.lsce.ipsl.fr/>`_, Paris. This bird is spawned of the `Flyingpigeon`_.
-* A new Python library, `eggshell`_, is started to provide base functionallity
+  by `LSCE <https://a2c2.lsce.ipsl.fr/>`_, Paris. This bird is spawned off `Flyingpigeon`_.
+* A new Python library, `eggshell`_, is started to provide common base functionallity
   to WPS birds like Flyingpigeon and Black Swan.
 * The `Twitcher`_ security proxy supports now X509 certificates for authentication to WPS services.
 
