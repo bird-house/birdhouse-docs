@@ -9,6 +9,36 @@ Release Notes
    :depth: 2
    :backlinks: none
 
+Montréal (March 2018)
+=====================
+
+Highlighted Changes:
+
+* Birdhouse has a Logo :)
+* A `Cookiecutter`_ template for Birdhouse WPS birds is available.
+* A new WPS Bird `Black Swan`_ for extreme weather event assessments is started
+  by `LSCE <https://a2c2.lsce.ipsl.fr/>`_, Paris. This bird is spawned off `Flyingpigeon`_.
+* A new Python library, `eggshell`_, is started to provide common base functionallity
+  to WPS birds like Flyingpigeon and Black Swan.
+* The `Twitcher`_ security proxy supports now X509 certificates for authentication to WPS services.
+
+Released Birds:
+
+* Phoenix `0.8.1 <https://github.com/bird-house/pyramid-phoenix/releases/tag/0.8.1>`_
+* Birdy `0.2.1 <https://github.com/bird-house/birdy/releases/tag/0.2.1>`_
+* Twitcher `0.3.7 <https://github.com/bird-house/twitcher/releases/tag/0.3.7>`_
+* Flyingpigeon `1.2.0 <https://github.com/bird-house/flyingpigeon/releases/tag/1.2.0>`_
+* Hummingbird `0.5.7 <https://github.com/bird-house/hummingbird/releases/tag/0.5.7>`_
+* Malleefowl `0.6.7 <https://github.com/bird-house/malleefowl/releases/tag/0.6.7>`_
+* Emu `0.6.3 <https://github.com/bird-house/emu/releases/tag/0.6.3>`_
+
+New Birds in the making:
+
+* Black Swan: https://github.com/bird-house/blackswan
+* Eggshell: https://github.com/bird-house/eggshell
+* Cookiecutter: https://github.com/bird-house/cookiecutter-birdhouse
+
+
 Bonn (August 2016)
 ==================
 
