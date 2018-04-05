@@ -9,13 +9,13 @@ Release Notes
    :depth: 2
    :backlinks: none
 
-Montreal (March 2018)
+Montréal (March 2018)
 =====================
 
 Highlighted Changes:
 
 * Birdhouse has a Logo :)
-* `Cookiecutter`_ template for Birdhouse WPS birds is available.
+* A `Cookiecutter`_ template for Birdhouse WPS birds is available.
 * A new WPS Bird `Black Swan`_ for extreme weather event assessments is started
   by `LSCE <https://a2c2.lsce.ipsl.fr/>`_, Paris. This bird is spawned of the `Flyingpigeon`_.
 * A new Python library, `eggshell`_, is started to provide base functionallity
