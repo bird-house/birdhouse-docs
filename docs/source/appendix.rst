@@ -198,3 +198,7 @@ Related Projects
 
 References
 ==========
+This list :cite:`Schnase2016`  has no claim to be complete.
+
+.. bibliography:: refs.bib
+   :notcited:
