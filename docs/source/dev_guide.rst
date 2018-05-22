@@ -11,7 +11,7 @@ Developer Guide
 Make your own Bird
 ------------------
 
-Birdhouse has Cookiecutter_ template for a simple PyWPS application.
+Birdhouse has `Cookiecutter`_ template for a simple PyWPS application.
 You just need to run the Cookiecutter, answer a few questions and you will get a new "Bird".
 Follow the instructions given by the Cookiecutter documentation.
 In short run the following::
