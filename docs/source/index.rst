@@ -41,7 +41,7 @@ Getting started
 Presentations & Blog Posts
 ==========================
 
-* `GIZ Fachtagung 2018` <https://github.com/bird-house/birdhouse-docs/tree/master/slides/birdhouse-fata2018/main.pdf1>`_
+* `GIZ Fachtagung, 2018 <https://github.com/bird-house/birdhouse-docs/tree/master/slides/birdhouse-fata2018/main.pdf1>`_
 * `Flyingpigeon in Computes and Geosciences, January 2018 <https://www.sciencedirect.com/science/article/pii/S0098300416302801>`_
 * `Birdhouse in LSDMA book, 2017 <https://publikationen.bibliothek.kit.edu/1000071931>`_
 * `UNCCC Subgroup 2017 at Kigali <https://github.com/bird-house/birdhouse-docs/blob/master/slides/birdhouse-UNCCC/CCNUCC_Kigali2017.pdf>`_
