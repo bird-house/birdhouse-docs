@@ -41,6 +41,7 @@ Getting started
 Presentations & Blog Posts
 ==========================
 
+* `D-GEO Days, 2018 <https://github.com/bird-house/birdhouse-docs/tree/master/slides/birdhouse-D-GEO/main.pdf>`_
 * `GIZ Fachtagung, 2018 <https://github.com/bird-house/birdhouse-docs/tree/master/slides/birdhouse-fata2018/main.pdf>`_
 * `Flyingpigeon in Computes and Geosciences, January 2018 <https://www.sciencedirect.com/science/article/pii/S0098300416302801>`_
 * `Birdhouse in LSDMA book, 2017 <https://publikationen.bibliothek.kit.edu/1000071931>`_
