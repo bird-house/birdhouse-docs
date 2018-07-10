@@ -20,6 +20,10 @@ Chat-room
 If you want to have a quick chat with one of the developers,
 or just follow the discussions, feel welcome to join the Gitter `chat room`_
 
+Blog
+----
+
+Follow birdhouse news on our `blog`_.
 
 Wiki
 ----
@@ -36,3 +40,4 @@ The wiki is used to organize and document birdhouse `meetings`_.
 .. _`wiki`: https://github.com/bird-house/bird-house.github.io/wiki
 .. _`meetings`: https://github.com/bird-house/bird-house.github.io/wiki/Meetings
 .. _`chat room`: https://gitter.im/bird-house/birdhouse
+.. _`blog`: https://medium.com/birdhouse-newsletter
