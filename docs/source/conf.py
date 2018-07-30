@@ -341,7 +341,7 @@ rst_epilog = """
 .. _Black Swan: https://github.com/bird-house/blackswan
 .. _Birdy: http://birdy.readthedocs.io/en/latest/
 .. _Cookiecutter: http://cookiecutter-birdhouse.readthedocs.io/en/latest/
-.. _eggshell: https://github.com/bird-house/eggshell
+.. _Eggshell: https://eggshell.readthedocs.io/en/latest/
 .. _Bootstrap: http://birdhousebuilderbootstrap.readthedocs.io/en/latest/
 .. _icclim: http://icclim.readthedocs.io/en/latest/
 .. _PyWPS: http://pywps.org/

@@ -9,16 +9,18 @@ components to support them (the birds):
 WPS client side:
 
 * `Phoenix`_: a web-based WPS client with ESGF data access
-* `Birdy`_: a WPS command line tool
+* `Birdy`_: a WPS command line client and native library
 
 WPS supporting services and libraries:
 
 * `Twitcher`_: an OWS Security Proxy
 * `Malleefowl`_: access to climate data (ESGF, ...) as a service
+* `Eggshell`_: provides common functionallity for Birdhouse WPS services
 
-WPS services and libraries with libraries used in climate data analysis:
+WPS services used in climate data analysis:
 
 * `Flyingpigeon`_: services for the climate impact community
+* `Black Swan`_: services for the extreme weather event assessments
 * `Hummingbird`_: provides cdo and compliance-checker as a service
 * `Emu`_: some example WPS processes for demo
 
