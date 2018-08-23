@@ -9,7 +9,6 @@ This document will outline some guidelines on contributing to birdhouse.
 As well, the birdhouse :ref:`community` is a great place to get an idea of
 how to connect and participate in birdhouse community and development.
 
-
 Code of Conduct
 ---------------
 
@@ -19,7 +18,7 @@ accordance with the `OSGeo Code of Conduct`_.
 Source code
 -----------
 
-The source code of all birdhouse components is available on `Github`_.
+The source code of all birdhouse components is available on GitHub_.
 
 Issue tracker
 -------------
@@ -48,15 +47,18 @@ Website development
 The birdhouse website is on http://bird-house.github.io/.
 The HTML pages are `maintained on GitHub <https://github.com/bird-house/bird-house.github.io>`_.
 
-
 Documentation
 -------------
 
-The documentation is created with `Sphinx <http://sphinx-doc.org/index.html>`_
-and is automatically published to `ReadTheDocs <https://readthedocs.org/>`_ with GitHub webhooks.
+Documentation is written in reStructuredText_ and generated with Sphinx_.
+
+* http://sphinx-doc.org/tutorial.html
+* http://quick-sphinx-tutorial.readthedocs.io/en/latest/
+
+The documentation is automatically published to ReadTheDocs_ with GitHub webhooks.
 
 The main `documentation`_ (which you are reading now) is the starting point to
-get an overview of what birdhouse provides. Each birdhouse component comes with
+get an overview of birdhouse. Each birdhouse component comes with
 its own Sphinx documentation and is referenced by the main birdhouse document.
 
 .. _`OSGeo Code of Conduct`: http://www.osgeo.org/code_of_conduct

@@ -309,14 +309,14 @@ texinfo_documents = [
 # Example configuration for intersphinx: refer to the Python standard library.
 #intersphinx_mapping = {'https://docs.python.org/': None}
 intersphinx_mapping = {'python': ('http://docs.python.org/', None),
-                       'phoenix': ('http://pyramid-phoenix.readthedocs.io/en/latest/', None),
-                       'malleefowl': ('http://malleefowl.readthedocs.io/en/latest/', None),
-                       'twitcher': ('http://twitcher.readthedocs.io/en/latest/', None),
-                       'flyingpigeon': ('http://flyingpigeon.readthedocs.io/en/latest/', None),
-                       'hummingbird': ('http://birdhouse-hummingbird.readthedocs.io/en/latest/', None),
-                       'emu': ('http://emu.readthedocs.io/en/latest/', None),
-                       'birdy': ('http://birdy.readthedocs.io/en/latest/', None),
-                       'bootstrap': ('http://birdhousebuilderbootstrap.readthedocs.io/en/latest/', None),
+                       'phoenix': ('https://pyramid-phoenix.readthedocs.io/en/latest/', None),
+                       'malleefowl': ('https://malleefowl.readthedocs.io/en/latest/', None),
+                       'twitcher': ('https://twitcher.readthedocs.io/en/latest/', None),
+                       'flyingpigeon': ('https://flyingpigeon.readthedocs.io/en/latest/', None),
+                       'hummingbird': ('https://birdhouse-hummingbird.readthedocs.io/en/latest/', None),
+                       'emu': ('https://emu.readthedocs.io/en/latest/', None),
+                       'birdy': ('https://birdy.readthedocs.io/en/latest/', None),
+                       'bootstrap': ('https://birdhousebuilderbootstrap.readthedocs.io/en/latest/', None),
                         }
 
 # linkcheck options
@@ -326,10 +326,10 @@ linkcheck_timeout = 5
 
 # Link references always present on RST page.
 rst_epilog = """
+.. _Conda: https://conda.io/docs/index.html
 .. _Sphinx: http://sphinx-doc.org/
 .. _reStructuredText: http://sphinx-doc.org/rest.html
-.. _Read the Docs: https://readthedocs.org
-.. _Anaconda: https://www.continuum.io/
+.. _ReadTheDocs: https://readthedocs.org
 .. _Buildout: http://www.buildout.org/en/latest/
 .. _Birdhouse: http://birdhouse.readthedocs.io/en/latest/
 .. _Phoenix: http://pyramid-phoenix.readthedocs.io/en/latest/
@@ -344,7 +344,13 @@ rst_epilog = """
 .. _Eggshell: https://eggshell.readthedocs.io/en/latest/
 .. _Bootstrap: http://birdhousebuilderbootstrap.readthedocs.io/en/latest/
 .. _icclim: http://icclim.readthedocs.io/en/latest/
+.. _ESGF: https://esgf.llnl.gov/
 .. _PyWPS: http://pywps.org/
+.. _PyCSW: http://pycsw.org/
+.. _OWSLib: https://geopython.github.io/OWSLib/
+.. _GeoPython: https://geopython.github.io/
 .. _dispel4py: https://github.com/dispel4py/dispel4py
 .. _esgf-pyclient: https://github.com/ESGF/esgf-pyclient
+.. _Web Processing Service: http://geoprocessing.info/wpsdoc/
+.. _OpenClimateGIS: https://www.earthsystemcog.org/projects/openclimategis/
 """
