@@ -1,23 +1,9 @@
 .. _wps_tutorial:
 
-What is WPS?
-============
+Wordcounter Example
+===================
 
-**Geographic Information Processing for the Web**
-    *The Web Processing Service (WPS) offers a simple web-based method of finding, accessing, and using all kinds of calculations and models* ([#what_is_wps]_)
-
-Web Processing Service offers you the following:
-
-* **simple web service** to enable remote call of calcualtions. 
-* WPS services are **self-describing**. 
-* WPS is an **interface description**. Several implementations exist.
-* WPS is part of the :term:`OGC` **open standards** family: :term:`wms`, wfc, wcs, sos, csw, ...
-* can be called with **simple HTTP requests** with key/value pairs or
-* can be called with HTTP post-requests with XML documents.
-* a **lightweight specification**. Comparable to :term:`XML-RPC` ... but XML-RPC is not self-describing.
-* can be registered in :term:`Catalog Services <csw>`.
-
-You will find further information in the appendix: :ref:`appendix_wps_docs`.
+.. todo:: The WPS tutorial needs to be updated.
 
 In the following we show an example with a `Word Counter` function which is enabled as a web-service using WPS.
 
@@ -31,7 +17,7 @@ Defining a `Word Counter` function
 In the following example we will use the `Word Counter` function::
 
     def count_words(file):
-        """Calculates number of words in text document. 
+        """Calculates number of words in text document.
         Returns JSON document with occurrences of each word.
         """
         return json_doc
@@ -43,13 +29,13 @@ This Python function has the following parts:
 * `input parameters`: file (mime type `text/plain`)
 * `output parameters`: json_doc (mime type `application/json`)
 
-Now, we would like to run this function remotely using a simple web-service.  
-To get this web-service we can use :term:`WPS`. The function parts (name, parameters) are all we need to know to define a WPS process.
+Now, we would like to run this function remotely using a simple web-service.
+To get this web-service we can use WPS. The function parts (name, parameters) are all we need to know to define a WPS process.
 
 WPS definition of `Word Counter`
 --------------------------------
 
-To add a new proccess you need to define the input and output parameters. For the `Word Counter` process this looks like the following. 
+To add a new proccess you need to define the input and output parameters. For the `Word Counter` process this looks like the following.
 
 .. image:: ../_images/WpsInOut.png
 
@@ -65,9 +51,9 @@ There are two types of input/output parameters:
 An input/output parameter has:
 
 * a name or `identifier`
-* a descriptive `title` 
+* a descriptive `title`
 * an `abstract` giving a description of the parameter
-* `multiplicity` ... how often can this parameter occur: optional, once, many ... 
+* `multiplicity` ... how often can this parameter occur: optional, once, many ...
 * in case of literal parameters a list of `allowed values`.
 
 For more details see the following `WPS Tutorial`_.
@@ -78,7 +64,7 @@ Chaining WPS processes
 ----------------------
 
 If you know the input/output parameters of processes you can chain processes. For example we will chain a `Text Generator` process to
-our `Word Counter` process. 
+our `Word Counter` process.
 
 .. image:: ../_images/WpsChain.png
 
@@ -87,7 +73,7 @@ The `Text document` output of the `Text Generator` process becomes the input of 
 You can chain process manually by calling them one after the other. The WPS specification allows you to also chain process with a single WPS request.
 To get even more flexibility (using if-clauses, loops, monitoring ...) you can also use a :term:`workflow engine <workflow>` (:term:`Taverna`, :term:`VisTrails`, :term:`Dispel4py`, ...).
 
-You will find more details about chaining in the `GeoProcessing document <http://geoprocessing.info/wpsdoc/Concepts#chaining>`_ 
+You will find more details about chaining in the `GeoProcessing document <http://geoprocessing.info/wpsdoc/Concepts#chaining>`_
 and the `GeoServer Tutorial <http://geoserver.geo-solutions.it/edu/en/wps/chaining_processes.html>`_.
 
 
@@ -117,14 +103,14 @@ The following diagram shows these operations:
 
 .. image:: ../_images/wps_usage.png
 
-To call these process one can use simple HTTP request with key/value pairs: 
+To call these process one can use simple HTTP request with key/value pairs:
 
 * `GetCapabilites` request::
 
    http://localhost:8094/wps?&request=GetCapabilities&service=WPS&version=1.0.0
 
 * `DescribeProcess` request for `wordcount` process::
- 
+
    http://localhost:8094/wps?&request=DescribeProcess&service=WPS&version=1.0.0&identifier=wordcount
 
 * `Exceute` request::
@@ -136,7 +122,7 @@ To call these process one can use simple HTTP request with key/value pairs:
 A process can be run `synchronously` or `asynchronously`:
 
 * sync: You make a HTTP request and you need to wait until the request returns with a response (or timeout). This is only useful for short-running processes.
-* async: You make a HTTP request and you get immediately a response document. This document gives you a link to a status document which you need to poll until the process has finished. 
+* async: You make a HTTP request and you get immediately a response document. This document gives you a link to a status document which you need to poll until the process has finished.
 
 Processes can be run with simple HTTP get-requests (as shown above) and also with HTTP post-requests. In the later case XML documents are exchanged with the
 communication details (process, parameters, ...).
@@ -149,7 +135,7 @@ There are also some `IPython notebooks <http://nbviewer.jupyter.org/github/bird-
 Calling `Word Counter` with Birdy
 ---------------------------------
 
-Now, we are using :ref:`Birdy wps command line client <birdy:introduction>` to access the `wordcount` process.
+Now, we are using Birdy_ wps command line client to access the `wordcount` process.
 
 Which proccess are available (`GetCapabilities`)::
 
@@ -184,7 +170,7 @@ Run `wordcount` with a text document (`Execute`)::
   Execution status: ProcessAccepted
   Execution status: ProcessSucceeded
   Output:
-  output=http://localhost:8090/wpsoutputs/emu/output-37445d08-cf0f-11e4-ab7e-68f72837e1b4.txt 
+  output=http://localhost:8090/wpsoutputs/emu/output-37445d08-cf0f-11e4-ab7e-68f72837e1b4.txt
 
 ..  _WPS Tutorial: http://wiki.ieee-earth.org/Documents/GEOSS_Tutorials/GEOSS_Provider_Tutorials/Web_Processing_Service_Tutorial_for_GEOSS_Providers/Section_2:_Introduction_to_WPS
 

@@ -9,6 +9,13 @@ Release Notes
    :depth: 2
    :backlinks: none
 
+Dar es Salaam (August 2018)
+===========================
+
+Birdhouse will be at the `FOSS4G 2018 in Dar es Salaam <https://2018.foss4g.org/>`_.
+
+In the making ...
+
 Montréal (March 2018)
 =====================
 
