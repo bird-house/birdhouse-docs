@@ -45,6 +45,7 @@ Presentations & Blog Posts
 
 2018:
 
+* `FOSS4G 2018 at Dar-Es-Salaam <https://github.com/bird-house/birdhouse-docs/blob/master/slides/birdhouse-foss4g-2018/Hempelmann_foss4g2018.pdf>`_
 * `Open Climate GIS and Birdhouse at Pangeo Developer Workshop, 2018 <https://medium.com/pangeo/the-2018-pangeo-developers-workshop-1be359dac33c>`_
 * `D-GEO Days, 2018 <https://github.com/bird-house/birdhouse-docs/tree/master/slides/birdhouse-D-GEO/main.pdf>`_
 * `GIZ Fachtagung, 2018 <https://github.com/bird-house/birdhouse-docs/tree/master/slides/birdhouse-fata2018/main.pdf>`_
