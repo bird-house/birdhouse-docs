@@ -6,18 +6,12 @@
 .. _introduction:
 
 Introduction
-============
+------------
 
 Birdhouse is a collection of `Web Processing Service`_ (WPS) related
 Python components to support data processing in the *climate science*
 community. We use the Python implemention of WPS, PyWPS_, and the Python OWS library OWSLib_
 from the GeoPython_ Project.
-
-
-.. _getting_started:
-
-Getting started
-===============
 
 .. toctree::
    :maxdepth: 2
