@@ -20,3 +20,4 @@ from the GeoPython_ Project.
    release_notes
    license
    glossary
+   literature
