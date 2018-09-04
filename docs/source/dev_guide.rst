@@ -1,8 +1,8 @@
-.. _guides:
+.. _dev_guide:
 
 
-Guidelines and Tutorials:
-=========================
+Developer Guidelines
+====================
 
 .. contents::
     :local:

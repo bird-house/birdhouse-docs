@@ -1,11 +1,11 @@
-.. _adminguide:
+.. _admin_guide:
 
-Administrator Guide
-===================
+Administrator Guidelines
+========================
 
 .. contents::
     :local:
-    :depth: 2
+    :depth: 3
 
 .. _filesandfolder:
 
