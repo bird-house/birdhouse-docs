@@ -24,6 +24,7 @@ WPS services used in climate data analysis:
 * `Hummingbird`_: provides cdo and compliance-checker as a service
 * `Emu`_: some example WPS processes for demo
 
+Many climate analysis operations are implemented using OpenClimateGIS_.
 
 You can find the source code of all birdhouse components on GitHub_.
 Docker images with birdhouse components are on `Docker Hub`_
