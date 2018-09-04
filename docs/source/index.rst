@@ -20,16 +20,3 @@ from the GeoPython_ Project.
    glossary
    release_notes
    license
-
-
-License Agreement
-=================
-
-Birdhouse is Open Source and released under the :ref:`Apache License, Version 2.0 <license>`.
-
-
-.. _PAVICS: https://ouranosinc.github.io/pavics-sdi/
-.. _Ouranos: https://www.ouranos.ca/
-.. _CRIM: https://www.crim.ca/en
-.. _Climate Data Store: https://cds.climate.copernicus.eu/
-.. _Copernicus Climate Change Service: https://climate.copernicus.eu/
