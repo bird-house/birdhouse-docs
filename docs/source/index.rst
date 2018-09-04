@@ -15,7 +15,6 @@ from the GeoPython_ Project.
 
    overview
    dev_guide
-   admin_guide
    communication
    projects
    release_notes
