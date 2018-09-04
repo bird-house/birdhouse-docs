@@ -17,6 +17,6 @@ from the GeoPython_ Project.
    guides
    communication
    projects
-   glossary
    release_notes
    license
+   glossary
