@@ -7,6 +7,10 @@ Administrator Guidelines
     :local:
     :depth: 3
 
+
+.. warning:: WARNING: This section is outdated ... 
+
+
 .. _filesandfolder:
 
 Files and Folders
@@ -199,3 +203,5 @@ See the `mongodb documentation <https://docs.mongodb.com/manual/core/backups/>`_
 With the following command you can make a dump of the ``users`` collection of the Phoenix database::
 
     $ mongodump --port 27027 --db phoenix_db --collection users
+
+-->
