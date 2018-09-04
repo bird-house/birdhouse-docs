@@ -23,8 +23,7 @@ Getting started
    :maxdepth: 2
 
    overview
-   components
-   dev_guide
+   guides
    community
    contributing
    presentations

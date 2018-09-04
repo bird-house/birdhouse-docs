@@ -1,11 +1,14 @@
-.. _devguide:
+.. _guides:
 
-Developer Guide
-===============
+
+Guidelines and Tutorials:
+=========================
 
 .. contents::
     :local:
     :depth: 3
+
+Guidelines and tutorials for Developers to include new components to birdhouse or enhance existing functionality.
 
 
 Make your own Bird
