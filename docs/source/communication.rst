@@ -3,17 +3,20 @@
 Communication
 ==============
 
+.. contents::
+    :local:
+    :depth: 3
+
+
 There are numerous ways to interact with the Birdhouse community,
 for example join the chat_ or follow our blog_. Also we are present on several conferences where you can enjoy one of our good presentations_.
 
+Newsletter and Blog-post
+------------------------
 
-
-Blog
-----
-
-We inform abut the main steps forward that you can keep track on whats going on in the birdhouse.
-If you want to receive this updates follow birdhouse news on our blog_.
-You need to register in medium and activate following for the birdhouse newsletter.
+In the blog_ you can find interesting articles and information related to birdhouse in general.
+We also inform regularly abut the main steps forward in the software development that you can keep track on whats going on in the birdhouse.
+If you want to receive this updates follow birdhouse news on our blog_. You need to register in medium and activate following for the birdhouse newsletter.
 
 Chat-room
 ---------
@@ -41,8 +44,8 @@ The wiki is used to organize and document birdhouse meetings_.
 
 .. _presentations:
 
-Presentations & Blog Posts
---------------------------
+Presentations
+-------------
 
 2018:
 
