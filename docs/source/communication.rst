@@ -64,7 +64,7 @@ Presentations
 2016:
 
 * `AGU 2016 at San Francisco <http://www.crim.ca/media/publication/fulltext/agu2016_presentation_short_ouranos.pdf>`_
-* `ESGF F2F 2016 at Washington <https://github.com/bird-house/birdhouse-docs/blob/master/slides/birdhouse-esgf-f2f-2016/birdhouse-esgf-f2f-2016_dkrz.pdf>`_
+* `ESGF F2F 2016 at Washington <https://github.com/cehbrecht/birdhouse-esgf-f2f-2016/blob/master/birdhouse-esgf-f2f-2016_dkrz.pdf>`_
 * `FOSS4G 2016 at Bonn <https://github.com/bird-house/birdhouse-docs/blob/master/slides/birdhouse-foss4g-2016/Hempelmann_foss4g2016.pdf>`_
 * `EGU 2016 at Vienna <https://github.com/bird-house/birdhouse-docs/blob/master/slides/birdhouse-egu-2016/EGU-Processing-DKRZ.pdf>`_
 * `ICRC-CORDEX 2016 <https://github.com/bird-house/birdhouse-docs/blob/master/slides/Hempelmann_CORDEX2016_datatoinformation.pdf>`_
