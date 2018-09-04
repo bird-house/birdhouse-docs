@@ -13,11 +13,6 @@ Python components to support data processing in the *climate science*
 community. We use the Python implemention of WPS, PyWPS_, and the Python OWS library OWSLib_
 from the GeoPython_ Project.
 
-Birdhouse is used in the following projects:
-
-* CP4CDS: Climate Projects for the `Climate Data Store`_ (part of the European Union's `Copernicus Climate Change Service`_).
-* PAVICS_: Platform for climate analysis and visualization by Ouranos_ and CRIM_, Canada.
-
 Many climate analysis operations are implemented using OpenClimateGIS_.
 
 
@@ -31,6 +26,7 @@ Getting started
 
    overview
    projects
+   components
    dev_guide
    community
    contributing
