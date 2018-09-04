@@ -18,4 +18,6 @@ Here comes a section of References to our own publications and general literatur
 References
 ----------
 
-.. todo:: include ref bibliography file!
+.. note:: just a test bibliography file!
+
+.. bibliography:: refs.bib
