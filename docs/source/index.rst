@@ -14,7 +14,8 @@ from the GeoPython_ Project.
    :maxdepth: 2
 
    overview
-   guides
+   dev_guide
+   admin_guide
    communication
    projects
    release_notes
