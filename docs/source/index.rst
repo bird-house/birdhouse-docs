@@ -24,9 +24,7 @@ Getting started
 
    overview
    guides
-   community
-   contributing
-   presentations
+   communication
    projects
    glossary
    release_notes
