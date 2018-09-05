@@ -74,7 +74,7 @@ Presentations
 
 2015:
 
-* `Paris Coding Spring 2015 at IPSL <https://github.com/bird-house/birdhouse-docs/blob/master/slides/birdhouse-architecture/birdhouse-architecture.pdf>`_
+* `Paris Coding Spring 2015 at IPSL <https://github.com/cehbrecht/birdhouse-talk-coding-sprint-ipsl-2015/blob/master/birdhouse-architecture.pdf>`_
 
 2014:
 
