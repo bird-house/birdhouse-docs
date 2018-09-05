@@ -20,10 +20,12 @@ Highlighted Changes:
 
 * Ansible playbook to install PyWPS applications.
 * Skipped Buildout deployment ... not all birds are converted yet.
+* Updated Cookiecutter template for new deployment.
 
 Released Birds:
 
 * Ansible Playbook for PyWPS `0.1.0 <https://github.com/bird-house/ansible-wps-playbook/releases/tag/0.1.0>`_
+* Cookiecutter Template for PyWPS `0.3.0 <https://github.com/bird-house/cookiecutter-birdhouse/releases/tag/v0.3.0>`_
 
 Montréal (March 2018)
 =====================
