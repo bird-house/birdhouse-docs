@@ -67,7 +67,7 @@ Presentations
 * `ESGF F2F 2016 in Washington <https://github.com/cehbrecht/birdhouse-esgf-f2f-2016/blob/master/birdhouse-esgf-f2f-2016_dkrz.pdf>`_
 * `FOSS4G 2016 in Bonn <https://github.com/bird-house/birdhouse-docs/blob/master/slides/birdhouse-foss4g-2016/Hempelmann_foss4g2016.pdf>`_
 * `EGI Workshop 2016 in Amsterdam <https://github.com/cehbrecht/birdhouse-talk-egi-2016/blob/master/birdhouse-talk-egi-2016.pdf>`_
-* `EGU 2016 in Vienna <https://github.com/bird-house/birdhouse-docs/blob/master/slides/birdhouse-egu-2016/EGU-Processing-DKRZ.pdf>`_
+* `EGU 2016 in Vienna <https://github.com/cehbrecht/birdhouse-talk-egu-2016/blob/master/EGU-Processing-DKRZ.pdf>`_
 * `ICRC-CORDEX 2016 <https://github.com/bird-house/birdhouse-docs/blob/master/slides/Hempelmann_CORDEX2016_datatoinformation.pdf>`_
 * Model Animation LSCE
 * `Talk on USGS WebEx 2016/02/18 <https://my.usgs.gov/confluence/pages/viewpage.action?pageId=542482181>`_
