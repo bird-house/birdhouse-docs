@@ -39,7 +39,7 @@ If you want to receive a notification of new articles follow birdhouse news on o
 Newsletter
 ----------
 
-To be informed about the main progress in the birdhouse development as well as related information you can subscribe to our newsletter.
+To be informed about the main progress in the birdhouse development as well as related information you can subscribe to our newsletter_.
 
 
 Wiki
