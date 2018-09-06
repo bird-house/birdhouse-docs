@@ -68,14 +68,14 @@ Presentations
 * `FOSS4G 2018 in Dar-Es-Salaam <https://github.com/nilshempelmann/presentations/blob/master/birdhouse-foss4g-2018/Hempelmann_foss4g2018.pdf>`_
 * `Open Climate GIS and Birdhouse at Pangeo Developer Workshop, 2018 <https://medium.com/pangeo/the-2018-pangeo-developers-workshop-1be359dac33c>`_
 * `D-GEO Days, 2018 <https://github.com/nilshempelmann/presentations/blob/master/birdhouse-D-GEO/main.pdf>`_
-* `GIZ Fachtagung, 2018 <https://github.com/nilshempelmann/presentations/blob/master/slides/birdhouse-fata2018/main.pdf>`_
+* `GIZ Fachtagung, 2018 <https://github.com/nilshempelmann/presentations/blob/master/birdhouse-fata2018/main.pdf>`_
 * `Copernicus/Birdhouse at EGU 2018, Vienna <https://presentations.copernicus.org/EGU2018-6491_presentation.pdf>`_
 * `Flyingpigeon in Computes and Geosciences, January 2018 <https://www.sciencedirect.com/science/article/pii/S0098300416302801>`_
 
 2017:
 
 * `Birdhouse in LSDMA book, 2017 <https://publikationen.bibliothek.kit.edu/1000071931>`_
-* `UNCCC Subgroup 2017 in Kigali <https://github.com/nilshempelmann/presentations/blob/master/birdhouse-UNCCC/CCNUCC_Kigali2017.pdf>`_
+* `UNCCC Subgroup 2017 in Kigali <https://github.com/nilshempelmann/presentations/blob/master/birdhouse-UNFCCC/CCNUCC_Kigali2017.pdf>`_
 
 2016:
 
