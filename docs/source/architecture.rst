@@ -40,21 +40,14 @@ WPS serivces can be accessed through web-applications like Phoenix or from scrip
 Birdhouse is the home of Web Processing Services used in climate science and
 components to support them (the birds):
 
-WPS client side:
----------------
+client side components
+----------------------
 
 * `Phoenix`_: a web-based WPS client with ESGF data access
 * `Birdy`_: a WPS command line client and native library
 
-WPS supporting services and libraries:
---------------------------------------
-
-* `Twitcher`_: an OWS Security Proxy
-* `Malleefowl`_: access to climate data (ESGF, ...) as a service
-* `Eggshell`_: provides common functionallity for Birdhouse WPS services
-
-WPS services used in climate data analysis:
--------------------------------------------
+server side components
+----------------------
 
 * `Flyingpigeon`_: services for the climate impact community
 * `Black Swan`_: services for the extreme weather event assessments
@@ -62,6 +55,10 @@ WPS services used in climate data analysis:
 * `Emu`_: some example WPS processes for demo
 
 Many climate analysis operations are implemented using OpenClimateGIS_.
+
+* `Twitcher`_: an OWS Security Proxy
+* `Malleefowl`_: access to climate data (ESGF, ...) as a service
+* `Eggshell`_: provides common functionallity for Birdhouse WPS services
 
 You can find the source code of all birdhouse components on GitHub_.
 Docker images with birdhouse components are on `Docker Hub`_
