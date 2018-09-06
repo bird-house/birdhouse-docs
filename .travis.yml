@@ -3,9 +3,17 @@ python:
   - "3.6"
 sudo: false
 install:
-  - pip install -r rtd.txt
+  # Python 3.x is default
+  - wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
+  - bash miniconda.sh -b -p $HOME/miniconda
+  - export PATH="$HOME/miniconda/bin:$PATH"
+  - hash -r
+  - conda config --set always_yes yes --set changeps1 no
+  - conda update -q conda
+  # Useful for debugging any issues with conda
+  - conda info -a
+  # Create now the env with our environment
+  - conda env create -f environment.yml
+  - source activate birdhouse-docs
 script:
   - make docs
-#  - make linkcheck
-#after_success:
-# - coveralls

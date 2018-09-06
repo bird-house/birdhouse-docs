@@ -9,15 +9,28 @@ Release Notes
    :depth: 2
    :backlinks: none
 
-Dar es Salaam (August 2018)
-===========================
+Dar es Salaam (September 2018)
+==============================
 
-Birdhouse will be at the `FOSS4G 2018 in Dar es Salaam <https://2018.foss4g.org/>`_.
+Birdhouse was present at the `FOSS4G 2018 in Dar es Salaam <https://2018.foss4g.org/>`_.
 
-In the making ...
+.. warning:: In the making ...
+
+Highlighted Changes:
+
+* Ansible playbook to install PyWPS applications.
+* Skipped Buildout deployment ... not all birds are converted yet.
+* Updated Cookiecutter template for new deployment.
+
+Released Birds:
+
+* Ansible Playbook for PyWPS `0.1.0 <https://github.com/bird-house/ansible-wps-playbook/releases/tag/0.1.0>`_
+* Cookiecutter Template for PyWPS `0.3.0 <https://github.com/bird-house/cookiecutter-birdhouse/releases/tag/v0.3.0>`_
 
 Montréal (March 2018)
 =====================
+
+We had a `workshop in Montréal <https://medium.com/birdhouse-newsletter/april-2018-74c8914648d9>`_ with CRIM and Ouranos.
 
 Highlighted Changes:
 
@@ -48,6 +61,10 @@ New Birds in the making:
 
 Bonn (August 2016)
 ==================
+
+Birdhouse was present at the `FOSS4G 2016 in Bonn <http://2016.foss4g.org/home.html>`_.
+
+Highlighted Changes:
 
 * Leaflet map with time-dimension plugin.
 * using twitcher security proxy.
