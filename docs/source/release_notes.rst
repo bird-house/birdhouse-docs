@@ -9,6 +9,13 @@ Release Notes
    :depth: 2
    :backlinks: none
 
+Washington (December 2018)
+==========================
+
+Birdhouse will be at the `AGU 2018 in Washington D.C. <https://fallmeeting.agu.org/2018/>`_.
+
+.. warning:: Comming next ...
+
 Dar es Salaam (September 2018)
 ==============================
 
@@ -27,6 +34,7 @@ Released Birds:
 
 * Ansible Playbook for PyWPS `0.1.0 <https://github.com/bird-house/ansible-wps-playbook/releases/tag/0.1.0>`_
 * Cookiecutter Template for PyWPS `0.3.0 <https://github.com/bird-house/cookiecutter-birdhouse/releases/tag/v0.3.0>`_
+* Birdy WPS Client: `0.4.0 <https://github.com/bird-house/birdy/releases/tag/v0.4.0>`_
 * Emu WPS: `0.9.0 <https://github.com/bird-house/emu/releases/tag/v0.9.0>`_
 * Hummingbird WPS: `0.6.0 <https://github.com/bird-house/hummingbird/releases/tag/v0.6.0>`_
 
