@@ -15,10 +15,15 @@ Overview
 Introduction
 ------------
 
-Birdhouse is a collection of `Web Processing Service`_ (WPS) related
-Python components to support data processing in the *climate science*
-community. We use the Python implemention of WPS, PyWPS_, and the Python OWS library OWSLib_
-from the GeoPython_ Project.
+Birdhouse is a collaborative project open for the community to participate. It is a software framework containing a collection of
+`Web Processing Service`_ (WPS). The deployed algorithms are focusing on Earth Systems and environmental data processing with the
+philosophy of streamlining the software development and deployment. By supporting climate, earth observation and biodiversity data
+and processes, Birdhouse can be used in a wide array of Earth sciences projects and workflows. The core benefit of this project is to
+allow the seamless use of climate services developed by a diverse network of national meteorological offices, regional climate service
+providers, academics, not-for-profit research centers and private industry. As governments move toward open-data policies, there will
+be a need for analytical services that extract value out of the deluge of information. Using an interoperable software architecture,
+institutions can provide both data and services allowing users to process the data remotely from a laptop, instead of having to acquire
+and maintain large storage infrastructures.
 
 .. _what_is_wps
 
