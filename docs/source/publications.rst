@@ -57,5 +57,4 @@ EGI Community Forum 2014 ...
 
 * Gerics Hamburg
 
-
-.. bibliography:: birdhouse_publications.bib
+.. bibliography:: birdhouse.bib
