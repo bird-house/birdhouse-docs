@@ -16,4 +16,4 @@
    release_notes
    license
    glossary
-   literature
+   publications
