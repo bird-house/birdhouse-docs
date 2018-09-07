@@ -49,7 +49,7 @@ Articles, book sections and conference proceedings and presentations related to 
 2014:
 
 * `EGI Community Forum 2014 at Helsinki <https://indico.egi.eu/indico/event/1994/session/23/contribution/134>`_
-EGI Community Forum 2014 :cite:`HEMPELMANN2014`
+EGI Community Forum 2014 ...
 
 * Prag
 
