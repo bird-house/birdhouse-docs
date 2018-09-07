@@ -28,7 +28,9 @@ What is WPS?
 **Geographic Information Processing for the Web**
     *The Web Processing Service (WPS) offers a simple web-based method of finding, accessing, and using all kinds of calculations and models*.
 
-.. note:: Read the documenation on `Geographic Information Processing for the Web <http://geoprocessing.info/wpsdoc/>`_
+.. image:: _images/WPS_principe.png
+
+.. note:: Read the documentation on `Geographic Information Processing for the Web <http://geoprocessing.info/wpsdoc/>`_
 
 .. _wps_use_case:
 

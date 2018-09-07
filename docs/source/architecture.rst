@@ -13,7 +13,7 @@ Architecture
 Framework overview
 ------------------
 
-.. image:: _images/birdhouse-components.png
+.. image:: _images/framework.png
 
 ESGF_ is currently the main climate data resource (but more resources are possible).
 ESGF Solr-index is used to find ESGF data.
