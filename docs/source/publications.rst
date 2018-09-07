@@ -5,26 +5,17 @@ Publications
 
 .. contents::
     :local:
-    :depth: 3
-
-
-Publications
-------------
-
-Articles, book sections and conference proceedings related to the birdhouse projects:
-
-.. todo: Update the list
-
-Flyingpigeon Version 1.0 :cite:`hempelmann2018`
-EGI Community Forum 2014 :cite:`HEMPELMANN2014`
-
-.. bibliography:: publications.bib
-
+    :depth: 2
 
 .. _presentations:
 
-Presentations
--------------
+Presentations and Publications
+------------------------------
+
+Articles, book sections and conference proceedings and presentations related to the birdhouse projects:
+
+.. todo: Update the bibtex
+
 
 2018:
 
@@ -33,7 +24,7 @@ Presentations
 * `D-GEO Days, 2018 <https://github.com/nilshempelmann/presentations/blob/master/birdhouse-D-GEO/main.pdf>`_
 * `GIZ Fachtagung, 2018 <https://github.com/nilshempelmann/presentations/blob/master/birdhouse-fata2018/main.pdf>`_
 * `Copernicus/Birdhouse at EGU 2018, Vienna <https://presentations.copernicus.org/EGU2018-6491_presentation.pdf>`_
-* `Flyingpigeon in Computes and Geosciences, January 2018 <https://www.sciencedirect.com/science/article/pii/S0098300416302801>`_
+* `Flyingpigeon in Computes and Geosciences, January 2018 :cite:`hempelmann2018`
 
 2017:
 
@@ -58,8 +49,13 @@ Presentations
 2014:
 
 * `EGI Community Forum 2014 at Helsinki <https://indico.egi.eu/indico/event/1994/session/23/contribution/134>`_
+EGI Community Forum 2014 :cite:`HEMPELMANN2014`
+
 * Prag
 
 2013:
 
 * Gerics Hamburg
+
+
+.. bibliography:: birdhouse_publications.bib
