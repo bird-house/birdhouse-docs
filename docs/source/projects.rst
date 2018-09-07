@@ -2,7 +2,7 @@
 .. _projects:
 
 Projects using birdhouse
-=========================
+========================
 
 
 .. contents::
@@ -10,6 +10,8 @@ Projects using birdhouse
     :depth: 3
 
 Birdhouse is used in the following projects:
+
+.. todo: add some introduction sentences for each project
 
 COPERNICUS:
 -----------
