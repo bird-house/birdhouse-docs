@@ -16,4 +16,3 @@
    release_notes
    license
    glossary
-   publications
