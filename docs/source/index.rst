@@ -13,6 +13,7 @@
    admin_guide
    communication
    projects
+   publications
    release_notes
    license
    glossary
