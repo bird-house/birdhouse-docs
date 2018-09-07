@@ -103,7 +103,59 @@ Contribution Workflow
 Please find the coding guide in the
 `Wiki <https://github.com/bird-house/bird-house.github.io/wiki/Development-Guidelines>`_.
 
+.. _contributing:
+
+Contributing
+------------
+
+The Birdhouse project openly welcomes contributions
+(bug reports, bug fixes, code enhancements/features, etc.).
+This document will outline some guidelines on contributing to birdhouse.
+As well, the birdhouse :ref:`community` is a great place to get an idea of
+how to connect and participate in birdhouse community and development.
+
+.. _codeofconduct:
+Code of Conduct
+---------------
+
+Contributors to this project are expected to act respectfully toward others in
+accordance with the `OSGeo Code of Conduct`_.
+
+.. _source:
+Source code
+-----------
+
+The source code of all birdhouse components is available on GitHub_.
+
+.. _issuetracker:
+Issue tracker
+-------------
+
+Please use the issue tracker on GitHub for the corresponding birdhouse component.
 
 
+Website development
+-------------------
+
+The birdhouse website is on http://bird-house.github.io/.
+The HTML pages are `maintained on GitHub <https://github.com/bird-house/bird-house.github.io>`_.
+
+Documentation
+-------------
+
+Documentation is written in reStructuredText_ and generated with Sphinx_.
+
+* http://sphinx-doc.org/tutorial.html
+* http://quick-sphinx-tutorial.readthedocs.io/en/latest/
+
+The documentation is automatically published to ReadTheDocs_ with GitHub webhooks.
+
+The main `documentation`_ (which you are reading now) is the starting point to
+get an overview of birdhouse. Each birdhouse component comes with
+its own Sphinx documentation and is referenced by the main birdhouse document.
+
+.. _`OSGeo Code of Conduct`: http://www.osgeo.org/code_of_conduct
+.. _`documentation`: https://github.com/bird-house/birdhouse-docs
+.. _`GitHub`: https://github.com/bird-house
 .. _PEP8: https://www.python.org/dev/peps/pep-0008/
 .. _flake8: http://flake8.pycqa.org/en/latest/
