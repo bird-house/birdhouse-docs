@@ -23,7 +23,7 @@ be a need for analytical services that extract value out of the deluge of inform
 institutions can provide both data and services allowing users to process the data remotely from a laptop, instead of having to acquire
 and maintain large storage infrastructures.
 
-.. _what_is_wps
+.. _what_is_wps:
 
 What is WPS?
 -----------
