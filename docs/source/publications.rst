@@ -24,7 +24,7 @@ Articles, book sections and conference proceedings and presentations related to 
 * `D-GEO Days, 2018 <https://github.com/nilshempelmann/presentations/blob/master/birdhouse-D-GEO/main.pdf>`_
 * `GIZ Fachtagung, 2018 <https://github.com/nilshempelmann/presentations/blob/master/birdhouse-fata2018/main.pdf>`_
 * `Copernicus/Birdhouse at EGU 2018, Vienna <https://presentations.copernicus.org/EGU2018-6491_presentation.pdf>`_
-* `Flyingpigeon in Computes and Geosciences, :cite:`hempelmann2018` January 2018 
+* Flyingpigeon in Computes and Geosciences, January 2018 :cite:`hempelmann2018`
 
 2017:
 
