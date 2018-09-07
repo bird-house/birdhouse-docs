@@ -28,7 +28,7 @@ Articles, book sections and conference proceedings and presentations related to 
 
 2017:
 
-* `Birdhouse in LSDMA book, 2017 <https://publikationen.bibliothek.kit.edu/1000071931>`_
+* `Birdhouse in LSDMA book, 2017 <https://publikationen.bibliothek.kit.edu/1000071931>`_ :cite:`Jung2017`
 * `UNCCC Subgroup 2017 in Kigali <https://github.com/nilshempelmann/presentations/blob/master/birdhouse-UNFCCC/CCNUCC_Kigali2017.pdf>`_
 
 2016:
@@ -49,9 +49,10 @@ Articles, book sections and conference proceedings and presentations related to 
 2014:
 
 * `EGI Community Forum 2014 at Helsinki <https://indico.egi.eu/indico/event/1994/session/23/contribution/134>`_
-EGI Community Forum 2014 ...
+EGI Community Forum 2014 :cite:`HEMPELMANN2014`
 
 * Prag
+* Optimization of data life cycles :cite:`Jung2014`
 
 2013:
 
