@@ -1,8 +1,8 @@
 
 .. _projects:
 
-Projects based on birdhouse
-===========================
+Projects using birdhouse
+=========================
 
 
 .. contents::
@@ -26,8 +26,12 @@ PAVICS:
 
 * PAVICS_: Platform for climate analysis and visualization by Ouranos_ and CRIM_, Canada.
 
+A2C2:
+-----
 
+* A2C2_: Atmospheric flow Analogues for Climate Change
 
+.. _A2C2: https://a2c2.lsce.ipsl.fr/Atmospheric flow Analogues for Climate Change"
 .. _PAVICS: https://ouranosinc.github.io/pavics-sdi/
 .. _Ouranos: https://www.ouranos.ca/
 .. _CRIM: https://www.crim.ca/en
