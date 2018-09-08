@@ -88,6 +88,9 @@ Sublime
 
 .. _writing_functions:
 
+Writing functions:
+------------------
+
 .. todo: guidline for writing functions. Where to place, how to comment.
 
 .. _writing_WPS_process:
