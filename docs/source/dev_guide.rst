@@ -120,17 +120,6 @@ on how to implement a WPS process.
 
 .. note:: To get started quickly, you can try the Emu_ WPS with some example processes for PyWPS.
 
-Make your own Bird
-..................
-
-We have now a Cookiecutter_ template to create a new bird (PyWPS application).
-It is the recommended and fastest way to create your own bird:
-
-https://github.com/bird-house/cookiecutter-birdhouse
-
-.. note:: The cookiecutter is brand-new. Please give feedback and help to improve it.
-
-
 .. _writing_tests:
 
 Writing tests
@@ -150,14 +139,12 @@ Last but not least, a very very important point is to write a good documentation
 * http://quick-sphinx-tutorial.readthedocs.io/en/latest/
 
 The documentation is automatically published to ReadTheDocs_ with GitHub webhooks.
-It is important to keep the :ref:`_codestyle` and write explainations to your functions. There is an auto-api for documentation of functions.
-.. todo: explenation of enabling spinx automatic api documentation.
+It is important to keep the :ref:`_codestyle` and write explanations to your functions. There is an auto-api for documentation of functions.
+.. todo: explanation of enabling spinx automatic api documentation.
 
 The main `documentation`_ (which you are reading now) is the starting point to
 get an overview of birdhouse. Each birdhouse component comes with
 its own Sphinx documentation and is referenced by the main birdhouse document.
-
-
 
 .. _conda:
 Environment with conda
@@ -165,6 +152,17 @@ Environment with conda
 .. todo: How to create a conda package
 
 
+Make your own Bird
+------------------
+
+If you are familiar with all the upper chapters you are ready to create your own WPS. The WPS in birdhouse are named after birds, so this section is giving you a guidline of how to make your own bird. Birds are sorted thematically, so before setting up a new one, make sure it is not already covered and just missing some processes and be clear in the new thematic you would like to provide.
+
+ We have now a Cookiecutter_ template to create a new bird (PyWPS application).
+It is the recommended and fastest way to create your own bird:
+
+https://github.com/bird-house/cookiecutter-birdhouse
+
+.. note:: The cookiecutter is brand-new. Please give feedback and help to improve it.
 
 
 .. _`OSGeo Code of Conduct`: http://www.osgeo.org/code_of_conduct
