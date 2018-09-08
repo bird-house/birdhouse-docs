@@ -44,8 +44,8 @@ Please find the coding guide in the
 
 .. _codestyle:
 
-Python Code Style (PEP8)
-------------------------
+Code Style
+-----------
 
 A good start to contribute is an enhancement of existing code with better or new functions. To respect a common coding style, Birdhouse uses PEP8_ checks to ensure a consistent coding style. Currently the following PEP8 rules are enabled in ``setup.cfg``:
 
