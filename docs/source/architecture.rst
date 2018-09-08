@@ -75,5 +75,36 @@ Many climate analysis operations are implemented using OpenClimateGIS_.
 You can find the source code of all birdhouse components on GitHub_.
 Docker images with birdhouse components are on `Docker Hub`_
 
+
+.. _filesandfolder:
+
+Files and Folders
+-----------------
+
+.. Warning: outdated
+
+The birds have a similar folder structure. While library dependencies are stored within the conda deployment
+
+
+Three folder locations have to be pointed out:
+
+* **repository clones:**  The fetched code by ``git clone``. It is recommended to store the repositories in ``~/birdhouse``
+* **anaconda**: By default, the installation process creates a folder ``~/anaconda`` for general anaconda-specific software.
+* **conda environments:** All birds (repositories) are built with their own environment to avoid missmatch of dependencies.
+  By default, the conda environments are in ``~/.conda/envs/``.
+
+To change the default settings, create a ``Makefile.config`` with::
+
+  $ cp Makefile.config.example Makefile.config
+
+and change the paths accordingly to your needs.
+
+Furthermore, in ``environment.yml``, the conda packages can be defined. It is recommended to pin the version. The bird-specific packages are defined here, while in ``requirements/conda_pinned``, general versions are set.
+
+There are **log files** situated at:: ``~/birdhouse/var/log/pywps/``
+
+
+
+
 .. _GitHub: https://github.com/bird-house
 .. _`Docker Hub`: https://hub.docker.com/r/birdhouse

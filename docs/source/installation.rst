@@ -1,11 +1,13 @@
 .. _installation:
 
-Installation
-============
+Installation Guidelines
+=======================
 
 .. contents::
     :local:
     :depth: 2
+
+.. warning:: WARNING: This section is outdated ...
 
 Birdhouse consists of several components like Malleefowl_ and Emu_. Each of them can be installed individually.
 The installation is done using the Python-based build system :term:`Buildout`.

@@ -9,6 +9,7 @@
 
    overview
    architecture
+   installation
    admin_guide
    dev_guide
    communication

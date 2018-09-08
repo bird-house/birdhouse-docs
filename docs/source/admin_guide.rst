@@ -5,48 +5,17 @@ Administrator Guidelines
 
 .. contents::
     :local:
-    :depth: 3
+    :depth: 2
 
 
-.. warning:: WARNING: This section is outdated ... 
-
-
-.. _filesandfolder:
-
-Files and Folders
------------------
-
-Birdhouse is a framework with several compartments. They can be installed according to the specefic needs of the user. Here is a short overview in order of the most important files and folders:
-
-Environment
-...........
-
-Three folder locations have to be pointed out:
-
-* **repository clones:**  The fetched code by ``git clone``. It is recommended to store the repositories in ``~/birdhouse``
-* **anaconda**: By default, the installation process creates a folder ``~/anaconda`` for general anaconda-specific software.
-* **conda environments:** All birds (repositories) are built with their own environment to avoid missmatch of dependencies.
-  By default, the conda environments are in ``~/.conda/envs/``.
-
-To change the default settings, create a ``Makefile.config`` with::
-
-  $ cp Makefile.config.example Makefile.config
-
-and change the paths accordingly to your needs.
-
-Furthermore, in ``environment.yml``, the conda packages can be defined. It is recommended to pin the version. The bird-specific packages are defined here, while in ``requirements/conda_pinned``, general versions are set.
-
-There are **log files** situated at:: ``~/birdhouse/var/log/pywps/``
-
-
-
+.. warning:: WARNING: This section is outdated ...
 
 .. _birdhouse_ecosystem:
 
 Set up a birdhouse ecosystem server
 -----------------------------------
 
-If you are already familliar with installing single standalone WPS (follow the installation guides in the documentations of e.g. emu), then you are ready to set up a birdhouse containing flyingpigeon (providing scientific analyses methods), malleefowl (to search and fetch data) and the pheonix (a graphic interface for a web browser including a WMS).
+If you are already familiar with installing single standalone WPS (follow the :ref:`installation` guides in the documentations of e.g. emu), then you are ready to set up a birdhouse containing flyingpigeon (providing scientific analyses methods), malleefowl (to search and fetch data) and the pheonix (a graphic interface for a web browser including a WMS).
 
 general remarks:
 ..................
