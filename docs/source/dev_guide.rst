@@ -11,8 +11,7 @@ Developer Guidelines
 Code of Conduct
 ---------------
 
-.. note:: Before we start please be aware that contributors to this project are expected to act respectfully toward others in
-accordance with the `OSGeo Code of Conduct`_.
+.. note:: Before we start please be aware that contributors to this project are expected to act respectfully toward others in accordance with the `OSGeo Code of Conduct`_.
 
 Contribution Workflow
 ---------------------
