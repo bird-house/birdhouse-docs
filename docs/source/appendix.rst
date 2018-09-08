@@ -9,6 +9,8 @@ Useful Links
 WPS Documentation
 =================
 
+.. Warning: outdated
+
 * `What is WPS? <http://geoprocessing.info/wpsdoc/Concepts#what>`_
 * `WPS on OSGeo Live <http://download.osgeo.org/livedvd/doc-dev/standards/wps_overview.html>`_
 * `WPS tutorial <http://wiki.ieee-earth.org/Documents/GEOSS_Tutorials/GEOSS_Provider_Tutorials/Web_Processing_Service_Tutorial_for_GEOSS_Providers/Section_2:_Introduction_to_WPS>`_

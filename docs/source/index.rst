@@ -17,3 +17,4 @@
    release_notes
    license
    glossary
+   appendix

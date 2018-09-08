@@ -5,7 +5,7 @@ Developer Guidelines
 
 .. contents::
     :local:
-    :depth: 3
+    :depth: 2
 
 The Birdhouse project openly welcomes contributions (bug reports, bug fixes, code enhancements/features, etc.). This document will outline some guidelines on contributing to birdhouse. As well, the birdhouse :ref:`communication` is a great place to get an idea of how to connect and participate in birdhouse community and development where everybody is welcome to rise questions and discussions.
 
@@ -20,14 +20,30 @@ accordance with the `OSGeo Code of Conduct`_.
 
 Contribution Workflow
 ---------------------
+Everybody is welcome to contribute to birdhouse. Here are some basic guides to smoothly contribute:
 
-.. todo:: The coding guide needs to be updated.
+.. _source_code:
+
+Source code
+...........
+The source code of all birdhouse components is available on GitHub_. Respecting the git mechanisms you can fork, clone and pull source-code into your repositories for modification and enhancement. Once your improvement is ready, make a pull request to integrate your work into the origin birdhouse repositories.
+
+.. note: Please keep your forks close to the origin repositories and don't forget the pull requests.
+
+.. _issuetracker:
+
+Issue tracker
+.............
+
+To keep track on the contribution and development, please use the issue tracker on GitHub for the corresponding birdhouse component.
+
 
 Please find the coding guide in the
 `Wiki <https://github.com/bird-house/bird-house.github.io/wiki/Development-Guidelines>`_.
 
 
 .. _codestyle:
+
 Python Code Style (PEP8)
 ------------------------
 
@@ -140,6 +156,16 @@ It is important to keep the :ref:`_codestyle` and write explainations to your fu
 The main `documentation`_ (which you are reading now) is the starting point to
 get an overview of birdhouse. Each birdhouse component comes with
 its own Sphinx documentation and is referenced by the main birdhouse document.
+
+
+
+.. _conda:
+Environment with conda
+----------------------
+.. todo: How to create a conda package
+
+
+
 
 .. _`OSGeo Code of Conduct`: http://www.osgeo.org/code_of_conduct
 .. _`documentation`: https://github.com/bird-house/birdhouse-docs
