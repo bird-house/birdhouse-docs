@@ -9,13 +9,11 @@ Developer Guidelines
 
 The Birdhouse project openly welcomes contributions (bug reports, bug fixes, code enhancements/features, etc.). This document will outline some guidelines on contributing to birdhouse. As well, the birdhouse :ref:`communication` is a great place to get an idea of how to connect and participate in birdhouse community and development where everybody is welcome to rise questions and discussions.
 
-For better understanding this section, it is recommended that you are familiar with the :ref:`admin_guide`.
-
 .. _codeofconduct:
 Code of Conduct
 ---------------
 
-.. note: Before we start please be aware that contributors to this project are expected to act respectfully toward others in
+.. note:: Before we start please be aware that contributors to this project are expected to act respectfully toward others in
 accordance with the `OSGeo Code of Conduct`_.
 
 Contribution Workflow
@@ -28,7 +26,7 @@ Source code
 ...........
 The source code of all birdhouse components is available on GitHub_. Respecting the git mechanisms you can fork, clone and pull source-code into your repositories for modification and enhancement. Once your improvement is ready, make a pull request to integrate your work into the origin birdhouse repositories.
 
-.. note: Please keep your forks close to the origin repositories and don't forget the pull requests.
+.. note:: Please keep your forks close to the origin repositories and don't forget the pull requests.
 
 .. _issuetracker:
 
