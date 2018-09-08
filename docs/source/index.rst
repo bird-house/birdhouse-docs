@@ -9,8 +9,8 @@
 
    overview
    architecture
-   dev_guide
    admin_guide
+   dev_guide
    communication
    projects
    publications

@@ -1,6 +1,5 @@
 .. _dev_guide:
 
-
 Developer Guidelines
 ====================
 
@@ -8,37 +7,31 @@ Developer Guidelines
     :local:
     :depth: 3
 
-Guidelines and tutorials for Developers to include new components to birdhouse or enhance existing functionality.
+The Birdhouse project openly welcomes contributions (bug reports, bug fixes, code enhancements/features, etc.). This document will outline some guidelines on contributing to birdhouse. As well, the birdhouse :ref:`communication` is a great place to get an idea of how to connect and participate in birdhouse community and development where everybody is welcome to rise questions and discussions.
 
+For better understanding this section, it is recommended that you are familiar with the :ref:`admin_guide`.
 
-Make your own Bird
-------------------
+.. _codeofconduct:
+Code of Conduct
+---------------
 
-We have now a Cookiecutter_ template to create a new bird (PyWPS application).
-It is the recommended and fastest way to create your own bird:
+.. note: Before we start please be aware that contributors to this project are expected to act respectfully toward others in
+accordance with the `OSGeo Code of Conduct`_.
 
-https://github.com/bird-house/cookiecutter-birdhouse
-
-.. note:: The cookiecutter is brand-new. Please give feedback and help to improve it.
-
-.. _writing_WPS_process:
-
-Writing a WPS process
+Contribution Workflow
 ---------------------
 
-In birdhouse, we are using the PyWPS_ implementation of a :term:`Web Processing Service`.
-Please read the PyWPS `documentation <https://pywps.readthedocs.io/en/master/process.html>`_
-on how to implement a WPS process.
+.. todo:: The coding guide needs to be updated.
 
-.. note:: To get started quickly, you can try the Emu_ WPS with some example processes for PyWPS.
+Please find the coding guide in the
+`Wiki <https://github.com/bird-house/bird-house.github.io/wiki/Development-Guidelines>`_.
 
-.. _conda:
 
+.. _codestyle:
 Python Code Style (PEP8)
 ------------------------
 
-Birdhouse uses PEP8_ checks to ensure a consistent coding style. Currently the following PEP8 rules are enabled
-in ``setup.cfg``:
+A good start to contribute is an enhancement of existing code with better or new functions. To respect a common coding style, Birdhouse uses PEP8_ checks to ensure a consistent coding style. Currently the following PEP8 rules are enabled in ``setup.cfg``:
 
 .. code-block:: ini
 
@@ -57,8 +50,7 @@ To check the coding style run ``flake8``:
     # or
     $ make pep8    # make calls flake8
 
-To make it easier to write code according to the PEP8 rules enable PEP8 checking in your editor.
-In the following we give examples how to enable code checking for different editors.
+To make it easier to write code according to the PEP8 rules enable PEP8 checking in your editor. In the following we give examples how to enable code checking for different editors.
 
 Atom
 ....
@@ -92,63 +84,55 @@ Sublime
     "wrap_width": 79
     }
 
-
 .. todo:: Add PEP8 instructions for more editors: PyCharm, Kate, Emacs, Vim, Spyder.
 
-Contribution Workflow
+.. _writing_functions:
+
+.. todo: guidline for writing functions. Where to place, how to comment.
+
+.. _writing_WPS_process:
+
+Writing a WPS process
 ---------------------
 
-.. todo:: The coding guide needs to be updated.
+In birdhouse, we are using the PyWPS_ implementation of a :term:`Web Processing Service`.
+Please read the PyWPS `documentation <https://pywps.readthedocs.io/en/master/process.html>`_
+on how to implement a WPS process.
 
-Please find the coding guide in the
-`Wiki <https://github.com/bird-house/bird-house.github.io/wiki/Development-Guidelines>`_.
+.. note:: To get started quickly, you can try the Emu_ WPS with some example processes for PyWPS.
 
-.. _contributing:
+Make your own Bird
+..................
 
-Contributing
-------------
+We have now a Cookiecutter_ template to create a new bird (PyWPS application).
+It is the recommended and fastest way to create your own bird:
 
-The Birdhouse project openly welcomes contributions
-(bug reports, bug fixes, code enhancements/features, etc.).
-This document will outline some guidelines on contributing to birdhouse.
-As well, the birdhouse :ref:`community` is a great place to get an idea of
-how to connect and participate in birdhouse community and development.
+https://github.com/bird-house/cookiecutter-birdhouse
 
-.. _codeofconduct:
-Code of Conduct
----------------
+.. note:: The cookiecutter is brand-new. Please give feedback and help to improve it.
 
-Contributors to this project are expected to act respectfully toward others in
-accordance with the `OSGeo Code of Conduct`_.
 
-.. _source:
-Source code
------------
+.. _writing_tests:
 
-The source code of all birdhouse components is available on GitHub_.
-
-.. _issuetracker:
-Issue tracker
+Writing tests
 -------------
 
-Please use the issue tracker on GitHub for the corresponding birdhouse component.
+.. todo: missing so far :-)
 
 
-Website development
--------------------
+.. _writing_docs:
 
-The birdhouse website is on http://bird-house.github.io/.
-The HTML pages are `maintained on GitHub <https://github.com/bird-house/bird-house.github.io>`_.
+Writing documentation
+---------------------
 
-Documentation
--------------
-
-Documentation is written in reStructuredText_ and generated with Sphinx_.
+Last but not least, a very very important point is to write a good documentation about your work! Each WPS (bird) has a docs folder for this where the documentation is written in reStructuredText_ and generated with Sphinx_.
 
 * http://sphinx-doc.org/tutorial.html
 * http://quick-sphinx-tutorial.readthedocs.io/en/latest/
 
 The documentation is automatically published to ReadTheDocs_ with GitHub webhooks.
+It is important to keep the :ref:`_codestyle` and write explainations to your functions. There is an auto-api for documentation of functions.
+.. todo: explenation of enabling spinx automatic api documentation.
 
 The main `documentation`_ (which you are reading now) is the starting point to
 get an overview of birdhouse. Each birdhouse component comes with
