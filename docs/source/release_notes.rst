@@ -29,6 +29,7 @@ Highlighted Changes:
 * Skipped Buildout deployment ... not all birds are converted yet.
 * Updated Cookiecutter template for new deployment.
 * Using PyWPS OpenDAP support.
+* Initial version of Birdy native client.
 
 Released Birds:
 
