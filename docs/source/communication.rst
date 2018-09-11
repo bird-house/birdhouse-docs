@@ -34,7 +34,15 @@ In the blog_ you can find interesting articles and information related to birdho
 We also inform regularly abut the main steps forward in the software development that you can keep track on whats going on in the birdhouse.
 If you want to receive a notification of new articles follow birdhouse news on our blog_.
 
-.. todo: insert follow image
+Special issues:
+...............
+
+* `The IT Landscape for Climate Services  <https://medium.com/birdhouse-newsletter/the-it-landscape-for-climate-services-4e21c32c4ffb>`_
+* `Cyberinfrastructures for Sustainable Development <https://medium.com/birdhouse-newsletter/cyber-structures-for-sustainable-development-74b3e4deeff1>`_
+
+`python package icclim <http://icclim.readthedocs.io/en/latest/>`_
+
+.. todo:: insert follow image
 
 Newsletter
 ----------
@@ -47,6 +55,9 @@ Wiki
 
 The birdhouse wiki_ provides an area for supporting information that frequently
 changes and / or is outside the scope of the formal documentation.
+
+
+
 
 
 .. _`newsletter`: http://eepurl.com/dGbQ2X
