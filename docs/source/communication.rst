@@ -54,3 +54,4 @@ changes and / or is outside the scope of the formal documentation.
 .. _`meetings`: https://github.com/bird-house/bird-house.github.io/wiki/Meetings
 .. _`chat`: https://gitter.im/bird-house/birdhouse
 .. _`blog`: https://medium.com/birdhouse-newsletter
+.. _`presentations`: https://birdhouse.readthedocs.io/en/latest/publications.html
