@@ -40,8 +40,6 @@ Special issues:
 * `The IT Landscape for Climate Services  <https://medium.com/birdhouse-newsletter/the-it-landscape-for-climate-services-4e21c32c4ffb>`_
 * `Cyberinfrastructures for Sustainable Development <https://medium.com/birdhouse-newsletter/cyber-structures-for-sustainable-development-74b3e4deeff1>`_
 
-`python package icclim <http://icclim.readthedocs.io/en/latest/>`_
-
 .. todo:: insert follow image
 
 Newsletter

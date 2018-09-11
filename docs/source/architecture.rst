@@ -35,7 +35,6 @@ WPS serivces can be accessed through web-applications like Phoenix or from scrip
 
 .. _Birdhouse Presentation: https://github.com/bird-house/birdhouse-presentation
 
-
 Birdhouse is the home of Web Processing Services used in climate science and
 components to support them (the birds):
 
@@ -65,7 +64,7 @@ server side components
 * `Malleefowl WPS base processes to access data <https://github.com/bird-house/malleefowl/issues>`_
 
 
-Many climate analysis operations are implemented using OpenClimateGIS_.
+Many climate analysis operations are implemented using OpenClimateGIS_ including the `python package icclim <http://icclim.readthedocs.io/en/latest/>`_
 
 * `Twitcher`_: an OWS Security Proxy
 * `Twitcher, an WPS security proxy <https://github.com/bird-house/twitcher/issues>`_
