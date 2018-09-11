@@ -1,7 +1,8 @@
 .. _overview:
 
+********
 Overview
-========
+********
 
 .. contents::
     :local:

@@ -1,6 +1,5 @@
 .. _birdhouse_overview:
 
-.. _components:
 
 Architecture
 ============
@@ -41,6 +40,8 @@ Birdhouse is the home of Web Processing Services used in climate science and
 components to support them (the birds):
 
 
+.. _client_components:
+
 client side components
 ----------------------
 
@@ -50,7 +51,7 @@ client side components
 * `Phoenix web application <https://github.com/bird-house/pyramid-phoenix/issues>`_
 * `Birdy command line WPS client <https://github.com/bird-house/birdy/issues>`_
 
-
+.. _server_components:
 server side components
 ----------------------
 

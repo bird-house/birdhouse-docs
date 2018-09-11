@@ -9,6 +9,7 @@
 
    overview
    architecture
+   guidelines
    communication
    projects
    publications
