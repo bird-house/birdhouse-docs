@@ -37,7 +37,16 @@ Released Birds:
 * Birdy WPS Client: `0.4.0 <https://github.com/bird-house/birdy/releases/tag/v0.4.0>`_
 * Emu WPS: `0.9.0 <https://github.com/bird-house/emu/releases/tag/v0.9.0>`_
 * Hummingbird WPS: `0.6.0 <https://github.com/bird-house/hummingbird/releases/tag/v0.6.0>`_
-* Malleefowl WPS (Buildout): `0.6.8 <https://github.com/bird-house/malleefowl/releases/tag/v0.6.8>`_
+
+Maintained Birds with Buildout:
+
+* Malleefowl WPS: `0.6.8 <https://github.com/bird-house/malleefowl/releases/tag/v0.6.8>`_
+* Twitcher WPS Proxy: `0.3.8 <https://github.com/bird-house/twitcher/releases/tag/v0.3.8>`_
+
+New Birds in the making:
+
+* Black Swan: https://github.com/bird-house/blackswan
+* Eggshell: https://github.com/bird-house/eggshell
 
 Montréal (March 2018)
 =====================
