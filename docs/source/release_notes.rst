@@ -9,15 +9,15 @@ Release Notes
    :depth: 2
    :backlinks: none
 
-Washington (December 2018)
-==========================
+Washington (December 2018, v0.6.1)
+==================================
 
 Birdhouse will be at the `AGU 2018 in Washington D.C. <https://fallmeeting.agu.org/2018/>`_.
 
-.. warning:: Comming next ...
+.. warning:: In the making ...
 
-Dar es Salaam (September 2018)
-==============================
+Dar es Salaam (September 2018, v0.6.0)
+======================================
 
 Birdhouse was present at the `FOSS4G 2018 in Dar es Salaam <https://2018.foss4g.org/>`_.
 
@@ -49,8 +49,8 @@ New Birds in the making:
 * Black Swan: https://github.com/bird-house/blackswan
 * Eggshell: https://github.com/bird-house/eggshell
 
-Montréal (March 2018)
-=====================
+Montréal (March 2018, v0.5.0)
+=============================
 
 We had a `workshop in Montréal <https://medium.com/birdhouse-newsletter/april-2018-74c8914648d9>`_ with CRIM and Ouranos.
 
@@ -81,8 +81,8 @@ New Birds in the making:
 * Cookiecutter: https://github.com/bird-house/cookiecutter-birdhouse
 
 
-Bonn (August 2016)
-==================
+Bonn (August 2016, v0.4.0)
+==========================
 
 Birdhouse was present at the `FOSS4G 2016 in Bonn <http://2016.foss4g.org/home.html>`_.
 
@@ -96,8 +96,8 @@ Highlighted Changes:
 * allow upload of files to processes.
 * updated Phoenix user interface.
 
-Paris (October 2015)
-====================
+Paris (October 2015, v0.3.0)
+============================
 
 * updated documents on readthedocs
 * OAuth2 used for login with GitHub, Ceda, ...
@@ -113,8 +113,8 @@ Paris (October 2015)
 * using birdy wps command line client
 
 
-Paris (September 2014)
-======================
+Paris (September 2014, v0.2.0)
+==============================
 
 * Phoenix UI as WPS client with ESGF faceted search component and a wizard to chain WPS processes
 * PyWPS based processing backend with supporting processes of Malleefowl
@@ -132,15 +132,22 @@ Paris (September 2014)
 * moved source code and documentation to birdhouse on GitHub
 
 
-Helsinki (May 2014)
-===================
+Helsinki (May 2014, v0.1.2)
+===========================
 
 * presentation of birdhouse at EGI, Helsinki
 * stabilized birdhouse and CSC processes
 * updated documenation and tutorials
 
-Vienna (April 2014)
-===================
+Vienna (April 2014, v0.1.1)
+===========================
 
-* presentation of birdhouse at EGU, Vienna
-* "quality check" workflow for CORDEX data
+* presentation of birdhouse at EGU, Vienna.
+* "quality check" workflow for CORDEX data.
+
+Hamburg (December 2013, v0.1.0)
+===============================
+
+* First presentation of Birdhouse at GERICS_ (German Climate Service Center), Hamburg.
+
+.. _GERICS: https://www.climate-service-center.de/

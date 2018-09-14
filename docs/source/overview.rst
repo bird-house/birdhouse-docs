@@ -27,7 +27,7 @@ and maintain large storage infrastructures.
 .. _what_is_wps:
 
 What is WPS?
------------
+------------
 
 **Geographic Information Processing for the Web**
     *The Web Processing Service (WPS) offers a simple web-based method of finding, accessing, and using all kinds of calculations and models*.
@@ -49,7 +49,8 @@ compartments is a framework. WPS divides the operation into server and client si
 .. _wps_use_case:
 
 WPS Use Case
------------
+------------
+
 .. todo:: needs to be updated.
 
 A user runs WPS processes *remotely* on a machine with direct access to climate data archives.

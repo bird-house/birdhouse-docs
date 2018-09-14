@@ -9,7 +9,7 @@ Architecture
     :depth: 2
 
 
-Framework overview
+Framework Overview
 ------------------
 
 .. image:: _images/framework.png
@@ -41,47 +41,42 @@ components to support them (the birds):
 
 .. _client_components:
 
-client side components
+Client Side Components
 ----------------------
 
 * `Phoenix`_: a web-based WPS client with ESGF data access
 * `Birdy`_: a WPS command line client and native library
 
-* `Phoenix web application <https://github.com/bird-house/pyramid-phoenix/issues>`_
-* `Birdy command line WPS client <https://github.com/bird-house/birdy/issues>`_
-
 .. _server_components:
-server side components
+
+Server Side Components
 ----------------------
+
+WPS services for climate data analysis:
 
 * `Flyingpigeon`_: services for the climate impact community
 * `Black Swan`_: services for the extreme weather event assessments
 * `Hummingbird`_: provides cdo and compliance-checker as a service
 * `Emu`_: some example WPS processes for demo
-* `Flyingpigeon WPS for climate impact <https://github.com/bird-house/flyingpigeon/issues>`_
-* `Hummingbird WPS processes for cdo and compliance checking <https://github.com/bird-house/hummingbird/issues>`_
-* `Emu WPS processes for demo and testing <https://github.com/bird-house/emu/issues>`_
-* `Malleefowl WPS base processes to access data <https://github.com/bird-house/malleefowl/issues>`_
 
+Many climate analysis operations are implemented using OpenClimateGIS_
+including the `python package icclim <http://icclim.readthedocs.io/en/latest/>`_.
 
-Many climate analysis operations are implemented using OpenClimateGIS_ including the `python package icclim <http://icclim.readthedocs.io/en/latest/>`_
+Supporting Services and libraries:
 
 * `Twitcher`_: an OWS Security Proxy
-* `Twitcher, an WPS security proxy <https://github.com/bird-house/twitcher/issues>`_
 * `Malleefowl`_: access to climate data (ESGF, ...) as a service
 * `Eggshell`_: provides common functionallity for Birdhouse WPS services
 
-
 You can find the source code of all birdhouse components on GitHub_.
 Docker images with birdhouse components are on `Docker Hub`_
-
 
 .. _filesandfolder:
 
 Files and Folders
 -----------------
 
-.. Warning: outdated
+.. warning:: This section is outdated. We are moving to a new deployment without Buildout.
 
 The birds have a similar folder structure. While library dependencies are stored within the conda deployment
 
@@ -102,8 +97,6 @@ and change the paths accordingly to your needs.
 Furthermore, in ``environment.yml``, the conda packages can be defined. It is recommended to pin the version. The bird-specific packages are defined here, while in ``requirements/conda_pinned``, general versions are set.
 
 There are **log files** situated at:: ``~/birdhouse/var/log/pywps/``
-
-
 
 
 .. _GitHub: https://github.com/bird-house
