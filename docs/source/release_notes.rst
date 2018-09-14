@@ -21,8 +21,6 @@ Dar es Salaam (September 2018)
 
 Birdhouse was present at the `FOSS4G 2018 in Dar es Salaam <https://2018.foss4g.org/>`_.
 
-.. warning:: In the making ...
-
 Highlighted Changes:
 
 * Ansible playbook to install PyWPS applications.
@@ -42,8 +40,9 @@ Released Birds:
 Maintained Birds with Buildout:
 
 * Phoenix Web App: `0.8.2 <https://github.com/bird-house/pyramid-phoenix/releases/tag/v0.8.2>`_
-* Malleefowl WPS: `0.6.8 <https://github.com/bird-house/malleefowl/releases/tag/v0.6.8>`_
 * Twitcher WPS Proxy: `0.3.8 <https://github.com/bird-house/twitcher/releases/tag/v0.3.8>`_
+* Flyingpigeon WPS: `1.2.1 <https://github.com/bird-house/flyingpigeon/releases/tag/v.1.2.1>`_
+* Malleefowl WPS: `0.6.8 <https://github.com/bird-house/malleefowl/releases/tag/v0.6.8>`_
 
 New Birds in the making:
 
