@@ -11,25 +11,28 @@ Projects using birdhouse
 
 Birdhouse is used in the following projects:
 
-.. todo: add some introduction sentences for each project
+.. todo:: add some introduction sentences for each project
 
-COPERNICUS:
------------
+COPERNICUS
+----------
+
 * CP4CDS: Climate Projects for the `Climate Data Store`_ (part of the European Union's `Copernicus Climate Change Service`_).
 
-OGC-Testbeds:
--------------
+OGC-Testbeds
+------------
+
+.. todo:: Add references to OGC testbed.
 
 * OGC Testbed 13: Enhancement of scheduling services
 * OGC Testbed 14: Enhancement of security
 
-PAVICS:
--------
+PAVICS
+------
 
 * PAVICS_: Platform for climate analysis and visualization by Ouranos_ and CRIM_, Canada.
 
-A2C2:
------
+A2C2
+----
 
 * A2C2_: Atmospheric flow Analogues for Climate Change
 

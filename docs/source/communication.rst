@@ -55,9 +55,6 @@ The birdhouse wiki_ provides an area for supporting information that frequently
 changes and / or is outside the scope of the formal documentation.
 
 
-
-
-
 .. _`newsletter`: http://eepurl.com/dGbQ2X
 .. _`wiki`: https://github.com/bird-house/bird-house.github.io/wiki
 .. _`meetings`: https://github.com/bird-house/bird-house.github.io/wiki/Meetings

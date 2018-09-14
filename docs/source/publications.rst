@@ -57,7 +57,7 @@ Articles, book sections and conference proceedings and presentations related to 
 
 * Gerics Hamburg User-Developer Workshop
 
-.. references:
+.. _references:
 
 References
 ----------

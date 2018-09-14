@@ -8,6 +8,7 @@ Developer Guidelines
     :depth: 2
 
 .. _codeofconduct:
+
 Code of Conduct
 ---------------
 
@@ -104,7 +105,7 @@ Sublime
 Writing functions:
 ------------------
 
-.. todo: guidline for writing functions. Where to place, how to comment.
+.. todo:: Guideline for writing functions. Where to place, how to comment.
 
 .. _writing_WPS_process:
 
@@ -112,7 +113,7 @@ Writing a WPS process
 ---------------------
 
 In birdhouse, we are using the PyWPS_ implementation of a :term:`Web Processing Service`.
-Please read the PyWPS `documentation <https://pywps.readthedocs.io/en/master/process.html>`_
+Please read the `PyWPS documentation <https://pywps.readthedocs.io/en/master/process.html>`_
 on how to implement a WPS process.
 
 .. note:: To get started quickly, you can try the Emu_ WPS with some example processes for PyWPS.
@@ -122,7 +123,7 @@ on how to implement a WPS process.
 Writing tests
 -------------
 
-.. todo: missing so far :-)
+.. todo:: Guideline to write tests. Look at the Emu_ to see examples.
 
 
 .. _writing_docs:
@@ -136,17 +137,18 @@ Last but not least, a very very important point is to write a good documentation
 * http://quick-sphinx-tutorial.readthedocs.io/en/latest/
 
 The documentation is automatically published to ReadTheDocs_ with GitHub webhooks.
-It is important to keep the :ref:`_codestyle` and write explanations to your functions. There is an auto-api for documentation of functions.
-.. todo: explanation of enabling spinx automatic api documentation.
+It is important to keep the :ref:`codestyle` and write explanations to your functions. There is an auto-api for documentation of functions.
+
+.. todo:: explanation of enabling spinx automatic api documentation.
 
 The main `documentation`_ (which you are reading now) is the starting point to
 get an overview of birdhouse. Each birdhouse component comes with
 its own Sphinx documentation and is referenced by the main birdhouse document.
 
-.. _conda:
 Environment with conda
 ----------------------
-.. todo: How to create a conda package
+
+.. todo:: How to create a conda package
 
 
 Make your own Bird
@@ -154,7 +156,7 @@ Make your own Bird
 
 If you are familiar with all the upper chapters you are ready to create your own WPS. The WPS in birdhouse are named after birds, so this section is giving you a guidline of how to make your own bird. Birds are sorted thematically, so before setting up a new one, make sure it is not already covered and just missing some processes and be clear in the new thematic you would like to provide.
 
- We have now a Cookiecutter_ template to create a new bird (PyWPS application).
+We have now a Cookiecutter_ template to create a new bird (PyWPS application).
 It is the recommended and fastest way to create your own bird:
 
 https://github.com/bird-house/cookiecutter-birdhouse

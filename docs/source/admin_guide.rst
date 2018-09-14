@@ -8,7 +8,7 @@ Administrator Guidelines
     :depth: 2
 
 
-.. warning:: WARNING: This section is outdated ...
+.. warning:: This section is outdated ...
 
 .. _birdhouse_ecosystem:
 
@@ -17,15 +17,15 @@ Set up a birdhouse ecosystem server
 
 If you are already familiar with installing single standalone WPS (follow the :ref:`installation` guides in the documentations of e.g. emu), then you are ready to set up a birdhouse containing flyingpigeon (providing scientific analyses methods), malleefowl (to search and fetch data) and the pheonix (a graphic interface for a web browser including a WMS).
 
-general remarks:
-..................
+General Remarks
+...............
 
 | Check the :ref:`requirements` of your system!
 | The installation is done as **normal user**, root rights are causing conflicts.
 
 
-clone the repositories from gitHub:
-...................................
+Clone the Repositories from GitHub
+..................................
 
 It is recommended to collect the repositories in a seperate folder (e.g. birdhouse, but can have a name of your choice)::
 

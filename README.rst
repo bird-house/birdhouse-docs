@@ -1,5 +1,6 @@
-Birdhouse Docs
-==============
+=========
+Birdhouse
+=========
 
 .. image:: https://img.shields.io/badge/docs-latest-brightgreen.svg
    :target: http://birdhouse.readthedocs.io/en/latest/?badge=latest
@@ -17,8 +18,8 @@ Birdhouse Docs
    :target: https://gitter.im/bird-house/birdhouse?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
    :alt: Join the chat at https://gitter.im/bird-house/birdhouse
 
-
-Birdhouse Sphinx documentation and IPython Notebooks with examples.
+Birdhouse is a GitHub organization comprised of Python projects related
+to `Web Processing Services <http://geoprocessing.info/wpsdoc/>`_ to support climate data analysis.
 
 The full `documentation <http://birdhouse.readthedocs.io/en/latest/>`_
 is available on ReadTheDocs and in the `docs/` folder.
