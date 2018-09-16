@@ -19,6 +19,7 @@ Articles, book sections and conference proceedings and presentations related to 
 
 2018:
 
+* `Birdhouse in ISPES photogramm and remote-sensing  <https://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XLII-4-W8/43/2018/>`_  :cite:`ehbrecht2018`
 * `FOSS4G 2018 in Dar-Es-Salaam <https://github.com/nilshempelmann/presentations/blob/master/birdhouse-foss4g-2018/Hempelmann_foss4g2018.pdf>`_
 * `Open Climate GIS and Birdhouse at Pangeo Developer Workshop, 2018 <https://medium.com/pangeo/the-2018-pangeo-developers-workshop-1be359dac33c>`_
 * `D-GEO Days, 2018 <https://github.com/nilshempelmann/presentations/blob/master/birdhouse-D-GEO/main.pdf>`_
