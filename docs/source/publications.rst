@@ -14,8 +14,6 @@ Talks and articles
 
 Articles, book sections and conference proceedings and presentations related to the birdhouse projects:
 
-.. todo:: Update the bibtex file
-
 
 2018:
 
