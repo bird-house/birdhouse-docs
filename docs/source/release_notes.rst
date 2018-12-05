@@ -12,7 +12,11 @@ Release Notes
 Washington (December 2018, v0.6.1)
 ==================================
 
-Birdhouse will be at the `AGU 2018 in Washington D.C. <https://fallmeeting.agu.org/2018/>`_.
+Birdhouse was present at the
+`AGU 2018 <https://fallmeeting.agu.org/2018/>`_
+and
+`ESGF Face to Face 2018 <https://esgf.llnl.gov/2018-F2F.html>`_
+both in Washington D.C.
 
 .. warning:: In the making ...
 
@@ -26,6 +30,7 @@ Released Birds:
 * Cookiecutter Template for PyWPS `0.3.1 <https://github.com/bird-house/cookiecutter-birdhouse/releases/tag/v0.3.1>`_
 * Birdy WPS Client: `0.5.0 <https://github.com/bird-house/birdy/releases/tag/v0.5.0>`_
 * Emu WPS: `0.9.1 <https://github.com/bird-house/emu/releases/tag/v0.9.1>`_
+* Hummingbird WPS: `0.6.1 <https://github.com/bird-house/hummingbird/releases/tag/v0.6.1>`_
 * Malleefowl WPS: `0.7.0 <https://github.com/bird-house/malleefowl/releases/tag/v0.7.0>`_
 
 
