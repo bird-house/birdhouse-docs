@@ -18,13 +18,16 @@ Birdhouse will be at the `AGU 2018 in Washington D.C. <https://fallmeeting.agu.o
 
 Highlighted Changes:
 
-* Improved Birdy `WPSClient` as a pythonic library for WPS with support for Jupyter Notebooks.
+* Improved *Birdy* `WPSClient` as a pythonic library for WPS with support for Jupyter Notebooks.
+* Converted *Malleefowl* and *FlyingPigeon* to new deployment layout without buildout.
 
 Released Birds:
 
 * Cookiecutter Template for PyWPS `0.3.1 <https://github.com/bird-house/cookiecutter-birdhouse/releases/tag/v0.3.1>`_
 * Birdy WPS Client: `0.5.0 <https://github.com/bird-house/birdy/releases/tag/v0.5.0>`_
 * Emu WPS: `0.9.1 <https://github.com/bird-house/emu/releases/tag/v0.9.1>`_
+* Malleefowl WPS: `0.7.0 <https://github.com/bird-house/malleefowl/releases/tag/v0.7.0>`_
+
 
 Dar es Salaam (September 2018, v0.6.0)
 ======================================
