@@ -22,6 +22,7 @@ Highlighted Changes:
 
 Released Birds:
 
+* Cookiecutter Template for PyWPS `0.3.1 <https://github.com/bird-house/cookiecutter-birdhouse/releases/tag/v0.3.1>`_
 * Birdy WPS Client: `0.5.0 <https://github.com/bird-house/birdy/releases/tag/v0.5.0>`_
 * Emu WPS: `0.9.1 <https://github.com/bird-house/emu/releases/tag/v0.9.1>`_
 
