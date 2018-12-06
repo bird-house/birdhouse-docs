@@ -18,8 +18,6 @@ and
 `ESGF Face to Face 2018 <https://esgf.llnl.gov/2018-F2F.html>`_
 both in Washington D.C.
 
-.. warning:: In the making ...
-
 Highlighted Changes:
 
 * Improved *Birdy* `WPSClient` as a pythonic library for WPS with support for Jupyter Notebooks.
@@ -27,6 +25,7 @@ Highlighted Changes:
 
 Released Birds:
 
+* Ansible Playbook for PyWPS `0.2.0 <https://github.com/bird-house/ansible-wps-playbook/releases/tag/v0.2.0>`_
 * Cookiecutter Template for PyWPS `0.3.1 <https://github.com/bird-house/cookiecutter-birdhouse/releases/tag/v0.3.1>`_
 * Birdy WPS Client: `0.5.0 <https://github.com/bird-house/birdy/releases/tag/v0.5.0>`_
 * Emu WPS: `0.9.1 <https://github.com/bird-house/emu/releases/tag/v0.9.1>`_
