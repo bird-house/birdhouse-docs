@@ -27,7 +27,7 @@ General Remarks
 Clone the Repositories from GitHub
 ..................................
 
-It is recommended to collect the repositories in a seperate folder (e.g. birdhouse, but can have a name of your choice)::
+It is recommended to collect the repositories in a separate folder (e.g. birdhouse, but can have a name of your choice)::
 
   $ mkdir birdhouse
   $ cd birdhouse
@@ -54,41 +54,21 @@ This will automatically write a password hash into pyramid-phoenix/custom.cfg
 * **installation**
 
 You can run the installation with default settings.
-It will create an anaconda environment into your HOME direcory and deploy all required software dependecies there.
+It will create an anaconda environment into your HOME directory and deploy all required software dependencies there.
 *read the ''changing the default configuration' first if you would like to change the defaults.*
 
 In **all** of the tree folders (malleefowl, flyingpigeon and pyramid-phoenix) run::
 
   $ make install
 
-This installation will take some minutes to fetch all dependencies and install them into seperate conda environments.
-With the default settings, the installation creates the following folders::
-
-  $ ls ~/anaconda/
-
-contains general software required by anaconda::
-
-  $ ls ~/.conda/envs/
-
-contains the seperate environments of the birds for their specific software dependencies::
-
-  $ ls ~/birdhouse/var/
-
-the local cache for fetched input files, output files and logs. This folder is growing (while fetching files and storing job outputs) under productive usage of birdhouse.
+This installation will take some minutes to fetch all dependencies and install them into separate conda environments.
 
 * **start the services**
 
-in **one** of the birds run::
+in **all** of the birds run::
 
   $ make start
 
-or::
-
-  $ make restart
-
-and to check if the services are running, run::
-
-  $ make status
 
 * **launching the Phoenix GUI**
 
