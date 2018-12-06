@@ -54,10 +54,12 @@ Server Side Components
 
 WPS services for climate data analysis:
 
-* `Flyingpigeon`_: services for the climate impact community
+* `Emu`_: some example WPS processes for demo
+* `Flyingpigeon`_: Testbed for new process development
 * `Black Swan`_: services for the extreme weather event assessments
 * `Hummingbird`_: provides cdo and compliance-checker as a service
-* `Emu`_: some example WPS processes for demo
+* Finch: services for climate impact and climate indices calculation
+* Kingfisher: Services for Earth-Observation data analysis 
 
 Many climate analysis operations are implemented using OpenClimateGIS_
 including the `python package icclim <http://icclim.readthedocs.io/en/latest/>`_.
