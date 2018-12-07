@@ -7,26 +7,26 @@ User Guidelines
     :local:
     :depth: 2
 
-There are three principle ways to use WPS services. You can connect to a service:
-* with a terminal using appropriate commands
-* within a code - script (following an example written in PYTHON)
-* over a web graphical user inter-phase (a website)
+.. warning::
+    Work in progress. Examples will come soon.
 
-.. note_:: work in process examples will come soon.
+You can connect to a WPS service in the following ways:
 
-command line
+* using a command-line tool in your terminal.
+* using a web based application from your browser.
+* using a Python library from a Jupyter notebook or your Python scripts.
+
+Command-line
 ------------
 
-with birdy
-(reference to birdy)
+.. todo:: birdy example
 
-Python call:
-------------
+Phoenix Web App
+---------------
 
-Example of a python call
+.. todo:: Screenshot of Phoenix
 
+Python Library
+--------------
 
-Phoenix gui
------------
-
-Screenshot with Phoenix
+.. todo:: Example of a python call in a Notebook

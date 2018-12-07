@@ -339,6 +339,8 @@ rst_epilog = """
 .. _Hummingbird: http://birdhouse-hummingbird.readthedocs.io/en/latest/
 .. _Emu: http://emu.readthedocs.io/en/latest/
 .. _Black Swan: https://github.com/bird-house/blackswan
+.. _Finch: https://github.com/bird-house/finch
+.. _Kingfisher: https://kingfisher.readthedocs.io/en/latest/
 .. _Birdy: http://birdy.readthedocs.io/en/latest/
 .. _Cookiecutter: http://cookiecutter-birdhouse.readthedocs.io/en/latest/
 .. _Eggshell: https://eggshell.readthedocs.io/en/latest/

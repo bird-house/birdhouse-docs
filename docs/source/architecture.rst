@@ -54,21 +54,21 @@ Server Side Components
 
 WPS services for climate data analysis:
 
-* `Emu`_: some example WPS processes for demo
-* `Flyingpigeon`_: Testbed for new process development
+* Emu_: some example WPS processes for demo
+* Flyingpigeon_: Testbed for new process development
 * `Black Swan`_: services for the extreme weather event assessments
-* `Hummingbird`_: provides cdo and compliance-checker as a service
-* Finch: services for climate indices calculation
-* Kingfisher: Services for Earth-Observation data analysis 
+* Hummingbird_: provides cdo and compliance-checker as a service
+* Finch_: services for climate indices calculation
+* Kingfisher_: Services for Earth-Observation data analysis
 
 Many climate analysis operations are implemented using OpenClimateGIS_
 including the `python package icclim <http://icclim.readthedocs.io/en/latest/>`_.
 
 Supporting Services and libraries:
 
-* `Twitcher`_: an OWS Security Proxy
-* `Malleefowl`_: access to climate data (ESGF, ...) as a service
-* `Eggshell`_: provides common functionallity for Birdhouse WPS services
+* Twitcher_: an OWS Security Proxy
+* Malleefowl_: access to climate data (ESGF, ...) as a service
+* Eggshell_: provides common functionallity for Birdhouse WPS services
 
 You can find the source code of all birdhouse components on GitHub_.
 Docker images with birdhouse components are on `Docker Hub`_
