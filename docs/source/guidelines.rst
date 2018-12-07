@@ -12,3 +12,4 @@ To guide you through the learning curve of installation modules of birdhouse and
    installation
    admin_guide
    dev_guide
+   user_guide
