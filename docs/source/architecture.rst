@@ -58,7 +58,7 @@ WPS services for climate data analysis:
 * `Flyingpigeon`_: Testbed for new process development
 * `Black Swan`_: services for the extreme weather event assessments
 * `Hummingbird`_: provides cdo and compliance-checker as a service
-* Finch: services for climate impact and climate indices calculation
+* Finch: services for climate indices calculation
 * Kingfisher: Services for Earth-Observation data analysis 
 
 Many climate analysis operations are implemented using OpenClimateGIS_
