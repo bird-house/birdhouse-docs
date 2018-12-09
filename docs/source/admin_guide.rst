@@ -8,7 +8,7 @@ Administrator Guidelines
     :depth: 2
 
 
-.. warning:: This section is outdated ...
+.. warning:: This section needs is outdated and needs to be rewritten!
 
 .. _birdhouse_ecosystem:
 
@@ -18,22 +18,23 @@ Set up a birdhouse ecosystem server
 If you are already familiar with installing single standalone WPS (follow the :ref:`installation` guides in the documentations of e.g. emu), then you are ready to set up a birdhouse containing flyingpigeon (providing scientific analyses methods), malleefowl (to search and fetch data) and the pheonix (a graphic interface for a web browser including a WMS).
 
 General Remarks
-...............
+~~~~~~~~~~~~~~~
 
 | Check the :ref:`requirements` of your system!
 | The installation is done as **normal user**, root rights are causing conflicts.
 
 
-Clone the Repositories from GitHub
-..................................
+Prepare Installation
+~~~~~~~~~~~~~~~~~~~~
 
-It is recommended to collect the repositories in a seperate folder (e.g. birdhouse, but can have a name of your choice)::
+It is recommended to collect the repositories in a separate folder (e.g. birdhouse, but can have a name of your choice)::
 
   $ mkdir birdhouse
   $ cd birdhouse
 
 
-* **fetch the source code:**
+Get the source code from GitHub
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: ini
 
@@ -41,56 +42,30 @@ It is recommended to collect the repositories in a seperate folder (e.g. birdhou
   $ git clone https://github.com/bird-house/pyramid-phoenix.git
   $ git clone https://github.com/bird-house/malleefowl.git
 
-* **phoenix password**
-
-To be able to log into the Phoenix GUI once the services are running, it is necessary to generate a password:
-go into the pyramid-phoenix folder and run::
-
-  $ make passwd
-
-This will automatically write a password hash into pyramid-phoenix/custom.cfg
-
-
-* **installation**
+Run Installation
+~~~~~~~~~~~~~~~~
 
 You can run the installation with default settings.
-It will create an anaconda environment into your HOME direcory and deploy all required software dependecies there.
-*read the ''changing the default configuration' first if you would like to change the defaults.*
+It will create a conda environment and deploy all required software dependencies there.
+
+.. note:: Read the *changing the default configuration* if you want to customize the configuration.
 
 In **all** of the tree folders (malleefowl, flyingpigeon and pyramid-phoenix) run::
 
   $ make install
 
-This installation will take some minutes to fetch all dependencies and install them into seperate conda environments.
-With the default settings, the installation creates the following folders::
+This installation will take some minutes to fetch all dependencies and install them into separate conda environments.
 
-  $ ls ~/anaconda/
+Start the Services
+~~~~~~~~~~~~~~~~~~
 
-contains general software required by anaconda::
-
-  $ ls ~/.conda/envs/
-
-contains the seperate environments of the birds for their specific software dependencies::
-
-  $ ls ~/birdhouse/var/
-
-the local cache for fetched input files, output files and logs. This folder is growing (while fetching files and storing job outputs) under productive usage of birdhouse.
-
-* **start the services**
-
-in **one** of the birds run::
+in **all** of the birds run::
 
   $ make start
 
-or::
 
-  $ make restart
-
-and to check if the services are running, run::
-
-  $ make status
-
-* **launching the Phoenix GUI**
+Launching the Phoenix Web App
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If the services are running, you can launch the GUI in a common web browser. By default, phoenix is set to port 8081::
 
@@ -103,42 +78,51 @@ or::
 Now you can log in (upper right corner) with your Phoenix password created previously.
 Phoenix is just a graphical interface with no more function than looking nice ;-).
 
-* **register a service in the GUI**
+Register a service in Phoenix Web App
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Your first administrator step is to register flyingpigeon as a service. For that, log in with your phoenix password.
-In the upper right corner is a tool symbol to open the 'settings'. Click on 'Services' and the 'Register a Service'.
+.. note:: Please read the `Phoenix documentation <https://pyramid-phoenix.readthedocs.io/en/latest/user_guide.html#>`_
 
-flyingpigeon is per default at port 8093.
+Your first administration step is to register *flyingpigeon* as a service.
+For that, log in with your phoenix password.
+In the upper right corner is a tool symbol to open the `settings`.
+Click on `Services` and the `Register a Service`.
 
-the appropriate url is::
+Flyingpigeon is per default on port 8093.
+
+The appropriate url is::
 
   http://localhost:8093/wps
 
 Provide service title and name as you like:
-Service Title: Flyingpigeon
-Service Name: flyingpigeon
+* Service Title: Flyingpigeon
+* Service Name: flyingpigeon
 
-check 'Service Type' : 'Web Processing Service' (default) and register.
+check `Service Type`: `Web Processing Service` (default) and register.
 
-Optionally, you can check 'Public access?', to allow unregistered users to launch jobs. (**NOT recommended**)
+Optionally, you can check `Public access?`, to allow unregistered users to launch jobs. (**NOT recommended**)
 
+Launching a Job
+~~~~~~~~~~~~~~~
 
-* **launching a job**
-
-Now your birdhouse ecosysem is set up. The also installed malleefowl is already running in the background and will do a lot of work silently. Ther is **no need to register malleefowl** manually!
+Now your birdhouse ecosysem is set up.
+The also installed malleefowl is already running in the background and will do a lot of work silently.
+There is **no need to register malleefowl** manually!
 
 Launching a job can be performed as a process (Process menu) or with the wizard. To get familliar with the processes provided by each of the birds, read the approriate documentation for each of the services listed in the `overview: <http://birdhouse.readthedocs.io/en/latest/index.html>`_
 
-* **changing the default configuration:**
+Changing the default configuration
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. _note: files and folder section (architecture chapter)
 
-The default configuration can be changed by creating a Makefile.config file. There is an example provided to be used::
+You can customize the configuration of the service. Please read the documentation, for example:
 
-  $ cp Makefile.config.example Makefile.config
+* `Phoenix documentation <https://pyramid-phoenix.readthedocs.io/en/latest/configuration.html>`_
+* `Flyingpigeon documentation <https://flyingpigeon.readthedocs.io/en/latest/configuration.html>`_
 
-and set the appropriate path. You have to **do this in all** bird repositories.
-
-Furthermore, you might change the hostname (to provide your service to the outside), ESGF-node connection, the port or the log-level for more/less information in the administrator logfiles.
-Here is an example pyramid-phoenix/custom.cfg:
+Furthermore, you might change the hostname (to make your service accessible from outside), ESGF-node connection,
+the port or the log-level for more/less information in the administrator logfiles.
+Here is an example `pyramid-phoenix/custom.cfg`:
 
 .. code-block:: ini
 
@@ -156,12 +140,15 @@ Here is an example pyramid-phoenix/custom.cfg:
   wps-url = http://localhost:8091/wps
 
 
-* **Administration HELP:**
+Update Phoenix Password
+~~~~~~~~~~~~~~~~~~~~~~~
 
-In case of questions or trouble shooting, feel welcome to join the birdhouse chat and get into contact with the developers directly:
+To be able to log into the Phoenix GUI once the services are running, it is necessary to generate a password:
+go into the pyramid-phoenix folder and run::
 
-`Birdhouse-Chatroom <https://gitter.im/bird-house/birdhouse>`_
+  $ make passwd
 
+This will automatically write a password hash into pyramid-phoenix/custom.cfg
 
 .. _backups:
 
@@ -173,4 +160,9 @@ With the following command you can make a dump of the ``users`` collection of th
 
     $ mongodump --port 27027 --db phoenix_db --collection users
 
--->
+Asking for Support
+------------------
+
+In case of questions or trouble shooting, feel welcome to join
+the `birdhouse chat <https://gitter.im/bird-house/birdhouse>`_
+and get into contact with the developers directly.

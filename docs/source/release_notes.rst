@@ -12,9 +12,41 @@ Release Notes
 Washington (December 2018, v0.6.1)
 ==================================
 
-Birdhouse will be at the `AGU 2018 in Washington D.C. <https://fallmeeting.agu.org/2018/>`_.
+Birdhouse was present at the
+`AGU 2018 <https://fallmeeting.agu.org/2018/>`_
+and
+`ESGF Face to Face 2018 <https://esgf.llnl.gov/2018-F2F.html>`_
+both in Washington D.C.
 
-.. warning:: In the making ...
+Highlighted Changes:
+
+* Improved *Birdy* `WPSClient` as a pythonic library for WPS client with support for Jupyter Notebooks.
+* Converted *Malleefowl* and *FlyingPigeon* to new deployment layout without buildout.
+* New birds: *Finch* WPS for Climate Indicators and *Kingfisher* for Earth Observation Data Analysis.
+* *FlyingPigeon* has been reborn as the *Curious Climate Explorer*. Most of its original functionallity
+  has moved to other birds: *BlackSwan*, *Kingfisher* and *Finch*.
+
+Released Birds:
+
+* Ansible Playbook for PyWPS `0.2.0 <https://github.com/bird-house/ansible-wps-playbook/releases/tag/v0.2.0>`_
+* Cookiecutter Template for PyWPS `0.3.1 <https://github.com/bird-house/cookiecutter-birdhouse/releases/tag/v0.3.1>`_
+* Birdy WPS Client: `0.5.0 <https://github.com/bird-house/birdy/releases/tag/v0.5.0>`_
+* Emu WPS: `0.9.1 <https://github.com/bird-house/emu/releases/tag/v0.9.1>`_
+* Hummingbird WPS: `0.6.1 <https://github.com/bird-house/hummingbird/releases/tag/v0.6.1>`_
+* Malleefowl WPS: `0.7.0 <https://github.com/bird-house/malleefowl/releases/tag/v0.7.0>`_
+
+Maintained Birds with Buildout:
+
+* Phoenix Web App: `0.8.3 <https://github.com/bird-house/pyramid-phoenix/releases/tag/v0.8.3>`_
+* Twitcher WPS Proxy: `0.3.8 <https://github.com/bird-house/twitcher/releases/tag/v0.3.8>`_
+
+New Birds in the making:
+
+* FlyingPigeon (reborn): https://github.com/bird-house/flyingpigeon
+* Kingfisher: https://github.com/bird-house/kingfisher
+* Finch: https://github.com/bird-house/finch
+* Black Swan: https://github.com/bird-house/blackswan
+* Eggshell: https://github.com/bird-house/eggshell
 
 Dar es Salaam (September 2018, v0.6.0)
 ======================================
