@@ -24,7 +24,7 @@ Command-line
 Phoenix Web App
 ---------------
 
-.. todo:: Screenshot of Phoenix
+.. todo:: Screen-shot of Phoenix
 
 Python Library
 --------------

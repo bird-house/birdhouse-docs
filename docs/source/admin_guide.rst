@@ -113,6 +113,7 @@ Launching a job can be performed as a process (Process menu) or with the wizard.
 
 Changing the default configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. _note: files and folder section (architecture chapter)
 
 You can customize the configuration of the service. Please read the documentation, for example:
 

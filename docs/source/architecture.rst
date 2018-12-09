@@ -73,5 +73,60 @@ Supporting Services and libraries:
 You can find the source code of all birdhouse components on GitHub_.
 Docker images with birdhouse components are on `Docker Hub`_
 
+Files and Folders
+.................
+
+.. _note: See also administrator guidelines
+
+This is an overview of folder structure and important files for administration of a server-side birdhouse ecosystem.
+
+It is recommended to clone the separated WPS services (birds) into one top level folder like:
+
+.. code-block:: sh
+
+  $ ~/birdhouse/emu
+  $ ~/birdhouse/pyramid-pheonix
+  $ ~/birdhouse/finch
+  $ ~/birdhouse/malleefowl
+  ...
+
+The dependencies of each bird is deployed as `conda environment` and per default located at:
+
+.. code-block:: sh
+
+  $ ~/.conda/envs/
+
+The environment of a bird is defined in `./{birdname}/environment.yml`.
+
+Process descriptions are placed in `./{birdname}/{birdname}/processes/` while modules designed and used for the service
+are situated in `./{birdname}/{birdname}/`. Here are also static data like shapefiles, templates or additional data used by the processes.
+
+.. code-block:: sh
+
+  $ ./{birdname}/{birdname}/data/shapefiles
+  $ ./{birdname}/{birdname}/templates
+
+Each birdhouse compartment has a documentation build with `Sphinx` and the corresponding files are situated in
+
+.. code-block:: sh
+
+  $ ./{birdname}/docs
+
+When running a service, files and folders for input data, result storage, file cache of simply logfiles
+are defined in the `./{birdname}/.config.cfg`. Default configuration is defined in `./{birdname}/{birdname}/default.cfg`
+as well as an example can be found in `~./{birdname}/etc`.
+For more options of configuration see the `pywps configuration instructions <https://pywps.readthedocs.io/en/master/configuration.html>`_
+
+For development and deployment testing the installations be checked running tests (`make test`). Test descriptions testdata
+are situated in:
+
+.. code-block:: sh
+
+  $ ./{birdname}/tests
+  $ ./{birdname}/tests/testdata
+
+.. _note:: See also the administration guideline to set up a birdhouse ecosystem.
+.. _todo:: add locations of mongodb celery etc...
+
 .. _GitHub: https://github.com/bird-house
 .. _`Docker Hub`: https://hub.docker.com/r/birdhouse
