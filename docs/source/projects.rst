@@ -37,7 +37,7 @@ A2C2
 
 * A2C2_: Atmospheric flow Analogues for Climate Change
 
-.. _A2C2: https://a2c2.lsce.ipsl.fr/Atmospheric flow Analogues for Climate Change"
+.. _A2C2: https://a2c2.lsce.ipsl.fr/
 .. _PAVICS: https://ouranosinc.github.io/pavics-sdi/
 .. _PAVICS-Hydro: https://medium.com/birdhouse-newsletter/web-processing-services-for-hydrological-modeling-7b5eb5c426ed
 .. _Ouranos: https://www.ouranos.ca/
