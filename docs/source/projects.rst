@@ -30,6 +30,7 @@ PAVICS
 ------
 
 * PAVICS_: Platform for climate analysis and visualization by Ouranos_ and CRIM_, Canada.
+* PAVICS-Hydro_ : Additional services for PAVICS_ allowing users to perform hydrological modeling and analysis.
 
 A2C2
 ----
@@ -38,6 +39,7 @@ A2C2
 
 .. _A2C2: https://a2c2.lsce.ipsl.fr/Atmospheric flow Analogues for Climate Change"
 .. _PAVICS: https://ouranosinc.github.io/pavics-sdi/
+.. _PAVICS-Hydro: https://medium.com/birdhouse-newsletter/web-processing-services-for-hydrological-modeling-7b5eb5c426ed
 .. _Ouranos: https://www.ouranos.ca/
 .. _CRIM: https://www.crim.ca/en
 .. _Climate Data Store: https://cds.climate.copernicus.eu/
