@@ -164,6 +164,24 @@ https://github.com/bird-house/cookiecutter-birdhouse
 .. note:: The cookiecutter is brand-new. Please give feedback and help to improve it.
 
 
+Release Notes and Versions:
+---------------------------
+
+The development of birdhouse is following a release cycle of around three month. Updates of modules are coordinated by the developers over the communication channels (gitter chat or Video Conference).
+New releases are documented in the release notes and communicated over the mailing list.
+A release of a birdhouse module is taged with a version number and appropriate git repository version branch.
+
+For an orientation of when to release a new version:
+
+* Full version (v1.0) with scientific publication in a reviewed journal
+* subversion (v1.1) by major changes
+* subsub versions (v1.1.1) by minor changes
+
+out of the release cycles bug fix patches can be released every time ( communication is not mandatory )
+
+* patch v1.1.1_patch1 bugfix
+
+
 .. _`OSGeo Code of Conduct`: http://www.osgeo.org/code_of_conduct
 .. _`documentation`: https://github.com/bird-house/birdhouse-docs
 .. _`GitHub`: https://github.com/bird-house
