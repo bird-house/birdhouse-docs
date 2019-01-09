@@ -111,7 +111,7 @@ on how to implement a WPS process.
 
 .. note:: To get started quickly, you can try the Emu_ WPS with some example processes for PyWPS.
 
-.. image:: _image/process_schema_1.png
+.. image:: _images/process_schema_1.png
 
 Another point to think about when designing a process is the possibility of chaining processes together. The result of a process can be a final result or be used as an input for another process. Chaining processes is a common practice but depends on the user you are designing the service for.
 Technically, for the development of WPS process chaining, here are a few summary points:
