@@ -65,8 +65,8 @@ Technically, for the development of WPS process chaining, here are a few summary
 
 .. _writing_functions:
 
-Writing functions:
-------------------
+Writing functions
+-----------------
 
 A Process is calling several functions during the performance. Since WPS is a autonom running process several eventualities needs to be taken into account. If irregularities are occurring, it is a question of the process design if the performance should stop and return an error or continue with may be an modified result.
 
