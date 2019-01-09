@@ -14,7 +14,7 @@ You can connect to a WPS service in the following ways:
 
 * using a command-line tool in your terminal.
 * using a web based application from your browser.
-* using a Python library from a Jupyter notebook or your Python scripts.
+* using a Python library from a jupyter notebook or your Python scripts.
 
 Command-line
 ------------
@@ -29,4 +29,7 @@ Phoenix Web App
 Python Library
 --------------
 
-.. todo:: Example of a python call in a Notebook
+.. toctree::
+   :maxdepth: 2
+
+   flyingpigeon_tutorial
