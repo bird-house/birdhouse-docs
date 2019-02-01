@@ -6,6 +6,7 @@
    overview
    architecture
    guidelines
+   ideas/index
    communication
    projects
    publications
