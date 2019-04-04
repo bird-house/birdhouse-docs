@@ -9,6 +9,14 @@ Release Notes
    :depth: 2
    :backlinks: none
 
+San Francisco (April 2019, v0.7.0)
+==================================
+
+Released Birds:
+
+* Birdy WPS Client: `0.6.0 <https://github.com/bird-house/birdy/releases/tag/v0.6.0>`_
+
+
 Washington (December 2018, v0.6.1)
 ==================================
 
