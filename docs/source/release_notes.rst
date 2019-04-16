@@ -15,7 +15,7 @@ San Francisco (April 2019, v0.7.0)
 Released Birds:
 
 * Birdy WPS Client: `0.6.0 <https://github.com/bird-house/birdy/releases/tag/v0.6.0>`_
-
+* Hummingbird WPS: `0.7.0 <https://github.com/bird-house/hummingbird/releases/tag/v0.7.0>`_
 
 Washington (December 2018, v0.6.1)
 ==================================
