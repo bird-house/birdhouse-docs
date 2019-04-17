@@ -18,6 +18,7 @@ Released Birds:
 * Birdy WPS Client: `0.6.0 <https://github.com/bird-house/birdy/releases/tag/v0.6.0>`_
 * Emu WPS: `0.10.0 <https://github.com/bird-house/emu/releases/tag/v0.10.0>`_
 * Hummingbird WPS: `0.7.0 <https://github.com/bird-house/hummingbird/releases/tag/v0.7.0>`_
+* Malleefowl WPS: `0.8.0 <https://github.com/bird-house/malleefowl/releases/tag/v0.8.0>`_
 
 Washington (December 2018, v0.6.1)
 ==================================
