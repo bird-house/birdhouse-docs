@@ -14,6 +14,7 @@ San Francisco (April 2019, v0.7.0)
 
 Released Birds:
 
+* Cookiecutter Template for PyWPS `0.4.0 <https://github.com/bird-house/cookiecutter-birdhouse/releases/tag/v0.4.0>`_
 * Birdy WPS Client: `0.6.0 <https://github.com/bird-house/birdy/releases/tag/v0.6.0>`_
 * Emu WPS: `0.10.0 <https://github.com/bird-house/emu/releases/tag/v0.10.0>`_
 * Hummingbird WPS: `0.7.0 <https://github.com/bird-house/hummingbird/releases/tag/v0.7.0>`_
