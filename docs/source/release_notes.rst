@@ -9,8 +9,8 @@ Release Notes
    :depth: 2
    :backlinks: none
 
-San Francisco (April 2019, v0.7.0)
-==================================
+San Francisco (May 2019, v0.7.0)
+================================
 
 Released Birds:
 
@@ -19,6 +19,10 @@ Released Birds:
 * Emu WPS: `0.10.0 <https://github.com/bird-house/emu/releases/tag/v0.10.0>`_
 * Hummingbird WPS: `0.7.0 <https://github.com/bird-house/hummingbird/releases/tag/v0.7.0>`_
 * Malleefowl WPS: `0.8.0 <https://github.com/bird-house/malleefowl/releases/tag/v0.8.0>`_
+
+Maintained Birds with Buildout:
+
+* Phoenix Web App: `0.9.0 <https://github.com/bird-house/pyramid-phoenix/releases/tag/v0.9.0>`_
 
 Washington (December 2018, v0.6.1)
 ==================================
