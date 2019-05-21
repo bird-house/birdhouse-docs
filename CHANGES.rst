@@ -1,6 +1,16 @@
 Change History
 **************
 
+0.7.0 (2019-05-21)
+==================
+
+San Francisco Release
+
+Changes:
+
+* Updated Release Notes (#37).
+* Updated docs (#35, #33, #31).
+
 0.6.0 (2018-09-14)
 ==================
 
