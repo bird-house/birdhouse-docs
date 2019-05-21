@@ -9,6 +9,41 @@ Release Notes
    :depth: 2
    :backlinks: none
 
+San Francisco (May 2019, v0.7.0)
+================================
+
+Highlighted Changes:
+
+* All released birds support only Python >3.6.
+* Support for the `ESGF WPS profile <https://github.com/ESGF/esgf-compute-api>`_
+  with a Pelican WPS demo and an OWSLib extension.
+* Support for `MetaLink <https://pywps.readthedocs.io/en/latest/process.html#returning-multiple-files>`_
+  in Birdy and PyWPS to return multiple files as WPS output.
+* Release of `Finch <https://finch.readthedocs.io/en/latest/>`_, a WPS for climate indicators.
+
+Released Birds:
+
+* Cookiecutter Template for PyWPS `0.4.0 <https://github.com/bird-house/cookiecutter-birdhouse/releases/tag/v0.4.0>`_
+* Birdy WPS Client: `0.6.0 <https://github.com/bird-house/birdy/releases/tag/v0.6.0>`_
+* Emu WPS: `0.10.0 <https://github.com/bird-house/emu/releases/tag/v0.10.0>`_
+* FlyingPigeon WPS: `1.4.1 <https://github.com/bird-house/flyingpigeon/releases/tag/v1.4.1>`_
+* Finch WPS: `0.2.0 <https://github.com/bird-house/finch/releases/tag/v0.2>`_
+* Hummingbird WPS: `0.7.0 <https://github.com/bird-house/hummingbird/releases/tag/v0.7.0>`_
+* Malleefowl WPS: `0.8.0 <https://github.com/bird-house/malleefowl/releases/tag/v0.8.0>`_
+
+Maintained Birds with Buildout:
+
+* Phoenix Web App: `0.9.0 <https://github.com/bird-house/pyramid-phoenix/releases/tag/v0.9.0>`_
+* Twitcher WPS Proxy: `0.4.0 <https://github.com/bird-house/twitcher/releases/tag/v0.4.0>`_
+
+New Birds in the making:
+
+* Kingfisher: https://github.com/bird-house/kingfisher
+* Black Swan: https://github.com/bird-house/blackswan
+* Eggshell: https://github.com/bird-house/eggshell
+* Pelican: https://github.com/bird-house/pelican
+* OWSLib extension for ESGF: https://github.com/bird-house/OWSLib-esgfwps
+
 Washington (December 2018, v0.6.1)
 ==================================
 
