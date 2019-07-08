@@ -9,6 +9,15 @@ Release Notes
    :depth: 2
    :backlinks: none
 
+Bucharest (September 2019, v0.8.0)
+===============================
+
+PyWPS was present at `FOSS4G 2019 in Bucharest <https://2019.foss4g.org/>`_.
+
+Released Birds:
+
+* OWSLib extension for ESGF: `0.2.0 <https://github.com/bird-house/OWSLib-esgfwps/releases/tag/v0.2.0>`_
+
 San Francisco (May 2019, v0.7.0)
 ================================
 
