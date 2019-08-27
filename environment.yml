@@ -2,6 +2,7 @@ name: birdhouse-docs
 channels:
 - defaults
 dependencies:
+- pip
 - sphinx
 - pip:
   - sphinxcontrib-bibtex
