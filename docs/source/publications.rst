@@ -14,6 +14,10 @@ Talks and articles
 
 Articles, book sections and conference proceedings and presentations related to the birdhouse projects:
 
+2019:
+
+* `UN GIS Initiative Workshop at FOSS4G Bucharest <https://github.com/nilshempelmann/presentations/raw/master/birdhouse-foss4g-2019/Hempelmann_foss4g2019.pdf>`_
+
 
 2018:
 
