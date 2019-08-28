@@ -33,6 +33,7 @@ extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.viewcode',
     'sphinxcontrib.bibtex',
+    'sphinx.ext.graphviz',
 ]
 
 # autoapi_type = 'python'
