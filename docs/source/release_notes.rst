@@ -24,6 +24,7 @@ Highlighted Changes:
 Released Birds:
 
 * Twitcher WPS Proxy: `0.5.2 <https://github.com/bird-house/twitcher/releases/tag/v0.5.2>`_
+* Ansible Playbook for PyWPS `0.2.2 <https://github.com/bird-house/ansible-wps-playbook/releases/tag/v0.2.2>`_
 * Cookiecutter Template for PyWPS `0.4.1 <https://github.com/bird-house/cookiecutter-birdhouse/releases/tag/v0.4.1>`_
 * Birdy WPS Client: `0.6.5 <https://github.com/bird-house/birdy/releases/tag/v0.6.5>`_
 * Emu WPS: `0.11.0 <https://github.com/bird-house/emu/releases/tag/v0.11.0>`_
@@ -58,6 +59,7 @@ Highlighted Changes:
 
 Released Birds:
 
+* Ansible Playbook for PyWPS `0.2.1 <https://github.com/bird-house/ansible-wps-playbook/releases/tag/v0.2.1>`_
 * Cookiecutter Template for PyWPS `0.4.0 <https://github.com/bird-house/cookiecutter-birdhouse/releases/tag/v0.4.0>`_
 * Birdy WPS Client: `0.6.0 <https://github.com/bird-house/birdy/releases/tag/v0.6.0>`_
 * Emu WPS: `0.10.0 <https://github.com/bird-house/emu/releases/tag/v0.10.0>`_
