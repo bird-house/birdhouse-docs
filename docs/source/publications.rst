@@ -16,6 +16,7 @@ Articles, book sections and conference proceedings and presentations related to 
 
 2019:
 
+* `WPS Deployment at CORDEX Copernicus Workshop, Copenhagen <https://github.com/cehbrecht/wps-talk-copernicus-cordex-dmi-meeting-2019/blob/master/WPS-Deployment-Talk.pdf>`_
 * `UN GIS Initiative Workshop at FOSS4G Bucharest <https://github.com/nilshempelmann/presentations/raw/master/birdhouse-foss4g-2019/Hempelmann_foss4g2019.pdf>`_
 
 
