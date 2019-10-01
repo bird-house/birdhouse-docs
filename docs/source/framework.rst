@@ -1,42 +1,38 @@
-.. _birdhouse_overview:
+.. _framework:
 
-
-Architecture
-============
+*******************
+birdhouse framework
+*******************
 
 .. contents::
     :local:
     :depth: 2
 
 
-Framework Overview
-------------------
+Birdhouse is organized in separate stand-alone software components. The stand-alone components are named after birds, which gives the entire project its name birdhouse. Due to the nature of Web processing services the components can be categorized into :ref:`client_components` as tools for the user and :ref:`server_components` to build the architecture of server side back-ends.
 
-.. image:: _images/framework.png
+.. _framework_structure:
 
-ESGF_ is currently the main climate data resource (but more resources are possible).
-ESGF Solr-index is used to find ESGF data.
-The ESGF identity provider with OpenIDs and X509 certificate is used for authentication.
+Framework structure
+-------------------
 
 There are several WPS services. Malleefowl_ is the main one for the Phoenix_ client.
 Malleefowl is used to search, download (with caching) ESGF data and to retrieve certificates.
 Malleefowl has also a workflow engine (dispel4py_) to chain WPS processes.
 
 The results of the WPS processes are stored on the file system and are accessible via URL (with a token id).
-
 Results can be shown on a Map using a Web Mapping Service (ncWMS, adagucserver).
-
 The PyCSW Catalog Service is used to register WPS services and also to publish WPS outputs.
 Published results in the PyCSW can also used as input source for processes again.
 
+ESGF_ is currently the main climate data resource (but more resources are possible).
+ESGF Solr-index is used to find ESGF data. The ESGF identity provider with OpenIDs and X509 certificate is used for authentication.
+
 WPS serivces can be accessed through web-applications like Phoenix or from scripts.
 
-.. note:: See also the `Birdhouse Presentation`_.
+.. image:: _images/framework.png
 
-.. _Birdhouse Presentation: https://github.com/bird-house/birdhouse-presentation
-
-Birdhouse is the home of Web Processing Services used in climate science and
-components to support them (the birds):
+.. note:: See also the :ref:`Publications and Presentations <publications>`.
 
 
 .. _client_components:
@@ -124,6 +120,10 @@ are situated in:
 
   $ ./{birdname}/tests
   $ ./{birdname}/tests/testdata
+
+
+
+
 
 .. _note:: See also the administration guideline to set up a birdhouse ecosystem.
 .. _todo:: add locations of mongodb celery etc...

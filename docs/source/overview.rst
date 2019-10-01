@@ -11,15 +11,15 @@ Overview
 
 .. _introduction:
 
+Birdhouse is a collaborative project open for the community to participate. It is a software framework containing a collection of `Web Processing Service`_ (WPS). The deployed algorithms are focusing on Earth Systems and environmental data processing with the philosophy of streamlining the software development and deployment. By supporting climate, earth observation and biodiversity data and processes, Birdhouse can be used in a wide array of Earth sciences projects and workflows. The core benefit of this project is to allow the seamless use of climate services developed by a diverse network of national meteorological offices, regional climate service providers, academics, not-for-profit research centers and private industry. As governments move toward open-data policies, there will be a need for analytical services that extract value out of the deluge of information. Using an interoperable software architecture, institutions can provide both data and services allowing users to process the data remotely from a laptop, instead of having to acquire and maintain large storage infrastructures.
 
-Introduction
-------------
 
-Birdhouse is a collaborative project open for the community to participate. It is a software framework containing a collection of `Web Processing Service`_ (WPS). The deployed algorithms are focusing on Earth Systems and environmental data processing with the
-philosophy of streamlining the software development and deployment. By supporting climate, earth observation and biodiversity data and processes, Birdhouse can be used in a wide array of Earth sciences projects and workflows. The core benefit of this project is to
-allow the seamless use of climate services developed by a diverse network of national meteorological offices, regional climate service providers, academics, not-for-profit research centers and private industry. As governments move toward open-data policies, there will be a need for analytical services that extract value out of the deluge of information. Using an interoperable software architecture, institutions can provide both data and services allowing users to process the data remotely from a laptop, instead of having to acquire and maintain large storage infrastructures.
+.. _documentation_structure
 
-The documentation of birdhouse is representing its nature of separate software components and therefor organized in separate documentations. Birdhouse is being used by international working groups pitching up projects with individual focus on the projects objectives. The following graph shows an overview of the documentations organization and how they are aggregated to each other for a better understanding of where to find which information:
+Documentation structure
+-----------------------
+
+The documentation of birdhouse is representing its nature of separate software components and therefor organized in separate documentations according to the :ref:`birdhouse framework structure <framework_structure>`. Birdhouse is being used by international working groups pitching up projects with individual focus on the projects objectives. The following graph shows an overview of the documentations organization and how they are aggregated to each other for a better understanding of where to find which information:
 
 
 .. image:: _images/Documentation_aggrgation.png
