@@ -20,6 +20,8 @@ PAVICS
 .. literalinclude:: https://raw.githubusercontent.com/Ouranosinc/pavics-sdi/master/docs/source/index.rst
    :language: rst
 
+:ref:`comparison manual <pavics:config>`
+
 
 COPERNICUS
 ----------

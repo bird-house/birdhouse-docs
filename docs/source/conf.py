@@ -44,6 +44,8 @@ extensions = [
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
+intersphinx_mapping = {'pavics': ('https://raw.githubusercontent.com/Ouranosinc/pavics-sdi/master/docs/source/', None)}
+
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 # source_suffix = ['.rst', '.md']
