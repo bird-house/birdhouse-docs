@@ -11,6 +11,7 @@ birdhouse framework
 
 Birdhouse is organized in separate stand-alone software components. The stand-alone components are named after birds, which gives the entire project its name birdhouse. Due to the nature of Web processing services the components can be categorized into :ref:`client_components` as tools for the user and :ref:`server_components` to build the architecture of server side back-ends.
 
+
 .. _framework_structure:
 
 Framework structure
@@ -32,7 +33,7 @@ WPS serivces can be accessed through web-applications like Phoenix or from scrip
 
 .. image:: _images/framework.png
 
-.. note:: See also the :ref:`Publications and Presentations <publications>`.
+.. note:: See also the :ref:`Publications and Presentations <publications>` for more information and details.
 
 
 .. _client_components:
@@ -55,6 +56,7 @@ WPS services for climate data analysis:
 * `Black Swan`_: services for the extreme weather event assessments
 * Hummingbird_: provides cdo and compliance-checker as a service
 * Finch_: services for climate indices calculation
+* Pelican_: Supporting ESGF compute API
 * Kingfisher_: Services for Earth-Observation data analysis
 
 Many climate analysis operations are implemented using OpenClimateGIS_
@@ -70,11 +72,9 @@ You can find the source code of all birdhouse components on GitHub_.
 Docker images with birdhouse components are on `Docker Hub`_
 
 Files and Folders
-.................
+-----------------
 
-.. _note: See also administrator guidelines
-
-This is an overview of folder structure and important files for administration of a server-side birdhouse ecosystem.
+This is an overview of folder structure and important files for :ref:`administration of a server-side <admin_guide>` birdhouse ecosystem.
 
 It is recommended to clone the separated WPS services (birds) into one top level folder like:
 
@@ -120,13 +120,6 @@ are situated in:
 
   $ ./{birdname}/tests
   $ ./{birdname}/tests/testdata
-
-
-
-
-
-.. _note:: See also the administration guideline to set up a birdhouse ecosystem.
-.. _todo:: add locations of mongodb celery etc...
 
 .. _GitHub: https://github.com/bird-house
 .. _`Docker Hub`: https://hub.docker.com/r/birdhouse
