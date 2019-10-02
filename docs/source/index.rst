@@ -4,11 +4,11 @@
    :maxdepth: 2
 
    overview
-   framework
-   projects
+   architecture
    guidelines
    ideas/index
    communication
+   projects
    publications
    release_notes
    license
