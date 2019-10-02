@@ -1,17 +1,25 @@
 
 .. _projects:
 
-Projects using birdhouse
-========================
+Architectures examples
+======================
 
 
 .. contents::
     :local:
     :depth: 3
 
-Birdhouse is used in the following projects:
+The birdhouse :ref:`framework is modular organized <framework_structure>` to enable a flexible architecture design depending on the projects needs. Due to the OCG Standard, software components non-birdhouse components can be combined for interoperability. Here are some examples of real projects to show the flexibility and potential of the birdhouse framework.
 
-.. todo:: add some introduction sentences for each project
+PAVICS
+------
+
+* PAVICS_: Platform for climate analysis and visualization by Ouranos_ and CRIM_, Canada.
+* PAVICS-Hydro_ : Additional services for PAVICS_ allowing users to perform hydrological modeling and analysis.
+
+.. literalinclude:: https://ouranosinc.github.io/pavics-sdi/_sources/arch/backend.rst.txt
+   :language: txt
+
 
 COPERNICUS
 ----------
@@ -25,15 +33,6 @@ OGC-Testbeds
 
 * OGC Testbed 13: Enhancement of scheduling services
 * OGC Testbed 14: Enhancement of security
-
-PAVICS
-------
-
-* PAVICS_: Platform for climate analysis and visualization by Ouranos_ and CRIM_, Canada.
-* PAVICS-Hydro_ : Additional services for PAVICS_ allowing users to perform hydrological modeling and analysis.
-
-.. literalinclude :: https://raw.githubusercontent.com/Ouranosinc/pavics-sdi/master/docs/source/index.rst
-   :language: rst
 
 
 A2C2
