@@ -34,6 +34,7 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinxcontrib.bibtex',
     'sphinx.ext.graphviz',
+    'docaggregation'
 ]
 
 # autoapi_type = 'python'
