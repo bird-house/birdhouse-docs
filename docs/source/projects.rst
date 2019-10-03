@@ -16,8 +16,6 @@ PAVICS
 * PAVICS_: Platform for climate analysis and visualization by Ouranos_ and CRIM_, Canada.
 * PAVICS-Hydro_ : Additional services for PAVICS_ allowing users to perform hydrological modeling and analysis.
 
-See the original PAVICS Project site for detailed PAVICS_architecture_ information
-
 
 .. gittoctree:: https://github.com/Ouranosinc/pavics-sdi.git
 
