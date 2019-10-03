@@ -1,35 +1,78 @@
-import os, re, subprocess, sys
-from docutils import nodes, statemachine
-from docutils.parsers.rst import Directive, directives
+import os, re, subprocess
+from docutils.parsers.rst.directives.misc import Include as BaseInclude
+from sphinx.directives import TocTree
+from sphinx.util.docutils import SphinxDirective
 
 
-class DocGitFetchDirective(Directive):
+def checkout(env, repo, branch='master'):
+    """Checkout git repository and return the relative path to the source directory."""
 
-    has_content = True
+    cache = os.path.join(env.srcdir, '_gitext')
+    root = os.path.join(cache, re.sub('[\W\-]+', '_', repo))
+
+    # Clone the repo
+    if not os.path.exists(root):
+        os.makedirs(root)
+        subprocess.run(['git', 'clone', '--depth=1', repo, root])
+
+    # Fetch latest version and checkout branch
+    subprocess.run(['git', 'fetch', repo], cwd=root)
+    subprocess.call(['git', 'co', branch], cwd=root)
+
+    return os.path.relpath(root, start=env.srcdir)
+
+
+class GitTocTree(TocTree):
+    """Table of content directive drawing from a git repository.
+
+    Example
+    -------
+    .. gittoctree:: <https://url_to_git_repo>
+
+       <relative_path_1>
+       <relative_path_2>
+
+    """
     required_arguments = 1
-    optional_arguments = 0
-    final_argument_whitespace = False
-
-    def _setup_repo(self, repo):
-        env = self.state.document.settings.env
-        path = os.path.normpath(env.doc2path(env.docname, base=None))
-        cache = os.path.join(os.path.dirname(path), '_docfetch')
-
-        root = os.path.join(cache, re.sub('[\W\-]+', '_', repo))
-        if not os.path.exists(root):
-            os.makedirs(root)
-            subprocess.run(['git', 'clone', '--depth=1', repo, root])
-        subprocess.run(['git', 'fetch', repo], cwd=root)
-        subprocess.call(['git', 'co', 'master'], cwd=root)
-        return root
 
     def run(self):
-        root = self._setup_repo(self.arguments[0])
-        for path in self.content:
-            data = open(os.path.join(root, path), 'r').read()
-            lines = statemachine.string2lines(data)
-            self.state_machine.insert_input(lines, path)
-        return []
+        env = self.state.document.settings.env
+        root = checkout(env, self.arguments[0])
+
+        # Link the content to the cloned repository
+        self.content = [os.path.join(root, content) for content in self.content]
+
+        return super().run()
+
+
+class GitInclude(BaseInclude, SphinxDirective):
+    """Include directive for file fetched from a git repository.
+
+    Arguments
+    ---------
+    repo : str
+      HTTP url to the git repository.
+    path : str
+      Relative path to the file inside the repository.
+
+    Example
+    -------
+
+    .. gitinclude:: <https://url_to_git_repo> <relative path to file>
+    """
+    required_arguments = 2
+
+    def run(self):
+        env = self.state.document.settings.env
+        root = checkout(env, self.arguments[0])
+
+        # Point path to the file in the cloned repo
+        rel_filename, filename = self.env.relfn2path(os.path.join(root, self.arguments[1]))
+        self.arguments = [filename]
+        self.env.note_included(filename)
+        return super().run()
+
 
 def setup(app):
-    app.add_directive('docaggregation', DocGitFetchDirective)
+    app.add_directive('gitinclude', GitInclude)
+    app.add_directive('gittoctree', GitTocTree)

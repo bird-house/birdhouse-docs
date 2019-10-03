@@ -19,12 +19,12 @@ PAVICS
 See the original PAVICS Project site for detailed PAVICS_architecture_ information
 
 
-.. literalinclude:: https://ouranosinc.github.io/pavics-sdi/_sources/arch/backend.rst.txt
-   :language: txt
-
-.. docaggregation:: https://github.com/Ouranosinc/pavics-sdi.git
+.. gittoctree:: https://github.com/Ouranosinc/pavics-sdi.git
 
     docs/source/arch/backend.rst
+
+
+.. gitinclude:: https://github.com/Ouranosinc/pavics-sdi.git docs/source/arch/backend.rst
 
 
 COPERNICUS
