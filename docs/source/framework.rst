@@ -9,7 +9,7 @@ birdhouse framework
     :depth: 2
 
 
-Birdhouse is organized in separate stand-alone software components. The stand-alone components are named after birds, which gives the entire project its name birdhouse. Due to the nature of Web processing services the components can be categorized into :ref:`client_components` as tools for the user and :ref:`server_components` to build the architecture of server side back-ends.
+Birdhouse is organized in separate stand-alone software components. Most components are named after birds, which gives the  project its name birdhouse. The components can be categorized into :ref:`client_components`, i.e. tools for end-users, and :ref:`server_components`, i.e. back-end elements of the architecture.
 
 
 .. _framework_structure:
