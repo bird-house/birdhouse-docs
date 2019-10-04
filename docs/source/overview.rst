@@ -19,7 +19,7 @@ Birdhouse is a collaborative project open for the community to participate. It i
 Documentation structure
 -----------------------
 
-The documentation of birdhouse is representing its nature of separate software components and therefor organized in separate documentations according to the :ref:`birdhouse framework structure <framework_structure>`. Birdhouse is being used by international working groups pitching up projects with individual focus on the projects objectives. The following graph shows an overview of the documentations organization and how they are aggregated to each other for a better understanding of where to find which information:
+The birdhouse documentation reflects the fact that it is an assemblage of independent software components. It's therefore organized according to the :ref:`birdhouse framework structure <framework_structure>`. Birdhouse is being used by international working groups who deploy subsets of components tailored to their user base. The following graph shows an overview of the documentation's organization:
 
 
 .. image:: _images/Documentation_aggrgation.png
