@@ -9,6 +9,42 @@ Release Notes
    :depth: 2
    :backlinks: none
 
+Bucharest (October 2019, v0.8.0)
+==================================
+
+PyWPS was present at `FOSS4G 2019 in Bucharest <https://2019.foss4g.org/>`_.
+
+Highlighted Changes:
+
+* Skipped buildout in Twitcher.
+* Skipped conda handling in Makefile.
+* Working on OAuth support in Twitcher and birdy.
+* Released OWSLib extension for ESGF compute API.
+
+Released Birds:
+
+* Twitcher WPS Proxy: `0.5.2 <https://github.com/bird-house/twitcher/releases/tag/v0.5.2>`_
+* Ansible Playbook for PyWPS `0.2.2 <https://github.com/bird-house/ansible-wps-playbook/releases/tag/v0.2.2>`_
+* Cookiecutter Template for PyWPS `0.4.1 <https://github.com/bird-house/cookiecutter-birdhouse/releases/tag/v0.4.1>`_
+* Birdy WPS Client: `0.6.5 <https://github.com/bird-house/birdy/releases/tag/v0.6.5>`_
+* Emu WPS: `0.11.0 <https://github.com/bird-house/emu/releases/tag/v0.11.0>`_
+* FlyingPigeon WPS: `1.5 <https://github.com/bird-house/flyingpigeon/releases/tag/v1.5>`_
+* Finch WPS: `0.2.5 <https://github.com/bird-house/finch/releases/tag/v0.2.5>`_
+* Hummingbird WPS: `0.8.0 <https://github.com/bird-house/hummingbird/releases/tag/v0.8.0>`_
+* Malleefowl WPS: `0.9.0 <https://github.com/bird-house/malleefowl/releases/tag/v0.9.0>`_
+* OWSLib extension for ESGF: `0.2.0 <https://github.com/bird-house/OWSLib-esgfwps/releases/tag/v0.2.0>`_
+
+Maintained Birds with Buildout:
+
+* Phoenix Web App: `0.10.0 <https://github.com/bird-house/pyramid-phoenix/releases/tag/v0.10.0>`_
+
+New Birds in the making:
+
+* Kingfisher: https://github.com/bird-house/kingfisher
+* Black Swan: https://github.com/bird-house/blackswan
+* Eggshell: https://github.com/bird-house/eggshell
+* Pelican: https://github.com/bird-house/pelican
+
 San Francisco (May 2019, v0.7.0)
 ================================
 
@@ -23,6 +59,7 @@ Highlighted Changes:
 
 Released Birds:
 
+* Ansible Playbook for PyWPS `0.2.1 <https://github.com/bird-house/ansible-wps-playbook/releases/tag/v0.2.1>`_
 * Cookiecutter Template for PyWPS `0.4.0 <https://github.com/bird-house/cookiecutter-birdhouse/releases/tag/v0.4.0>`_
 * Birdy WPS Client: `0.6.0 <https://github.com/bird-house/birdy/releases/tag/v0.6.0>`_
 * Emu WPS: `0.10.0 <https://github.com/bird-house/emu/releases/tag/v0.10.0>`_
