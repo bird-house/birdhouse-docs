@@ -129,7 +129,25 @@ It is important to keep the :ref:`codestyle` and write explanations to your func
 
 The main `documentation`_ (which you are reading now) is the starting point to
 get an overview of birdhouse. Each birdhouse component comes with
-its own Sphinx documentation and is referenced by the main birdhouse document.
+its own Sphinx documentation and is referenced by the main birdhouse document. Projects using birdhouse components like PAVICS_ or `COPERNICUS Data Store`_ generally have their own documentation as well. If you want to aggregate documentation here is one suggestion to realize an integration of a remote sphinx documentation into the main birdhouse documentation:
+
+.. code-block:: sphinx
+   :linenos:
+
+   Here is the text of the birdhouse main documentation. At the place where you want to integrate
+   a part of a remote sphinx documentation stored in a `git` repository you can fetch the docs
+   parts and integrated it with:
+
+   .. gittoctree:: https://github.com/Ouranosinc/pavics-sdi.git
+
+      docs/source/arch/backend.rst
+
+
+   .. gitinclude:: https://github.com/Ouranosinc/pavics-sdi.git docs/source/arch/backend.rst
+
+   Than continue with your documentation text and the remote documentation block will be compiled
+   where you placed it.
+
 
 .. _codestyle:
 
@@ -228,7 +246,7 @@ out of the release cycles bug fix patches can be released every time ( communica
 
 * patch v1.1.1_patch1 bugfix
 
-
+.. _`COPERNICUS Data Store`: https://cds.climate.copernicus.eu/#!/home
 .. _`OSGeo Code of Conduct`: http://www.osgeo.org/code_of_conduct
 .. _`documentation`: https://github.com/bird-house/birdhouse-docs
 .. _`GitHub`: https://github.com/bird-house

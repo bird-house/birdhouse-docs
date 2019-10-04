@@ -47,6 +47,7 @@ docs/make.bat
 docs/doctrees/
 docs/html/
 docs/build/
+docs/source/_gitext/
 
 # External Sources
 #src/external
