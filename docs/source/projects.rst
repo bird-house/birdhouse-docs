@@ -1,8 +1,8 @@
 
 .. _projects:
 
-Architecture examples
-=====================
+Project examples
+================
 
 .. contents::
     :local:
