@@ -32,15 +32,11 @@ Blog-post
 
 In the blog_ you can find interesting articles and information related to birdhouse in general.
 We also inform regularly abut the main steps forward in the software development that you can keep track on whats going on in the birdhouse.
-If you want to receive a notification of new articles follow birdhouse news on our blog_.
-
-Special issues:
-...............
+If you want to receive a notification of new articles follow birdhouse news on our blog_:
 
 * `The IT Landscape for Climate Services  <https://medium.com/birdhouse-newsletter/the-it-landscape-for-climate-services-4e21c32c4ffb>`_
 * `Cyberinfrastructures for Sustainable Development <https://medium.com/birdhouse-newsletter/cyber-structures-for-sustainable-development-74b3e4deeff1>`_
 
-.. todo:: insert follow image
 
 Newsletter
 ----------

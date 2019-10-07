@@ -19,6 +19,7 @@ import shlex
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 # sys.path.insert(0, os.path.abspath('.'))
+sys.path.append(os.path.abspath("./ext"))
 
 # -- General configuration ------------------------------------------------
 
@@ -34,6 +35,7 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinxcontrib.bibtex',
     'sphinx.ext.graphviz',
+    'docaggregation'
 ]
 
 # autoapi_type = 'python'
@@ -43,6 +45,8 @@ extensions = [
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
+
+intersphinx_mapping = {'pavics': ('https://raw.githubusercontent.com/Ouranosinc/pavics-sdi/master/docs/source/', None)}
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
@@ -316,6 +320,7 @@ intersphinx_mapping = {'python': ('http://docs.python.org/', None),
                        'flyingpigeon': ('https://flyingpigeon.readthedocs.io/en/latest/', None),
                        'hummingbird': ('https://birdhouse-hummingbird.readthedocs.io/en/latest/', None),
                        'emu': ('https://emu.readthedocs.io/en/latest/', None),
+                       'pelican': ('https://github.com/bird-house/pelican', None),
                        'birdy': ('https://birdy.readthedocs.io/en/latest/', None),
                        'bootstrap': ('https://birdhousebuilderbootstrap.readthedocs.io/en/latest/', None),
                         }
@@ -338,6 +343,7 @@ rst_epilog = """
 .. _Twitcher: http://twitcher.readthedocs.io/en/latest/
 .. _Flyingpigeon: http://flyingpigeon.readthedocs.io/en/latest/
 .. _Hummingbird: http://birdhouse-hummingbird.readthedocs.io/en/latest/
+.. _Pelican: https://github.com/bird-house/pelican
 .. _Emu: http://emu.readthedocs.io/en/latest/
 .. _Black Swan: https://github.com/bird-house/blackswan
 .. _Finch: https://github.com/bird-house/finch

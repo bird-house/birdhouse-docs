@@ -129,7 +129,25 @@ It is important to keep the :ref:`codestyle` and write explanations to your func
 
 The main `documentation`_ (which you are reading now) is the starting point to
 get an overview of birdhouse. Each birdhouse component comes with
-its own Sphinx documentation and is referenced by the main birdhouse document.
+its own Sphinx documentation and is referenced by the main birdhouse document. Projects using birdhouse components like PAVICS_ or `COPERNICUS Data Store`_ generally have their own documentation as well. To include documentation from external repository here, two custom made sphinx directives can be used. The `gittoctree` directive behaves like a normal table of content directive (`toctree`), but takes as an argument the URL to the git repo and refers to files inside this directory through their full path. The `gitinclude` directive acts like an normal `include` directive, but takes as a first argument the URL to the git repo this file belongs to. For example:
+
+.. code-block:: sphinx
+   :linenos:
+
+   Here is the text of the birdhouse main documentation. At the place where you want to integrate
+   a part of a remote sphinx documentation stored in a `git` repository you can fetch the docs
+   parts and integrated it with a table of content referring to external files:
+
+   .. gittoctree:: https://github.com/Ouranosinc/pavics-sdi.git
+
+      docs/source/arch/backend.rst
+
+   or include an individual file: 
+
+   .. gitinclude:: https://github.com/Ouranosinc/pavics-sdi.git docs/source/arch/backend.rst
+
+   The directive will clone and checkout the repository, then include these external files as if they were part of the native documentation. 
+
 
 .. _codestyle:
 
@@ -228,7 +246,7 @@ out of the release cycles bug fix patches can be released every time ( communica
 
 * patch v1.1.1_patch1 bugfix
 
-
+.. _`COPERNICUS Data Store`: https://cds.climate.copernicus.eu/#!/home
 .. _`OSGeo Code of Conduct`: http://www.osgeo.org/code_of_conduct
 .. _`documentation`: https://github.com/bird-house/birdhouse-docs
 .. _`GitHub`: https://github.com/bird-house
