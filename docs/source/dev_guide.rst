@@ -142,11 +142,12 @@ its own Sphinx documentation and is referenced by the main birdhouse document. P
 
       docs/source/arch/backend.rst
 
-   or include an individual file: 
+   or include an individual file:
 
    .. gitinclude:: https://github.com/Ouranosinc/pavics-sdi.git docs/source/arch/backend.rst
 
-   The directive will clone and checkout the repository, then include these external files as if they were part of the native documentation. 
+   The directive will clone and checkout the repository, then include these external files as if
+   they were part of the native documentation. 
 
 
 .. _codestyle:
