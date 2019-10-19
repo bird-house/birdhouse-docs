@@ -31,7 +31,7 @@ ESGF Solr-index is used to find ESGF data. The ESGF identity provider with OpenI
 
 WPS serivces can be accessed through web-applications like Phoenix or from scripts.
 
-.. image:: _images/framework.png
+.. image:: _images/birdhouse-framework.png
 
 .. note:: See also the :ref:`Publications and Presentations <publications>` for more information and details.
 
