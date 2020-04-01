@@ -9,8 +9,36 @@ Release Notes
    :depth: 2
    :backlinks: none
 
+
+Oxford (April 2020, v0.9.0)
+===========================
+
+Highlighted Changes:
+
+* Keycloak support in Twitcher and Phoenix.
+
+Released Tools:
+
+* Twitcher WPS Proxy: `0.6.0 <https://github.com/bird-house/twitcher/releases/tag/v0.6.0>`_
+* Ansible Playbook for PyWPS `0.3.0 <https://github.com/bird-house/ansible-wps-playbook/releases/tag/v0.3.0>`_
+* Ansible Playbook for Twitcher `0.1.0 <https://github.com/bird-house/ansible-twitcher-playbook/releases/tag/v0.1.0>`_
+* Cookiecutter Template for PyWPS `0.4.2 <https://github.com/bird-house/cookiecutter-birdhouse/releases/tag/v0.4.2>`_
+* Birdy WPS Client: `0.6.9 <https://github.com/bird-house/birdy/releases/tag/v0.6.9>`_
+
+Released WPS services:
+
+* Emu WPS: `0.11.1 <https://github.com/bird-house/emu/releases/tag/v0.11.1>`_
+* FlyingPigeon WPS: `1.5.1 <https://github.com/bird-house/flyingpigeon/releases/tag/v1.5.1>`_
+* Finch WPS: `0.5.1 <https://github.com/bird-house/finch/releases/tag/v0.5.1>`_
+* Hummingbird WPS: `0.9.0 <https://github.com/bird-house/hummingbird/releases/tag/v0.9.0>`_
+
+Maintained Apps with Buildout:
+
+* Phoenix Web App: `0.11.0 <https://github.com/bird-house/pyramid-phoenix/releases/tag/v0.11.0>`_
+
+
 Bucharest (October 2019, v0.8.0)
-==================================
+================================
 
 PyWPS was present at `FOSS4G 2019 in Bucharest <https://2019.foss4g.org/>`_.
 
