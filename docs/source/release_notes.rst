@@ -30,12 +30,11 @@ Released WPS services:
 * Emu WPS: `0.11.1 <https://github.com/bird-house/emu/releases/tag/v0.11.1>`_
 * FlyingPigeon WPS: `1.5.1 <https://github.com/bird-house/flyingpigeon/releases/tag/v1.5.1>`_
 * Finch WPS: `0.5.1 <https://github.com/bird-house/finch/releases/tag/v0.5.1>`_
-
-* Hummingbird WPS: `0.8.0 <https://github.com/bird-house/hummingbird/releases/tag/v0.8.0>`_
+* Hummingbird WPS: `0.9.0 <https://github.com/bird-house/hummingbird/releases/tag/v0.9.0>`_
 
 Maintained Apps with Buildout:
 
-* Phoenix Web App: `0.10.0 <https://github.com/bird-house/pyramid-phoenix/releases/tag/v0.10.0>`_
+* Phoenix Web App: `0.11.0 <https://github.com/bird-house/pyramid-phoenix/releases/tag/v0.11.0>`_
 
 
 Bucharest (October 2019, v0.8.0)
