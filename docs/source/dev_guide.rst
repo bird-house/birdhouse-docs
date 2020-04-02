@@ -110,7 +110,17 @@ In practice, the functions should be encapsulated in **try** and **except** call
 Writing tests
 -------------
 
-.. todo:: Guideline to write tests. Look at the Emu_ to see examples.
+Writing test is an essential part of software development. The WPS templates produced by Cookiecutter_ are already including the initial folders for units tests and basic dependencies in the environment.
+There are two parts of tests:
+
+* Unit tests:
+python nose-tests to check the functionality of functions and processes. They are stored in the folder `{bird WPS}/tests` and appropriate test data  `{bird WPS}/tests/testdata`.
+
+* notebook tests:
+Code examples of the documentation to demonstrate the usage of WPS services. The examples are written in jupyter notebooks and stored in the documentation folder `{bird WPS}/docs/source/notebooks/`
+
+
+.. EXAMPLE:: Guideline to write tests. Look at the Emu_ to see examples.
 
 .. _writing_docs:
 
@@ -147,7 +157,7 @@ its own Sphinx documentation and is referenced by the main birdhouse document. P
    .. gitinclude:: https://github.com/Ouranosinc/pavics-sdi.git docs/source/arch/backend.rst
 
    The directive will clone and checkout the repository, then include these external files as if
-   they were part of the native documentation. 
+   they were part of the native documentation.
 
 
 .. _codestyle:
