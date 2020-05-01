@@ -151,7 +151,7 @@ its own Sphinx documentation and is referenced by the main birdhouse document. P
  There are two parts of tests:
 
  * Unit tests:
- python nose-tests to check the functionality of functions and processes. They are stored in the folder `{bird WPS}/tests` and appropriate test data  `{bird WPS}/tests/testdata`.
+ python pytest to check the functionality of functions and processes. They are stored in the folder `{bird WPS}/tests` and appropriate test data  `{bird WPS}/tests/testdata`.
 
  * notebook tests:
  Code examples of the documentation to demonstrate the usage of WPS services. The examples are written in jupyter notebooks and stored in the documentation folder `{bird WPS}/docs/source/notebooks/`
