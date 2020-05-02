@@ -147,7 +147,7 @@ its own Sphinx documentation and is referenced by the main birdhouse document. P
  Writing tests
  -------------
 
- Writing test is an essential part of software development. The WPS templates produced by Cookiecutter_ are already including the initial folders for units tests and basic dependencies in the environment.
+ Writing tests is an essential part of software development. The WPS templates produced by Cookiecutter_ include the initial folders needed for units tests and basic dependencies in the environment.
  There are two parts of tests:
 
  * Unit tests:
