@@ -15,12 +15,12 @@ Niamey (September 2020, v0.10.0)
 
 Highlighted Changes:
 
-* ...
+* Ansible PyWPS playbook with support for Slurm cluster.
 
 Released Tools:
 
 * Twitcher WPS Proxy: `0.6.0 <https://github.com/bird-house/twitcher/releases/tag/v0.6.0>`_
-.. * Ansible Playbook for PyWPS `0.3.0 <https://github.com/bird-house/ansible-wps-playbook/releases/tag/v0.3.0>`_
+* Ansible Playbook for PyWPS `0.4.0 <https://github.com/bird-house/ansible-wps-playbook/releases/tag/v0.4.0>`_
 * Ansible Playbook for Twitcher `0.1.0 <https://github.com/bird-house/ansible-twitcher-playbook/releases/tag/v0.1.0>`_
 .. * Cookiecutter Template for PyWPS `0.4.2 <https://github.com/bird-house/cookiecutter-birdhouse/releases/tag/v0.4.2>`_
 .. * Birdy WPS Client: `0.6.9 <https://github.com/bird-house/birdy/releases/tag/v0.6.9>`_
