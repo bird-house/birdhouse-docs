@@ -1,6 +1,6 @@
 .. _guide_install:
 
-Installation Guidelines
+birdhouse installation
 =======================
 
 .. contents::

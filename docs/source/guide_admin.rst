@@ -1,6 +1,6 @@
 .. _guide_admin:
 
-Administrator Guidelines
+birdhouse administration
 ========================
 
 .. contents::

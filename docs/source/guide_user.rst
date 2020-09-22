@@ -1,7 +1,7 @@
 .. _guide_user:
 
-User Guidelines
-===============
+birdhouse useage
+=================
 
 .. contents::
     :local:

@@ -1,7 +1,7 @@
 .. _guide_guide:
 
-Developer Guidelines
-====================
+birdhouse development
+=====================
 
 .. contents::
     :local:
