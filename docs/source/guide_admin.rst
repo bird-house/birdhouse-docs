@@ -1,4 +1,4 @@
-.. _admin_guide:
+.. _guide_admin:
 
 Administrator Guidelines
 ========================

@@ -12,7 +12,7 @@ To guide you through the learning curve of installation modules of birdhouse and
 .. toctree::
    :maxdepth: 2
 
-   installation
-   admin_guide
-   dev_guide
-   user_guide
+   guide_install
+   guide_admin
+   guide_dev
+   guide_user
