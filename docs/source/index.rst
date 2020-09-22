@@ -5,11 +5,12 @@
 
    overview
    framework
-   projects
+   tutorials
    guidelines
    ideas/index
    communication
    publications
+   projects
    release_notes
    license
    glossary

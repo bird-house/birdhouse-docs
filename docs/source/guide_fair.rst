@@ -9,14 +9,14 @@ FAIR Principles
 
 .. _fairdata:
 
-FAIR Data 
+FAIR Data
 ---------
 
-.. note:: Coming soon
+.. note:: Work in progress
 
-.. _fairstructures:
+.. _fairstructure:
 
-FAIR Structures
----------------
+FAIR Structure
+--------------
 
 .. note:: Work in progress
