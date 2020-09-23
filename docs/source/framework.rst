@@ -1,8 +1,8 @@
 .. _framework:
 
-*******************
-birdhouse framework
-*******************
+************
+Architecture
+************
 
 .. contents::
     :local:

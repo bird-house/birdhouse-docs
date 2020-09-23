@@ -196,11 +196,3 @@ Related Projects
 * http://wps-web1.ceda.ac.uk/ui/home
 * ``https://freva.met.fu-berlin.de/``
 * https://climate.apache.org/
-
-
-References
-==========
-This list :cite:`Schnase2016`  has no claim to be complete.
-
-.. bibliography:: refs.bib
-   :notcited:
