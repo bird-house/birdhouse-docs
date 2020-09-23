@@ -8,7 +8,7 @@ FAIR Principles
     :depth: 1
 
 
-Climate datasets rapidly grow in volume and complexity and creating climate products requires high bandwidth, massive storage and large compute resources. For some regions, low bandwidth constitutes a real obstacle to developing climate services. Data volume also hinders reproducibility because very few institutions have the means to archive original data sets over the long term. Moreover, typical climate products often aggregate multiple sources of information, yet mechanisms to systematically track and document the provenance of all these data are only emerging. So although there is a general consensus that climate information should follow the ``FAIR Data Principles'' :cite:`Wilkinson2016, mons2017`, that is be findable, accessible, interoperable, and reusable, a number of obstacles hinder progress. Following guidelines might help to set up climate services information systems by enabling synergies. All the aspects of FAIR principles needs to be seen focusing on data as well as the data production structures.
+Climate datasets rapidly grow in volume and complexity and creating climate products requires high bandwidth, massive storage and large compute resources. For some regions, low bandwidth constitutes a real obstacle to developing climate services. Data volume also hinders reproducibility because very few institutions have the means to archive original data sets over the long term. Moreover, typical climate products often aggregate multiple sources of information, yet mechanisms to systematically track and document the provenance of all these data are only emerging. So although there is a general consensus that climate information should follow the **FAIR Data Principles** :cite:`Wilkinson2016, mons2017`, that is be findable, accessible, interoperable, and reusable, a number of obstacles hinder progress. Following guidelines might help to set up climate services information systems by enabling synergies. All the aspects of FAIR principles needs to be seen focusing on data as well as the data production structures.
 
 .. _findable:
 
@@ -65,9 +65,3 @@ Result output data from one service can be post-processed by another service whe
 Contrary to running analysis code on a local machine, it is recommended to use remote services have no direct control on the software they are running. The server's maintainer essentially decides when software and services are upgraded, meaning that within the time a scientist performs initial exploration and produces the final version of a figure for a paper, remote-services might have slightly changed or have been retired.
 
 This implies that reproducabillity results might not be easily reproducible if earlier versions of services are not available anymore. This puts an additional burden on scientists to carefully monitor the version of all the remote services used in the analysis to be able to explain discrepancies between results. Similar issues occur with data versions. If a scientist used version 1 for an analysis, there is no guarantee the source data will be archived over the long term if it has been superseded by version 2. In practice, climate services use ensembles of simulations, meaning that typical climate products aggregate hundreds or thousands of files, whose versions should ideally be tracked up until the final graphic or table. This capability to uniquely identify simulation files, errata and updates is available in CMIP6 :cite:`Stockhause2017, Weigel2013`, but it is the responsibility of climate service providers to embed this information into the products they develop.
-
-
-References
-----------
-
-.. bibliography:: birdhouse.bib

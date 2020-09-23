@@ -61,10 +61,3 @@ Articles, book sections and conference proceedings and presentations related to 
 2013:
 
 * Gerics Hamburg User-Developer Workshop
-
-.. _references:
-
-References
-----------
-
-.. bibliography:: birdhouse.bib

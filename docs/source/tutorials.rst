@@ -8,9 +8,6 @@ Tutorials
     :depth: 3
 
 
-.. warning::
-    Work in progress. Examples will come soon.
-
 This is a collection of tutorials and examples covering to show usage of WPS services but is also covering general data management with an focus on sustainable development.
 
 If you are a newcommer, you might have to go through a basic python tutorial first:
@@ -50,12 +47,6 @@ WPS services of birdhouse
 
 * Climate Indices (finch):
 
-.. gittoctree:: https://github.com/bird-house/finch.git
-
-   docs/source/notebooks/index.rst
-
-
-.. gitinclude:: https://github.com/bird-house/finch/blob/master/docs/source/notebooks/index.rst
 
 
 * :ref:`Emu Example with Docker <emu:tutorial>`
