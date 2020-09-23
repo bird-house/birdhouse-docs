@@ -37,6 +37,9 @@ You can connect to a WPS service in the following ways:
    :maxdepth: 1
 
    tutorial_wps
+   tutorial_install
+   tutorial_admin
+
 
 
 .. gittoctree:: https://github.com/bird-house/finch.git

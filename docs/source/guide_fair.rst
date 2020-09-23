@@ -30,10 +30,12 @@ In free and open source for geospatial (FOSS4G) developments workflows, independ
 Accessible
 ----------
 
-**access to data**
+**Access to data:**
+
 For data users, the prevailing *modus operandi* has traditionally been to download raw data locally to conduct analyses. As data volume grows, bandwidth and local storage capacity limits the type of science that individual scientists can perform.
 
-**access to algorithms**
+**Access to algorithms:**
+
 A high certainty and quality of scientific evidence is needed for information in a juridical context to regulate the conflict between economic development and environmental protection :cite:`Brown2019`. Therefor backend solutions to provide climate information for decision makers, need to be as much as possible 'error free'. The challenge of high-quality software solutions is illustrated with Linus's law that "given enough eyeballs, all bugs are shallow". :cite:`Raymond2001`. In free and open source for geospatial (FOSS4G) developments workflows, independent developer groups are collaborating in a win-win situation and ensuring a high-quality software product :cite:`Bahamdain2015`. Public repositories enabling a work efficient participating and knowledge sharing approach :cite:`Bejoy2010`.
 
 .. _interoperable:
