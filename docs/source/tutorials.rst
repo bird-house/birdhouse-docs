@@ -8,25 +8,27 @@ Tutorials
     :depth: 3
 
 
+.. warning::
+    Work in progress. Examples will come soon.
 
-.. toctree::
-   :maxdepth: 1
+This is a collection of tutorials and examples covering to show usage of WPS services but is also covering general data management with an focus on sustainable development.
 
-   tutorial_wps
+If you are a newcommer, you might have to go through a basic python tutorial first:
+.. todo:: Python tutorial
 
-External Tutorials
-------------------
+Climate data management
+-----------------------
+**general Tutorial** about climate and related data handling.
+
+* esfg-python client
+
+
+WPS general usage
+-----------------
+General concepts and tutorials for pyWPS:
 
 * `PyWPS 4.0.0 Slides <http://www.slideshare.net/jachym/pywps400>`_
 * `PyWPS Documentation <https://pywps.readthedocs.io/en/master/process.html>`_
-* :ref:`Emu Example with Docker <emu:tutorial>`
-* :ref:`Phoenix Tutorial <phoenix:tutorial>`
-* `Flyingpigeon Tutorial <http://flyingpigeon.readthedocs.io/en/latest/tutorials/index.html>`_
-* :ref:`Example with Birdy WPS command line tool <birdy:tutorial>`
-
-
-.. warning::
-    Work in progress. Examples will come soon.
 
 You can connect to a WPS service in the following ways:
 
@@ -34,20 +36,27 @@ You can connect to a WPS service in the following ways:
 * using a web based application from your browser.
 * using a Python library from a jupyter notebook or your Python scripts.
 
-Command-line
-------------
+.. toctree::
+   :maxdepth: 1
+
+   tutorial_wps
 
 .. todo:: birdy example
-
-Phoenix Web App
----------------
-
 .. todo:: Screen-shot of Phoenix
 
-Python Library
---------------
 
-.. toctree::
-   :maxdepth: 2
+WPS services of birdhouse
+-------------------------
 
-   flyingpigeon_tutorial
+* Climate Indices (finch):
+
+.. gittoctree:: https://github.com/bird-house/finch.git
+
+   docs/source/notebooks/index.rst
+
+
+.. gitinclude:: https://github.com/bird-house/finch/blob/master/docs/source/notebooks/index.rst
+
+
+* :ref:`Emu Example with Docker <emu:tutorial>`
+* :ref:`Example with Birdy WPS command line tool <birdy:tutorial>`
