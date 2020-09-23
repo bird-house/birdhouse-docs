@@ -3,35 +3,31 @@
 **********
 Tutorials
 **********
-.. contents::
-    :local:
-    :depth: 3
-
 
 This is a collection of tutorials and examples covering to show usage of WPS services but is also covering general data management with an focus on sustainable development.
 
-If you are a newcommer, you might have to go through a basic python tutorial first:
-.. todo:: Python tutorial
+.. contents::
+    :local:
+    :depth: 1
 
-Climate data management
+Introduction
+------------
+
+Data for sustainable Development
+................................
+
+
+Climate data processing
 -----------------------
-**general Tutorial** about climate and related data handling.
 
-* esfg-python client
+.. toctree::
+   :maxdepth: 1
+
+   tutorial_firststepps
 
 
-WPS general usage
------------------
-General concepts and tutorials for pyWPS:
-
-* `PyWPS 4.0.0 Slides <http://www.slideshare.net/jachym/pywps400>`_
-* `PyWPS Documentation <https://pywps.readthedocs.io/en/master/process.html>`_
-
-You can connect to a WPS service in the following ways:
-
-* using a command-line tool in your terminal.
-* using a web based application from your browser.
-* using a Python library from a jupyter notebook or your Python scripts.
+WPS first stepps
+----------------
 
 .. toctree::
    :maxdepth: 1
@@ -40,105 +36,30 @@ You can connect to a WPS service in the following ways:
    tutorial_install
    tutorial_admin
 
+WPS services of birdhouse
+-------------------------
 
+The following section are tutorials of the different components of birdhouse.
+
+WPS client (birdy):
+...................
+
+.. todo:: include birdy tutorial
+
+
+
+Climate Indices (finch):
+........................
+
+Birdhouse is providing services to calculate climate indices widely used in climate change adaptation planing processes.
 
 .. gittoctree:: https://github.com/bird-house/finch.git
 
   docs/source/notebooks/index.rst
+  docs/source/notebooks/finch-usage.rst
 
 
 .. gitinclude:: https://github.com/bird-house/finch/blob/master/docs/source/notebooks/index.rst
-
-
-
-.. todo:: birdy example
-.. todo:: Screen-shot of Phoenix
-
-
-WPS services of birdhouse
--------------------------
-
-* Climate Indices (finch):
-
-
-.. _python_guide:
-
-Python syntax:
-==============
-
-.. code:: ipython3
-
-    """Python WPS execute"""
-
-    from owslib.wps import WebProcessingService, monitorExecution
-    from os import system
-
-
-.. code:: ipython3
-
-    wps = WebProcessingService(url="http://localhost:8093/wps", verbose=False)
-    print("Service '{}' is running".format(wps.identification.title))
-
-
-.. parsed-literal::
-
-    Service 'Flyingpigeon' is running
-
-
-.. code:: ipython3
-
-    for process in wps.processes:
-        print( '{} : \t {}'.format(process.identifier, process.abstract))
-
-
-.. parsed-literal::
-
-    subset : 	 Return the data for which grid cells intersect the selected polygon for each input dataset as well asthe time range selected.
-    subset_bbox : 	 Return the data for which grid cells intersect the bounding box for each input dataset as well asthe time range selected.
-    subset_continents : 	 Return the data whose grid cells intersect the selected continents for each input dataset.
-    subset_countries : 	 Return the data whose grid cells intersect the selected countries for each input dataset.
-    pointinspection : 	 Extract the timeseries at the given coordinates.
-    subset_WFS : 	 Return the data for which grid cells intersect the selected polygon for each input dataset.
-    plot_timeseries : 	 Outputs some timeseries of the file field means. Spaghetti and uncertainty plot
-
-
-.. code:: ipython3
-
-    # define some data urls
-
-    url1 = 'https://www.esrl.noaa.gov/psd/thredds/fileServer/Datasets/ncep.reanalysis.dailyavgs/surface/slp.2000.nc'
-    url2 = 'https://www.esrl.noaa.gov/psd/thredds/fileServer/Datasets/ncep.reanalysis.dailyavgs/surface/slp.2001.nc'
-    url3 = 'https://www.esrl.noaa.gov/psd/thredds/fileServer/Datasets/ncep.reanalysis.dailyavgs/surface/slp.2002.nc'
-    url4 = 'https://www.esrl.noaa.gov/psd/thredds/fileServer/Datasets/ncep.reanalysis.dailyavgs/surface/slp.2003.nc'
-
-.. code:: ipython3
-
-    execute = wps.execute(
-        identifier="plot_timeseries", #indices_clipping",
-        inputs=[
-           ("resource",url1),
-           ("resource",url2),
-           ("resource",url3),
-           ("resource",url4),
-           # ("variable" , "slp"),
-           ])
-
-    monitorExecution(execute, sleepSecs=5)
-    print(execute.getStatus())
-
-    for o in execute.processOutputs:
-        print(o.reference)
-
-
-.. parsed-literal::
-
-     owslib.wps.WPSException : {'code': 'NoApplicableCode', 'locator': 'None', 'text': 'Process failed, please check server error log'}
-    ProcessFailed
-
-
-.. code:: ipython3
-
-    from eggshell.nc.nc_utils import get_coordinates
 
 
 

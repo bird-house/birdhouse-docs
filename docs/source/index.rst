@@ -15,11 +15,3 @@
    license
    glossary
    appendix
-
-
-.. _references:
-
-References
-==========
-
-.. bibliography:: birdhouse.bib

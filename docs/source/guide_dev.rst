@@ -1,7 +1,7 @@
 .. _guide_guide:
 
-birdhouse development
-=====================
+Software development
+====================
 
 .. contents::
     :local:

@@ -1,4 +1,4 @@
-.. _guide_install:
+.. _tutorial_install:
 
 birdhouse installation
 =======================
