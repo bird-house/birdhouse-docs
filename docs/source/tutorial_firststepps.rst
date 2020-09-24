@@ -4,8 +4,6 @@
 If you are a newcommer, you might have to go through a basic python tutorial first:
 .. todo:: Python tutorial
 
-First stepps with climate data
-==============================
 
 **general Tutorial** about climate and related data handling.
 

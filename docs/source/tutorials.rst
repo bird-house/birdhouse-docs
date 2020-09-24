@@ -17,36 +17,37 @@ Data for sustainable Development
 ................................
 
 
-Climate data processing
------------------------
+First stepps with climate data
+------------------------------
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
-   tutorial_firststepps
+   _tutorials/CMIP_resolution
 
 
-WPS first stepps
-----------------
+First stepps with WPS
+----------------------
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    tutorial_wps
-   tutorial_install
-   tutorial_admin
 
-WPS services of birdhouse
--------------------------
+First stepps with WPS services of birdhouse
+-------------------------------------------
 
 The following section are tutorials of the different components of birdhouse.
+
+Beginner WPS (emu):
+...................
+
+* :ref:`Emu Example with Docker <emu:tutorial>`
 
 WPS client (birdy):
 ...................
 
-.. todo:: include birdy tutorial
-
-
+* :ref:`Example with Birdy WPS command line tool <birdy:tutorial>`
 
 Climate Indices (finch):
 ........................
@@ -56,12 +57,23 @@ Birdhouse is providing services to calculate climate indices widely used in clim
 .. gittoctree:: https://github.com/bird-house/finch.git
 
   docs/source/notebooks/index.rst
-  docs/source/notebooks/finch-usage.rst
 
 
 .. gitinclude:: https://github.com/bird-house/finch/blob/master/docs/source/notebooks/index.rst
 
 
+Combining services
+------------------
 
-* :ref:`Emu Example with Docker <emu:tutorial>`
-* :ref:`Example with Birdy WPS command line tool <birdy:tutorial>`
+.. todo:: Chaining birds
+.. todo:: calling external services
+
+
+Server administration
+---------------------
+
+.. toctree::
+   :maxdepth: 1
+
+   tutorial_install
+   tutorial_admin

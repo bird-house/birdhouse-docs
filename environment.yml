@@ -1,8 +1,10 @@
 name: birdhouse-docs
 channels:
 - defaults
+- conda-forge
 dependencies:
 - pip
 - sphinx
+- nbsphinx
 - pip:
   - sphinxcontrib-bibtex

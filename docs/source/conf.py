@@ -35,8 +35,26 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinxcontrib.bibtex',
     'sphinx.ext.graphviz',
-    'docaggregation'
+    'docaggregation',
+    "nbsphinx",
 ]
+
+
+# extensions = [
+#     "sphinx.ext.autodoc",
+#     "sphinx.ext.viewcode",
+#     "sphinx.ext.mathjax",
+#     "sphinx.ext.napoleon",
+#     "sphinx.ext.todo",
+#     "pywps.ext_autodoc",
+#     "sphinx.ext.autosectionlabel",
+#     "sphinx.ext.imgconverter",
+#     "nbsphinx",
+#     "IPython.sphinxext.ipython_console_highlighting",
+#     # "sphinx.ext.intersphinx",
+#     # "docaggregation",
+# ]
+
 
 # autoapi_type = 'python'
 # autoapi_dirs = ['../../.']
