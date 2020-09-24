@@ -1,11 +1,13 @@
 .. _guide_fair:
 
-FAIR Principles
+
+Fair Principles
 ===============
 
-.. contents::
-    :local:
-    :depth: 1
+.. toctree::
+  :maxdepth: 2
+
+
 
 
 Climate datasets rapidly grow in volume and complexity and creating climate products requires high bandwidth, massive storage and large compute resources. For some regions, low bandwidth constitutes a real obstacle to developing climate services. Data volume also hinders reproducibility because very few institutions have the means to archive original data sets over the long term. Moreover, typical climate products often aggregate multiple sources of information, yet mechanisms to systematically track and document the provenance of all these data are only emerging. So although there is a general consensus that climate information should follow the **FAIR Principles** :cite:`Wilkinson2016,mons2017`, that is be *findable, accessible, interoperable, and reusable*, a number of obstacles hinder progress. Following guidelines might help to set up climate services information systems to avoid inefficiency and enabling synergies. The four FAIR Principles aspects can be seen in line with **data** as well as the processing **structures**.
@@ -71,11 +73,3 @@ Contrary to running analysis code on a local machine, it is recommended to use r
 **Reproducabillity:**
 
 This implies that reproducabillity results might not be easily reproducible if earlier versions of services are not available anymore. This puts an additional burden on scientists to carefully monitor the version of all the remote services used in the analysis to be able to explain discrepancies between results. Similar issues occur with data versions. If a scientist used version 1 for an analysis, there is no guarantee the source data will be archived over the long term if it has been superseded by version 2. In practice, climate services use ensembles of simulations, meaning that typical climate products aggregate hundreds or thousands of files, whose versions should ideally be tracked up until the final graphic or table. This capability to uniquely identify simulation files, errata and updates is available in CMIP6 :cite:`Stockhause2017,Weigel2013`, but it is the responsibility of climate service providers to embed this information into the products they develop.
-
-
-.. _bib_guide_fair:
-
-References
-..........
-
-.. bibliography:: bib_guide_fair.bib
