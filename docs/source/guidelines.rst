@@ -17,6 +17,7 @@ Guidelines
   guide_fair
   guide_dev
   guide_WPS
+  guide_server
 
 
 .. _bib_guide_fair:
