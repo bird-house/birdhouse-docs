@@ -8,9 +8,7 @@ Fair Principles
   :maxdepth: 2
 
 
-
-
-Climate datasets rapidly grow in volume and complexity and creating climate products requires high bandwidth, massive storage and large compute resources. For some regions, low bandwidth constitutes a real obstacle to developing climate services. Data volume also hinders reproducibility because very few institutions have the means to archive original data sets over the long term. Moreover, typical climate products often aggregate multiple sources of information, yet mechanisms to systematically track and document the provenance of all these data are only emerging. So although there is a general consensus that climate information should follow the **FAIR Principles** :cite:`Wilkinson2016,mons2017`, that is be *findable, accessible, interoperable, and reusable*, a number of obstacles hinder progress. Following guidelines might help to set up climate services information systems to avoid inefficiency and enabling synergies. The four FAIR Principles aspects can be seen in line with **data** as well as the processing **structures**.
+Climate datasets rapidly grow in volume and complexity and creating climate products requires high bandwidth, massive storage and large compute resources. For some regions, low bandwidth constitutes a real obstacle to developing climate services. Data volume also hinders reproducibility because very few institutions have the means to archive original data sets over the long term. Moreover, typical climate products often aggregate multiple sources of information, yet mechanisms to systematically track and document the provenance of all these data are only emerging. So although there is a general consensus that climate information should follow the **FAIR Principles** :cite:`Wilkinson2016,mons2017`, that is be *findable, accessible, interoperable, and reusable*, a number of obstacles hinder progress. The following principles can help set up efficient climate services information systems, and show how the four FAIR Principles not only apply to data, but also to analytical processes.
 
 .. _findable:
 
