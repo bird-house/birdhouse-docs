@@ -1,8 +1,8 @@
 .. _guide_fair:
 
 
-Fair Principles
-===============
+FAIR Guiding Principles
+=======================
 
 .. toctree::
   :maxdepth: 2
