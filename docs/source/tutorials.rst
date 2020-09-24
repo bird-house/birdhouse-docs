@@ -23,7 +23,8 @@ First stepps with climate data
 .. toctree::
    :maxdepth: 2
 
-   _tutorials/CMIP_resolution
+   tutorial_firststepps
+   _tutorials/CMIP_resolution.ipynb
 
 
 First stepps with WPS
@@ -39,8 +40,8 @@ First stepps with WPS services of birdhouse
 
 The following section are tutorials of the different components of birdhouse.
 
-Beginner WPS (emu):
-...................
+Hello World WPS (emu):
+......................
 
 * :ref:`Emu Example with Docker <emu:tutorial>`
 
@@ -52,7 +53,7 @@ WPS client (birdy):
 Climate Indices (finch):
 ........................
 
-Birdhouse is providing services to calculate climate indices widely used in climate change adaptation planing processes.
+WPS finch is providing services to calculate climate indices widely used in climate change adaptation planing processes.
 
 .. gittoctree:: https://github.com/bird-house/finch.git
 
@@ -60,6 +61,19 @@ Birdhouse is providing services to calculate climate indices widely used in clim
 
 
 .. gitinclude:: https://github.com/bird-house/finch/blob/master/docs/source/notebooks/index.rst
+
+
+Hydrological models (raven):
+............................
+
+WPS raven is providing hydrological models for e.g. hydro-power controlling and sustainable planing
+
+.. gittoctree:: https://github.com/Ouranosinc/raven.git
+
+   docs/source/notebooks/index.rst
+
+
+.. gitinclude:: https://github.com/Ouranosinc/raven/blob/master/docs/source/notebooks/index.rst
 
 
 Combining services

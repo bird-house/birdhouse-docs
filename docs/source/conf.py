@@ -37,7 +37,9 @@ extensions = [
     'sphinx.ext.graphviz',
     'docaggregation',
     "nbsphinx",
+    'sphinx.ext.mathjax',
 ]
+
 
 
 # extensions = [
@@ -106,7 +108,7 @@ language = None
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = []
+exclude_patterns = ['_build', '**.ipynb_checkpoints']
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
