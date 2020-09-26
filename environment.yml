@@ -6,5 +6,6 @@ dependencies:
 - pip
 - sphinx
 - nbsphinx
+- nb_conda_kernels
 - pip:
   - sphinxcontrib-bibtex

@@ -40,7 +40,7 @@ extensions = [
     'sphinx.ext.mathjax',
 ]
 
-
+nbsphinx_allow_errors = True
 
 # extensions = [
 #     "sphinx.ext.autodoc",

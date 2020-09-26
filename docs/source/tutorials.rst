@@ -3,20 +3,16 @@
 **********
 Tutorials
 **********
-<<<<<<< HEAD
 
-This is a collection of tutorials and examples covering to show usage of WPS services but is also covering general data management with an focus on sustainable development.
-=======
-.. contents::
-    :local:
-    :depth: 3
-
-To guide you through the learning curve of installation modules of birdhouse and set up an running birdhouse ecosystem, administer the server-side birdhouse components or even improve and develop your own specific functions, here are some general tutorials. This is a collection of tutorials and examples covering to show usage of WPS services but is also covering general data management with an focus on sustainable development.
->>>>>>> guidelines
+.. warning::
+    Work in progress!!
 
 .. contents::
     :local:
     :depth: 1
+
+This is a collection of tutorials and examples covering to show usage of WPS services but is also covering general data management with an focus on sustainable development. To guide you through the learning curve of installation modules of birdhouse and set up an running birdhouse ecosystem, administer the server-side birdhouse components or even improve and develop your own specific functions, here are some general tutorials. This is a collection of tutorials and examples covering to show usage of WPS services but is also covering general data management with an focus on sustainable development.
+
 
 Introduction
 ------------
@@ -32,7 +28,15 @@ First stepps with climate data
    :maxdepth: 2
 
    tutorial_firststepps
-   _tutorials/CMIP_resolution.ipynb
+
+
+.. gittoctree:: https://github.com/nilshempelmann/climdatatutorial.git
+
+ notebooks/index.rst
+
+
+.. gitinclude:: https://github.com/nilshempelmann/climdatatutorial/blob/master/notebooks/index.rst
+
 
 
 First stepps with WPS
@@ -57,13 +61,6 @@ https://github.com/bird-house/cookiecutter-birdhouse
 .. note:: The cookiecutter is brand-new. Please give feedback and help to improve it.
 
 
-
-WPS services of birdhouse
--------------------------
-
-* Climate Indices (finch):
-
-
 .. _python_guide:
 
 Python syntax:
@@ -86,6 +83,7 @@ First stepps with WPS services of birdhouse
 
 The following section are tutorials of the different components of birdhouse.
 
+
 Hello World WPS (emu):
 ......................
 
@@ -96,8 +94,9 @@ WPS client (birdy):
 
 * :ref:`Example with Birdy WPS command line tool <birdy:tutorial>`
 
+
 Climate Indices (finch):
-........................
+------------------------
 
 WPS finch is providing services to calculate climate indices widely used in climate change adaptation planing processes.
 
@@ -109,8 +108,9 @@ WPS finch is providing services to calculate climate indices widely used in clim
 .. gitinclude:: https://github.com/bird-house/finch/blob/master/docs/source/notebooks/index.rst
 
 
+
 Hydrological models (raven):
-............................
+----------------------------
 
 WPS raven is providing hydrological models for e.g. hydro-power controlling and sustainable planing
 
@@ -120,6 +120,7 @@ WPS raven is providing hydrological models for e.g. hydro-power controlling and 
 
 
 .. gitinclude:: https://github.com/Ouranosinc/raven/blob/master/docs/source/notebooks/index.rst
+
 
 
 Combining services
