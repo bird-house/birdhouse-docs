@@ -2,7 +2,9 @@
 
 
 WPS general usage
------------------
+=================
+
+
 General concepts and tutorials for pyWPS:
 
 * `PyWPS 4.0.0 Slides <http://www.slideshare.net/jachym/pywps400>`_
@@ -22,7 +24,7 @@ Get familliar with WPS (emu):
 
 
 Wordcounter Example
-===================
+-------------------
 
 .. todo:: The WPS tutorial needs to be updated.
 
@@ -82,7 +84,7 @@ For more details see the following `WPS Tutorial`_.
 .. _chaining_WPS:
 
 Chaining WPS processes
-----------------------
+======================
 
 If you know the input/output parameters of processes you can chain processes. For example we will chain a `Text Generator` process to
 our `Word Counter` process.
@@ -192,6 +194,39 @@ Run `wordcount` with a text document (`Execute`)::
   Execution status: ProcessSucceeded
   Output:
   output=http://localhost:8090/wpsoutputs/emu/output-37445d08-cf0f-11e4-ab7e-68f72837e1b4.txt
+
+
+Environment with conda
+======================
+
+.. todo:: How to create a conda package
+
+
+.. _python_guide:
+
+Python syntax:
+..............
+
+.. code:: ipython3
+
+    """Python WPS execute"""
+
+    from owslib.wps import WebProcessingService, monitorExecution
+    from os import system
+
+
+Make your own Bird
+==================
+
+If you are familiar with all the upper chapters you are ready to create your own WPS. The WPS in birdhouse are named after birds, so this section is giving you a guidline of how to make your own bird. Birds are sorted thematically, so before setting up a new one, make sure it is not already covered and just missing some processes and be clear in the new thematic you would like to provide.
+
+We have now a Cookiecutter_ template to create a new bird (PyWPS application).
+It is the recommended and fastest way to create your own bird:
+
+https://github.com/bird-house/cookiecutter-birdhouse
+
+.. note:: The cookiecutter is brand-new. Please give feedback and help to improve it.
+
 
 ..  _WPS Tutorial: http://wiki.ieee-earth.org/Documents/GEOSS_Tutorials/GEOSS_Provider_Tutorials/Web_Processing_Service_Tutorial_for_GEOSS_Providers/Section_2:_Introduction_to_WPS
 
