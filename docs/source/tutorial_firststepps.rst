@@ -1,8 +1,14 @@
 .. _tutorials_firststepps:
 
+Direct Acess to Climate Data
+============================
 
-First stepps with climate data
-==============================
+ESGF client
+...........
+
+
+Basic processing of climate data
+================================
 
 This is a collection of tutorials and examples covering to show usage of WPS services but is also covering general data management with an focus on sustainable development. To guide you through the learning curve of installation modules of birdhouse and set up an running birdhouse ecosystem, administer the server-side birdhouse components or even improve and develop your own specific functions, here are some general tutorials. This is a collection of tutorials and examples covering to show usage of WPS services but is also covering general data management with an focus on sustainable development.
 
@@ -21,13 +27,12 @@ notebooks/index.rst
 
 **general Tutorial** about climate and related data handling.
 
-Acess to Climate Data
-=====================
 
 
 * esfg-python client
 
-**Visualization**
+Basic Visualization
+===================
 
 
 .. _python_guide:
