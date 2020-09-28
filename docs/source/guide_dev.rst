@@ -1,13 +1,8 @@
 .. _guide_guide:
 
-<<<<<<< HEAD
 Software development
 ====================
-=======
-Coding guide
-============
 
->>>>>>> guidelines
 
 .. contents::
     :local:
