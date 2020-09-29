@@ -197,7 +197,7 @@ Run `wordcount` with a text document (`Execute`)::
 
 
 Environment with conda
-======================
+......................
 
 .. todo:: How to create a conda package
 
