@@ -11,7 +11,7 @@ Tutorials
 .. toctree::
    :maxdepth: 3
 
-   tutorial_firststepps
+   tutorial_basic
    tutorial_wps
    tutorial_server
    tutorial_birds
