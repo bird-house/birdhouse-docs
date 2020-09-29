@@ -3,6 +3,10 @@ WPS services of birdhouse
 
 The following section are tutorials of the different components of birdhouse.
 
+.. contents::
+    :local:
+    :depth: 1
+
 
 Hello World WPS (emu):
 ......................
