@@ -37,11 +37,11 @@ WPS definition of `Word Counter`
 
 To add a new proccess you need to define the input and output parameters. For the `Word Counter` process this looks like the following.
 
-.. image:: ../_images/WpsInOut.png
+.. image:: _images/WpsInOut.png
 
 Here is another example for a `Text Generator` process. We will use it later for chaining processes.
 
-.. image:: ../_images/WpsTextGenerator.png
+.. image:: _images/WpsTextGenerator.png
 
 There are two types of input/output parameters:
 
@@ -66,7 +66,7 @@ Chaining WPS processes
 If you know the input/output parameters of processes you can chain processes. For example we will chain a `Text Generator` process to
 our `Word Counter` process.
 
-.. image:: ../_images/WpsChain.png
+.. image:: _images/WpsChain.png
 
 The `Text document` output of the `Text Generator` process becomes the input of `Word Counter` process.
 
@@ -83,7 +83,7 @@ WPS process implementation with PyWPS
 There are several WPS implementations available (:term:`GeoServer`, :term:`COWS`, ...). In birdhouse, we use the Python implementation :term:`PyWPS`.
 In `PyWPS` the `Word Counter` process could look like the following:
 
-.. literalinclude:: wps_word_counter.py
+.. literalinclude:: _tutorial/wps_word_counter.py
     :language: python
     :emphasize-lines: 8,16,24,32
     :linenos:

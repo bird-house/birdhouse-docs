@@ -5,13 +5,13 @@
 
    overview
    framework
-   tutorials
    guidelines
-   ideas/index
-   communication
+   tutorials
    publications
    projects
+   ideas/index
    release_notes
+   communication
    license
    glossary
    appendix

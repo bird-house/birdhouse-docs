@@ -6,3 +6,160 @@ Tutorials
 .. contents::
     :local:
     :depth: 3
+
+To guide you through the learning curve of installation modules of birdhouse and set up an running birdhouse ecosystem, administer the server-side birdhouse components or even improve and develop your own specific functions, here are some general tutorials. This is a collection of tutorials and examples covering to show usage of WPS services but is also covering general data management with an focus on sustainable development.
+
+If you are a newcommer, you might have to go through a basic python tutorial first:
+.. todo:: Python tutorial
+
+Climate data management
+-----------------------
+**general Tutorial** about climate and related data handling.
+
+* esfg-python client
+
+
+WPS general usage
+-----------------
+General concepts and tutorials for pyWPS:
+
+* `PyWPS 4.0.0 Slides <http://www.slideshare.net/jachym/pywps400>`_
+* `PyWPS Documentation <https://pywps.readthedocs.io/en/master/process.html>`_
+
+You can connect to a WPS service in the following ways:
+
+* using a command-line tool in your terminal.
+* using a web based application from your browser.
+* using a Python library from a jupyter notebook or your Python scripts.
+
+.. toctree::
+   :maxdepth: 1
+
+   tutorial_wps
+   tutorial_install
+   tutorial_admin
+
+
+
+.. gittoctree:: https://github.com/bird-house/finch.git
+
+  docs/source/notebooks/index.rst
+
+
+.. gitinclude:: https://github.com/bird-house/finch/blob/master/docs/source/notebooks/index.rst
+
+
+
+.. todo:: birdy example
+.. todo:: Screen-shot of Phoenix
+
+
+Environment with conda
+......................
+
+.. todo:: How to create a conda package
+
+
+Make your own Bird
+..................
+
+If you are familiar with all the upper chapters you are ready to create your own WPS. The WPS in birdhouse are named after birds, so this section is giving you a guidline of how to make your own bird. Birds are sorted thematically, so before setting up a new one, make sure it is not already covered and just missing some processes and be clear in the new thematic you would like to provide.
+
+We have now a Cookiecutter_ template to create a new bird (PyWPS application).
+It is the recommended and fastest way to create your own bird:
+
+https://github.com/bird-house/cookiecutter-birdhouse
+
+.. note:: The cookiecutter is brand-new. Please give feedback and help to improve it.
+
+
+
+WPS services of birdhouse
+-------------------------
+
+* Climate Indices (finch):
+
+
+.. _python_guide:
+
+Python syntax:
+==============
+
+.. code:: ipython3
+
+    """Python WPS execute"""
+
+    from owslib.wps import WebProcessingService, monitorExecution
+    from os import system
+
+
+.. code:: ipython3
+
+    wps = WebProcessingService(url="http://localhost:8093/wps", verbose=False)
+    print("Service '{}' is running".format(wps.identification.title))
+
+
+.. parsed-literal::
+
+    Service 'Flyingpigeon' is running
+
+
+.. code:: ipython3
+
+    for process in wps.processes:
+        print( '{} : \t {}'.format(process.identifier, process.abstract))
+
+
+.. parsed-literal::
+
+    subset : 	 Return the data for which grid cells intersect the selected polygon for each input dataset as well asthe time range selected.
+    subset_bbox : 	 Return the data for which grid cells intersect the bounding box for each input dataset as well asthe time range selected.
+    subset_continents : 	 Return the data whose grid cells intersect the selected continents for each input dataset.
+    subset_countries : 	 Return the data whose grid cells intersect the selected countries for each input dataset.
+    pointinspection : 	 Extract the timeseries at the given coordinates.
+    subset_WFS : 	 Return the data for which grid cells intersect the selected polygon for each input dataset.
+    plot_timeseries : 	 Outputs some timeseries of the file field means. Spaghetti and uncertainty plot
+
+
+.. code:: ipython3
+
+    # define some data urls
+
+    url1 = 'https://www.esrl.noaa.gov/psd/thredds/fileServer/Datasets/ncep.reanalysis.dailyavgs/surface/slp.2000.nc'
+    url2 = 'https://www.esrl.noaa.gov/psd/thredds/fileServer/Datasets/ncep.reanalysis.dailyavgs/surface/slp.2001.nc'
+    url3 = 'https://www.esrl.noaa.gov/psd/thredds/fileServer/Datasets/ncep.reanalysis.dailyavgs/surface/slp.2002.nc'
+    url4 = 'https://www.esrl.noaa.gov/psd/thredds/fileServer/Datasets/ncep.reanalysis.dailyavgs/surface/slp.2003.nc'
+
+.. code:: ipython3
+
+    execute = wps.execute(
+        identifier="plot_timeseries", #indices_clipping",
+        inputs=[
+           ("resource",url1),
+           ("resource",url2),
+           ("resource",url3),
+           ("resource",url4),
+           # ("variable" , "slp"),
+           ])
+
+    monitorExecution(execute, sleepSecs=5)
+    print(execute.getStatus())
+
+    for o in execute.processOutputs:
+        print(o.reference)
+
+
+.. parsed-literal::
+
+     owslib.wps.WPSException : {'code': 'NoApplicableCode', 'locator': 'None', 'text': 'Process failed, please check server error log'}
+    ProcessFailed
+
+
+.. code:: ipython3
+
+    from eggshell.nc.nc_utils import get_coordinates
+
+
+
+* :ref:`Emu Example with Docker <emu:tutorial>`
+* :ref:`Example with Birdy WPS command line tool <birdy:tutorial>`

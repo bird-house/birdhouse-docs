@@ -3,17 +3,28 @@
 **********
 Guidelines
 **********
-.. contents::
-    :local:
-    :depth: 3
 
-To guide you through the learning curve of installation modules of birdhouse and set up an running birdhouse ecosystem, administer the server-side birdhouse components or even improve and develop your own specific functions, here are some general guidelines:
+.. _codeofconduct:
+
+
+.. note:: **Code of Conduct:** Before we start please be aware that contributors to this project are expected to act respectfully toward others in accordance with the `OSGeo Code of Conduct`_.
+
 
 .. toctree::
-   :maxdepth: 2
+  :maxdepth: 2
 
-   guide_fair
-   guide_user
-   guide_install
-   guide_admin
-   guide_dev
+  guide_general
+  guide_fair
+  guide_dev
+  guide_WPS
+  guide_server
+
+
+.. _bib_guide_fair:
+
+References
+..........
+
+.. bibliography:: bib_guide_fair.bib
+
+.. _`OSGeo Code of Conduct`: http://www.osgeo.org/code_of_conduct

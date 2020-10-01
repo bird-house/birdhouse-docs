@@ -62,9 +62,10 @@ Articles, book sections and conference proceedings and presentations related to 
 
 * Gerics Hamburg User-Developer Workshop
 
-.. _references:
+
+.. _bib_publications:
 
 References
 ----------
 
-.. bibliography:: birdhouse.bib
+.. bibliography:: bib_publications.bib
