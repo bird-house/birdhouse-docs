@@ -2,29 +2,6 @@
 
 
 WPS general usage
-=================
-
-
-General concepts and tutorials for pyWPS:
-
-* `PyWPS 4.0.0 Slides <http://www.slideshare.net/jachym/pywps400>`_
-* `PyWPS Documentation <https://pywps.readthedocs.io/en/master/process.html>`_
-
-You can connect to a WPS service in the following ways:
-
-* using a command-line tool in your terminal.
-* using a web based application from your browser.
-* using a Python library from a jupyter notebook or your Python scripts.
-
-
-Get familliar with WPS (emu):
------------------------------
-
-.. todo:: include Emu tutorial
-
-
-Wordcounter Example
--------------------
 
 .. todo:: The WPS tutorial needs to be updated.
 
@@ -213,7 +190,6 @@ Python syntax:
 
     from owslib.wps import WebProcessingService, monitorExecution
     from os import system
-
 
 ..  _WPS Tutorial: http://wiki.ieee-earth.org/Documents/GEOSS_Tutorials/GEOSS_Provider_Tutorials/Web_Processing_Service_Tutorial_for_GEOSS_Providers/Section_2:_Introduction_to_WPS
 
