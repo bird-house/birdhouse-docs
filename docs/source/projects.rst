@@ -6,7 +6,7 @@ Project examples
 
 .. contents::
     :local:
-    :depth: 3
+    :depth: 1
 
 The birdhouse :ref:`framework is modular organized <framework_structure>` to enable a flexible architecture design depending on the projects needs. Due to the OCG Standard, software components non-birdhouse components can be combined for interoperability. Here are some examples of real projects to show the flexibility and potential of the birdhouse framework.
 

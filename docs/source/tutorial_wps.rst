@@ -1,7 +1,7 @@
 .. _wps_tutorial:
 
-Wordcounter Example
-===================
+
+WPS general usage
 
 .. todo:: The WPS tutorial needs to be updated.
 
@@ -61,7 +61,7 @@ For more details see the following `WPS Tutorial`_.
 .. _chaining_WPS:
 
 Chaining WPS processes
-----------------------
+======================
 
 If you know the input/output parameters of processes you can chain processes. For example we will chain a `Text Generator` process to
 our `Word Counter` process.
@@ -171,6 +171,25 @@ Run `wordcount` with a text document (`Execute`)::
   Execution status: ProcessSucceeded
   Output:
   output=http://localhost:8090/wpsoutputs/emu/output-37445d08-cf0f-11e4-ab7e-68f72837e1b4.txt
+
+
+Environment with conda
+......................
+
+.. todo:: How to create a conda package
+
+
+.. _python_guide:
+
+Python syntax:
+..............
+
+.. code:: ipython3
+
+    """Python WPS execute"""
+
+    from owslib.wps import WebProcessingService, monitorExecution
+    from os import system
 
 ..  _WPS Tutorial: http://wiki.ieee-earth.org/Documents/GEOSS_Tutorials/GEOSS_Provider_Tutorials/Web_Processing_Service_Tutorial_for_GEOSS_Providers/Section_2:_Introduction_to_WPS
 

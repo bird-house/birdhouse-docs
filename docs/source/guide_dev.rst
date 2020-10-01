@@ -1,7 +1,7 @@
 .. _guide_guide:
 
-Coding guide
-============
+Software development
+====================
 
 
 .. contents::
