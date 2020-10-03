@@ -1,11 +1,7 @@
 .. _tutorial_birdy:
 
-Calling a Service (birdy):
-==========================
-
-.. contents::
-    :local:
-    :depth: 1
+Calling a Service (birdy)
+=========================
 
 
 .. gittoctree:: https://github.com/bird-house/birdy.git

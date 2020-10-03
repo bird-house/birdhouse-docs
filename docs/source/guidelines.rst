@@ -16,6 +16,7 @@ Guidelines
   guide_general
   guide_fair
   guide_dev
+  guide_cuckiecutter
   guide_WPS
   guide_server
 

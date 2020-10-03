@@ -15,5 +15,6 @@ Tutorials
    tutorial_pywps
    tutorial_wps
    tutorial_birdy
-   tutorial_birds
+   tutorial_finch
+   tutorial_raven
    tutorial_server
