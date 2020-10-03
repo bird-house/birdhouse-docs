@@ -7,10 +7,7 @@ dependencies:
 - sphinx
 - nbsphinx
 - nb_conda_kernels
-<<<<<<< HEAD
-=======
 - pywps
-- jupyter-client 
->>>>>>> tutorials
+- jupyter-client
 - pip:
   - sphinxcontrib-bibtex
