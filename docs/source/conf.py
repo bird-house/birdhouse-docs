@@ -31,7 +31,7 @@ needs_sphinx = '1.6'
 # ones.
 extensions = [
     "sphinx.ext.autodoc",
-    "pywps.ext_autodoc"
+    "pywps.ext_autodoc",
     'sphinx.ext.intersphinx',
     'sphinx.ext.todo',
     'sphinx.ext.viewcode',
