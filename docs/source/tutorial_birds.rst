@@ -29,7 +29,7 @@ WPS finch is providing services to calculate climate indices widely used in clim
   docs/source/notebooks/index.rst
 
 
-.. gitinclude:: https://github.com/bird-house/finch/blob/master/docs/source/notebooks/index.rst
+.. gitinclude:: https://github.com/bird-house/finch.git docs/source/notebooks/index.rst
 
 
 
@@ -43,4 +43,4 @@ WPS raven is providing hydrological models for e.g. hydro-power controlling and 
    docs/source/notebooks/index.rst
 
 
-.. gitinclude:: https://github.com/Ouranosinc/raven/blob/master/docs/source/notebooks/index.rst
+.. gitinclude:: https://github.com/Ouranosinc/raven.git docs/source/notebooks/index.rst
