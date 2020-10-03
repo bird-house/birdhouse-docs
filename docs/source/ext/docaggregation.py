@@ -1,6 +1,6 @@
 import os, re, subprocess
 from docutils.parsers.rst.directives.misc import Include as BaseInclude
-from sphinx.directives import TocTree
+from sphinx.directives.other import TocTree
 from sphinx.util.docutils import SphinxDirective
 
 
