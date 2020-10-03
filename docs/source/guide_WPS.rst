@@ -9,7 +9,6 @@ WPS design
     :depth: 1
 
 
-
 Setting up a new WPS
 ====================
 
