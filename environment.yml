@@ -8,6 +8,5 @@ dependencies:
 - nbsphinx
 - nb_conda_kernels
 - pywps
-- jupyter-client
 - pip:
   - sphinxcontrib-bibtex
