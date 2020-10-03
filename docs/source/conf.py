@@ -46,22 +46,25 @@ extensions = [
 
 
 nbsphinx_allow_errors = True
+# To avoid having to install these and burst memory limit on ReadTheDocs.
+# List of all tested working mock imports from all birds so new birds can
+# inherit without having to test which work which do not.
+autodoc_mock_imports = ["numpy", "xarray", "fiona", "rasterio", "shapely",
+                        "osgeo", "geopandas", "pandas", "statsmodels",
+                        "affine", "rasterstats", "spotpy", "matplotlib",
+                        "scipy", "unidecode", "gdal", "sentry_sdk", "dask",
+                        "numba", "parse", "siphon", "sklearn", "cftime",
+                        "netCDF4", "bottleneck", "ocgis", "geotiff", "geos",
+                        "hdf4", "hdf5", "zlib", "pyproj", "proj", "cartopy",
+                        "scikit-learn", "cairo"]
 
-# extensions = [
-#     "sphinx.ext.autodoc",
-#     "sphinx.ext.viewcode",
-#     "sphinx.ext.mathjax",
-#     "sphinx.ext.napoleon",
-#     "sphinx.ext.todo",
-#     "pywps.ext_autodoc",
-#     "sphinx.ext.autosectionlabel",
-#     "sphinx.ext.imgconverter",
-#     "nbsphinx",
-#     "IPython.sphinxext.ipython_console_highlighting",
-#     # "sphinx.ext.intersphinx",
-#     # "docaggregation",
-# ]
+# Monkeypatch constant because the following are mock imports.
+# Only works if numpy is actually installed and at the same time being mocked.
+#import numpy
+#numpy.pi = 3.1416
 
+# We are using mock imports in readthedocs, so probably safer to not run the notebooks
+nbsphinx_execute = 'never'
 
 # autoapi_type = 'python'
 # autoapi_dirs = ['../../.']
@@ -71,7 +74,6 @@ nbsphinx_allow_errors = True
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
-intersphinx_mapping = {'pavics': ('https://raw.githubusercontent.com/Ouranosinc/pavics-sdi/master/docs/source/', None)}
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
@@ -113,7 +115,7 @@ language = None
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = ['_build', '**.ipynb_checkpoints']
+exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "**.ipynb_checkpoints"]
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
