@@ -4,10 +4,6 @@
 Tutorials
 **********
 
-.. warning::
-    Work in progress!!
-
-
 .. toctree::
    :maxdepth: 2
 
