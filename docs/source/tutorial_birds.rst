@@ -1,23 +1,14 @@
-WPS services of birdhouse
-=========================
+.. _tutorial_birds:
+
+
+WPS birdhouse Services
+======================
 
 The following section are tutorials of the different components of birdhouse.
 
 .. contents::
     :local:
     :depth: 1
-
-
-Hello World WPS (emu):
-......................
-
-* :ref:`Emu Example with Docker <emu:tutorial>`
-
-
-WPS client (birdy):
-...................
-
-* :ref:`Example with Birdy WPS command line tool <birdy:tutorial>`
 
 
 Climate Indices (finch):

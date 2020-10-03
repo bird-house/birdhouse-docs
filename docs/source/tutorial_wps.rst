@@ -60,7 +60,7 @@ For more details see the following `WPS Tutorial`_.
 .. _chaining_WPS:
 
 Chaining WPS processes
-======================
+----------------------
 
 If you know the input/output parameters of processes you can chain processes. For example we will chain a `Text Generator` process to
 our `Word Counter` process.
@@ -171,8 +171,13 @@ Run `wordcount` with a text document (`Execute`)::
   Output:
   output=http://localhost:8090/wpsoutputs/emu/output-37445d08-cf0f-11e4-ab7e-68f72837e1b4.txt
 
+Hello World WPS (emu):
+......................
 
-Environment with conda
+* :ref:`Emu Example with Docker <emu:tutorial>`
+
+
+Create a conda package
 ......................
 
 .. todo:: How to create a conda package
