@@ -10,10 +10,5 @@ Hydrological models (raven):
 
 WPS raven is providing hydrological models for e.g. hydro-power controlling and sustainable planing
 
-
-.. gittoctree:: https://github.com/Ouranosinc/raven.git
-
-   docs/source/notebooks/index.rst
-
-
-.. gitinclude:: https://github.com/Ouranosinc/raven.git docs/source/notebooks/index.rst
+Have a look on the examples of the raven documentation:
+https://pavics-raven.readthedocs.io/en/latest/notebooks/index.html
