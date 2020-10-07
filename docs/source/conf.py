@@ -44,7 +44,6 @@ extensions = [
     "IPython.sphinxext.ipython_console_highlighting",
 ]
 
-
 nbsphinx_allow_errors = True
 # To avoid having to install these and burst memory limit on ReadTheDocs.
 # List of all tested working mock imports from all birds so new birds can
@@ -56,7 +55,9 @@ autodoc_mock_imports = ["numpy", "xarray", "fiona", "rasterio", "shapely",
                         "numba", "parse", "siphon", "sklearn", "cftime",
                         "netCDF4", "bottleneck", "ocgis", "geotiff", "geos",
                         "hdf4", "hdf5", "zlib", "pyproj", "proj", "cartopy",
-                        "scikit-learn", "cairo"]
+                        "scikit-learn", "cairo",
+                        "pywps", ]
+
 
 # Monkeypatch constant because the following are mock imports.
 # Only works if numpy is actually installed and at the same time being mocked.
