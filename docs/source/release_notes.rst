@@ -15,6 +15,7 @@ Niamey (October 2020, v0.10.0)
 
 Highlighted Changes:
 
+* Updated FlyingPigeon WPS with improved plot and subset processes.
 * Improved cookiecutter template for PyWPS with cruft update.
 * Ansible PyWPS playbook with support for Slurm cluster.
 
@@ -23,7 +24,7 @@ Released Tools:
 * Twitcher WPS Proxy: `0.6.0 <https://github.com/bird-house/twitcher/releases/tag/v0.6.0>`_
 * Ansible Playbook for PyWPS `0.4.0 <https://github.com/bird-house/ansible-wps-playbook/releases/tag/v0.4.0>`_
 * Ansible Playbook for Twitcher `0.1.0 <https://github.com/bird-house/ansible-twitcher-playbook/releases/tag/v0.1.0>`_
-.. * Cookiecutter Template for PyWPS `0.4.2 <https://github.com/bird-house/cookiecutter-birdhouse/releases/tag/v0.4.2>`_
+* Cookiecutter Template for PyWPS `0.5.0 <https://github.com/bird-house/cookiecutter-birdhouse/releases/tag/v0.5.0>`_
 * Birdy WPS Client: `0.6.9 <https://github.com/bird-house/birdy/releases/tag/v0.6.9>`_
 
 Released WPS services:
@@ -31,7 +32,7 @@ Released WPS services:
 * Emu WPS: `0.12.0 <https://github.com/bird-house/emu/releases/tag/v0.12.0>`_
 * FlyingPigeon WPS: `1.6.0 <https://github.com/bird-house/flyingpigeon/tree/v1.6>`_
 * Finch WPS: `0.5.3 <https://github.com/bird-house/finch/releases/tag/v0.5.3>`_
-.. * Hummingbird WPS: `0.9.0 <https://github.com/bird-house/hummingbird/releases/tag/v0.9.0>`_
+* Hummingbird WPS: `0.9.0 <https://github.com/bird-house/hummingbird/releases/tag/v0.9.0>`_
 
 Maintained Apps with Buildout:
 
