@@ -6,7 +6,7 @@ Climate Data with Phyton
 
 Introduction to basic processing of climate data
 
-..note: Coming soon, planed for Nov 2021.
+.. note:: Coming soon, planed for Nov 2021.
 
 
 .. gittoctree:: https://github.com/nilshempelmann/climdatatutorial.git
