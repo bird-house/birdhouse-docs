@@ -10,4 +10,5 @@ Tutorials
    tutorial_pywps
    tutorial_birdy
    tutorial_wps
+   tutorial_finch
    tutorial_server
