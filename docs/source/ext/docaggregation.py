@@ -17,7 +17,7 @@ def checkout(env, repo, branch='master'):
 
     # Fetch latest version and checkout branch
     subprocess.run(['git', 'fetch', repo], cwd=root)
-    subprocess.call(['git', 'co', branch], cwd=root)
+    subprocess.call(['git', 'checkout', branch], cwd=root)
 
     return os.path.relpath(root, start=env.srcdir)
 
