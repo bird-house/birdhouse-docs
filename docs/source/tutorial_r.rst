@@ -99,3 +99,10 @@ Which Reads from a file similar to :code:`requirements.txt` for Python dependenc
    
    PCICt==0.5.4.1
    climdex.pcic==1.1.11
+
+
+.. _docker:
+
+Dockerfile
+............
+To install :code:`Rpy2`, R needs to be installed already. A good base image for R is `rocker/r-ver <https://hub.docker.com/r/rocker/r-ver>`_ and you can install Python on top of it.
