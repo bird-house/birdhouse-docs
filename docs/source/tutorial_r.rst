@@ -25,19 +25,26 @@ There’s several R-to-python Python libraries but `Rpy2 <https://rpy2.github.io
    base = importr("base")
    utils = importr("utils")
    
-Then you can use functions from that package with :code:`package.function_name()`. If the R function name has a period '.' it is replaced with an underscore in python.
+Then you can use functions from that package with :code:`package.function_name()`. If the R function name has a period '.' it is replaced with an underscore '_' in python.
  
 .. code-block:: Python
 
    base.all(True)
-   base.all_equal("hello","world")
+   base.all_equal("hello","world") # all.equal() in R
  
 You can execute any regular R code as a string passed to :code:`robjects.r()`
 
 .. code-block:: Python
 
    from rpy2 import robjects
-   robjects.r("c(1,2,3)")d
+   count = robjects.r("c(1,2,3)")
+   robjects.r("all(T)")
+   
+You can also access R functions with the syntax :code:`robjects.r["function.name"]` if you want to avoid the import step.
+
+.. code-block:: Python
+
+   robjects.r["save"](count, file=output_path)
    
 Install another package with Rpy2 and use the functions form that package...
 
