@@ -1,6 +1,17 @@
 Pywps with R
 ============
-The following shows how you can wrap R software with pyWPS
+The following shows how you can wrap R software with pyWPS.
+
+.. _examples:
+
+Examples of R Birds
+...........................
+* `pcic/quail <https://github.com/pacificclimate/quail>`_
+
+  * `wps_climdex_gsl.py <https://github.com/pacificclimate/quail/blob/master/quail/processes/wps_climdex_gsl.py>`_
+* `pcic/chickadee <https://github.com/pacificclimate/chickadee>`_
+
+  * `wps_BCCAQ.py <https://github.com/pacificclimate/chickadee/blob/master/chickadee/processes/wps_BCCAQ.py>`_ 
 
 .. _rpy2:
 
@@ -105,4 +116,4 @@ Which Reads from a file similar to :code:`requirements.txt` for Python dependenc
 
 Dockerfile
 ............
-To install :code:`Rpy2`, R needs to be installed already. A good base image for R is `rocker/r-ver <https://hub.docker.com/r/rocker/r-ver>`_ and you can install Python on top of it.
+To install :code:`Rpy2`, R needs to be installed already. A good base image for R is `rocker/r-ver <https://hub.docker.com/r/rocker/r-ver>`_ and you can install Python on top of it. Check out the `pcic/quail Dockerfile <https://github.com/pacificclimate/quail/blob/master/Dockerfile>`_ as an example.
