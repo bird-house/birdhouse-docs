@@ -54,9 +54,9 @@ Install another package with Rpy2 and use the functions form that package...
    climdex_pcic = importr("climdex.pcic")
    climdex.climdex_gsl(climdexInput, gsl_mode)
    
-.. _input:
+.. _io:
 
-Input
+I/O
 .....
   
 If an R object input is needed you can store the object in a RDS or Rdata file and read as a :code:`ComplexInput` with :code:`format`:
@@ -69,6 +69,18 @@ If an R object input is needed you can store the object in a RDS or Rdata file a
       "r_file",
       "R data file",
       supported_formats=[Format("application/x-gzip", encoding="base64")],
+   )
+   
+... And if your output is an R object you can save that object to an RDS or Rdata file and return it with :code:`ComplexOutput`:
+
+.. code-block:: Python
+
+   from pywps import ComplexOutput
+   
+   ComplexOutput(
+     "r_output",
+     "R output file",
+     supported_formats=[Format("application/x-gzip", extension=".rda", encoding="base64")],
    )
   
 .. _dep:
