@@ -17,7 +17,7 @@ Examples of R Birds
 
 Rpy2
 ....
-There’s several R-to-python Python libraries but `Rpy2 <https://rpy2.github.io/doc/latest/html/index.html>`_ is probably the most well documented and most frequently used. Any R library can be accessed, as long as it is installed, with :code:`importr([package-name])`. Since R :code:`base` and :code:`utils` are installed with :code:`rpy2` you can import them:
+There’s several R-to-python Python libraries but `Rpy2 <https://rpy2.github.io/doc/latest/html/index.html>`_ is probably the most well documented and most frequently used. As long as it is installed, a R library can be accessed with :code:`importr([package-name])`. Since R :code:`base` and :code:`utils` are installed with :code:`rpy2` you can import them:
 
 .. code-block:: Python
    
@@ -25,7 +25,7 @@ There’s several R-to-python Python libraries but `Rpy2 <https://rpy2.github.io
    base = importr("base")
    utils = importr("utils")
    
-Then you can use functions from that package with :code:`package.function_name()`. If the R function name has a period '.' it is replaced with an underscore '_' in python.
+Then you can use functions from that package with :code:`package.function_name()`. If the R function name has a period :code:`.` it is replaced with an underscore :code:`_` in python.
  
 .. code-block:: Python
 
@@ -59,7 +59,7 @@ Install another package with Rpy2 and use the functions form that package...
 I/O
 .....
   
-If an R object input is needed you can store the object in a RDS or Rdata file and read as a :code:`ComplexInput` with :code:`format`:
+If an R object input is needed you can store the object in a RDS or Rdata file. RDS files and Rdata files are indistinguishable by name when read to the server so their handling has to be done elsewhere in the processes. You can see how it's handled in PCIC's `quail <https://github.com/pacificclimate/quail/blob/6f89a3f2d2d7effb2ee22bb7e6a8ae1a74c6e6cc/quail/utils.py#L91>`_. Read the file as a :code:`ComplexInput` with :code:`format`:
 
 .. code-block:: Python
 
@@ -87,41 +87,9 @@ If an R object input is needed you can store the object in a RDS or Rdata file a
 
 Installing Dependencies
 .......................
-With a simple Rscript you can install dependencies similarly to installing Python dependencies with :code:`requirements.txt`.
-
-**install_pkgs.R:**
-
-.. code-block:: R
-
-   # Usage:
-   # Rscript install_pgks.R r_requirements.txt
-   # r_requirements delimited by '==' as in python requirements.txt
-
-   # Create user library
-   dir.create(Sys.getenv('R_LIBS_USER'), recursive = TRUE);
-   .libPaths(Sys.getenv('R_LIBS_USER'));
-
-   # Install devtools and its dependencies
-   install.packages('devtools', dependencies=TRUE);
-
-   # Install packages from requirements list
-   args <- commandArgs(trailingOnly = TRUE)
-   req_filename <- args[1]
-   requirements_file <- file(req_filename,open="r")
-   data <-readLines(requirements_file)
-   for (i in 1:length(data)){
-       pkg_ver_pair <- unlist(stringr::str_split(data[i], "=="))
-       pkg<-pkg_ver_pair[1]
-       ver<-pkg_ver_pair[2]
-       if (is.na(ver)){
-           devtools::install_version(pkg)
-       } else {
-           devtools::install_version(pkg, version = ver);
-       }
-   }
-   close(requirements_file)
+You can write a simple script in :code:`R`, :code:`bash`, or :code:`Python` to automate installation of R package dependencies. :code:`devtools::install_version()` is used to pin versions in PCIC's :code:`quail` and :code:`chickadee`. You can take a look at the R script `here <https://github.com/pacificclimate/quail/blob/cd60aabcfdcae249921541f6e969de26a2695127/install_pkgs.R>`_. 
    
-Which Reads from a file similar to :code:`requirements.txt` for Python dependencies:
+The script reads from a file similar to :code:`requirements.txt` for Python dependencies:
 
 **r_requirements.txt:**
 
