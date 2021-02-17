@@ -59,7 +59,7 @@ Install another package with Rpy2 and use the functions form that package...
 I/O
 .....
   
-If an R object input is needed you can store the object in a RDS or Rdata file. RDS files and Rdata files are indistinguishable by name when read to the server so their handling has to be done elsewhere in the processes. You can see how it's handled in PCIC's `quail <https://github.com/pacificclimate/quail/blob/6f89a3f2d2d7effb2ee22bb7e6a8ae1a74c6e6cc/quail/utils.py#L91>`_. Read the file as a :code:`ComplexInput` with :code:`format`:
+Rpy2 handles R-to-python conversions of `LITERAL_DATA_TYPES <https://pywps.readthedocs.io/en/latest/api.html#pywps.inout.literaltypes.LITERAL_DATA_TYPES>`_, but objects of other types may need to be stored in a RDS or Rdata file. RDS files and Rdata files are indistinguishable by mime type when read to the server so their handling has to be done elsewhere in the processes. You can see how it's handled in PCIC's `quail <https://github.com/pacificclimate/quail/blob/6f89a3f2d2d7effb2ee22bb7e6a8ae1a74c6e6cc/quail/utils.py#L91>`_. Read the file as a :code:`ComplexInput` with :code:`format`:
 
 .. code-block:: Python
 
