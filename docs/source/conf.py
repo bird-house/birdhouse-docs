@@ -44,6 +44,10 @@ extensions = [
     "IPython.sphinxext.ipython_console_highlighting",
 ]
 
+# bibtex extension
+bibtex_bibfiles = ['bib_publications.bib', 'bib_guide_fair.bib']
+
+# nbsphinx extension
 nbsphinx_allow_errors = True
 # To avoid having to install these and burst memory limit on ReadTheDocs.
 # List of all tested working mock imports from all birds so new birds can
@@ -57,6 +61,7 @@ autodoc_mock_imports = ["numpy", "xarray", "fiona", "rasterio", "shapely",
                         "hdf4", "hdf5", "zlib", "pyproj", "proj", "cartopy",
                         "scikit-learn", "cairo",
                         "pywps", ]
+
 
 
 # Monkeypatch constant because the following are mock imports.
