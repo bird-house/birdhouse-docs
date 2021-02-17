@@ -1,6 +1,6 @@
-Pywps with R
+PyWPS with R
 ============
-The following shows how you can wrap R software with pyWPS.
+The following shows how you can wrap R software with PyWPS.
 
 .. _examples:
 
@@ -52,7 +52,7 @@ Install another package with Rpy2 and use the functions form that package...
 
    utils.install_packages("climdex.pcic")
    climdex_pcic = importr("climdex.pcic")
-   climdex.climdex_gsl(climdexInput, gsl_mode)
+   climdex_pcic.climdex_gsl(climdexInput, gsl_mode)
    
 .. _io:
 
