@@ -14,3 +14,4 @@ Tutorials
    tutorial_finch
    tutorial_raven
    tutorial_server
+   tutorial_r
