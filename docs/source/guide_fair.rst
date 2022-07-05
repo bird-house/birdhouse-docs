@@ -8,4 +8,4 @@ FAIR Guiding Principles
   :maxdepth: 2
 
 
-Texed moved to CLINT project
+Text moved to CLINT project
