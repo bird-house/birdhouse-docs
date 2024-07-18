@@ -43,6 +43,9 @@ Client Side Components
 
 * `Phoenix`_: a web-based WPS client with ESGF data access
 * `Birdy`_: a WPS command line client and native library
+* `Weaver`_: provides a
+  `Python client and command line interface <https://pavics-weaver.readthedocs.io/en/latest/cli.html>`_
+  for *OGC API - Processes*, *Common Workflow Language* (CWL), and remote WPS providers.
 
 .. _server_components:
 
@@ -66,7 +69,8 @@ Supporting Services and libraries:
 
 * Twitcher_: an OWS Security Proxy
 * Malleefowl_: access to climate data (ESGF, ...) as a service
-* Eggshell_: provides common functionallity for Birdhouse WPS services
+* Eggshell_: provides common functionality for Birdhouse WPS services
+* Weaver_: provides support for *OGC API - Processes*, *Common Workflow Language* (CWL) and remote WPS Workflows
 
 You can find the source code of all birdhouse components on GitHub_.
 Docker images with birdhouse components are on `Docker Hub`_
