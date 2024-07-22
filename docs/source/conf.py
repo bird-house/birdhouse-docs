@@ -356,6 +356,7 @@ intersphinx_mapping = {'python': ('http://docs.python.org/', None),
                        'pelican': ('https://github.com/bird-house/pelican', None),
                        'birdy': ('https://birdy.readthedocs.io/en/latest/', None),
                        'bootstrap': ('https://birdhousebuilderbootstrap.readthedocs.io/en/latest/', None),
+                       'birdhouse-deploy': ('https://birdhouse-deploy.readthedocs.io/en/latest/', None),
                         }
 
 # linkcheck options
@@ -395,4 +396,5 @@ rst_epilog = """
 .. _esgf-pyclient: https://github.com/ESGF/esgf-pyclient
 .. _Web Processing Service: http://geoprocessing.info/wpsdoc/
 .. _OpenClimateGIS: https://www.earthsystemcog.org/projects/openclimategis/
+.. _birdhouse-deploy: https://birdhouse-deploy.readthedocs.io/en/latest/
 """

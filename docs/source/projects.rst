@@ -24,6 +24,15 @@ PAVICS
 
 .. gitinclude:: https://github.com/Ouranosinc/pavics-sdi.git docs/source/arch/backend.rst
 
+DACCS
+.....
+
+* DACCS_: *Data Analytics for Canadian Climate Services* is a collaboration between the `University of Toronto`_,
+  the Pacific Climate Impacts Consortium (PCIC_), the Computer Research Institute of Montréal (CRIM_), and Ouranos_.
+
+  This project evolved from `PAVICS`_ developments, by extending Birdhouse_ services with multiple new capabilities,
+  and providing an *Infrastructure as Code* (IaC) `birdhouse-deploy`_ definition allowing the customizable selection
+  of server `components <https://birdhouse-deploy.readthedocs.io/en/latest/#birdhouse>`_.
 
 COPERNICUS
 ..........
@@ -43,6 +52,9 @@ OGC-Testbeds
 .. _PAVICS: https://ouranosinc.github.io/pavics-sdi/
 .. _PAVICS-Hydro: https://medium.com/birdhouse-newsletter/web-processing-services-for-hydrological-modeling-7b5eb5c426ed
 .. _PAVICS_architecture: https://ouranosinc.github.io/pavics-sdi/_sources/arch/backend.rst.txt
+.. _PCIC: https://www.pacificclimate.org/
+.. _DACCS: https://daccs.ca/
+.. _University of Toronto: https://www.utoronto.ca/
 .. _Ouranos: https://www.ouranos.ca/
 .. _CRIM: https://www.crim.ca/en
 .. _Climate Data Store: https://cds.climate.copernicus.eu/
