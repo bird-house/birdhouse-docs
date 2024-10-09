@@ -357,6 +357,7 @@ intersphinx_mapping = {'python': ('http://docs.python.org/', None),
                        'birdy': ('https://birdy.readthedocs.io/en/latest/', None),
                        'bootstrap': ('https://birdhousebuilderbootstrap.readthedocs.io/en/latest/', None),
                        'weaver': ('https://pavics-weaver.readthedocs.io/en/latest/', None),
+                       'birdhouse-deploy': ('https://birdhouse-deploy.readthedocs.io/en/latest/', None),
                         }
 
 # linkcheck options
@@ -397,4 +398,5 @@ rst_epilog = """
 .. _Web Processing Service: http://geoprocessing.info/wpsdoc/
 .. _OpenClimateGIS: https://www.earthsystemcog.org/projects/openclimategis/
 .. _Weaver: https://pavics-weaver.readthedocs.io/en/latest/
+.. _birdhouse-deploy: https://birdhouse-deploy.readthedocs.io/en/latest/
 """
