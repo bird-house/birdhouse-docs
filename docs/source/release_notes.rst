@@ -35,6 +35,7 @@ Released WPS services:
 * Rook: `0.9.0 <https://github.com/bird-house/hummingbird/releases/tag/v0.9.0>`_
 
 New WPS services for CLINT:
+
 * Duck: `0.2.0 <https://github.com/climateintelligence/duck/releases/tag/v0.2.0>`_
 * Shearwater: `0.1.0 <https://github.com/climateintelligence/shearwater>`_
 * Albatross: `0.1.0 <https://github.com/climateintelligence/albatross>`_

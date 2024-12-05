@@ -6,10 +6,6 @@ Birdhouse
    :target: http://birdhouse.readthedocs.io/en/latest/?badge=latest
    :alt: Documentation Status
 
-.. image:: https://travis-ci.org/bird-house/birdhouse-docs.svg?branch=master
-   :target: https://travis-ci.org/bird-house/birdhouse-docs
-   :alt: Travis Build
-
 .. image:: https://img.shields.io/github/license/bird-house/birdhouse-docs.svg
    :target: https://github.com/bird-house/birdhouse-docs/blob/master/LICENSE.txt
    :alt: GitHub license
