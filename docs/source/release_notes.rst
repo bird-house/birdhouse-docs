@@ -10,6 +10,44 @@ Release Notes
    :backlinks: none
 
 
+Bonn (December 2024, v1.0.0)
+============================
+
+We had a `workshop in Bonn <https://www.dkrz.de/en/communication/news-archive/clint-coding-sprint>`_ 
+for the `CLINT <https://climateintelligence.eu/>`_ project in October 2024 at the ECMWF.
+
+Highlighted Changes:
+
+* Rook WPS used by the `Copernicus Climate Data Store <https://cds.climate.copernicus.eu>`_ since 2021 for accessing CMIP6, CORDEX and Atlas data.
+* Several new WPS birds for the CLINT project since 2022 for AI services on climate data.
+
+Released Tools:
+
+* Cookiecutter Template for PyWPS `1.0.0 <https://github.com/bird-house/cookiecutter-birdhouse/releases/tag/v1.0.0>`_
+* Birdy WPS Client: `0.8.7 <https://github.com/bird-house/birdy/releases/tag/v0.8.7>`_
+* Twitcher WPS Proxy: `0.10.0 <https://github.com/bird-house/twitcher/releases/tag/v0.10.0>`_
+* Ansible Playbook for PyWPS `0.7.0 <https://github.com/bird-house/ansible-wps-playbook/releases/tag/v0.7.0>`_
+
+Released WPS services:
+
+* Emu: `0.13.0 <https://github.com/bird-house/emu/releases/tag/v0.13.0>`_
+* Finch: `0.12.1 <https://github.com/bird-house/finch/releases/tag/v0.12.1>`_
+* Rook: `0.9.0 <https://github.com/bird-house/hummingbird/releases/tag/v0.9.0>`_
+
+New WPS services for CLINT:
+* Duck: `0.2.0 <https://github.com/climateintelligence/duck/releases/tag/v0.2.0>`_
+* Shearwater: `0.1.0 <https://github.com/climateintelligence/shearwater>`_
+* Albatross: `0.1.0 <https://github.com/climateintelligence/albatross>`_
+* Hawk: `0.1.0 <https://github.com/climateintelligence/hawk>`_
+* Owl: `0.1.0 <https://github.com/climateintelligence/owl>`_
+* Dipper: `0.1.0 <https://github.com/climateintelligence/dipper>`_
+
+
+Maintained Apps with Buildout:
+
+* Phoenix Web App: `0.12.0 <https://github.com/bird-house/pyramid-phoenix/releases/tag/v0.12.0>`_
+
+
 Niamey (October 2020, v0.10.0)
 ==============================
 
