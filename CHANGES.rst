@@ -1,6 +1,21 @@
 Change History
 **************
 
+1.0.0 (2024-12-05)
+==================
+
+Bonn Release
+
+Changes:
+* Updates Release Notes.
+* Fixed RTD build (#61).
+* Added simplified architecture diagramm (#60).
+* Added birdhouse-deploy and DACCS project references (#59).
+* Added weaver references (#58).
+* Added R birds tutorial (#57).
+* Added Guidelines for FAIR principles (#51).
+* Added a developer guide (#48).
+
 0.7.0 (2019-05-21)
 ==================
 
