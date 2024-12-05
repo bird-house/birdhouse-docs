@@ -1,6 +1,5 @@
 name: birdhouse-docs
 channels:
-- defaults
 - conda-forge
 dependencies:
 - pip
@@ -9,5 +8,5 @@ dependencies:
 - nb_conda_kernels
 - pywps
 - jupyter_client
-- pip:
-  - sphinxcontrib-bibtex
+- sphinxcontrib-bibtex
+
