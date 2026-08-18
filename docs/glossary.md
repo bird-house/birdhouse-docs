@@ -172,7 +172,7 @@ glossary:Malleefowl
 
 glossary:Emu
 
-:   *Emu* is a Python package with some test proccess for
+:   *Emu* is a Python package with some test process for
     `Web Processing Services <wps>`{.interpreted-text role="term"}.
     <http://emu.readthedocs.io/en/latest/>
 
@@ -197,7 +197,7 @@ glossary:TDS THREDDS
 
 glossary:cfchecker
 
-:   The NetCDF Climate Forcast Conventions compliance checker.
+:   The NetCDF Climate and Forecast (CF) Metadata Conventions compliance checker.
     <https://pypi.python.org/pypi/cfchecker>
 
 glossary:Taverna

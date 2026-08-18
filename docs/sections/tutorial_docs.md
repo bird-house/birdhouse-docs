@@ -1,4 +1,4 @@
-# How to contirbute to this documentation
+# How to contribute to this documentation
 
 Clone the docs repo from GitHub:
 ```console
@@ -39,5 +39,5 @@ You can convert `rst` files to *markdown* using [pandoc](https://pandoc.org/).
 pandoc tutorial.rst -t markdown -o tutorial.md
 ```
 
-Probably some edits are neccessary after the conversion.
+Edits will likely be necessary after the conversion.
 

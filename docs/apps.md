@@ -1,9 +1,14 @@
 # Climate Services Application Packages
 
-Here is a list of active software packages, applications and utilities to be used to spin off technical climate services information systems. They are complient to approved international standards to ensure technical interoperabillity.
-Birds are services providing processes for specific thematic subjects. For example to access climate data or to run a cyclone tracking tool. The services are using pygeoapi from the GeoPython project. Birdhouse provides tools (cockiecutter-template, birdy client, docker, ...) to make it easier to build, use and deploy new thematic birds.
+Here is a list of active software packages, applications and utilities to be used to spin off technical climate services information systems.
+They are compliant with approved international standards to ensure technical interoperabillity.
+Birds are services providing processes for specific thematic subjects.
+For example to access climate data or to run a cyclone tracking tool.
+The services are using pygeoapi from the GeoPython project.
+Birdhouse provides tools (cockiecutter-template, birdy client, docker, ...) to make it easier to build, use, maintain, and deploy new thematic birds.
 
-The sources of the software packages are centralised in the GitHub Organisation [Bird-House](https://github.com/bird-house). Some applications are stored in different places due to the deveopment history, funding mechanism or intellectual property rights.
+The sources of the software packages are centralised in the GitHub Organisation [Bird-House](https://github.com/bird-house).
+Some applications are stored in different places due to the development history, funding mechanism, or intellectual property rights.
 
 ## **Testsuits**
 
@@ -11,7 +16,7 @@ The sources of the software packages are centralised in the GitHub Organisation 
 | -------- | ------- | ------- | ------- |
 | **nandu** | Nandu is a demo for ogcapi-process using pygeoapi (like the Emu for PyWPS) |  pygeoapi | [![Documentation Status](https://img.shields.io/badge/docs-latest-blue.svg)](https://nandu.readthedocs.io/en/latest/) <br> [![GitHub Nandu](https://img.shields.io/badge/GitHub-nandu-brightgreen.svg)](https://github.com/bird-house/nandu/) |
 | **emu**  |  Demo and testing application for training purpose (like the Nandu for PyGeoAPI) | pyWPS | [![Documentation Status](https://img.shields.io/badge/docs-latest-blue.svg)](https://emu.readthedocs.io/) <br> [![GitHub Emu](https://img.shields.io/badge/GitHub-emu-brightgreen.svg)](https://github.com/bird-house/emu) |
-| **flyingpigon**  | Test-suite for experimenting on processes and data analyitcs|  pyWPS | [![Documentation Status](https://img.shields.io/badge/docs-latest-blue.svg)](https://flyingpigeon.readthedocs.io) <br> [![GitHub Flyingpigeon](https://img.shields.io/badge/GitHub-flyingpigeon-brightgreen.svg)](https://github.com/bird-house/flyingpigeon) |
+| **flyingpigon**  | Test-suite for experimenting on processes and data analytics |  pyWPS | [![Documentation Status](https://img.shields.io/badge/docs-latest-blue.svg)](https://flyingpigeon.readthedocs.io) <br> [![GitHub Flyingpigeon](https://img.shields.io/badge/GitHub-flyingpigeon-brightgreen.svg)](https://github.com/bird-house/flyingpigeon) |
 
 ## **Utilities and Clients**
 
@@ -20,7 +25,7 @@ The sources of the software packages are centralised in the GitHub Organisation 
 | **twitcher** | Security Proxy for WPS, WCS, WMS  | [![Documentation Status](https://img.shields.io/badge/docs-latest-blue.svg)](http://twitcher.readthedocs.io/) <br> [![GitHub twicher](https://img.shields.io/badge/GitHub-twitcher-brightgreen.svg)](https://github.com/bird-house/twitcher/)  |
 | **cookiecutter-birdhouse** | Utility to create an OGC API Processes application package skeleton | [![Documentation Status](https://img.shields.io/badge/docs-latest-blue.svg)](https://cookiecutter-birdhouse.readthedocs.io) <br> [![GitHub twicher](https://img.shields.io/badge/GitHub-twitcher-brightgreen.svg)](https://github.com/bird-house/cookiecutter-birdhouse) |
 | **birdy**  |   Python WPS client to call a serverside deployed application package  | [![Documentation Status](https://img.shields.io/badge/docs-latest-blue.svg)](https://birdy.readthedocs.io) <br> [![GitHub birdy](https://img.shields.io/badge/GitHub-birdy-brightgreen.svg)](https://birdy.readthedocs.io/en/latest/) |
-| **Rooki**  |  The rooki python package is a lightweight wrapper around the birdy client library for WPS | [![Documentation Status](https://img.shields.io/badge/docs-latest-blue.svg)](https://rooki.readthedocs.io/en/latest/) <br> [![GitHub Rooki](https://img.shields.io/badge/GitHub-birdy-brightgreen.svg)](https://github.com/roocs/rooki) |
+| **Rooki**  |  The rooki Python package is a lightweight wrapper around the birdy client library for WPS | [![Documentation Status](https://img.shields.io/badge/docs-latest-blue.svg)](https://rooki.readthedocs.io/en/latest/) <br> [![GitHub Rooki](https://img.shields.io/badge/GitHub-birdy-brightgreen.svg)](https://github.com/roocs/rooki) |
 
 ## **Frontend - Graphical User Interphase**
 
@@ -40,7 +45,7 @@ The sources of the software packages are centralised in the GitHub Organisation 
 | **raven** | Hydrological modeling and analytics | pyWPS | [![Documentation Status](https://img.shields.io/badge/docs-latest-blue.svg)](https://pavics-sdi.readthedocs.io/projects/raven/en/latest/index.html) <br> [![GitHub Weaver](https://img.shields.io/badge/GitHub-raven-brightgreen.svg)](https://github.com/Ouranosinc/raven.git) |
 | **duck** | AI enhanced process to fill in missing values |  pyWPS | [![Documentation Status](https://img.shields.io/badge/docs-latest-blue.svg)](https://clint-duck.readthedocs.io/en/latest/) <br> [![GitHub Weaver](https://img.shields.io/badge/GitHub-weaver-brightgreen.svg)](https://github.com/climateintelligence/duck) |
 | **hawk** | Causal analysis for climate data or, in general, for time-series | pyWPS| [![Documentation Status](https://img.shields.io/badge/docs-latest-blue.svg)](https://clint-hawk.readthedocs.io/en/latest/) <br> [![GitHub Weaver](https://img.shields.io/badge/GitHub-hawk-brightgreen.svg)](https://github.com/climateintelligence/hawk) |
-| **albatross** | Climate resiliance application package for drought assessment |  pyWPS | [![Documentation Status](https://img.shields.io/badge/docs-latest-blue.svg)](https://clint-albatross.readthedocs.io/en/latest/) <br> [![GitHub albatross](https://img.shields.io/badge/GitHub-albatross-brightgreen.svg)](https://github.com/climateintelligence/albatross)|
+| **albatross** | Climate resilience application package for drought assessment |  pyWPS | [![Documentation Status](https://img.shields.io/badge/docs-latest-blue.svg)](https://clint-albatross.readthedocs.io/en/latest/) <br> [![GitHub albatross](https://img.shields.io/badge/GitHub-albatross-brightgreen.svg)](https://github.com/climateintelligence/albatross)|
 | **shearwater** | Perform detection and forecast of tropical-cyclone activities |  pyWPS | [![Documentation Status](https://img.shields.io/badge/docs-latest-blue.svg)](https://shearwater.readthedocs.io/en/latest/) <br> [![GitHub Shearwater](https://img.shields.io/badge/GitHub-shearwater-brightgreen.svg)](https://github.com/climateintelligence/shearwater)|
 | **owl** | Heatwave magnitude index and warm nights | pyWPS | [![Documentation Status](https://img.shields.io/badge/docs-latest-blue.svg)](https://clint-owl.readthedocs.io/en/latest/) <br> [![GitHub Owl](https://img.shields.io/badge/GitHub-owl-brightgreen.svg)](https://github.com/climateintelligence/owl)|
 | **hummingbird** | data compliance checker | pyWPS | [![Documentation Status](https://img.shields.io/badge/docs-latest-blue.svg)](http://birdhouse-hummingbird.readthedocs.io/) <br> [![GitHub Hummingbird](https://img.shields.io/badge/GitHub-hummingbird-brightgreen.svg)](https://github.com/bird-house/hummingbird.git)|

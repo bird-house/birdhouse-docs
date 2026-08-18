@@ -242,7 +242,7 @@ Highlighted Changes:
 -   New birds: *Finch* WPS for Climate Indicators and *Kingfisher* for
     Earth Observation Data Analysis.
 -   *FlyingPigeon* has been reborn as the *Curious Climate Explorer*.
-    Most of its original functionallity has moved to other birds:
+    Most of its original functionality has moved to other birds:
     *BlackSwan*, *Kingfisher* and *Finch*.
 
 Released Birds:
@@ -331,7 +331,7 @@ Highlighted Changes:
     is started by [LSCE](https://a2c2.lsce.ipsl.fr/), Paris. This bird
     is spawned off [Flyingpigeon]().
 -   A new Python library, [Eggshell](), is started to provide common
-    base functionallity to WPS birds like Flyingpigeon and Black Swan.
+    base functionality to WPS birds like Flyingpigeon and Black Swan.
 -   The [Twitcher]() security proxy supports now X509 certificates for
     authentication to WPS services.
 
@@ -393,7 +393,7 @@ Highlighted Changes:
     wizard to chain WPS processes
 -   PyWPS based processing backend with supporting processes of
     Malleefowl
--   WMS service (inculded in Thredds) for visualization of NetCDF files
+-   WMS service (included in Thredds) for visualization of NetCDF files
 -   OGC CSW catalog service for published results and OGC WPS services
 -   ESGF data access with wget and OpenID
 -   Caching of accessed files from ESGF Nodes and Catalog Service
@@ -415,7 +415,7 @@ Highlighted Changes:
 
 -   presentation of birdhouse at EGI, Helsinki
 -   stabilized birdhouse and CSC processes
--   updated documenation and tutorials
+-   updated documentation and tutorials
 
 ## Vienna (April 2014, v0.1.1)
 

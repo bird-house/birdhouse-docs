@@ -3,13 +3,13 @@
 > **Code of Conduct:** Before we start please be aware that contributors to this project are expected to act respectfully toward others in accordance with the [OSGeo Code of Conduct](https://www.osgeo.org/code_of_conduct/)
 
 
-Birdhouse is a comunity driven international initiative with many contributors from all over the world. Here is an unfinished list of projects which had actively contributed to the development. The birdhouse **framework is modular organized** to enable a flexible architecture design depending on the projects needs. Due to the OCG Standard complience, software components can be combined for interoperability. Here are some examples of ongoing or finished projects to show the flexibility and potential of the birdhouse framework.
+Birdhouse is a community driven international initiative with many contributors from all over the world. Here is an unfinished list of projects which had actively contributed to the development. The birdhouse **framework is modular organized** to enable a flexible architecture design depending on the projects needs. Due to the OCG Standard compliance, software components can be combined for interoperability. Here are some examples of ongoing or finished projects to show the flexibility and potential of the birdhouse framework.
 
 In case of questions or trouble shooting, feel welcome to join the [birdhouse chat](https://gitter.im/bird-house/birdhouse) and get into contact with the developers directly.
 
 ## Initiatives examples
 
-This are examples if closed or active initaitives contributing to birdhouse. If you recognise a project not listed here, which should be recognised here, get in contact.
+This are examples if closed or active initiatives contributing to birdhouse. If you recognise a project not listed here, which should be recognised here, get in contact.
 
 | Logo | Project focus and contribution |
 | -------- | ------- |

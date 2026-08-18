@@ -1,16 +1,20 @@
 # How to spin-off a climate services application package
 
-The following sections are describing how to transfer scientific methods into technical services which are deployable in Climate Services Application Packages. Birdhouse offers utilities to set up Climate Services Application Packages complient to international approved standards.
-The climate application packages (=birds) are designed to run in their own environment. This is avoiding dependency conflicts, when multiple birds are installed in a Climate Resilience Information System. The environments are organized with [conda](https://docs.conda.io/en/latest/) repective [mamba](https://github.com/conda-forge/miniforge#mambaforge).
-
+The following sections are describing how to transfer scientific methods into technical services which are deployable in Climate Services Application Packages.
+Birdhouse offers utilities to set up Climate Services Application Packages compliant with international approved standards.
+The climate application packages (`birds`) are designed to run in their own environment.
+This is to prevent dependency conflicts, when multiple birds are installed in a Climate Resilience Information System.
+The environments are organized with [conda](https://docs.conda.io/en/latest/) and [mamba](https://mamba.readthedocs.io/en/latest/), available from [miniforge](https://github.com/conda-forge/miniforge).
 
 ## Set up a birdhouse application based on PyGeoAPI
 
-> Currently an dedicated utility to set up a Climate Services Application Packages based on pygeoapi is under developement. [Nandu](https://nandu.readthedocs.io/en/latest/) is the current existing prototype, it is planned to transfer WPS into OGC-API Processes based applications within the year 2025.
+> Currently an dedicated utility to set up a Climate Services Application Packages based on pygeoapi is under development. [Nandu](https://nandu.readthedocs.io/en/latest/) is the current existing prototype, it is planned to transfer WPS into OGC-API Processes based applications within the year 2025.
 
 ## Set up a birdhouse application package based on WPS
 
-The following sections are describing how to transfer scientific methods into technical services which are deployable in climate resilience information systems. This is necessary when appropriate scientific methods are not already available and accessible as technical services. [Birdhouse](http://bird-house.github.io/) organisation lowers the barriers to set up new climate application package by providing tools enable you to build your own customised [OGC API Processes](https://ogcapi.ogc.org/processes/) application in support of web-based geospatial (climate) data analysis.
+The following sections are describing how to transfer scientific methods into technical services which are deployable in climate resilience information systems.
+This is necessary when appropriate scientific methods are not already available and accessible as technical services.
+[Birdhouse](http://bird-house.github.io/) organisation lowers the barriers to set up new climate application package by providing tools enable you to build your own customised [OGC API Processes](https://ogcapi.ogc.org/processes/) application in support of web-based geospatial (climate) data analysis.
 
 Within the Birdhouse organisation you can find an appropriate utility to set up a skeleton for a new climate application package:
 
@@ -24,7 +28,8 @@ conda install -c conda-forge cookiecutter cruft
 
 ## Example: build the Building Block 'duck'
 
-We show here an example how to build your processing service application, *duck*, using the cookiecutter template. Run the cookiecutter with the birdhouse template:
+We show here an example how to build your processing service application, *duck*, using the cookiecutter template.
+Run the cookiecutter with the birdhouse template:
 
 ```
 cruft create https://github.com/bird-house/cookiecutter-birdhouse.git
@@ -56,7 +61,8 @@ create_author_file [y]: y
 We have created a *duck* app for the *CLINT* project using this template.
 
 ## create the birds environment.
-The new bird is coming with as a fully operational service. The appropriate environment is defined in the ./{birdname}/environment.yml file and can be installed with
+The new bird is coming with as a fully operational service.
+The appropriate environment is defined in the ./{birdname}/environment.yml file and can be installed with:
 
 ```
 mamba env create
@@ -72,10 +78,13 @@ conda activate duck
 ```
 
 ## Installing and running the bird
-Since the climate build blocks are web services, they need to be started to make the service available. They can be installed with running in the root folder and activated environment of the bird:
+Since the climate build blocks are web services, they need to be started to make the service available.
+They can be installed with running in the root folder and activated environment of the bird:
+
 ```
 pip install -e .
 ```
+
 Which is installing the service.
 With `duck start`, the service is up and running.
 
@@ -90,8 +99,10 @@ http://localhost:5000/wps?version=1.0.0&request=DescribeProcess&&service=WPS&ide
 
 Once your new climate application package is created, it needs to be filled with scientific algorithms.
 In contrast to a script that you are running locally in an individual way a service needs to be standardised.
-The following figure is illustrating the principles design of a technical service. Input data needs to be provided by a given address to the appropriate resouces and parameters to modify the execution needs to be provided as well.
-On the other side, the number of output files are defined as well. Here number and format will be fixed.
+The following figure is illustrating the principles design of a technical service.
+Input data needs to be provided by a given address to the appropriate resources and parameters to modify the execution needs to be provided as well.
+On the other side, the number of output files are defined as well.
+Here the number and format will be fixed:
 
 | ![](images/guide_processscheema.png) |
 
@@ -122,7 +133,7 @@ In practice, the functions should be encapsulated in **try** and **except** call
 
 ```python
    # the following two line needs to be in the beginning of the *.py file.
-   # The ._handler will find the appropriate logfile and include timestemps
+   # The ._handler will find the appropriate logfile and include timestamps
    # and module information into the log.
 
    import logging
@@ -130,10 +141,10 @@ In practice, the functions should be encapsulated in **try** and **except** call
 
    # set a status message
    per = 5  # 5 will be 5% in the status line
-   response.update_status('execution started at : {}'.fromat(dt.now()), per)
+   response.update_status('execution started at : {}'.format(dt.now()), per)
 
    try:
-       response.update_status('the process is doing something: {}'.fromat(dt.now()),10)
+       response.update_status('the process is doing something: {}'.format(dt.now()),10)
        result = 42
        LOGGER.info('found the answer of life')
    except Exception as ex:
@@ -141,7 +152,7 @@ In practice, the functions should be encapsulated in **try** and **except** call
        LOGGER.error(msg)
 
   try:
-      response.update_status('the process is doing something else : {}'.fromat(dt.now()), 20)
+      response.update_status('the process is doing something else : {}'.format(dt.now()), 20)
       interesting = True
       LOGGER.info(' Thanks for reading the guidelines ')
       LOGGER.debug(' I need to know some details of the process: {} '.format(ex))
@@ -150,17 +161,18 @@ In practice, the functions should be encapsulated in **try** and **except** call
      LOGGER.exception(msg)
 ```
 
-<!-- In the following sections we are using the [Duck](https://github.com/climateintelligence/duck) software as example to guide you through the different stepps necessay to set up an application package to be deployed in an CRIS and used for **Climate Services**.
+<!-- In the following sections we are using the [Duck](https://github.com/climateintelligence/duck) software as example to guide you through the different stepps necessary to set up an application package to be deployed in an CRIS and used for **Climate Services**.
 
 Here we understand **Application Packages for CRIS** as standalone software in line to the [OGC API standards](https://developer.ogc.org). Several of this climate application packages can be found in the [Birdhouse](http://bird-house.github.io/) organisation which is a collection on OGC Standards based software. These software blocks can be used to build customised Climate Resilience Information System. The building blocks for climate services can be named with birdnames.
 
 The demo web-application has been created by Carsten Ehbrecht and Étienne Plésiat in the framework of the work package 8 of the [CLINT](https://climateintelligence.eu/) H2020 project. Duck provides an AI-enhanced service to infill missing values in climate datasets.
 
 
-If you are familiar with all the upper chapters you are ready to create your own WPS. The WPS in birdhouse are named after birds, so this section is giving you a guidline of how to make your own bird. Birds are sorted thematically, so before setting up a new one, make sure it is not already covered and just missing some processes and be clear in the new thematic you would like to provide.
+If you are familiar with all the upper chapters you are ready to create your own WPS. The WPS in birdhouse are named after birds, so this section provides guidelines on how to make your own bird.
+Birds are sorted thematically, so before setting up a new one, make sure it is not already covered and just missing some processes and be clear in the new thematic you would like to provide.
 
-There is a [Cookiecutter](https://github.com/bird-house/cookiecutter-birdhouse.git) template to create a new bird (PyWPS based application). It is the recommended and fastest way to create your own
-bird.
+There is a [Cookiecutter](https://github.com/bird-house/cookiecutter-birdhouse.git) template to create a new bird (PyWPS based application).
+It is the recommended and fastest way to create your own bird.
 
 
 ### Writing a WPS process
@@ -216,7 +228,7 @@ influence the running code and the information writing to the logfile:
 
 ``` {.python linenos=""}
 # the following two line needs to be in the beginning of the *.py file.
-# The ._handler will find the appropriate logfile and include timestemps
+# The ._handler will find the appropriate logfile and include timestamps
 # and module information into the log.
 
 import logging
@@ -224,10 +236,10 @@ LOGGER = logging.getLogger("PYWPS")
 
 # set a status message
 per = 5  # 5 will be 5% in the status line
-response.update_status('execution started at : {}'.fromat(dt.now()), per)
+response.update_status('execution started at : {}'.format(dt.now()), per)
 
 try:
-    response.update_status('the process is doing something: {}'.fromat(dt.now()),10)
+    response.update_status('the process is doing something: {}'.format(dt.now()),10)
     result = 42
     LOGGER.info('found the answer of life')
 except Exception as ex:
@@ -235,7 +247,7 @@ except Exception as ex:
     LOGGER.error(msg)
 
 try:
-    response.update_status('the process is doing something else : {}'.fromat(dt.now()), 20)
+    response.update_status('the process is doing something else : {}'.format(dt.now()), 20)
     interesting = True
     LOGGER.info(' Thanks for reading the guidelines ')
     LOGGER.debug(' I need to know some details of the process: {} '.format(interesting)

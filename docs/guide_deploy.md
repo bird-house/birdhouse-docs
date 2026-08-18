@@ -1,14 +1,19 @@
 # **Deploy an ecosystem of Climate Services Information Systems**
 
-The **birdhouse framework** is modular organized to enable a flexible architecture design depending on the projects needs. To enable FAIR Climate Services the applications are cpmoient to international approved standards, mainly following OGC Standards. Therefore software components developed outside of the birdhouse framework can be combined in the architectures enshuring interoperability.
+The **birdhouse framework** is modular organized to enable a flexible architecture design depending on the projects needs.
+To enable FAIR Climate Services the applications are compliant with international approved standards, mainly following OGC Standards.
+Therefore software components developed outside of the birdhouse framework can be combined in the architectures enshuring interoperability.
 
 ![](images/birdhouse-framework.png)
 
 ## Delopy a single service: Inpaint missing values
 
-The following is a demo web-application developed within the the Climate Intellignce [CLINT project](https://climateintelligence.eu) providing a process to inpaint missing values in datasets with AI-enhanced Climate Science. It is based on the [Phoenix](https://pyramid-phoenix.readthedocs.io/en/latest/) web-application from the [Birdhouse](http://bird-house.github.io/) collection and makes use of the [PyWPS](https://pywps.org/) Python package, which is an implementation of the [Web Processing Service](https://www.ogc.org/standards/wps) standard from the [Open Geospatial Consortium](https://www.ogc.org/). The implemented scientific methode is available as application **Climate Reconstraction AI** [CRAI](https://github.com/FREVA-CLINT/climatereconstructionAI/tree/clint), a state-of-the-art deep learning based inpainting technology to infill missing values in climate datasets[^1].
+The following is a demo web-application developed within the the Climate Intellignce [CLINT project](https://climateintelligence.eu) providing a process to inpaint missing values in datasets with AI-enhanced Climate Science.
+It is based on the [Phoenix](https://pyramid-phoenix.readthedocs.io/en/latest/) web-application from the [Birdhouse](http://bird-house.github.io/) collection and makes use of the [PyWPS](https://pywps.org/) Python package, which is an implementation of the [Web Processing Service](https://www.ogc.org/standards/wps) standard from the [Open Geospatial Consortium](https://www.ogc.org/).
+The implemented scientific method is available as application **Climate Reconstraction AI** [CRAI](https://github.com/FREVA-CLINT/climatereconstructionAI/tree/clint), a state-of-the-art deep learning based inpainting technology to infill missing values in climate datasets[^1].
 
-The current demo gives the possibility to infill near-surface air temperature anomalies in the [HadCRUT4](https://www.metoffice.gov.uk/hadobs/hadcrut4/) and [HadCRUT5](https://www.metoffice.gov.uk/hadobs/hadcrut5/) datasets. The input and output netCDF files are handled through an intuitive user interface.
+The current demo gives the possibility to infill near-surface air temperature anomalies in the [HadCRUT4](https://www.metoffice.gov.uk/hadobs/hadcrut4/) and [HadCRUT5](https://www.metoffice.gov.uk/hadobs/hadcrut5/) datasets.
+The input and output netCDF files are handled through an intuitive user interface.
 
 [^1]: [Kadow, C. *et al.*, *Nature Geoscience* 13, 408–413 (2020)](http://dx.doi.org/10.1038/s41561-020-0582-5)
 
@@ -75,7 +80,10 @@ $ git clone https://github.com/bird-house/malleefowl.git
 
 ### Run Installation
 
-As described above for the inpainting missing value, you can run the installation with default settings. It will create a conda environment and deploy all required software dependencies there. Read the *changing the default configuration* if you want to customize the configuration. In **all** of the tree folders (finch, duck and pyramid-phoenix) run:
+As described above for the inpainting missing value, you can run the installation with default settings.
+It will create a conda environment and deploy all required software dependencies there.
+Read the *changing the default configuration* if you want to customize the configuration.
+In **all** of the tree folders (finch, duck and pyramid-phoenix) run:
 
     $ make install
 
@@ -104,7 +112,9 @@ Now you can log in (upper right corner) with your Phoenix password created previ
 
 > Please read the [Phoenix documentation](https://pyramid-phoenix.readthedocs.io/en/latest/user_guide.html#)
 
-Your first administration step is to register *finch* as a service. For that, log in with your phoenix password. In the upper right corner is a tool symbol to open the *settings*. Click on *Services* and the *Register a Service*.
+Your first administration step is to register *finch* as a service. For that, log in with your phoenix password.
+In the upper right corner is a tool symbol to open the *settings*.
+Click on *Services* and the *Register a Service*.
 
 Finch is per default on port 5000.
 
@@ -113,14 +123,16 @@ The appropriate url is:
     http://localhost:5000/wps
 
 Provide service title and name as you like: **Service Title: Finch** Service Name: finch.
-Check *Service Type*: **Web Processing Service** (default) and register. Optionally, you can check **Public access?**, to allow unregistered users to launch jobs. (**NOT recommended**)
+Check *Service Type*: **Web Processing Service** (default) and register.
+Optionally, you can check **Public access?**, to allow unregistered users to launch jobs. (**NOT recommended**).
 
 ### Launching a Job
 Now your birdhouse ecosysem is set up. The also installed malleefowl is
 already running in the background and will do a lot of work silently.
 There is **no need to register malleefowl** manually!
 
-Launching a job can be performed as a process (Process menu) or with the wizard. To get familliar with the processes provided by each of the birds, read the approriate documentation for each of the services listed in the **Application List**
+Launching a job can be performed as either a process (Process menu) or with the wizard.
+To get familiar with the processes provided by each of the birds, read the appropriate documentation for each of the services listed in the **Application List**.
 
 ### Changing the default configuration
 
@@ -232,7 +244,7 @@ You will find more information about these options in the
 `Makefile documentation <bootstrap:makefile>`{.interpreted-text
 role="ref"}.
 
-Read the documention of each birdhouse component for the details of the
+Read the documentation of each birdhouse component for the details of the
 installation and how to configure the components. The
 `birdhouse bootstrap documentation <bootstrap:introduction>`{.interpreted-text
 role="ref"} gives some `examples <bootstrap:examples>`{.interpreted-text
