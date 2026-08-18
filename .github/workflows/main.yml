@@ -1,9 +1,9 @@
-name: build ⚙️
+name: Build Docs ⚙️
 
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
 
 concurrency:
@@ -15,32 +15,49 @@ permissions:
   contents: read
 
 jobs:
-
+  prek:
+    name: Lint (prek)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      
+      - name: Linting Checks
+        uses: j178/prek-action@5337cb91e0fa35a7ff31b9ca345126d8bbbcdf16 # v2.0.6
+        with:
+          extra-args: '--all-files'
+  
   docs:
     name: Docs (Python${{ matrix.python-version }})
+    needs: prek
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version:
-          - "3.10"
+        python-version: [ "3.10" ]
     defaults:
       run:
         shell: bash -l {0}
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
       - name: Install packages
         run: |
           sudo apt-get -y install pandoc graphviz
+      
       - name: Setup Conda (Micromamba) with Python${{ matrix.python-version }}
-        uses: mamba-org/setup-micromamba@f8b8a1e23a26f60a44c853292711bacfd3eac822 # v1.9.0
+        uses: mamba-org/setup-micromamba@f457c30a868e4760d3a6fcea5f25dc655b8edf39 # v3.2.1
         with:
           cache-downloads: true
           cache-environment: true
           environment-file: environment.yml
           create-args: >-
             python=${{ matrix.python-version }}
-          micromamba-version: 1.5.10-0 # Pin micromamba version because of following issue: https://github.com/mamba-org/setup-micromamba/issues/225
+      
       - name: Build Docs 📚
         run: |
           mkdocs build
