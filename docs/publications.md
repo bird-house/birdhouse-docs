@@ -8,10 +8,10 @@ Side event at UNCCD COP16 in Saudi Arabia 2024
 
 Poster at drought conference: Data Pipeline form raw data to Climate Information Drought management
 
-CLINT CODE Sprint 
+CLINT CODE Sprint
 
 OGC concept note: Summary Report Innovation Days Europe 2024 Concept Note on FAIR Climate Services: connecting Data and Technology with Policymaking
- 
+
 Engineering Report for OGC Climate and Disaster Resilience Pilot 2024 stage 1
 
 **2023**
@@ -22,9 +22,9 @@ IGARSS
 
 March: OGC Member Meeting (online)
 14. June: OGC Member Meeting Madrid
-August: FOSS4G: https://2022.foss4g.org/index.php 
-17-19 October:  Climate Observation Conference 
-31 October- 4 November Geoweek2022 of GEOS Ghana 
+August: FOSS4G: https://2022.foss4g.org/index.php
+17-19 October:  Climate Observation Conference
+31 October- 4 November Geoweek2022 of GEOS Ghana
 6-7 Dec: OGC Innovation Days https://www.ogc.org/node/4813
 The OGC Member Meeting Agendas can be found here: https://portal.ogc.org/meet/
 DEPLOYMENT OF AI-ENHANCED SERVICES IN CLIMATE RESILIENCE INFORMATION SYSTEMS [@Hempelmann2022]
@@ -35,7 +35,7 @@ DEPLOYMENT OF AI-ENHANCED SERVICES IN CLIMATE RESILIENCE INFORMATION SYSTEMS [@H
 March2021: OGC Member Meeting (online)
 June2021: OGC Member Meeting (online)
 July2021: UNFCCC Climate Week Asia-Pacific (online)
-07. Sept: EMS 2021 (Online): [Program Link](https://meetingorganizer.copernicus.org/EMS2021/EMS2021-488.html) 
+07. Sept: EMS 2021 (Online): [Program Link](https://meetingorganizer.copernicus.org/EMS2021/EMS2021-488.html)
 28. Sept2021: UNFCCC Climate Week Africa (online) [Program Link](https://unfccc.int/ACW2021)
 09. Nov2021: UNFCCC COP26 (online) [Program Link](https://2nsbq1gn1rl23zol93eyrccj-wpengine.netdna-ssl.com/wp-content/uploads/2021/07/COP26-Presidency-Programme.pdf)
 09. Dec2021: OGC Member Meeting (online)

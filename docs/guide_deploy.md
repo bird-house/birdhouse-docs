@@ -4,7 +4,7 @@ The **birdhouse framework** is modular organized to enable a flexible architectu
 
 ![](images/birdhouse-framework.png)
 
-## Delopy a single service: Inpaint missing values 
+## Delopy a single service: Inpaint missing values
 
 The following is a demo web-application developed within the the Climate Intellignce [CLINT project](https://climateintelligence.eu) providing a process to inpaint missing values in datasets with AI-enhanced Climate Science. It is based on the [Phoenix](https://pyramid-phoenix.readthedocs.io/en/latest/) web-application from the [Birdhouse](http://bird-house.github.io/) collection and makes use of the [PyWPS](https://pywps.org/) Python package, which is an implementation of the [Web Processing Service](https://www.ogc.org/standards/wps) standard from the [Open Geospatial Consortium](https://www.ogc.org/). The implemented scientific methode is available as application **Climate Reconstraction AI** [CRAI](https://github.com/FREVA-CLINT/climatereconstructionAI/tree/clint), a state-of-the-art deep learning based inpainting technology to infill missing values in climate datasets[^1].
 
@@ -56,7 +56,7 @@ duck stop
 
 If you are already familiar with installing single standalone service, then you are ready to set up an entire ecosystem of services and adding an online graphical user interphases to offer a portal for the user.
 
-> Extended explanation of deployment options including entire scripts are available in the [birdhouse-deploy repository](https://birdhouse-deploy.readthedocs.io/en/latest/) 
+> Extended explanation of deployment options including entire scripts are available in the [birdhouse-deploy repository](https://birdhouse-deploy.readthedocs.io/en/latest/)
 
 ### Prepare Installation
 
@@ -112,7 +112,7 @@ The appropriate url is:
 
     http://localhost:5000/wps
 
-Provide service title and name as you like: **Service Title: Finch** Service Name: finch. 
+Provide service title and name as you like: **Service Title: Finch** Service Name: finch.
 Check *Service Type*: **Web Processing Service** (default) and register. Optionally, you can check **Public access?**, to allow unregistered users to launch jobs. (**NOT recommended**)
 
 ### Launching a Job

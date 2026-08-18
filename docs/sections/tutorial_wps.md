@@ -219,7 +219,7 @@ uDig Desktop GIS with wps plugins:
 -   <https://udig.github.io/docs/user/reference/Using%20the%20WPS%20plugin.html>
 -   <https://github.com/52North/uDig-WPS-plugin> (outdated)
 
-<!-- 
+<!--
 ### Hello World WPS (emu):
 
 -   `Emu Example with Docker <emu:tutorial>`{.interpreted-text role="ref"}

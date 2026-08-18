@@ -1,11 +1,11 @@
 # Climate Services Application Packages
 
-Here is a list of active software packages, applications and utilities to be used to spin off technical climate services information systems. They are complient to approved international standards to ensure technical interoperabillity. 
+Here is a list of active software packages, applications and utilities to be used to spin off technical climate services information systems. They are complient to approved international standards to ensure technical interoperabillity.
 Birds are services providing processes for specific thematic subjects. For example to access climate data or to run a cyclone tracking tool. The services are using pygeoapi from the GeoPython project. Birdhouse provides tools (cockiecutter-template, birdy client, docker, ...) to make it easier to build, use and deploy new thematic birds.
 
-The sources of the software packages are centralised in the GitHub Organisation [Bird-House](https://github.com/bird-house). Some applications are stored in different places due to the deveopment history, funding mechanism or intellectual property rights. 
+The sources of the software packages are centralised in the GitHub Organisation [Bird-House](https://github.com/bird-house). Some applications are stored in different places due to the deveopment history, funding mechanism or intellectual property rights.
 
-## **Testsuits** 
+## **Testsuits**
 
 | Name and Documentation  | Usage | Standard | Source |
 | -------- | ------- | ------- | ------- |
@@ -17,10 +17,10 @@ The sources of the software packages are centralised in the GitHub Organisation 
 
 | Name and Documentation  | Usage | Source |
 | -------- | ------- | ------- |
-| **twitcher** | Security Proxy for WPS, WCS, WMS  | [![Documentation Status](https://img.shields.io/badge/docs-latest-blue.svg)](http://twitcher.readthedocs.io/) <br> [![GitHub twicher](https://img.shields.io/badge/GitHub-twitcher-brightgreen.svg)](https://github.com/bird-house/twitcher/)  | 
+| **twitcher** | Security Proxy for WPS, WCS, WMS  | [![Documentation Status](https://img.shields.io/badge/docs-latest-blue.svg)](http://twitcher.readthedocs.io/) <br> [![GitHub twicher](https://img.shields.io/badge/GitHub-twitcher-brightgreen.svg)](https://github.com/bird-house/twitcher/)  |
 | **cookiecutter-birdhouse** | Utility to create an OGC API Processes application package skeleton | [![Documentation Status](https://img.shields.io/badge/docs-latest-blue.svg)](https://cookiecutter-birdhouse.readthedocs.io) <br> [![GitHub twicher](https://img.shields.io/badge/GitHub-twitcher-brightgreen.svg)](https://github.com/bird-house/cookiecutter-birdhouse) |
 | **birdy**  |   Python WPS client to call a serverside deployed application package  | [![Documentation Status](https://img.shields.io/badge/docs-latest-blue.svg)](https://birdy.readthedocs.io) <br> [![GitHub birdy](https://img.shields.io/badge/GitHub-birdy-brightgreen.svg)](https://birdy.readthedocs.io/en/latest/) |
-| **Rooki**  |  The rooki python package is a lightweight wrapper around the birdy client library for WPS | [![Documentation Status](https://img.shields.io/badge/docs-latest-blue.svg)](https://rooki.readthedocs.io/en/latest/) <br> [![GitHub Rooki](https://img.shields.io/badge/GitHub-birdy-brightgreen.svg)](https://github.com/roocs/rooki) | 
+| **Rooki**  |  The rooki python package is a lightweight wrapper around the birdy client library for WPS | [![Documentation Status](https://img.shields.io/badge/docs-latest-blue.svg)](https://rooki.readthedocs.io/en/latest/) <br> [![GitHub Rooki](https://img.shields.io/badge/GitHub-birdy-brightgreen.svg)](https://github.com/roocs/rooki) |
 
 ## **Frontend - Graphical User Interphase**
 
@@ -31,9 +31,9 @@ The sources of the software packages are centralised in the GitHub Organisation 
 
 ## **Climate Services Application Packages**
 
-| Name  | Usage | Standard | Source | 
+| Name  | Usage | Standard | Source |
 | -------- | ------- | ------- | ------- |
-| **magpie** | Magpie is service for AuthN/AuthZ accessible via a REST API implemented with the Pyramid web framework | REST API  | [![Documentation Status](https://img.shields.io/badge/docs-latest-blue.svg)](https://pavics-magpie.readthedocs.io/en/latest/) <br> [![GitHub Magpie](https://img.shields.io/badge/GitHub-magpie-brightgreen.svg)](https://github.com/Ouranosinc/Magpie) | 
+| **magpie** | Magpie is service for AuthN/AuthZ accessible via a REST API implemented with the Pyramid web framework | REST API  | [![Documentation Status](https://img.shields.io/badge/docs-latest-blue.svg)](https://pavics-magpie.readthedocs.io/en/latest/) <br> [![GitHub Magpie](https://img.shields.io/badge/GitHub-magpie-brightgreen.svg)](https://github.com/Ouranosinc/Magpie) |
 | **weaver** | Execution Management Service that allows the execution of workflows chaining various applications and Web Processing Services inputs and outputs  |OGC-API-Processes | [![Documentation Status](https://img.shields.io/badge/docs-latest-blue.svg)](https://pavics-weaver.readthedocs.io/en/latest/) <br> [![GitHub Weaver](https://img.shields.io/badge/GitHub-weaver-brightgreen.svg)](https://github.com/crim-ca/weaver) |
 | **finch** | application package for processing services to calculate climate indices |  pyWPS | [![Documentation Status](https://img.shields.io/badge/docs-latest-blue.svg)](https://pavics-sdi.readthedocs.io/projects/finch) <br> [![GitHub Finch](https://img.shields.io/badge/GitHub-weaver-brightgreen.svg)](https://github.com/bird-house/finch) |
 | **rooks**| Remote operations on climate simulations |  pyWPS | [![Documentation Status](https://img.shields.io/badge/docs-latest-blue.svg)](https://rooki.readthedocs.io/en/latest/) <br> [![GitHub Weaver](https://img.shields.io/badge/GitHub-rooki-brightgreen.svg)](https://roocs.github.io/) |

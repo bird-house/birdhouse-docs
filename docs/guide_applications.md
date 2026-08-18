@@ -1,14 +1,14 @@
 # How to spin-off a climate services application package
 
-The following sections are describing how to transfer scientific methods into technical services which are deployable in Climate Services Application Packages. Birdhouse offers utilities to set up Climate Services Application Packages complient to international approved standards. 
+The following sections are describing how to transfer scientific methods into technical services which are deployable in Climate Services Application Packages. Birdhouse offers utilities to set up Climate Services Application Packages complient to international approved standards.
 The climate application packages (=birds) are designed to run in their own environment. This is avoiding dependency conflicts, when multiple birds are installed in a Climate Resilience Information System. The environments are organized with [conda](https://docs.conda.io/en/latest/) repective [mamba](https://github.com/conda-forge/miniforge#mambaforge).
 
 
-## Set up a birdhouse application based on PyGeoAPI 
+## Set up a birdhouse application based on PyGeoAPI
 
-> Currently an dedicated utility to set up a Climate Services Application Packages based on pygeoapi is under developement. [Nandu](https://nandu.readthedocs.io/en/latest/) is the current existing prototype, it is planned to transfer WPS into OGC-API Processes based applications within the year 2025. 
+> Currently an dedicated utility to set up a Climate Services Application Packages based on pygeoapi is under developement. [Nandu](https://nandu.readthedocs.io/en/latest/) is the current existing prototype, it is planned to transfer WPS into OGC-API Processes based applications within the year 2025.
 
-## Set up a birdhouse application package based on WPS 
+## Set up a birdhouse application package based on WPS
 
 The following sections are describing how to transfer scientific methods into technical services which are deployable in climate resilience information systems. This is necessary when appropriate scientific methods are not already available and accessible as technical services. [Birdhouse](http://bird-house.github.io/) organisation lowers the barriers to set up new climate application package by providing tools enable you to build your own customised [OGC API Processes](https://ogcapi.ogc.org/processes/) application in support of web-based geospatial (climate) data analysis.
 
@@ -154,7 +154,7 @@ In practice, the functions should be encapsulated in **try** and **except** call
 
 Here we understand **Application Packages for CRIS** as standalone software in line to the [OGC API standards](https://developer.ogc.org). Several of this climate application packages can be found in the [Birdhouse](http://bird-house.github.io/) organisation which is a collection on OGC Standards based software. These software blocks can be used to build customised Climate Resilience Information System. The building blocks for climate services can be named with birdnames.
 
-The demo web-application has been created by Carsten Ehbrecht and Étienne Plésiat in the framework of the work package 8 of the [CLINT](https://climateintelligence.eu/) H2020 project. Duck provides an AI-enhanced service to infill missing values in climate datasets. 
+The demo web-application has been created by Carsten Ehbrecht and Étienne Plésiat in the framework of the work package 8 of the [CLINT](https://climateintelligence.eu/) H2020 project. Duck provides an AI-enhanced service to infill missing values in climate datasets.
 
 
 If you are familiar with all the upper chapters you are ready to create your own WPS. The WPS in birdhouse are named after birds, so this section is giving you a guidline of how to make your own bird. Birds are sorted thematically, so before setting up a new one, make sure it is not already covered and just missing some processes and be clear in the new thematic you would like to provide.
@@ -255,4 +255,4 @@ python pytest to check the functionality of functions and processes. They are st
 * notebook tests:
 Code examples of the documentation to demonstrate the usage of WPS services. The examples are written in jupyter notebooks and stored in the documentation folder `{bird WPS}/docs/source/notebooks/`
 ```
---> 
+-->

@@ -10,7 +10,7 @@ nav:
   - Tutorials: tutorials.md
   - Release Notes: release_notes.md
   - Further Reading: publications.md
-  - Glossary: glossary.md 
+  - Glossary: glossary.md
   - References: references.md
 theme:
   name: material

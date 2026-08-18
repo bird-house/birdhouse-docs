@@ -11,5 +11,5 @@ dependencies:
 - mkdocs-material
 # plugins
 - mkdocs-bibtex
-- pip: 
+- pip:
   - mkdocs-ezglossary-plugin

@@ -23,12 +23,12 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
-      
+
       - name: Linting Checks
         uses: j178/prek-action@5337cb91e0fa35a7ff31b9ca345126d8bbbcdf16 # v2.0.6
         with:
           extra-args: '--all-files'
-  
+
   docs:
     name: Docs (Python${{ matrix.python-version }})
     needs: prek
@@ -48,7 +48,7 @@ jobs:
       - name: Install packages
         run: |
           sudo apt-get -y install pandoc graphviz
-      
+
       - name: Setup Conda (Micromamba) with Python${{ matrix.python-version }}
         uses: mamba-org/setup-micromamba@f457c30a868e4760d3a6fcea5f25dc655b8edf39 # v3.2.1
         with:
@@ -57,7 +57,7 @@ jobs:
           environment-file: environment.yml
           create-args: >-
             python=${{ matrix.python-version }}
-      
+
       - name: Build Docs 📚
         run: |
           mkdocs build

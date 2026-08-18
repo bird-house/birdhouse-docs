@@ -10,7 +10,7 @@ Go to the Phoenix app:
 https://clint.dkrz.de
 
 * Choose the *Duck* processing service
-![](images/phoenix-duck-wps.png) 
+![](images/phoenix-duck-wps.png)
 
 * Use the *ClintAI* process
 ![](images/phoenix-duck-processes.png)
