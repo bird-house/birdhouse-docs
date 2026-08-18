@@ -1,4 +1,4 @@
-name: birdhouse2-docs
+name: birdhouse-docs
 channels:
 - conda-forge
 dependencies:

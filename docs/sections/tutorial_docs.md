@@ -2,15 +2,15 @@
 
 Clone the docs repo from GitHub:
 ```console
-git clone https://github.com/bird-house/birdhouse2-docs.git
+git clone https://github.com/bird-house/birdhouse-docs.git
 
-cd birdhouse2-docs
+cd birdhouse-docs
 ```
 
 Create conda environment:
 ```console
 conda env create
-conda activate birdhouse2-docs
+conda activate birdhouse-docs
 ```
 
 Build the docs:
