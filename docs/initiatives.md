@@ -19,7 +19,6 @@ This are examples if closed or active initiatives contributing to birdhouse. If 
 | ![](images/logos/pavics_v.svg) | [PAVICS documentation](https://pavics-sdi.readthedocs.io/en/latest/): Platform for climate analysis and visualization [PAVICS-Hydro](https://medium.com/birdhouse-newsletter/web-processing-services-for-hydrological-modeling-7b5eb5c426ed) This work funded by CANARIE is based on the birdhouse architecture and the Raven hydrological framework  [PAVICS deployment](https://birdhouse-deploy.readthedocs.io/en/latest/#birdhouse) [Production PAVICS nodes federation](https://marbleclimate.com/)  |
 | EUCLEIA | The synergy present in the EUropean CLimate and weather Events: Interpretation and Attribution (**EUCLEIA**) facilitated new scientific developments that provides the foundation of an operational attribution service. The consortium drew on the specialist expertise of the project partners who contributed building blocks that could be integrated into a reliable, well-tested, fit-for-purpose attribution service. <br> [further reading: EUCLEIA Homepage](https://eucleia.eu) |
 | C3Grid | The Collaborative Climate Community Data and Processing Grid (C3Grid). Early beginning of interoperable Climate Services infrastructures |
-| -------- | ------- |
 
 ### OGC-Testbeds and Pilots
 
