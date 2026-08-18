@@ -5,6 +5,8 @@ dependencies:
 - pip
 - python>=3.10,<3.13
 - pandoc
+# dev
+- prek >=0.4.0
 # docs
 - mkdocs-material
 # plugins
