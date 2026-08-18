@@ -1,12 +1,11 @@
 # Release Notes
 
-<!--
 ## Leipzig (March 2025, v1.1.0)
 Submission of the CLINT project deliverable on AI based Climate Services
 
 Highlighted Changes:
--   Enhanced Documentation and Tutorials -->
 
+-   Enhanced Documentation and Tutorials 
 
 ## Bonn (December 2024, v1.0.0)
 

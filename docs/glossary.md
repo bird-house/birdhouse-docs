@@ -2,7 +2,7 @@
 <!-- https://avillar.github.io/ogc-glossary-js/ -->
 
 
-An glossary compiled also be found in the IPCC, 2021: Annex VII: Glossary. [IPCC_2023]
+An glossary compiled also be found in the IPCC, 2021: Annex VII: Glossary. [IPCC_2021]
 
 
 glossary:Open Geospatial Consortium (OGC)

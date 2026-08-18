@@ -45,10 +45,6 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Install packages
-        run: |
-          sudo apt-get -y install pandoc graphviz
-
       - name: Setup Conda (Micromamba) with Python${{ matrix.python-version }}
         uses: mamba-org/setup-micromamba@f457c30a868e4760d3a6fcea5f25dc655b8edf39 # v3.2.1
         with:

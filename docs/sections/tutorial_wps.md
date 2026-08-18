@@ -220,7 +220,7 @@ uDig Desktop GIS with wps plugins:
 <!--
 ### Hello World WPS (emu):
 
--   `Emu Example with Docker <emu:tutorial>`{.interpreted-text role="ref"}
+-   `Emu Example with Docker: URL HERE
 
 ### Create a conda package
 
