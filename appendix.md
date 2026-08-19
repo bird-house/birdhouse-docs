@@ -13,7 +13,7 @@ WMS clients:
 
 -   OpenLayers - <http://openlayers.org/>
 
--   
+-
 
     Leaflet - <http://leafletjs.com/>
 

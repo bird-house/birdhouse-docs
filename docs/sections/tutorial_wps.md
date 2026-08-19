@@ -29,9 +29,8 @@ web-service. To get this web-service we can use WPS. The function parts
 
 ## WPS definition of *\`Word Counter\`*
 
-To add a new proccess you need to define the input and output
-parameters. For the [Word Counter]{.title-ref} process this looks like
-the following.
+To add a new process you need to define the input and output parameters.
+For the [Word Counter]{.title-ref} process this looks like the following.
 
 ![image](../images/WPS/WpsInOut.png)
 
@@ -103,7 +102,7 @@ pairs:
 
         http://localhost:8094/wps?&request=DescribeProcess&service=WPS&version=1.0.0&identifier=wordcount
 
--   [Exceute]{.title-ref} request:
+-   [Execute]{.title-ref} request:
 
         http://localhost:8094/wps?request=Execute&service=WPS&version=1.0.0&identifier=wordcount
                                 &DataInputs=text=http://birdhouse.readthedocs.org/en/latest/index.html
@@ -127,7 +126,7 @@ There are also some [IPython notebooks](http://nbviewer.jupyter.org/github/bird-
 
 Now, we are using [Birdy]() wps command line client to access the [wordcount]{.title-ref} process.
 
-Which proccess are available ([GetCapabilities]{.title-ref}):
+Which processes are available ([GetCapabilities]{.title-ref}):
 
     $ birdy -h
     usage: birdy [-h] <command> [<args>]
@@ -154,8 +153,7 @@ What input and output parameters does [wordcount]{.title-ref} have ([DescribePro
                           Output: output=Word count result, mime
                           types=text/plain (default: all outputs)
 
-Run [wordcount]{.title-ref} with a text document
-([Execute]{.title-ref}):
+Run [wordcount]{.title-ref} with a text document ([Execute]{.title-ref}):
 
     $ birdy wordcount --text http://birdhouse.readthedocs.org/en/latest/index.html
     Execution status: ProcessAccepted
@@ -219,10 +217,10 @@ uDig Desktop GIS with wps plugins:
 -   <https://udig.github.io/docs/user/reference/Using%20the%20WPS%20plugin.html>
 -   <https://github.com/52North/uDig-WPS-plugin> (outdated)
 
-<!-- 
+<!--
 ### Hello World WPS (emu):
 
--   `Emu Example with Docker <emu:tutorial>`{.interpreted-text role="ref"}
+-   `Emu Example with Docker: URL HERE
 
 ### Create a conda package
 

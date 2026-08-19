@@ -20,7 +20,7 @@ simply with a soft link to avoid data transport and disc space usage.
 
 The locations are defined as follows:
 
--   **Resources:** Any kind of accessable data such as ESGF, thredd
+-   **Resources:** Any kind of accessible data such as ESGF, thredd
     server or files stored on the server-side disc system.
 -   **Cache:** `~/birdhouse/var/lib/pywps/cache/` The cache is for
     external data which are not located on the server side. The files of
@@ -105,7 +105,7 @@ temporary files, it is necessary to declare them as output files.
 Furthermore, during execution, there are steps which are necessary to be
 successfully performed and a result is called back. If this particular
 step fails, the whole process should exit with an appropriate error
-message, while in other cases it is not relevent for producing the final
+message, while in other cases it is not relevant for producing the final
 result. The following image shows a theoretical chain of functions:
 
 ![image](_images/module_chain.png)
@@ -171,7 +171,7 @@ The log file then looks like:
     PyWPS [2016-09-14 11:49:13,993] INFO: Start ocgis module call function
     PyWPS [2016-09-14 11:49:13,994] INFO: Execute ocgis module call function
     PyWPS [2016-09-14 11:49:14,029] INFO: OcgOperations set
-    PyWPS [2016-09-14 11:49:14,349] INFO: tas as variable dedected
+    PyWPS [2016-09-14 11:49:14,349] INFO: tas as variable detected
     PyWPS [2016-09-14 11:49:14,349] INFO: data_mb  = 0.0417938232422 ; memory_limit = 1660.33984375
     PyWPS [2016-09-14 11:49:14,349] INFO: ocgis module call as ops.execute()
     PyWPS [2016-09-14 11:49:16,648] INFO: Succeeded with ocgis module call function

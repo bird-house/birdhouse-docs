@@ -1,0 +1,3 @@
+[codespell]
+skip = site,images/birdhouse-ecosphere.svg,docs/images,references.bib
+ignore-words-list = inout

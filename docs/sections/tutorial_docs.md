@@ -1,16 +1,16 @@
-# How to contirbute to this documentation
+# How to contribute to this documentation
 
 Clone the docs repo from GitHub:
 ```console
-git clone https://github.com/bird-house/birdhouse2-docs.git
+git clone https://github.com/bird-house/birdhouse-docs.git
 
-cd birdhouse2-docs
+cd birdhouse-docs
 ```
 
 Create conda environment:
 ```console
 conda env create
-conda activate birdhouse2-docs
+conda activate birdhouse-docs
 ```
 
 Build the docs:
@@ -39,5 +39,5 @@ You can convert `rst` files to *markdown* using [pandoc](https://pandoc.org/).
 pandoc tutorial.rst -t markdown -o tutorial.md
 ```
 
-Probably some edits are neccessary after the conversion.
+Edits will likely be necessary after the conversion.
 
