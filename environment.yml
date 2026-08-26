@@ -2,7 +2,6 @@ name: birdhouse-docs
 channels:
 - conda-forge
 dependencies:
-- pip
 - python>=3.10,<3.13
 - pandoc
 # dev
@@ -11,5 +10,4 @@ dependencies:
 - mkdocs-material
 # plugins
 - mkdocs-bibtex
-- pip:
-  - mkdocs-ezglossary-plugin
+- mkdocs-ezglossary-plugin
