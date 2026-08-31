@@ -46,5 +46,3 @@ Extreme event detection and prediction methods for cyclone activity, droughts, h
 docs/source/examples.rst
 tutorial_basic tutorial_pywps tutorial_wps tutorial_server tutorial_r
  -->
-
-

@@ -40,4 +40,3 @@ pandoc tutorial.rst -t markdown -o tutorial.md
 ```
 
 Edits will likely be necessary after the conversion.
-
