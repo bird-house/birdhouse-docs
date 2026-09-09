@@ -1,0 +1,39 @@
+/* Government/agency funder logos (Canada, CFI, Québec, CANARIE, OGC row),
+   letting the width vary naturally depending on each logo's proportions. */
+img.logo-funder {
+  max-height: 5em;
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+  margin: 0.2em 0.4em;
+}
+
+/* Partner organization logos (CRIM, Luqia, universities, etc. row),
+   capped in width so wide logos don't dominate the row. */
+img.logo-org {
+  max-height: 5em;
+  max-width: 12em;
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+  margin: 0.2em 0.4em;
+}
+
+/* Project logos (initiatives examples table) are shown slightly larger,
+   but capped in width so wide/landscape logos (e.g. CLINT) don't
+   overflow the narrow "Logo" column. */
+img.logo-project {
+  max-height: 6em;
+  max-width: 12em;
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+  margin: 0.2em 0.4em;
+}
+
+/* EU co-funding banner, shown slightly smaller than its native size. */
+img.logo-eu {
+  width: 85%;
+  height: auto;
+  max-width: 32em;
+}
