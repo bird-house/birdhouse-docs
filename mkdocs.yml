@@ -16,6 +16,8 @@ theme:
   name: material
   logo: images/logo.svg
   favicon: images/favicon.ico
+extra_css:
+  - stylesheets/extra.css
 plugins:
   - search
   - bibtex:
